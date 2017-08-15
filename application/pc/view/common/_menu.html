@@ -1,0 +1,121 @@
+<aside class="Hui-aside">
+	<input runat="server" id="divScrollValue" type="hidden" value="" />
+	<div class="menu_dropdown bk_2">
+		<dl id="menu-project">
+			<dt><a  data-title="项目概况"   href="javascript:void(0)"><i class="Hui-iconfont">&#xe616;</i>&nbsp;项目概况<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></a></dt>
+			<dd>
+				<ul>
+					<li><a  data-href="project"  target="_self" data-title="分组信息" href="javascript:void(0)">分组信息</a></li>
+					<li><a  data-href="chart"  target="_self" data-title="分析流程图"  href="javascript:void(0)">分析流程图</a></li>
+					<li><a  data-href="format"  target="_self" data-title="测序序列格式展示"  href="javascript:void(0)">测序序列格式展示</a></li>
+					<li><a  data-href="evaluate"  target="_self" data-title="测序质量评估" href="javascript:void(0)">测序质量评估</a></li>
+					<li><a  data-href="pretreatment "  target="_self" data-title="数据预处理" href="javascript:void(0)">数据预处理</a></li>
+					<li><a  data-href="mapping"  target="_self" data-title="基因组比对" href="javascript:void(0)">基因组比对</a></li>
+				</ul>
+			</dd>
+		</dl>
+		<!--<dl id="menu-article">
+			<dt><a  data-title="测序质量评估"   href="javascript:void(0)"><i class="Hui-iconfont">&#xe616;</i>&nbsp; 测序质量评估<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></a></dt>
+			<dd>
+				<ul>
+					<li><a  data-href="qc/L58_no_rRNA.1qc" target="_self" data-title="L58_no_rRNA.1qc" href="javascript:void(0)">L58_no_rRNA.1qc</a></li>
+					<li><a  data-href="qc/L58_no_rRNA.2qc"  target="_self" data-title="L58_no_rRNA.2qc" href="javascript:void(0)">L58_no_rRNA.2qc</a></li>
+					<li><a  data-href="qc/L581_no_rRNA.1qc" target="_self" data-title="L581_no_rRNA.1qc" href="javascript:void(0)">L581_no_rRNA.1qc</a></li>
+          <li><a  data-href="qc/L581_no_rRNA.2qc"  target="_self" data-title="L581_no_rRNA.2qc" href="javascript:void(0)">L581_no_rRNA.2qc</a></li>
+					<li><a  data-href="qc/L58_no_rRNA.1qc" target="_self" data-title="L58_no_rRNA.1qc" href="javascript:void(0)">L58_no_rRNA.1qc</a></li>
+					<li><a  data-href="qc/L58_no_rRNA.2qc"  target="_self" data-title="L58_no_rRNA.2qc" href="javascript:void(0)">L58_no_rRNA.2qc</a></li>
+					<li><a  data-href="qc/L581_no_rRNA.1qc" target="_self" data-title="L581_no_rRNA.1qc" href="javascript:void(0)">L581_no_rRNA.1qc</a></li>
+					<li><a  data-href="qc/L581_no_rRNA.2qc"  target="_self" data-title="L581_no_rRNA.2qc" href="javascript:void(0)">L581_no_rRNA.2qc</a></li>
+					<li><a  data-href="qc/L58_no_rRNA.1qc" target="_self" data-title="L58_no_rRNA.1qc" href="javascript:void(0)">L58_no_rRNA.1qc</a></li>
+					<li><a  data-href="qc/L58_no_rRNA.2qc"  target="_self" data-title="L58_no_rRNA.2qc" href="javascript:void(0)">L58_no_rRNA.2qc</a></li>
+					<li><a  data-href="qc/L581_no_rRNA.1qc" target="_self" data-title="L581_no_rRNA.1qc" href="javascript:void(0)">L581_no_rRNA.1qc</a></li>
+					<li><a  data-href="qc/L581_no_rRNA.2qc"  target="_self" data-title="L581_no_rRNA.2qc" href="javascript:void(0)">L581_no_rRNA.2qc</a></li>
+					<li><a  data-href="qc/L58_no_rRNA.1qc" target="_self" data-title="L58_no_rRNA.1qc" href="javascript:void(0)">L58_no_rRNA.1qc</a></li>
+					<li><a  data-href="qc/L58_no_rRNA.2qc"  target="_self" data-title="L58_no_rRNA.2qc" href="javascript:void(0)">L58_no_rRNA.2qc</a></li>
+					<li><a  data-href="qc/L581_no_rRNA.1qc" target="_self" data-title="L581_no_rRNA.1qc" href="javascript:void(0)">L581_no_rRNA.1qc</a></li>
+					<li><a  data-href="qc/L581_no_rRNA.2qc"  target="_self" data-title="L581_no_rRNA.2qc" href="javascript:void(0)">L581_no_rRNA.2qc</a></li>
+					<li><a  data-href="qc/L58_no_rRNA.1qc" target="_self" data-title="L58_no_rRNA.1qc" href="javascript:void(0)">L58_no_rRNA.1qc</a></li>
+					<li><a  data-href="qc/L58_no_rRNA.2qc"  target="_self" data-title="L58_no_rRNA.2qc" href="javascript:void(0)">L58_no_rRNA.2qc</a></li>
+					<li><a  data-href="qc/L581_no_rRNA.1qc" target="_self" data-title="L581_no_rRNA.1qc" href="javascript:void(0)">L581_no_rRNA.1qc</a></li>
+					<li><a  data-href="qc/L581_no_rRNA.2qc"  target="_self" data-title="L581_no_rRNA.2qc" href="javascript:void(0)">L581_no_rRNA.2qc</a></li>
+					<li><a  data-href="qc/L58_no_rRNA.1qc" target="_self" data-title="L58_no_rRNA.1qc" href="javascript:void(0)">L58_no_rRNA.1qc</a></li>
+					<li><a  data-href="qc/L58_no_rRNA.2qc"  target="_self" data-title="L58_no_rRNA.2qc" href="javascript:void(0)">L58_no_rRNA.2qc</a></li>
+					<li><a  data-href="qc/L581_no_rRNA.1qc" target="_self" data-title="L581_no_rRNA.1qc" href="javascript:void(0)">L581_no_rRNA.1qc</a></li>
+					<li><a  data-href="qc/L581_no_rRNA.2qc"  target="_self" data-title="L581_no_rRNA.2qc" href="javascript:void(0)">L581_no_rRNA.2qc</a></li>
+					<li><a  data-href="qc/L58_no_rRNA.1qc" target="_self" data-title="L58_no_rRNA.1qc" href="javascript:void(0)">L58_no_rRNA.1qc</a></li>
+					<li><a  data-href="qc/L58_no_rRNA.2qc"  target="_self" data-title="L58_no_rRNA.2qc" href="javascript:void(0)">L58_no_rRNA.2qc</a></li>
+					<li><a  data-href="qc/L581_no_rRNA.1qc" target="_self" data-title="L581_no_rRNA.1qc" href="javascript:void(0)">L581_no_rRNA.1qc</a></li>
+					<li><a  data-href="qc/L581_no_rRNA.2qc"  target="_self" data-title="L581_no_rRNA.2qc" href="javascript:void(0)">L581_no_rRNA.2qc</a></li>
+					<li><a  data-href="qc/L58_no_rRNA.1qc" target="_self" data-title="L58_no_rRNA.1qc" href="javascript:void(0)">L58_no_rRNA.1qc</a></li>
+					<li><a  data-href="qc/L58_no_rRNA.2qc"  target="_self" data-title="L58_no_rRNA.2qc" href="javascript:void(0)">L58_no_rRNA.2qc</a></li>
+					<li><a  data-href="qc/L581_no_rRNA.1qc" target="_self" data-title="L581_no_rRNA.1qc" href="javascript:void(0)">L581_no_rRNA.1qc</a></li>
+					<li><a  data-href="qc/L581_no_rRNA.2qc"  target="_self" data-title="L581_no_rRNA.2qc" href="javascript:void(0)">L581_no_rRNA.2qc</a></li>
+					<li><a  data-href="qc/L58_no_rRNA.1qc" target="_self" data-title="L58_no_rRNA.1qc" href="javascript:void(0)">L58_no_rRNA.1qc</a></li>
+					<li><a  data-href="qc/L58_no_rRNA.2qc"  target="_self" data-title="L58_no_rRNA.2qc" href="javascript:void(0)">L58_no_rRNA.2qc</a></li>
+					<li><a  data-href="qc/L581_no_rRNA.1qc" target="_self" data-title="L581_no_rRNA.1qc" href="javascript:void(0)">L581_no_rRNA.1qc</a></li>
+					<li><a  data-href="qc/L581_no_rRNA.2qc"  target="_self" data-title="L581_no_rRNA.2qc" href="javascript:void(0)">L581_no_rRNA.2qc</a></li>
+					<li><a  data-href="qc/L58_no_rRNA.1qc" target="_self" data-title="L58_no_rRNA.1qc" href="javascript:void(0)">L58_no_rRNA.1qc</a></li>
+					<li><a  data-href="qc/L58_no_rRNA.2qc"  target="_self" data-title="L58_no_rRNA.2qc" href="javascript:void(0)">L58_no_rRNA.2qc</a></li>
+					<li><a  data-href="qc/L581_no_rRNA.1qc" target="_self" data-title="L581_no_rRNA.1qc" href="javascript:void(0)">L581_no_rRNA.1qc</a></li>
+					<li><a  data-href="qc/L581_no_rRNA.2qc"  target="_self" data-title="L581_no_rRNA.2qc" href="javascript:void(0)">L581_no_rRNA.2qc</a></li>
+					<li><a  data-href="qc/L58_no_rRNA.1qc" target="_self" data-title="L58_no_rRNA.1qc" href="javascript:void(0)">L58_no_rRNA.1qc</a></li>
+					<li><a  data-href="qc/L58_no_rRNA.2qc"  target="_self" data-title="L58_no_rRNA.2qc" href="javascript:void(0)">L58_no_rRNA.2qc</a></li>
+					<li><a  data-href="qc/L581_no_rRNA.1qc" target="_self" data-title="L581_no_rRNA.1qc" href="javascript:void(0)">L581_no_rRNA.1qc</a></li>
+					<li><a  data-href="qc/L581_no_rRNA.2qc"  target="_self" data-title="L581_no_rRNA.2qc" href="javascript:void(0)">L581_no_rRNA.2qc</a></li>
+					<li><a  data-href="qc/L58_no_rRNA.1qc" target="_self" data-title="L58_no_rRNA.1qc" href="javascript:void(0)">L58_no_rRNA.1qc</a></li>
+					<li><a  data-href="qc/L58_no_rRNA.2qc"  target="_self" data-title="L58_no_rRNA.2qc" href="javascript:void(0)">L58_no_rRNA.2qc</a></li>
+					<li><a  data-href="qc/L581_no_rRNA.1qc" target="_self" data-title="L581_no_rRNA.1qc" href="javascript:void(0)">L581_no_rRNA.1qc</a></li>
+					<li><a  data-href="qc/L581_no_rRNA.2qc"  target="_self" data-title="L581_no_rRNA.2qc" href="javascript:void(0)">L581_no_rRNA.2qc</a></li>
+					<li><a  data-href="qc/L58_no_rRNA.1qc" target="_self" data-title="L58_no_rRNA.1qc" href="javascript:void(0)">L58_no_rRNA.1qc</a></li>
+					<li><a  data-href="qc/L58_no_rRNA.2qc"  target="_self" data-title="L58_no_rRNA.2qc" href="javascript:void(0)">L58_no_rRNA.2qc</a></li>
+					<li><a  data-href="qc/L581_no_rRNA.1qc" target="_self" data-title="L581_no_rRNA.1qc" href="javascript:void(0)">L581_no_rRNA.1qc</a></li>
+					<li><a  data-href="qc/L581_no_rRNA.2qc"  target="_self" data-title="L581_no_rRNA.2qc" href="javascript:void(0)">L581_no_rRNA.2qc</a></li>
+				</ul>
+			</dd>
+		</dl>-->
+		<dl id="menu-picture">
+			<dt><a  data-title="基因表达分析结果" href="javascript:void(0)"><i class="Hui-iconfont">&#xe613;</i>&nbsp;基因表达分析结果<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></a></dt>
+			<dd>
+				<ul>
+					<li><a  data-href="geneExpression" data-title="基因表达定量" href="javascript:void(0)">基因表达定量</a></li>
+					<li><a  data-href="correlationAnalysis" data-title="表达相关性分析" href="javascript:void(0)">表达相关性分析</a></li>
+					<li><a data-href="diffGene" data-title="基因差异表达分析" href="javascript:void(0)">基因差异表达分析</a></li>
+				</ul>
+			</dd>
+		</dl>
+		<dl id="menu-comments">
+			<dt><a  data-title="富集分析" href="javascript:void(0)"><i class="Hui-iconfont">&#xe622;</i>&nbsp;富集分析 <i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></a></dt>
+			<dd>
+				<ul>
+					<li><a  data-href="go"data-title="GO富集分析" href="javascript:void(0)">GO富集分析</a></li>
+					<li><a data-href="kegg"  data-title="KEGG富集分析" href="javascript:void(0)">KEGG富集分析</a></li>
+				</ul>
+			</dd>
+		</dl>
+		<dl id="menu-product">
+			<dt><a  data-title="新基因分析" href="javascript:void(0)"><i class="Hui-iconfont">&#xe620;</i>&nbsp;新基因分析<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></a></dt>
+			<dd>
+				<ul>
+					<li><a  data-href="novelGene" data-title="新基因序列和表达定量" href="javascript:void(0)">新基因序列和表达定量</a></li>
+          <li><a data-href="diffNovel" data-title="新基因差异表达分析" href="javascript:void(0)">新基因差异表达分析</a></li>
+				</ul>
+			</dd>
+		</dl>
+		<dl id="menu-admin">
+			<dt><a data-title="ncRNA分析" href="javascript:void(0)"><i class="Hui-iconfont">&#xe61a;</i> ncRNA分析  <i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i> </a></dt>
+			  <dd>
+          <ul>
+            <li><a data-href="prediction"  data-title="ncRNA预测" href="javascript:void(0)">ncRNA预测</a></li>
+            <li><a data-href="expression"  data-title="ncRNA表达定量" href="javascript:void(0)">ncRNA表达定量</a></li>
+            <li><a data-href="diff" data-title="ncRNA差异表达" href="javascript:void(0)">ncRNA差异表达</a></li>
+            <li><a data-href="target"  data-title="ncRNA靶基因" href="javascript:void(0)">ncRNA靶基因</a></li>
+            <li><a data-href="targetEnrichment" data-title="差异ncRNA的靶基因富集分析" href="javascript:void(0)">ncRNA靶基因富集分析</a></li>
+            <li><a data-href="coExpression" data-title="差异ncRNA与差异mRNA共表达" href="javascript:void(0)">ncRNA与mRNA共表达</a></li>
+          </ul>
+        </dd>
+		</dl>
+		<dl id="menu-down">
+			<dt><a  data-href="all"  data-title="下载所有数据" href="javascript:void(0)"><i class="Hui-iconfont">&#xe622;</i>&nbsp;下载所有数据</a></dt>
+		</dl>
+	</div>
+</aside>

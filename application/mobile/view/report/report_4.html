@@ -1,0 +1,93 @@
+<!--富集分析-->
+	<div class="pages">
+		<div  data-page="report_{$level}" class="page">
+			<div class="navbar">
+				<div class="navbar-inner">
+					<div class="left sliding"><a href="report/{$bh_id}" class=" link"   > <i class="icon icon-back"></i></a></div>
+					{foreach $all_title as $vo}
+						{switch name="$vo.rank"}
+								{case value='0'} <div class="center sliding">{$vo.title}</div> {/case}
+						{/switch}
+					{/foreach}
+					<div class="right sliding">
+						<a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="page-content" >
+				{foreach $all_title as $vo}
+					{neq name="$vo.rank" value='0'}
+							{if condition=' $vo.text=="GO 富集分析" '}
+								{eq name="$img_flag['flag']['go']" value="1"}
+											<div class="content-block-title">
+												{$vo.title}
+											</div>
+										{foreach $all_content as $title}
+											{if condition=' $title.up=="1" AND $title.rank==$vo.rank  AND $title.level==$vo.level '}
+													<div class="content-block">
+														{$title.content}
+													</div>
+											{/if}
+										{/foreach}
+									<div class="content-block-title">GO结果图</div>
+									<div class="content-block">
+										<div class="row" id="go">
+											{eq name="$img_flag['go']['kg_flag']"  value='1' }
+											  {foreach name="$img_flag['go']['p_path']" item="vo"}
+													<div class="col-{$img_flag['go']['total']==1?'90':'33'} no-border">
+														<a href="go" data-i="{$key}" >
+															<img src="/result/{$analysis_id}/enrich/{$vo}"  class="img">
+														</a>
+													</div>
+											  {/foreach}
+											{/eq}
+										</div>
+									</div>
+									{foreach $all_content as $title}
+											{if condition=' $title.up=="0" AND $title.rank==$vo.rank  AND $title.level==$vo.level '}
+													<div class="content-block">
+														{$title.content}
+													</div>
+											{/if}
+									{/foreach}
+								{/eq}
+								{elseif condition=' $vo.text=="KEGG 富集分析"'/}
+									{eq name="$img_flag['flag']['kegg']" value="1"}
+												<div class="content-block-title">
+													{$vo.title}
+												</div>
+												{foreach $all_content as $title}
+														{if condition=' $title.up=="1" AND $title.rank==$vo.rank  AND $title.level==$vo.level '}
+																	<div class="content-block">
+																		{$title.content}
+																	</div>
+														{/if}
+												{/foreach}
+									<div class="content-block-title">KEGG结果图</div>
+									<div class="content-block">
+										<div class="row" id="kegg">
+											{eq name="$img_flag['kegg']['kg_flag']"  value='1' }
+											{foreach name="$img_flag['kegg']['p_path']" item="vo"}
+												<div class="col-{$img_flag['kegg']['total']==1?'90':'33'} no-border">
+													<a href="kegg" data-i="{$key}" >
+														<img src="/result/{$analysis_id}/enrich/{$vo}"  class="img">
+													</a>
+												</div>
+											{/foreach}
+											{/eq}
+										</div>
+									</div>
+											{foreach $all_content as $title}
+													{if condition=' $title.up=="0" AND $title.rank==$vo.rank  AND $title.level==$vo.level '}
+															<div class="content-block">
+																{$title.content}
+															</div>
+													{/if}
+											{/foreach}
+								{/eq}
+							{/if}
+					{/neq}
+				{/foreach}
+			</div>
+		</div>
+	</div>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Required meta tags-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!-- Color theme for statusbar -->
+	<meta name="theme-color" content="#2196f3">
+	<LINK rel="Shortcut Icon" href="__PUBLIC__/favicon.ico" />
+	<!-- Your app title -->
+	<title>上海伯豪报告系统</title>
+	<!-- Path to Framework7 Library CSS, Material Theme -->
+	<link rel="stylesheet" href="/static/index/css/framework7.material.css">
+	<!-- Path to Framework7 color related styles, Material Theme -->
+	<link rel="stylesheet" href="/static/index/css/framework7.material.colors.css">
+	<!-- Path to your custom app styles-->
+	<link rel="stylesheet" href="/static/index/css/my-app.css">
+</head>
+<body>
+<div class="login-screen modal-in">
+	<div class="view view-main">
+		<div class="page">
+			<div class="page-content login-screen-content position">
+				<div class="login-screen-title">
+					<img src="/static/index/image/shbiochip_logo.png"  class="img" alt=""/>
+				</div>
+				<div class="login-screen-title">报告系统</div>
+				<form>
+					<div class="list-block">
+						<ul>
+							<li class="item-content">
+								<div class="item-inner">
+									<div class="item-title ">账号</div>
+									<div class="item-input">
+										<input type="text" name="username" placeholder="请输入账号" value="demo">
+									</div>
+								</div>
+							</li>
+							<li class="item-content">
+								<div class="item-inner">
+									<div class="item-title ">密码</div>
+									<div class="item-input">
+										<input type="password" name="password" placeholder="请输入密码" value="123">
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="list-block">
+						<ul>
+							<li><a href="#" class="item-link list-button">登录</a></li>
+						</ul>
+					</div>
+				</form>
+			</div>
+			<!--<div class="toolbar ">
+				<div class="toolbar-inner">
+					<p>Copyright © 2017 伯豪生物 沪ICP备-14007085</p>
+				</div>
+			</div>-->
+		</div>
+	</div>
+</div>
+<div class="hidden" id="ip">
+	<script type="text/javascript" src="http://ip.chinaz.com/getip.aspx" ></script>
+</div>
+</body>
+<!-- Path to Framework7 Library JS-->
+<script type="text/javascript" src="/static/index/js/framework/framework7.js"></script>
+<!-- Path to your app js-->
+<script>
+	var PATH="__PATH__";
+</script>
+<script type="text/javascript" src="/static/index/js/framework/my-app.js"></script>
+</html>

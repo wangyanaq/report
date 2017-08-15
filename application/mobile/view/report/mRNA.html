@@ -1,0 +1,51 @@
+{eq name="$img_flag['mlc']['m']['m_flag']" value='1' }
+<div class="pages">
+	<div  data-page="mRNA" class="page">
+		<div class="page-content" >
+			<div class="swiper-container swiper-4">
+				<div class="swiper-wrapper">
+					{if condition="$img_flag['sql']['clust_plot']=='1'"}
+						{eq name="$img_flag['mlc']['m']['h_flag']" value='1' }
+						<div class="swiper-slide">
+								<span>
+									<div class="content-block-title">hclust</div>
+									<div class="content-block">
+										<div class="swiper-zoom-container"> <img src="/result/{$analysis_id}/index/mRNA/hclust.png" class="img" ></div>
+									</div>
+								</span>
+						</div>
+						{/eq}
+					{/if}
+					{if condition="$img_flag['sql']['pca_plot']=='1'"}
+						{eq name="$img_flag['mlc']['m']['p_flag']" value='1' }
+						<div class="swiper-slide ">
+									<span>
+										<div class="content-block-title">PCA</div>
+										<div class="content-block">
+											<div class="swiper-zoom-container"> <img src="/result/{$analysis_id}/index/mRNA/PCA.png" class="img" ></div>
+										</div>
+									</span>
+						</div>
+						{/eq}
+					{/if}
+					{if condition="$img_flag['sql']['corr_plot']=='1'"}
+						{eq name="$img_flag['mlc']['m']['c_flag']" value='1' }
+						<div class="swiper-slide">
+									<span>
+										<div class="content-block-title">correlation</div>
+										<div class="content-block">
+											<div class="swiper-zoom-container"> <img src="/result/{$analysis_id}/index/mRNA/correlation.png" class="img" ></div>
+										</div>
+									</span>
+						</div>
+						{/eq}
+					{/if}
+				</div>
+				{if condition="($img_flag['sql']['corr_plot']=='1' AND $img_flag['sql']['pca_plot']=='1') OR ($img_flag['sql']['corr_plot']=='1' AND $img_flag['sql']['clust_plot']=='1') OR($img_flag['sql']['pca_plot']=='1' AND $img_flag['sql']['clust_plot']=='1') "}
+				<div class="swiper-pagination m"></div>
+				{/if}
+			</div>
+		</div>
+	</div>
+</div>
+{/eq}

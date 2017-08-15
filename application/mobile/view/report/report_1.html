@@ -1,0 +1,223 @@
+<!-- 项目概况-->
+	<div class="pages">
+		<div data-page="report_{$level}" class="page">
+			<div class="navbar">
+				<div class="navbar-inner">
+					<div class="left sliding"><a href="report/{$bh_id}" class=" link"> <i class="icon icon-back"></i></a></div>
+					{foreach $all_title as $vo}
+						{switch  name='$vo.rank'}
+							{case value='0'}
+								<div class="center sliding">{$vo.title}</div>
+							{/case}
+						{/switch}
+					{/foreach}
+					<div class="right sliding">
+						<a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="page-content" >
+				{foreach $all_title as $vo}
+			   	{neq name='$vo.rank' value='0'}
+							{if condition='$vo.text=="差异基因信息" AND  $chip_list["flag"]=="1"'}
+												<div class="content-block-title">
+													{$vo.title}
+												</div>
+												{foreach $all_content as $tit }
+												{if condition='($tit.up=="1") AND ( $tit.rank==$vo.rank ) AND( $tit.level==$vo.level) '}
+												<div class="content-block">{$tit.content}</div>
+												{/if}
+												{/foreach}
+												<div class="content-block-title">差异基因数据统计结果</div>
+												<div class="content-block">
+													{foreach $chip_list["list"]['content'] as $title }
+													<div class="row  no-gutter">
+														<div class="col-25">{$title[0] }</div>
+														<div class="col-15">{$title[1] }</div>
+														<div class="col-20">{$title[2]}</div>
+														<div class="col-20">{$title[3]}</div>
+														<div class="col-20">{$title[4]}</div>
+													</div>
+													{/foreach}
+												</div>
+													{foreach $all_content as $tit }
+													{if condition='($tit.up=="0") AND ( $tit.rank==$vo.rank ) AND( $tit.level==$vo.level) '}
+													<div class="content-block">{$tit.content}</div>
+													{/if}
+													{/foreach}
+
+								<!--<div class="content-block-title">差异基因数据统计结果</div>
+								<div class="content-block">
+									<div class="row no-gutter">
+										<div class="col-25">分组</div>
+										<div class="col-15">P</div>
+										<div class="col-20">FC</div>
+										<div class="col-20">UP</div>
+										<div class="col-20">DOWN</div>
+									</div>
+									<div class="row no-gutter">
+										<div class="col-25">g2_VS_g1</div>
+										<div class="col-15">-</div>
+										<div class="col-20">-</div>
+										<div class="col-20">28929</div>
+										<div class="col-20">29271</div>
+									</div>
+									<div class="row no-gutter">
+
+										<div class="col-25">g2_VS_g1</div>
+										<div class="col-15">0.01</div>
+										<div class="col-20">-</div>
+										<div class="col-20">10</div>
+										<div class="col-20">13</div>
+									</div>
+									<div class="row no-gutter">
+
+										<div class="col-25">g2_VS_g1</div>
+										<div class="col-15">0.01</div>
+										<div class="col-20">2</div>
+										<div class="col-20">0</div>
+										<div class="col-20">1</div>
+									</div>
+									<div class="row no-gutter">
+
+										<div class="col-25">g2_VS_g1</div>
+										<div class="col-15">0.05</div>
+										<div class="col-20">-</div>
+										<div class="col-20">87</div>
+										<div class="col-20">89</div>
+									</div>
+									<div class="row no-gutter">
+
+										<div class="col-25">g2_VS_g1</div>
+										<div class="col-15">0.05</div>
+										<div class="col-20">2</div>
+										<div class="col-20">2</div>
+										<div class="col-20">3</div>
+									</div>
+									<div class="row no-gutter">
+
+										<div class="col-25">g2_VS_g1</div>
+										<div class="col-15">0.05</div>
+										<div class="col-20">2mean7</div>
+										<div class="col-20">0</div>
+										<div class="col-20">0</div>
+									</div>
+									<div class="row no-gutter">
+
+										<div class="col-25">g4_VS_g3</div>
+										<div class="col-15">-</div>
+										<div class="col-20">-</div>
+										<div class="col-20">25585</div>
+										<div class="col-20">32616</div>
+									</div>
+									<div class="row no-gutter">
+
+										<div class="col-25">g4_VS_g3</div>
+										<div class="col-15">0.01</div>
+										<div class="col-20">-</div>
+										<div class="col-20">105</div>
+										<div class="col-20">153</div>
+									</div>
+									<div class="row no-gutter">
+
+										<div class="col-25">g4_VS_g3</div>
+										<div class="col-15">0.01</div>
+										<div class="col-20">2</div>
+										<div class="col-20">9</div>
+										<div class="col-20">26</div>
+									</div>
+									<div class="row no-gutter">
+
+										<div class="col-25">g4_VS_g3</div>
+										<div class="col-15">0.05</div>
+										<div class="col-20">-</div>
+										<div class="col-20">533</div>
+										<div class="col-20">840</div>
+									</div>
+									<div class="row no-gutter">
+
+										<div class="col-25">g4_VS_g3</div>
+										<div class="col-15">0.05</div>
+										<div class="col-20">2</div>
+										<div class="col-20">36</div>
+										<div class="col-20">77</div>
+									</div>
+									<div class="row no-gutter">
+										<div class="col-25">g4_VS_g3</div>
+										<div class="col-15">0.05</div>
+										<div class="col-20">2mean7</div>
+										<div class="col-20">13</div>
+										<div class="col-20">38</div>
+									</div>
+								</div>
+								<div class="content-block-title">
+									简写含义:（简写名:原始名）
+								</div>
+								<div class="content-block">
+									<p> <i class="title">P:</i>p-value threshold</p>
+									<p> <i class="title">FC:</i>fold change threshold</p>
+									<p> <i class="title">UP:</i>number of up-regulated genes</p>
+									<p> <i class="title">DOWN:</i>number of down-regulated genes</p>
+								</div>-->
+
+								{elseif condition='$vo.text=="PCA、样本聚类、correlation"  AND  $img_flag["flag"]=="1"'/}
+
+											<div class="content-block-title">{$vo.title}</div>
+											{foreach $all_content as $title}
+													{if condition=' ($title.up=="1" ) AND ( $title.rank==$vo.rank)  AND ($title.level==$vo.level)'}
+															<div class="content-block">
+																{$title.content}
+															</div>
+													{/if}
+											{/foreach}
+											{foreach  name="$img_flag['mlc']"  item="img"  }
+														{eq name="$img['m_flag']"  value='1' }
+														<div class="content-block-title">{$img.title}结果图</div>
+														<div class="content-block"><?php $i=0?>
+															<div class="row " id="{$key}" >
+																{if condition="$img_flag['sql']['clust_plot']=='1'"}
+																		{eq name="$img['h_flag']" value='1' }
+																		<div class="col-{$img_flag['td']=='1' ?'33':'90'}  no-border">
+																			<a href="{$img.title}" data-i="{$i++}"  >
+																				<img src="/result/{$analysis_id}/index/{$img.title}/hclust.png"  class="img">
+																			</a>
+																		</div>
+																		{/eq}
+																{/if}
+																{if condition="$img_flag['sql']['pca_plot']=='1'"}
+																	{eq name="$img['p_flag']" value='1' }
+																	<div class="col-{$img_flag['td']=='1'?'33':'90'} no-border">
+																		<a href="{$img.title}" data-i="{$i++}"  >
+																			<img src="/result/{$analysis_id}/index/{$img.title}/PCA.png"  class="img">
+																		</a>
+																	</div>
+																	{/eq}
+																{/if}
+																{if condition="$img_flag['sql']['corr_plot']=='1'"}
+																	{eq name="$img['c_flag']" value='1' }
+																	<div class="col-{$img_flag['td']=='1'?'33':'90'} no-border">
+																		<a href="{$img.title}"  data-i="{$i++}" >
+																			<img src="/result/{$analysis_id}/index/{$img.title}/correlation.png"  class="img">
+																		</a>
+																	</div>
+																	{/eq}
+																{/if}
+															</div>
+														</div>
+														{/eq}
+										  {/foreach}
+				{foreach $all_content as $title}
+				{if condition=' ($title.up=="0" ) AND ( $title.rank==$vo.rank)  AND ($title.level==$vo.level)'}
+				<div class="content-block">
+					{$title.content}
+				</div>
+				{/if}
+				{/foreach}
+
+							{/if}
+			    {/neq}
+		    {/foreach}
+
+		</div>
+	</div>
+</div>

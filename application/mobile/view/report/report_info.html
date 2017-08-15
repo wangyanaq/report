@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Required meta tags-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!-- Color theme for statusbar -->
+  <meta name="theme-color" content="#2196f3">
+  <LINK rel="Shortcut Icon" href="__PUBLIC__/favicon.ico" />
+  <!-- Your app title -->
+  <title>上海伯豪报告系统</title>
+  <!-- Path to Framework7 Library CSS, Material Theme -->
+  <link rel="stylesheet" href="/static/index/css/framework7.material.css">
+
+  <!-- Path to Framework7 color related styles, Material Theme -->
+  <link rel="stylesheet" href="/static/index/css/framework7.material.colors.min.css">
+  <!-- Path to your custom app styles-->
+  <link rel="stylesheet" href="/static/index/css/my-app.css">
+</head>
+<body>
+<!-- Status bar overlay for fullscreen mode-->
+<div class="statusbar-overlay"></div>
+<!-- Panels overlay-->
+<div class="panel-overlay"></div>
+<div class="panel panel-left panel-reveal">
+  <div class="view navbar-fixed">
+    <div class="pages">
+      <div data-page="panel-left" class="page">
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="center">合同</div>
+          </div>
+        </div>
+        <div class="page-content">
+          <div class="list-block">
+            <ul>
+              <li>
+                <a href="report_info"   class="item-link item-content close-panel">
+                  <div class="item-media"><i class="icon icon-f7"></i></div>
+                  <div class="item-inner">
+                    <div class="item-title">合同信息</div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <!--
+                <a href="report_password"  class="item-link item-content close-panel">
+                  <div class="item-media"><i class="icon icon-f7"></i></div>
+                  <div class="item-inner">
+                    <div class="item-title">修改密码</div>
+                  </div>
+                </a>
+              </li>-->
+              <li><a href="#"  id="back"  class="item-link item-content close-panel">
+                <div class="item-media"><i class="icon icon-f7"></i></div>
+                <div class="item-inner">
+                  <div class="item-title">退出登录</div>
+                </div></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Views -->
+<div class="views" >
+    <!-- Default view-page layout -->
+    <div class="view view-main" >
+      <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+      <div class="pages navbar-fixed">
+        <!-- Index Page-->
+        <div data-page="report_info" class="page">
+          <!-- Top Navbar-->
+          <div class="navbar">
+            <div class="navbar-inner navbar-on-left">
+              <div class="left"><a href="#" id="login" class="link icon-only"> 注销</a></div>
+              <div class="center">  </div>
+              <div class="right sliding">欢迎,&nbsp;<span>{$username}</span>&nbsp;!&nbsp;<a  href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a></div>
+            </div>
+          </div>
+          <div class="page-content">
+            <div class="content-block-title">合同号列表</div>
+            <div class="list-block">
+              <ul>
+                {foreach name='bh_info' item='vo' empty="<li> <div class='item-content'>暂时没有合同 </div></li>"}
+                <li><a href="report/{$vo}"  class="item-link">
+                  <div class="item-content">
+                    <div class="item-inner">
+                      <div class="item-title">{$vo}</div>
+                    </div>
+                  </div></a></li>
+                {/foreach}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- Path to Framework7 Library JS-->
+<script type="text/javascript" src="/static/index/js/framework/framework7.min.js"></script>
+<!-- Path to your app js-->
+<script>
+  var PATH="__PATH__";
+</script>
+ <script type="text/javascript" src="/static/index/js/framework/my-app.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+{eq name="$img_flag['flag']['scatter_plot']"  value="1"}
+<div class="pages">
+		<div  data-page="scatter" class="page">
+			<div class="page-content" >
+				<div class="swiper-container swiper-scatter">
+					<div class="swiper-pagination sca"></div>
+					<div class="swiper-wrapper">
+						{eq name="$img_flag['scatter']['mRNA']['kg_flag']"  value='1' }
+						<div class="swiper-slide ">
+								<span>
+									<div class="content-block-title">mRNA散点图</div>
+									<div class="content-block">
+										<div class="swiper-zoom-container"><img src="/result/{$analysis_id}/diff/mRNA/{$img_flag['scatter']['mRNA']['p_path'][0]}" class="img" /></div>
+									</div>
+								</span>
+						</div>
+						{/eq}
+						{eq name="$img_flag['scatter']['lncRNA']['kg_flag']"  value='1' }
+						<div class="swiper-slide">
+									<span>
+										<div class="content-block-title">lncRNA散点图</div>
+										<div class="content-block">
+											<div class="swiper-zoom-container"><img src="/result/{$analysis_id}/diff/lncRNA/{$img_flag['scatter']['lncRNA']['p_path'][0]}"></div>
+										</div>
+									</span>
+						</div>
+						{/eq}
+						{eq name="$img_flag['scatter']['circRNA']['kg_flag']"  value='1' }
+						<div class="swiper-slide">
+									<span>
+										<div class="content-block-title">circRNA散点图</div>
+										<div class="content-block">
+											<div class="swiper-zoom-container"><img src="/result/{$analysis_id}/diff/circRNA/{$img_flag['scatter']['circRNA']['p_path'][0]}" class="img" /></div>
+										</div>
+									</span>
+						</div>
+						{/eq}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{/eq}

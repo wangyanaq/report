@@ -1,0 +1,35 @@
+<IfModule mod_rewrite.c>
+Options +FollowSymlinks -Multiviews
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php/$1 [QSA,PT,L]
+</IfModule>
+
+<IfModule mod_deflate.c>
+#Insert filter
+SetOutputFilter DEFLATE
+# Netscape 4.x has some problems��
+BrowserMatch ^Mozilla/4 gzip-only-text/html
+# Netscape 4.06-4.08 have some more problems
+BrowserMatch ^Mozilla/4\.0[678] no-gzip
+# MSIE masquerades as Netscape, but it is fine
+# BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+# NOTE: Due to a bug in mod_setenvif up to Apache 2.0.59
+# the above regex won��t work. You can use the following
+# workaround to get the desired effect:
+# BrowserMatch \bMSIE !no-gzip !gzip-only-text/html force-gzip
+BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+
+# Don��t compress images and other
+SetEnvIfNoCase Request_URI .(?:exe|t?gz|zip|bz2|sit|rar)$ no-gzip dont-vary
+SetEnvIfNoCase Request_URI .(?:pdf|doc)$ no-gzip dont-vary
+AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css
+AddOutputFilterByType DEFLATE application/x-javascript
+# Make sure proxies don��t deliver the wrong content
+Header append Vary User-Agent env=!dont-vary
+
+#DeflateFilterNote ratio ratio_info
+#LogFormat '"%v %h %l %u %t ��%r" %>s %b "%{Referer}i" "%{User-Agent}i"" (%{ratio}n)' deflate
+#CustomLog logs/deflate_log deflate
+</IfModule>

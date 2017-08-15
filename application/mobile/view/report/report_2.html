@@ -1,0 +1,85 @@
+<!-- 质控信息-->
+	<div class="pages">
+		<div  data-page="report_{$level}" class="page">
+			<div class="navbar">
+				<div class="navbar-inner">
+					<div class="left sliding"><a href="report/{$bh_id}" class=" link" > <i class="icon icon-back"></i></a></div>
+					{foreach $all_title as $vo}
+						{switch name="$vo.rank"}
+							{case value='0'}
+					      <div class="center sliding">{$vo.title}</div>
+							{/case}
+						{/switch}
+					{/foreach}
+					<div class="right sliding">
+						<a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="page-content">
+					{foreach $all_title as $vo}
+             {neq name="$vo.rank" value='0'}
+										{if condition='$vo.text=="RNA样本信息" '}
+										{elseif condition=' $vo.text=="芯片实验质控情况" '}
+												{if condition='$chip_list["flag"]=="1" '}
+														<div class="content-block-title">
+															{$vo.title}
+														</div>
+														{foreach $all_content as $title}
+														{if condition=' $title.up=="1" AND  $title.rank==$vo.rank  AND $title.level==$vo.level '}
+														<div class="content-block">{$title.content}</div>
+														{/if}
+														{/foreach}
+
+													<div class="content-block">
+														{foreach $chip_list["list"]['content'] as $title }
+														<div class="row  no-gutter">
+															<div class="col-45">{$title[0]}</div>
+															<div class="col-25">{$title[1]}</div>
+															<div class="col-30">{$title[2]}</div>
+														</div>
+														{/foreach}
+													</div>
+												{/if}
+										{elseif condition='$vo.text=="箱线图(Box Plot)" '}
+												{if condition='$plot["flag"]["box_plot"]=="1"' }
+														<div class="content-block-title">
+															{$vo.title}
+														</div>
+														{foreach $all_content as $title}
+														{if condition=' $title.up=="1" AND  $title.rank==$vo.rank  AND $title.level==$vo.level '}
+														<div class="content-block">{$title.content}</div>
+														{/if}
+														{/foreach}
+													<div class="content-block">
+														<span>
+															<div class="content-block-title">
+																芯片分析结果箱线图
+															</div>
+															{if condition='$plot["box_flag"]=="1"' }
+																<div class="content-block">
+																	<div class="row " id="vol">
+																		<div class="col-100  no-border">
+																			<a href="box_plot" data-i="0"  >
+																				<img src="/result/{$analysis_id}/qc/box_plot.png"  class="img">
+																			</a>
+																		</div>
+																	</div>
+																</div>
+															{else/}
+																	<div class="content-block">箱线图没有正确加载</div>
+															{/if}
+														</span>
+													</div>
+													{foreach $all_content as $title}
+													{if condition=' $title.up=="0" AND  $title.rank==$vo.rank  AND $title.level==$vo.level '}
+													<div class="content-block">{$title.content}</div>
+													{/if}
+													{/foreach}
+												{/if}
+										{/if}
+							{/neq}
+					{/foreach}
+			</div>
+		</div>
+	</div>

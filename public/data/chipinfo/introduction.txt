@@ -1,0 +1,20 @@
+[lnc]
+Xu WH. et al., 2014. Long non-coding RNA URHC regulates cell proliferation and apoptosis via ZAK through the ERK/MAPK signaling pathway in hepatocellular carcinoma. Int J Biol Sci. 2014 Jun 10;10(7):664-76.
+Hu P. et al., 2014. LncRNA expression signatures of twist-induced epithelial- to-mesenchymal transition in MCF10A cells. Cellular Signalling 26, 83¨C93.
+Dan Xing, MD. et al., 2014. Identification of Long Noncoding RNA Associated with Osteoarthritis in Humans. Orthop Surg., 6(4):288-93. doi: 10.1111/os.12147.
+Dan Xing, MD. et al., 2014. Identification of Long Noncoding RNA Associated with Osteoarthritis in Humans. Orthop Surg., 6(4):288-93. doi: 10.1111/os.12147.
+Dan Xing, MD. et al., 2014. Identification of Long Noncoding RNA Associated with Osteoarthritis in Humans. Orthop Surg., 6(4):288-93. doi: 10.1111/os.12147.
+Dan Xing, MD. et al., 2014. Identification of Long Noncoding RNA Associated with Osteoarthritis in Humans. Orthop Surg., 6(4):288-93. doi: 10.1111/os.12147.
+Dan Xing, MD. et al., 2014. Identification of Long Noncoding RNA Associated with Osteoarthritis in Humans. Orthop Surg., 6(4):288-93. doi: 10.1111/os.12147.
+Dan Xing, MD. et al., 2014. Identification of Long Noncoding RNA Associated with Osteoarthritis in Humans. Orthop Surg., 6(4):288ans. Orthop Surg., 6(4):288-93. doi: 10.1111/os.12147.
+[exp]
+Huang P.Y. et al., 2014. Direct Reprogramming of Human Fibroblasts to Functional and Expandable Hepatocytes. Cell Stem Cell , 14(3) , 370 - 384.
+Xu C., Ju X. et al., 2014. An association analysis between psychophysical characteristics and genome-wide gene expression changes in human adaptation to the extreme climate at the Antarctic Dome Argus. Mol Psychiatry. doi:10.1038/mp.2014.72.
+Wang Y., Gu X.G., et al. 2014.SATB1 over-expression promotes malignant T-cell proliferation in cutaneous CD30+ lymphoproliferative disease by repressing p21. Blood. 23(22):3452-61.
+Zhang X., Ma W. et al., 2014. Regulation of p21 by TWIST2 contributes to its tumor-suppressor function in human acute myeloid leukemia. Oncogene. doi:10.1038/onc.
+Zhang Y. M., Zhan YZ. et al. 2014. Eupolyphaga sinensis Walker displays inhibition on hepatocellular carcinoma through regulating cell growth and metastasis signaling. Sci Rep-UK. 4: 5518.
+Wang F., Zhou Y. et al., 2014. Molecular signatures and transcriptional regulatory networks of human immature decidual NK and mature peripheral NK cells. Eur J Immunol. DOI: 10.1002/eji.201344183.
+Du J., Wu Y. Y. et al., 2014. Mechanism of SB431542 in inhibiting mouse embryonic stem cell differentiation. Cell Signal. 26(10): 2107¨C116.
+Jia B., Yu Z.J. et al., 2014. Hyperammonaemia induces hepatic injury with alteration of gene expression profiles. Liver Int. 34(5):748-58.
+Wang Z. C., Fan Y. T. et al., 2014. Transcriptome Analysis of the Hippocampus in Novel Rat Model of Febrile Seizures. PLoS One. 9(4):e95237.
+Li X., Gao Y.Y. et al., 2014. Identification of Gene Expression Changes from Colitis to CRC in the Mouse CAC Model. PloS one. 9(4):e95347.

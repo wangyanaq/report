@@ -1,0 +1,7 @@
+file name	p-value threshold	fold change threshold	number of differentially expression genes	number of up-regulated genes	number of down-regulated genes
+g2_VS_g1.txt			88750	44634	44116
+g2_VS_g1_p001.txt	0.01		2120	1075	1045
+g2_VS_g1_p001fc2.txt	0.01	2	200	104	96
+g2_VS_g1_p005.txt	0.05		9135	4967	4168
+g2_VS_g1_p005fc2.txt	0.05	2	848	458	390
+g2_VS_g1_p005fc2mean7.txt	0.05	2mean7	528	282	246

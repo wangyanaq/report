@@ -1,0 +1,26 @@
+{eq name="$img_flag['kegg']['kg_flag']" value='1' }
+<div class="pages">
+	<div  data-page="kegg" class="page">
+		<div class="page-content" >
+			<div class="swiper-container swiper-kegg">
+				{neq name="$img_flag['kegg']['total']" value="1"}
+				<div class="swiper-pagination kegg"></div>
+				{/neq}
+				<div class="swiper-wrapper">
+					{foreach name="$img_flag['kegg']['p_path']" item="vo"}
+					<div class="swiper-slide ">
+								<span>
+									<div class="content-block-title"> </div>
+										<div class="content-block-title"> </div>
+									<div class="content-block">
+										<div class="swiper-zoom-container"><img src="/result/{$analysis_id}/enrich/{$vo}" class="img" /></div>
+									</div>
+								</span>
+					</div>
+					{/foreach}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{/eq}

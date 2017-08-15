@@ -1,0 +1,43 @@
+{eq name="$img_flag['flag']['volcano_plot']"  value="1"}
+	<div class="pages">
+		<div  data-page="volcano" class="page">
+			<div class="page-content" >
+				<div class="swiper-container swiper-volcano">
+					<div class="swiper-pagination vol"></div>
+					<div class="swiper-wrapper">
+						{eq name="$img_flag['volcano']['mRNA']['kg_flag']"  value='1' }
+						<div class="swiper-slide">
+								<span>
+									<div class="content-block-title">mRNA火山图</div>
+									<div class="content-block">
+										<div class="swiper-zoom-container"><img src="/result/{$analysis_id}/diff/mRNA/{$img_flag['volcano']['mRNA']['p_path'][0]}" class="img" /></div>
+									</div>
+								</span>
+						</div>
+						{/eq}
+						{eq name="$img_flag['volcano']['lncRNA']['kg_flag']"  value='1' }
+						<div class="swiper-slide">
+									<span>
+										<div class="content-block-title">lncRNA火山图</div>
+										<div class="content-block">
+											<div class="swiper-zoom-container"><img src="/result/{$analysis_id}/diff/lncRNA/{$img_flag['volcano']['lncRNA']['p_path'][0]}" class="img" /></div>
+										</div>
+									</span>
+						</div>
+						{/eq}
+						{eq name="$img_flag['volcano']['circRNA']['kg_flag']"  value='1' }
+						<div class="swiper-slide">
+									<span>
+										<div class="content-block-title">circRNA火山图</div>
+										<div class="content-block">
+											<div class="swiper-zoom-container"><img src="/result/{$analysis_id}/diff/circRNA/{$img_flag['volcano']['circRNA']['p_path'][0]}" class="img" /></div>
+										</div>
+									</span>
+						</div>
+						{/eq}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{/eq}

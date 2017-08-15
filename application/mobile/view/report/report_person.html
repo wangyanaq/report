@@ -1,0 +1,110 @@
+	<div class="pages">
+		<div  data-page="report_3" class="page">
+			<div class="navbar">
+				<div class="navbar-inner">
+					<div class="left sliding"><a href="report" class="  link"  > <i class="icon icon-back"></i></a></div>
+					<div class="center sliding">差异基因</div>
+					<div class="right sliding">
+						<a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="page-content">
+				<div class="content-block-title">
+					火山图
+				</div>
+				<div class="content-block">
+					&nbsp;&nbsp;&nbsp;&nbsp;芯片数据进行组间比较，通过筛选差异倍数（Fold change值）以及t-检验得到的p-value值来确定显著性差异的探针。火山图(Volcano plot)在同一平面内展示了满足上述两条件的探针数目及分布。在火山图里，纵坐标为-lg(P-value)值，即由t-检验计算所得的P-value值的以10为底的对数值的相反数。横坐标为log2(Fold Change)，即两组样本间的差异倍数的以2为底的对数值，正负号代表了基因表达的上调或下调。
+				</div>
+				<div class="content-block">
+					<div class="row" id="vol">
+						<div class="col-33 no-border">
+							<a href="volcano" data-i="0" >
+								<img src="/data/pUItWJC9vOTfmsv6xZje8gczoYpKQ79b1ihrcJOgwAdpZtnTDW/diff/mRNA/g1_VS_g2_volcano_plot.png"  class="img">
+							</a>
+						</div>
+						<div class="col-33 no-border">
+							<a href="volcano"  data-i="1">
+								<img src="/data/pUItWJC9vOTfmsv6xZje8gczoYpKQ79b1ihrcJOgwAdpZtnTDW/diff/lncRNA/g1_VS_g2_volcano_plot.png"  class="img">
+							</a>
+						</div>
+						<div class="col-33  no-border">
+							<a href="volcano" data-i="2"  >
+								<img src="/data/pUItWJC9vOTfmsv6xZje8gczoYpKQ79b1ihrcJOgwAdpZtnTDW/diff/circRNA/g1_VS_g2_volcano_plot.png"  class="img">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="content-block">
+					&nbsp;&nbsp;&nbsp;&nbsp;用芯片组间T检验分析得到p-value值与Fold change值两个因素共同绘制Volcano plot——火山图，用于显示两组样品数据的显著性差异。
+				</div>
+			<!--	<div class="content-block-title">
+					热图
+				</div>
+				<div class="content-block">
+					&nbsp;&nbsp;&nbsp;&nbsp;聚类热图（heatmap）是对样本和基因分别进行分级聚类之后，通过热图表现基因在不同样本中表达情况的直观的图形表现形式。
+				</div>
+				<div class="content-block">
+					<p class="buttons-row">
+						<a href="#" class="button  pb-standalone-captions heat-1" >mRNA</a>
+						<a href="#" class="button   pb-standalone-captions heat-2">lncRNA</a>
+						<a href="#" class="button   pb-standalone-captions heat-3">circRNA</a>
+					</p>
+				</div>
+				<div class="content-block">
+					备注：左上角的图标表示色阶，横坐标为Z-score，即为 (基因表达值 － 均值) / 方差，其中均值，方差都是针对同一基因在不同样本中的归一化信号值计算的。纵坐标为对应探针的计数。主图横坐标是样本名称，样本会按计算所得的距离远近排序（分组）；纵坐标是探针号（或基因名称）。
+				</div>-->
+				<div class="content-block-title">散点图</div>
+				<div class="content-block">
+					&nbsp;&nbsp;&nbsp;&nbsp;芯片的原始数据经过标准化处理，转化为log2的值后，在一个二维坐标系中，绘制散点图(scatter plot)。芯片数据的散点图常用于评估两组数据总体分布情况。散点图中每一个点代表芯片上的探针点，该点在二维平面中的位置由其X轴坐标和Y轴坐标确定。
+				</div>
+
+				<div class="content-block">
+					<div class="row" id="sca">
+						<div class="col-33 no-border">
+							<a href="scatter" data-i="0" >
+								<img src="/data/pUItWJC9vOTfmsv6xZje8gczoYpKQ79b1ihrcJOgwAdpZtnTDW/diff/mRNA/scatterplot.png"  class="img">
+							</a>
+						</div>
+						<div class="col-33 no-border">
+							<a href="scatter"  data-i="1">
+								<img src="/data/pUItWJC9vOTfmsv6xZje8gczoYpKQ79b1ihrcJOgwAdpZtnTDW/diff/lncRNA/scatterplot.png"  class="img">
+							</a>
+						</div>
+						<div class="col-33  no-border">
+							<a href="scatter" data-i="2"  >
+								<img src="/data/pUItWJC9vOTfmsv6xZje8gczoYpKQ79b1ihrcJOgwAdpZtnTDW/diff/circRNA/scatterplot.png"  class="img">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="content-block">芯片数据的散点图常用于评估两组数据总体分布集中趋势。</div>
+				<!--<div class="content-block-title">
+					染色体图谱
+				</div>
+				<div class="content-block">
+					<div class="swiper-container swiper-4">
+						<div class="swiper-pagination"></div>
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="#" class=" pb-standalone-captions s-1">
+                  <span>
+                    <div class="content-block">
+											<img src="/data/pUItWJC9vOTfmsv6xZje8gczoYpKQ79b1ihrcJOgwAdpZtnTDW/diff/circRNA/scatterplot.png" class="img"/>
+										</div>
+                  </span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>-->
+				<div class="content-block-title">
+					靶基因预测基
+				</div>
+				<div class="content-block">
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;cis靶基因预测: 选取lncRNA上下游10kb范围内的基因作为此lncRNA的cis作用靶基因。</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;Trans靶基因预测: 采用数据库中对应物种的基因序列。先通过blast选择出序列上具有互补性或相似性的序列，再利用RNAplex计算两序列之间的互补能量，选择e≤−30的基因作为此lncRNA的trans作用靶基因。</p>
+				</div>
+			</div>
+		</div>
+	</div>

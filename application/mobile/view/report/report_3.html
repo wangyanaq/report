@@ -1,0 +1,154 @@
+<!--差异基因-->
+	<div class="pages">
+		<div  data-page="report_{$level}" class="page">
+			<div class="navbar">
+				<div class="navbar-inner">
+					<div class="left sliding"><a href="report/{$bh_id}" class="  link"  > <i class="icon icon-back"></i></a></div>
+					{foreach $all_title as $vo}
+					  {switch name="$vo.rank"}
+					    {case value='0'} <div class="center sliding">{$vo.title}</div> {/case}
+					  {/switch}
+					{/foreach}
+					<div class="right sliding">
+						<a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="page-content">
+
+				{foreach $all_title as $vo}
+					{neq name="$vo.rank" value='0'}
+								{if condition=' $vo.text=="火山图" '}
+										{eq name="$img_flag['flag']['volcano_plot']"  value="1"}
+				<div class="content-block-title">
+					{$vo.title}
+				</div>
+				{foreach $all_content as $title}
+				{if condition='$title.up=="1" AND $title.rank==$vo.rank  AND $title.level==$vo.level '}
+				<div class="content-block">
+					{$title.content}
+				</div>
+				{/if}
+				{/foreach}
+										<div class="content-block">
+											<div class="row" id="vol">
+											 	<?php $i=0;?>
+												{eq name="$img_flag['volcano']['mRNA']['kg_flag']"  value='1' }
+
+															<div class="col-33 no-border">
+																<a href="volcano" data-i="{$i++}" >
+																	<img src="/result/{$analysis_id}/diff/lncRNA/{$img_flag['volcano']['mRNA']['p_path'][0]}"  class="img"/>
+																</a>
+															</div>
+											  	{/eq}
+													{eq name="$img_flag['volcano']['lncRNA']['kg_flag']"  value='1' }
+														<div class="col-33 no-border">
+															<a href="volcano" data-i="{$i++}" >
+																<img src="/result/{$analysis_id}/diff/lncRNA/{$img_flag['volcano']['lncRNA']['p_path'][0]}"  class="img"/>
+															</a>
+														</div>
+													{/eq}
+													{eq name="$img_flag['volcano']['circRNA']['kg_flag']"  value='1' }
+															<div class="col-33 no-border">
+																<a href="volcano" data-i="{$i++}" >
+																	<img src="/result/{$analysis_id}/diff/lncRNA/{$img_flag['volcano']['circRNA']['p_path'][0]}"  class="img"/>
+																</a>
+															</div>
+													{/eq}
+											</div>
+										</div>
+				{foreach $all_content as $title}
+				{if condition='$title.up=="0"  AND  $title.rank==$vo.rank  AND  $title.level==$vo.level'}
+				<div class="content-block">
+					{$title.content}
+				</div>
+				{/if}
+				{/foreach}
+										{/eq}
+									{elseif condition=' $vo.text=="散点图" '}
+											{eq name="$img_flag['flag']['scatter_plot']"  value="1"}
+				<div class="content-block-title">
+					{$vo.title}
+				</div>
+				{foreach $all_content as $title}
+				{if condition='$title.up=="1" AND $title.rank==$vo.rank  AND $title.level==$vo.level '}
+				<div class="content-block">
+					{$title.content}
+				</div>
+				{/if}
+				{/foreach}
+											<div class="content-block">
+												<div class="row" id="sca">
+													<?php $i=0;?>
+													{eq name="$img_flag['scatter']['mRNA']['kg_flag']"  value='1' }
+													<div class="col-33 no-border">
+														<a href="scatter" data-i="{$i++}" >
+															<img src="/result/{$analysis_id}/diff/mRNA/{$img_flag['scatter']['mRNA']['p_path'][0]}"  class="img"/>
+														</a>
+													</div>
+													{/eq}
+													{eq name="$img_flag['scatter']['lncRNA']['kg_flag']"  value='1' }
+													<div class="col-33 no-border">
+														<a href="scatter" data-i="{$i++}" >
+															<img src="/result/{$analysis_id}/diff/lncRNA/{$img_flag['scatter']['lncRNA']['p_path'][0]}"  class="img"/>
+														</a>
+													</div>
+													{/eq}
+													{eq name="$img_flag['scatter']['circRNA']['kg_flag']"  value='1' }
+													<div class="col-33 no-border">
+														<a href="scatter" data-i="{$i++}" >
+															<img src="/result/{$analysis_id}/diff/circRNA/{$img_flag['scatter']['circRNA']['p_path'][0]}"  class="img"/>
+														</a>
+													</div>
+													{/eq}
+												</div>
+											</div>
+				{foreach $all_content as $title}
+				{if condition='$title.up=="0"  AND  $title.rank==$vo.rank  AND  $title.level==$vo.level'}
+				<div class="content-block">
+					{$title.content}
+				</div>
+				{/if}
+				{/foreach}
+											{/eq}
+								{/if}
+					{/neq}
+				{/foreach}
+			<!--	<div class="content-block-title">
+					热图
+				</div>
+				<div class="content-block">
+					&nbsp;&nbsp;&nbsp;&nbsp;聚类热图（heatmap）是对样本和基因分别进行分级聚类之后，通过热图表现基因在不同样本中表达情况的直观的图形表现形式。
+				</div>
+				<div class="content-block">
+					<p class="buttons-row">
+						<a href="#" class="button  pb-standalone-captions heat-1" >mRNA</a>
+						<a href="#" class="button   pb-standalone-captions heat-2">lncRNA</a>
+						<a href="#" class="button   pb-standalone-captions heat-3">circRNA</a>
+					</p>
+				</div>
+				<div class="content-block">
+					备注：左上角的图标表示色阶，横坐标为Z-score，即为 (基因表达值 － 均值) / 方差，其中均值，方差都是针对同一基因在不同样本中的归一化信号值计算的。纵坐标为对应探针的计数。主图横坐标是样本名称，样本会按计算所得的距离远近排序（分组）；纵坐标是探针号（或基因名称）。
+				</div>-->
+				<!--<div class="content-block-title">
+					染色体图谱
+				</div>
+				<div class="content-block">
+					<div class="swiper-container swiper-4">
+						<div class="swiper-pagination"></div>
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="#" class=" pb-standalone-captions s-1">
+                  <span>
+                    <div class="content-block">
+											<img src="/data/pUItWJC9vOTfmsv6xZje8gczoYpKQ79b1ihrcJOgwAdpZtnTDW/diff/circRNA/scatterplot.png" class="img"/>
+										</div>
+                  </span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>-->
+			</div>
+		</div>
+	</div>

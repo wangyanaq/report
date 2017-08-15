@@ -1,0 +1,24 @@
+{if condition='$plot["flag"]["box_plot"]=="1"' }
+<div class="pages">
+		<div  data-page="box_plot" class="page">
+			<div class="page-content" >
+				<div class="swiper-container swiper-box">
+					<div class="swiper-wrapper">
+						{if condition='$plot["box_flag"]=="1"' }
+						<div class="swiper-slide">
+								<span>
+									<div class="content-block-title"></div>
+									<div class="content-block-title"></div>
+									<div class="content-block-title"></div>
+									<div class="content-block">
+										<div class="swiper-zoom-container"><img src="/result/{$analysis_id}/qc/box_plot.png" class="img" ></div>
+									</div>
+								</span>
+						</div>
+						{/if}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{/if}

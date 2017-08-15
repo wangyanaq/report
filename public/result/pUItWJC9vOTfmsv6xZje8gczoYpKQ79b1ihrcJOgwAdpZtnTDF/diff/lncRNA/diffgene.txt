@@ -1,0 +1,5 @@
+文件名	p-value	fold change	差异基因	上调	下调
+M3_VS_N.txt			9843	3970	5870
+M3_VS_N_fc2.txt		2	893	476	417
+M3_VS_N_fc2_signal7.txt		2_signal7	653	383	270
+M3_VS_N_fc3.txt		3	391	255	136

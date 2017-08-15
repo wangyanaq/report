@@ -1,0 +1,52 @@
+﻿{include file="common/_meta" /}
+<title>上海伯豪生物报告系统</title>
+<meta name="keywords" content="上海伯豪生物报告">
+<meta name="description" content="上海伯豪生物报告系统由公司内部人员开发，用于展示客户在本公司项目结果展示以及下载。">
+	<style>
+	.bk_2 	a{width: 100%;
+		display: block;
+		}
+		a:hover{
+			text-decoration: none;
+		}
+	</style>
+	<link rel="stylesheet" href="__PUBLIC__/js/skin/layer.css" id="layui_layer_skinlayercss">
+</head>
+{if condition="$curr_bh['status']==1"}
+<body >
+{else/}
+<body class="big-page" >
+{/if}
+<div id="tbody">
+ {include file="login/body" /}
+</div>
+<script type="text/javascript" src="__PUBLIC__/js/layer.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/jquery.contextmenu.r2.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/H-ui.admin.js"></script>
+<script>
+	var PATH="__PATH__";
+</script>
+<script type="text/javascript" src="__PUBLIC__/js/num.js"></script>
+<script type="text/javascript">
+	/*
+$(function(){
+	$(".Hui-tabNav-wp").contextMenu('myMenu1', {
+		bindings: {
+			'open': function(t) {
+				alert('Trigger was '+t.id+'\nAction was Open');
+			},
+			'email': function(t) {
+				alert('Trigger was '+t.id+'\nAction was Email');
+			},
+			'save': function(t) {
+				alert('Trigger was '+t.id+'\nAction was Save');
+			},
+			'delete': function(t) {
+				alert('Trigger was '+t.id+'\nAction was Delete')
+			}
+		}
+	});
+});*/
+</script>
+</body>
+</html>

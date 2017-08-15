@@ -1,0 +1,140 @@
+<!-- Views -->
+<div class="views" >
+    <!-- Default view-page layout -->
+    <div class="view view-main" >
+
+      <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+      <div class="pages navbar-fixed">
+        <!-- Index Page-->
+        <div data-page="report" class="page">
+          <!-- Top Navbar-->
+          <div class="navbar">
+            <div class="navbar-inner navbar-on-left">
+              <div class="left sliding"><a href="report_info" class="link"  > <i class="icon icon-back"></i></a></div>
+              <div class="center">{$bh_id}</div>
+              <div class="right sliding"><a  href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a></div>
+            </div>
+          </div>
+          <div class="page-content">
+            <div class="content-block-title color">合同信息</div>
+            <!-- Inset content block -->
+            <div class="content-block">
+              <div class="row  no-gutter">
+                <div class="col-50 "> 合同编号 </div>
+                <div class="col-50">{$bh_info["bh_id"]} </div>
+              </div>
+              <div class="row  no-gutter">
+                <div class="col-50"> 项目类型 </div>
+                <div class="col-50">{$bh_info["chip_company"]}芯片  </div>
+              </div>
+              <div class="row  no-gutter">
+                <div class="col-50">芯片数量 </div>
+                <div class="col-50"> {$bh_info["chip_num"]} </div>
+              </div>
+              <div class="row  no-gutter">
+                <div class="col-50">报告状态 </div>
+                <div class="col-50">{$bh_info["status"]==1?'已完成':'处理中'}</div>
+              </div>
+              <!--<div class="row  no-gutter">
+                <div class="col-50">查看地址 </div>
+                <div class="col-50">
+                  <a href="#" data-panel="left" class="open-panel">查看报告</a>
+                </div>
+              </div>-->
+            </div>
+            {eq name="$bh_info['status']" value="1" }
+            <div class="content-block-title color">分析结果</div>
+            <div class="list-block">
+              <ul>
+                <?php $i=1;?>
+                {foreach name='report_list' item='vo'}
+                <li><a href="report_{$i++}/{$bh_id}/{$vo['level']}" class="item-link">
+                  <div class="item-content">
+                    <div class="item-inner">
+                      <div class="item-title">{$vo['title']}</div>
+                    </div>
+                  </div></a>
+                </li>
+                {/foreach}
+              </ul>
+            </div>
+            {/eq}
+          <!--  <div class="content-block-title">分析内容</div>
+
+            <div class="content-block">
+
+              <div class="row  no-gutter">
+                <div class="col-75"> 分析内容 </div>
+                <div class="col-25"> 状态</div>
+              </div>
+              <div class="row  no-gutter">
+                <div class="col-75">原始数据的归一化处理 </div>
+                <div class="col-25"> &radic;</div>
+              </div>
+              <div class="row  no-gutter">
+                <div class="col-75">Box Plot图	 </div>
+                <div class="col-25"> &radic;</div>
+              </div>
+              <div class="row  no-gutter">
+                <div class="col-75">PCA图 </div>
+                <div class="col-25"> &radic;</div>
+              </div>
+              <div class="row  no-gutter">
+                <div class="col-75">样本聚类图</div>
+                <div class="col-25"> &radic;</div>
+              </div>
+
+              <div class="row  no-gutter">
+                <div class="col-75">  样本相关性分析</div>
+                <div class="col-25"> &radic;</div>
+              </div>
+              <div class="row  no-gutter">
+                <div class="col-75"> 基因水平表达差异筛选</div>
+                <div class="col-25"> &radic;</div>
+              </div>
+              <div class="row  no-gutter">
+                <div class="col-75"> 外显子水平表达差异筛选</div>
+                <div class="col-25"> &radic;</div>
+              </div>
+              <div class="row  no-gutter">
+                <div class="col-75"> 热图	 </div>
+                <div class="col-25"> &radic;</div>
+              </div>
+              <div class="row  no-gutter">
+                <div class="col-75"> 散点图 </div>
+                <div class="col-25"> &radic;</div>
+              </div>
+              <div class="row  no-gutter">
+                <div class="col-75">  火山图	</div>
+                <div class="col-25"> &radic;</div>
+              </div>
+              <div class="row  no-gutter">
+                <div class="col-75"> 差异基因的染色体分布</div>
+                <div class="col-25"> &radic;</div>
+              </div>
+              <div class="row  no-gutter">
+                <div class="col-75"> 差异基因层级聚类	 </div>
+                <div class="col-25"> &radic;</div>
+              </div>
+              <div class="row  no-gutter">
+                <div class="col-75"> lncRNA靶基因预测 </div>
+                <div class="col-25"> &radic;</div>
+              </div>
+              <div class="row  no-gutter">
+                <div class="col-75"> GO富集分析	 </div>
+                <div class="col-25"> &radic;</div>
+              </div>
+              <div class="row  no-gutter">
+                <div class="col-75"> KEGG富集分析 </div>
+                <div class="col-25"> &radic;</div>
+              </div>
+              <div class="row  no-gutter">
+                <div class="col-75"> circRNA吸附miRNA预测 </div>
+                <div class="col-25"> &radic;</div>
+              </div>
+            </div>-->
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

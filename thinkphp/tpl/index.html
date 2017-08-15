@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>上海伯豪报告系统登录</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/account.css" />
+	<!--[if IE]>
+		<script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="htmleaf-container">
+		<div class="login">
+			<div class="photo">
+			</div>
+			<span>登录您的账号</span>
+			<form action="login.php" id="login-form" method="post">
+				<div id="u" class="form-group">
+				  <input id="username" spellcheck=false class="form-control" name="username" type="text" size="18" alt="login" required="">
+				  <span class="form-highlight"></span>
+				  <span class="form-bar"></span>
+				  <label for="username" class="float-label">账号</label>
+				  <erroru>
+				  	请输入账号
+				  	<i>		
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+						    <path d="M0 0h24v24h-24z" fill="none"/>
+						    <path d="M1 21h22l-11-19-11 19zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/>
+						</svg>
+				  	</i>
+				  </erroru>
+				</div>
+				<div id="p" class="form-group">
+				  <input id="password" class="form-control" spellcheck=false name="password" type="password" size="18" alt="login" required="">
+				  <span class="form-highlight"></span>
+				  <span class="form-bar"></span>
+				  <label for="password" class="float-label">密码</label>
+				  <errorp>
+				  	请输入密码
+				  	<i>		
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+						    <path d="M0 0h24v24h-24z" fill="none"/>
+						    <path d="M1 21h22l-11-19-11 19zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/>
+						</svg>
+				  	</i>
+				  </errorp>
+				</div>
+				<div class="form-group">
+				<input type="checkbox" id="rem">
+				<label for="rem">保持登录</label>
+				<button type="submit" name="submit" ripple>登录</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	
+	<script src='http://libs.useso.com/js/jquery/1.11.0/jquery.min.js'></script>
+	<script>
+	$(document).ready(function () {
+	    $(function () {
+	        var animationLibrary = 'animate';
+	        $.easing.easeOutQuart = function (x, t, b, c, d) {
+	            return -c * ((t = t / d - 1) * t * t * t - 1) + b;
+	        };
+	        $('[ripple]:not([disabled],.disabled)').on('mousedown', function (e) {
+	            var button = $(this);
+	            var touch = $('<touch><touch/>');
+	            var size = button.outerWidth() * 1.8;
+	            var complete = false;
+	            $(document).on('mouseup', function () {
+	                var a = { 'opacity': '0' };
+	                if (complete === true) {
+	                    size = size * 1.33;
+	                    $.extend(a, {
+	                        'height': size + 'px',
+	                        'width': size + 'px',
+	                        'margin-top': -size / 2 + 'px',
+	                        'margin-left': -size / 2 + 'px'
+	                    });
+	                }
+	                touch[animationLibrary](a, {
+	                    duration: 500,
+	                    complete: function () {
+	                        touch.remove();
+	                    },
+	                    easing: 'swing'
+	                });
+	            });
+	            touch.addClass('touch').css({
+	                'position': 'absolute',
+	                'top': e.pageY - button.offset().top + 'px',
+	                'left': e.pageX - button.offset().left + 'px',
+	                'width': '0',
+	                'height': '0'
+	            });
+	            button.get(0).appendChild(touch.get(0));
+	            touch[animationLibrary]({
+	                'height': size + 'px',
+	                'width': size + 'px',
+	                'margin-top': -size / 2 + 'px',
+	                'margin-left': -size / 2 + 'px'
+	            }, {
+	                queue: false,
+	                duration: 500,
+	                'easing': 'easeOutQuart',
+	                'complete': function () {
+	                    complete = true;
+	                }
+	            });
+	        });
+	    });
+	    var username = $('#username'), password = $('#password'), erroru = $('erroru'), errorp = $('errorp'), submit = $('#submit'), udiv = $('#u'), pdiv = $('#p');
+	    username.blur(function () {
+	        if (username.val() == '') {
+	            udiv.attr('errr', '');
+	        } else {
+	            udiv.removeAttr('errr');
+	        }
+	    });
+	    password.blur(function () {
+	        if (password.val() == '') {
+	            pdiv.attr('errr', '');
+	        } else {
+	            pdiv.removeAttr('errr');
+	        }
+	    });
+	    submit.on('click', function (event) {
+	        event.preventDefault();
+	        if (username.val() == '') {
+	            udiv.attr('errr', '');
+	        } else {
+	            udiv.removeAttr('errr');
+	        }
+	        if (password.val() == '') {
+	            pdiv.attr('errr', '');
+	        } else {
+	            pdiv.removeAttr('errr');
+	        }
+	    });
+	});
+	</script>
+</body>
+</html>
