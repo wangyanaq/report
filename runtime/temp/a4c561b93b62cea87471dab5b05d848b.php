@@ -1,29 +1,28 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:69:"C:\xampp\htdocs\report\public/../application/pc\view\login\login.html";i:1502421540;s:70:"C:\xampp\htdocs\report\public/../application/pc\view\common\_meta.html";i:1502694442;s:68:"C:\xampp\htdocs\report\public/../application/pc\view\login\body.html";i:1502693668;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:69:"C:\xampp\htdocs\report\public/../application/pc\view\login\login.html";i:1502851827;s:72:"C:\xampp\htdocs\report\public/../application/pc\view\common\_header.html";i:1502765597;s:68:"C:\xampp\htdocs\report\public/../application/pc\view\login\body.html";i:1502775944;}*/ ?>
 ﻿<!DOCTYPE HTML>
-    <html>
-    <head>
-      <meta charset="utf-8">
-      <meta name="renderer" content="webkit|ie-comp|ie-stand">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
-      <meta http-equiv="Cache-Control" content="no-siteapp" />
-      <!--[if lt IE 9]>
-      <script type="text/javascript" src="__PUBLIC__/js/html5.js"></script>
-      <script type="text/javascript" src="__PUBLIC__/js/respond.min.js"></script>
-      <script type="text/javascript" src="__PUBLIC__/js/PIE_IE678.js"></script>
-      <![endif]-->
-      <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/pc/H-ui.css" />
-      <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/pc/H-ui.admin.css" />
-      <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/pc/iconfont.css" />
-      <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/pc/icheck.css" />
-      <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/pc/skin/default/skin.css" id="skin" />
-      <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/pc/style.css" />
-      <!--[if IE 6]>
-      <script type="text/javascript" src="__PUBLIC__/js/DD_belatedPNG_0.0.8a-min.js" ></script>
-      <script>DD_belatedPNG.fix('*');</script>
-      <![endif]-->
-    <script type="text/javascript" src="__PUBLIC__/js/jquery-1.11.3.js"></script>
-    <script type="text/javascript" src="__PUBLIC__/js/H-ui.js"></script>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="renderer" content="webkit|ie-comp|ie-stand">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<LINK rel="Shortcut Icon" href="favicon.ico" />
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="__PUBLIC__/js/html5.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/respond.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/PIE_IE678.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/pc/H-ui.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/pc/H-ui.admin.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/pc/iconfont.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/pc/icheck.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/pc/skin/default/skin.css" id="skin" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/pc/style.css" />
+	<!--[if IE 6]>
+	<script type="text/javascript" src="__PUBLIC__/js/DD_belatedPNG_0.0.8a-min.js" ></script>
+	<script>DD_belatedPNG.fix('*');</script>
+	<![endif]-->
 <title>上海伯豪生物报告系统</title>
 <meta name="keywords" content="上海伯豪生物报告">
 <meta name="description" content="上海伯豪生物报告系统由公司内部人员开发，用于展示客户在本公司项目结果展示以及下载。">
@@ -43,52 +42,53 @@
 <body class="big-page" >
 <?php endif; ?>
 <div id="tbody">
- <header class="navbar-wrapper">
-  <div class="navbar navbar-fixed-top">
-    <div class="container-fluid cl">
-      <a class="logo navbar-logo f-l mr-10 hidden-xs" href="http://www.shbio.com" target="_blank">上海伯豪生物技术有限公司</a>
-      <!--<a class="logo navbar-logo-m f-l mr-10 visible-xs" href="/aboutHui.shtml">H-ui</a>
+	<header class="navbar-wrapper">
+	<div class="navbar navbar-fixed-top">
+		<div class="container-fluid cl">
+			<a class="logo navbar-logo f-l mr-10 hidden-xs" href="http://www.shbio.com" target="_blank">上海伯豪生物技术有限公司</a>
+			<!--<a class="logo navbar-logo-m f-l mr-10 visible-xs" href="/aboutHui.shtml">H-ui</a>
       <span class="logo navbar-slogan f-l mr-10 hidden-xs">v2.5</span>
       <a aria-hidden="false" class="nav-toggle Hui-iconfont visible-xs" href="javascript:;">&#xe667;</a>-->
-      <nav class="nav navbar-nav">
-        <ul class="cl">
-          <li class="dropDown dropDown_hover">
-            <a href="javascript:;" class="dropDown_A">
-              <!--<i class="Hui-iconfont">&#xe600;</i>-->&nbsp;合同列表 <i class="Hui-iconfont">&#xe6d5;</i>
-            </a>
-            <ul class="dropDown-menu menu radius box-shadow" id="menu">
-              <?php if($status==1): if(is_array($bh_id_all) || $bh_id_all instanceof \think\Collection): if( count($bh_id_all)==0 ) : echo "" ;else: foreach($bh_id_all as $key=>$vo): ?>
-              <li>
-                <a href="javascript:void(0);"  class="update">
-                  <i class="Hui-iconfont">&#xe60d;</i>&nbsp; <span><?php echo $vo['bh_id']; ?></span></a>
-              </li>
-              <?php endforeach; endif; else: echo "" ;endif; else: endif; ?>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-      <nav id="Hui-userbar" class="nav navbar-nav navbar-userbar hidden-xs">
-        <ul class="cl">
-          <li>欢迎，</li>
-          <li><?php echo $username; ?></li>
-          <li>&nbsp;</li>
-          <li>&nbsp;</li>
-          <li>&nbsp;</li>
-          <?php if($status==1): ?>
-          <li>当前合同号：</li>
-          <li class="curr_bh"><?php echo $bh_id; ?></li>
-          <?php else: ?>
-          <li><?php echo $bh_id; ?></li>
-          <?php endif; ?>
-          <li>&nbsp;</li>
-          <li>&nbsp;</li>
-          <li>&nbsp;</li>
-          <li><a href="__PATH__">退出</a></li>
-        </ul>
-      </nav>
-    </div>
-  </div>
+			<nav class="nav navbar-nav">
+				<ul class="cl">
+					<li class="dropDown dropDown_hover">
+						<a href="javascript:;" class="dropDown_A">
+							<!--<i class="Hui-iconfont">&#xe600;</i>-->&nbsp;合同列表 <i class="Hui-iconfont">&#xe6d5;</i>
+						</a>
+						<ul class="dropDown-menu menu radius box-shadow" id="menu">
+							<?php if($status==1): if(is_array($bh_id_all) || $bh_id_all instanceof \think\Collection): if( count($bh_id_all)==0 ) : echo "" ;else: foreach($bh_id_all as $key=>$vo): ?>
+							<li>
+								<a href="javascript:void(0);"  class="update">
+									<i class="Hui-iconfont">&#xe60d;</i>&nbsp; <span><?php echo $vo['bh_id']; ?></span></a>
+							</li>
+							<?php endforeach; endif; else: echo "" ;endif; else: endif; ?>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<nav id="Hui-userbar" class="nav navbar-nav navbar-userbar hidden-xs">
+				<ul class="cl">
+					<li>欢迎，</li>
+					<li><?php echo $username; ?></li>
+					<li>&nbsp;</li>
+					<li>&nbsp;</li>
+					<li>&nbsp;</li>
+					<?php if($status==1): ?>
+					<li>当前合同号：</li>
+					<li class="curr_bh"><?php echo $bh_id; ?></li>
+					<?php else: ?>
+					<li><?php echo $bh_id; ?></li>
+					<?php endif; ?>
+					<li>&nbsp;</li>
+					<li>&nbsp;</li>
+					<li>&nbsp;</li>
+					<li><a href="__PATH__">退出</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
 </header>
+ 
 <?php if($bh_status=='bh'): ?>
 <!--芯片报告-->
   <?php if($status==1): ?>
@@ -96,7 +96,7 @@
     <input runat="server" id="divScrollValue" type="hidden" value="" />
     <div class="menu_dropdown bk_2">
       <dl id="menu-article">
-        <dt><a data-href="../Article/article_list/<?php echo $bh_id; ?>" data-title="项目概况"   href="javascript:void(0)"><i class="Hui-iconfont">&#xe616;</i>&nbsp;项目概况<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></a></dt>
+        <dt><a data-href="article/<?php echo $bh_id; ?>" data-title="项目概况"   href="javascript:void(0)"><i class="Hui-iconfont">&#xe616;</i>&nbsp;项目概况<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></a></dt>
         <dd>
           <ul>
             <!--<li><a  data-i="#1_1"  target="_self" data-title="项目概况"  href="javascript:void(0)">差异基因信息</a></li>-->
@@ -108,7 +108,7 @@
         </dd>
       </dl>
       <dl id="menu-picture">
-        <dt><a data-href="../Diff/diff_gene/<?php echo $bh_id; ?>" data-title="差异筛选结果" href="javascript:void(0)"><i class="Hui-iconfont">&#xe613;</i>&nbsp;差异筛选结果<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></a></dt>
+        <dt><a data-href="chipDiff/<?php echo $bh_id; ?>" data-title="差异筛选结果" href="javascript:void(0)"><i class="Hui-iconfont">&#xe613;</i>&nbsp;差异筛选结果<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></a></dt>
         <dd>
           <ul>
             <li><a data-i="#2_1" data-title="差异筛选结果" href="javascript:void(0)">差异基因数目统计</a></li>
@@ -128,7 +128,7 @@
         </dd>
       </dl>
       <dl id="menu-comments">
-        <dt><a data-href="../Pathway/pathway/<?php echo $bh_id; ?>" data-title="富集分析" href="javascript:void(0)"><i class="Hui-iconfont">&#xe622;</i>&nbsp;富集分析 <i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></a></dt>
+        <dt><a data-href="pathway/<?php echo $bh_id; ?>" data-title="富集分析" href="javascript:void(0)"><i class="Hui-iconfont">&#xe622;</i>&nbsp;富集分析 <i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></a></dt>
         <dd>
           <ul>
             <li><a data-i="#3_1" data-title="富集分析" href="javascript:void(0)">GO富集分析</a></li>
@@ -137,7 +137,7 @@
         </dd>
       </dl>
       <dl id="menu-product">
-        <dt><a data-href="../Qc/qc/<?php echo $bh_id; ?>" data-title="文章常用数据" href="javascript:void(0)"><i class="Hui-iconfont">&#xe620;</i>&nbsp;文章常用数据<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></a></dt>
+        <dt><a data-href="data/<?php echo $bh_id; ?>" data-title="文章常用数据" href="javascript:void(0)"><i class="Hui-iconfont">&#xe620;</i>&nbsp;文章常用数据<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></a></dt>
         <dd>
           <ul>
             <li><a data-i="#4_1" data-title="文章常用数据" href="javascript:void(0)">数据链接：差异基因表</a></li>
@@ -146,7 +146,7 @@
         </dd>
       </dl>
       <dl id="menu-admin">
-        <dt><a data-href="../Validchip/validchip/<?php echo $bh_id; ?>" data-title="表达谱芯片验证" href="javascript:void(0)"><i class="Hui-iconfont">&#xe61a;</i> 表达谱芯片验证 <!--<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i>--></a></dt>
+        <dt><a data-href="validchip/<?php echo $bh_id; ?>" data-title="表达谱芯片验证" href="javascript:void(0)"><i class="Hui-iconfont">&#xe61a;</i> 表达谱芯片验证 <!--<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i>--></a></dt>
        <!-- <dd>
           <ul>
             <li><a data-i="#5_1" data-title="表达谱芯片验证" href="javascript:void(0)">芯片验证</a></li>
@@ -154,10 +154,10 @@
         </dd>-->
       </dl>
       <dl id="menu-tongji">
-        <dt><a data-href="../Source/source/<?php echo $bh_id; ?>" data-title="SAS使用指南" href="javascript:void(0)"><i class="Hui-iconfont">&#xe62d;</i>&nbsp;SAS使用指南 </a></dt>
+        <dt><a data-href="source/<?php echo $bh_id; ?>" data-title="SAS使用指南" href="javascript:void(0)"><i class="Hui-iconfont">&#xe62d;</i>&nbsp;SAS使用指南 </a></dt>
       </dl>
       <dl id="menu-member">
-        <dt><a data-href="../Rowdata/rawData/<?php echo $bh_id; ?>" data-title="GEO上传指南" href="javascript:void(0)"><i class="Hui-iconfont">&#xe60d;</i>&nbsp;GEO上传指南 </a></dt>
+        <dt><a data-href="rawData/<?php echo $bh_id; ?>" data-title="GEO上传指南" href="javascript:void(0)"><i class="Hui-iconfont">&#xe60d;</i>&nbsp;GEO上传指南 </a></dt>
       </dl>
     </div>
   </aside>
@@ -333,12 +333,16 @@
   </section>
 <?php endif; ?>
 </div>
-<script type="text/javascript" src="__PUBLIC__/js/layer.js"></script>
-<script type="text/javascript" src="__PUBLIC__/js/jquery.contextmenu.r2.js"></script>
-<script type="text/javascript" src="__PUBLIC__/js/H-ui.admin.js"></script>
+
 <script>
 	var PATH="__PATH__";
 </script>
+<script type="text/javascript" src="__PUBLIC__/js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/H-ui.js"></script>
+<!--login-->
+<script type="text/javascript" src="__PUBLIC__/js/layer.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/jquery.contextmenu.r2.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/H-ui.admin.js"></script>
 <script type="text/javascript" src="__PUBLIC__/js/num.js"></script>
 <script type="text/javascript">
 	/*

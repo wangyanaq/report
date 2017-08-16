@@ -21,28 +21,34 @@ return [
      'welcome/:bh_id'=>'pc/Welcome/welcome',
      'current'=>'pc/Login/current',
      //芯片
+     'article/:bh_id'=>'pc/Article/article_list',//项目概况
+     'chipDiff/:bh_id'=>'pc/Diff/diff_gene',//差异筛选结果
+      'pathway/:bh_id'=>'pc/Pathway/pathway', //富集分析
+      'data/:bh_id'=>'pc/ArticleData/qc',//文章常用数据
+      'validchip/:bh_id'=>'pc/Validchip/validchip', //表达谱芯片验证
+      'source/:bh_id'=>'pc/Source/source', //SAS使用指南
+      'rawData/:bh_id'=>'pc/Rowdata/rawData', //GEO上传指南
+     //测序  rnaseq模块
+    'project'=>'rnaseq/Project/project',
 
-     //测序
-    'project'=>'pc/Project/project',
-
-    'chart'=>'pc/Chart/chart',
-    'format'=>'pc/Format/format',
-     'evaluate'=>'pc/Evaluate/evaluate', //质量评估
-     'pretreatment'=>'pc/Pretreatment/pretreatment',
-      'mapping'=>'pc/Mapping/mapping',
-    'qc'=>'pc/Qc/qc',
-     'geneExpression'=>'pc/GeneExpression/geneExpression',
-     'correlationAnalysis'=>'pc/CorrelationAnalysis/correlationAnalysis',
-     'diffGene'=>'pc/DiffGene/diffGene',
-     'go'=>'pc/Go/go',
-     'kegg'=>'pc/Kegg/kegg',
-     'novelGene'=>'pc/NovelGene/novelGene',
-     'diffNovel'=>'pc/DiffNovel/diffNovel',
-     'prediction'=>'pc/Prediction/prediction',
-     'expression'=>'pc/Expression/expression',
-     'diff'=>'pc/Diff/diff',
-     'target'=>'pc/Target/target',
-     'targetEnrichment'=>'pc/TargetEnrichment/targetEnrichment',
-     'coExpression'=>'pc/CoExpression/coExpression',
-      'all'=>'pc/All/all',
+    'chart'=>'rnaseq/Chart/chart',
+    'format'=>'rnaseq/Format/format',
+     'evaluate'=>'rnaseq/Evaluate/evaluate', //质量评估
+     'pretreatment'=>'rnaseq/Pretreatment/pretreatment',
+      'mapping'=>'rnaseq/Mapping/mapping',
+     'qc'=>'rnaseq/Qc/qc',
+     'geneExpression'=>'rnaseq/GeneExpression/geneExpression',
+     'correlationAnalysis'=>'rnaseq/CorrelationAnalysis/correlationAnalysis',
+     'diffGene'=>'rnaseq/DiffGene/diffGene',
+     'go'=>'rnaseq/Go/go',
+     'kegg'=>'rnaseq/Kegg/kegg',
+     'novelGene'=>'rnaseq/NovelGene/novelGene',
+     'diffNovel'=>'rnaseq/DiffNovel/diffNovel',
+     'prediction'=>'rnaseq/Prediction/prediction',
+     'expression'=>'rnaseq/Expression/expression',
+     'diff'=>'rnaseq/Diff/diff',
+     'target'=>'rnaseq/Target/target',
+     'targetEnrichment'=>'rnaseq/TargetEnrichment/targetEnrichment',
+     'coExpression'=>'rnaseq/CoExpression/coExpression',
+      'all'=>'rnaseq/All/all',
 ];

@@ -1,53 +1,4 @@
-<header class="navbar-wrapper">
-  <div class="navbar navbar-fixed-top">
-    <div class="container-fluid cl">
-      <a class="logo navbar-logo f-l mr-10 hidden-xs" href="http://www.shbio.com" target="_blank">上海伯豪生物技术有限公司</a>
-      <!--<a class="logo navbar-logo-m f-l mr-10 visible-xs" href="/aboutHui.shtml">H-ui</a>
-      <span class="logo navbar-slogan f-l mr-10 hidden-xs">v2.5</span>
-      <a aria-hidden="false" class="nav-toggle Hui-iconfont visible-xs" href="javascript:;">&#xe667;</a>-->
-      <nav class="nav navbar-nav">
-        <ul class="cl">
-          <li class="dropDown dropDown_hover">
-            <a href="javascript:;" class="dropDown_A">
-              <!--<i class="Hui-iconfont">&#xe600;</i>-->&nbsp;合同列表 <i class="Hui-iconfont">&#xe6d5;</i>
-            </a>
-            <ul class="dropDown-menu menu radius box-shadow" id="menu">
-              {if condition="$status==1"}
-              {foreach name="$bh_id_all" item="vo"}
-              <li>
-                <a href="javascript:void(0);"  class="update">
-                  <i class="Hui-iconfont">&#xe60d;</i>&nbsp; <span>{$vo.bh_id}</span></a>
-              </li>
-              {/foreach}
-              {else/}
 
-              {/if}
-            </ul>
-          </li>
-        </ul>
-      </nav>
-      <nav id="Hui-userbar" class="nav navbar-nav navbar-userbar hidden-xs">
-        <ul class="cl">
-          <li>欢迎，</li>
-          <li>{$username}</li>
-          <li>&nbsp;</li>
-          <li>&nbsp;</li>
-          <li>&nbsp;</li>
-          {if condition="$status==1"}
-          <li>当前合同号：</li>
-          <li class="curr_bh">{$bh_id}</li>
-          {else/}
-          <li>{$bh_id}</li>
-          {/if}
-          <li>&nbsp;</li>
-          <li>&nbsp;</li>
-          <li>&nbsp;</li>
-          <li><a href="__PATH__">退出</a></li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-</header>
 {if condition="$bh_status=='bh'"}
 <!--芯片报告-->
   {if condition="$status==1"}
@@ -55,7 +6,7 @@
     <input runat="server" id="divScrollValue" type="hidden" value="" />
     <div class="menu_dropdown bk_2">
       <dl id="menu-article">
-        <dt><a data-href="../Article/article_list/{$bh_id}" data-title="项目概况"   href="javascript:void(0)"><i class="Hui-iconfont">&#xe616;</i>&nbsp;项目概况<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></a></dt>
+        <dt><a data-href="article/{$bh_id}" data-title="项目概况"   href="javascript:void(0)"><i class="Hui-iconfont">&#xe616;</i>&nbsp;项目概况<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></a></dt>
         <dd>
           <ul>
             <!--<li><a  data-i="#1_1"  target="_self" data-title="项目概况"  href="javascript:void(0)">差异基因信息</a></li>-->
@@ -67,7 +18,7 @@
         </dd>
       </dl>
       <dl id="menu-picture">
-        <dt><a data-href="../Diff/diff_gene/{$bh_id}" data-title="差异筛选结果" href="javascript:void(0)"><i class="Hui-iconfont">&#xe613;</i>&nbsp;差异筛选结果<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></a></dt>
+        <dt><a data-href="chipDiff/{$bh_id}" data-title="差异筛选结果" href="javascript:void(0)"><i class="Hui-iconfont">&#xe613;</i>&nbsp;差异筛选结果<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></a></dt>
         <dd>
           <ul>
             <li><a data-i="#2_1" data-title="差异筛选结果" href="javascript:void(0)">差异基因数目统计</a></li>
@@ -91,7 +42,7 @@
         </dd>
       </dl>
       <dl id="menu-comments">
-        <dt><a data-href="../Pathway/pathway/{$bh_id}" data-title="富集分析" href="javascript:void(0)"><i class="Hui-iconfont">&#xe622;</i>&nbsp;富集分析 <i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></a></dt>
+        <dt><a data-href="pathway/{$bh_id}" data-title="富集分析" href="javascript:void(0)"><i class="Hui-iconfont">&#xe622;</i>&nbsp;富集分析 <i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></a></dt>
         <dd>
           <ul>
             <li><a data-i="#3_1" data-title="富集分析" href="javascript:void(0)">GO富集分析</a></li>
@@ -100,7 +51,7 @@
         </dd>
       </dl>
       <dl id="menu-product">
-        <dt><a data-href="../Qc/qc/{$bh_id}" data-title="文章常用数据" href="javascript:void(0)"><i class="Hui-iconfont">&#xe620;</i>&nbsp;文章常用数据<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></a></dt>
+        <dt><a data-href="data/{$bh_id}" data-title="文章常用数据" href="javascript:void(0)"><i class="Hui-iconfont">&#xe620;</i>&nbsp;文章常用数据<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></a></dt>
         <dd>
           <ul>
             <li><a data-i="#4_1" data-title="文章常用数据" href="javascript:void(0)">数据链接：差异基因表</a></li>
@@ -109,7 +60,7 @@
         </dd>
       </dl>
       <dl id="menu-admin">
-        <dt><a data-href="../Validchip/validchip/{$bh_id}" data-title="表达谱芯片验证" href="javascript:void(0)"><i class="Hui-iconfont">&#xe61a;</i> 表达谱芯片验证 <!--<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i>--></a></dt>
+        <dt><a data-href="validchip/{$bh_id}" data-title="表达谱芯片验证" href="javascript:void(0)"><i class="Hui-iconfont">&#xe61a;</i> 表达谱芯片验证 <!--<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i>--></a></dt>
        <!-- <dd>
           <ul>
             <li><a data-i="#5_1" data-title="表达谱芯片验证" href="javascript:void(0)">芯片验证</a></li>
@@ -117,10 +68,10 @@
         </dd>-->
       </dl>
       <dl id="menu-tongji">
-        <dt><a data-href="../Source/source/{$bh_id}" data-title="SAS使用指南" href="javascript:void(0)"><i class="Hui-iconfont">&#xe62d;</i>&nbsp;SAS使用指南 </a></dt>
+        <dt><a data-href="source/{$bh_id}" data-title="SAS使用指南" href="javascript:void(0)"><i class="Hui-iconfont">&#xe62d;</i>&nbsp;SAS使用指南 </a></dt>
       </dl>
       <dl id="menu-member">
-        <dt><a data-href="../Rowdata/rawData/{$bh_id}" data-title="GEO上传指南" href="javascript:void(0)"><i class="Hui-iconfont">&#xe60d;</i>&nbsp;GEO上传指南 </a></dt>
+        <dt><a data-href="rawData/{$bh_id}" data-title="GEO上传指南" href="javascript:void(0)"><i class="Hui-iconfont">&#xe60d;</i>&nbsp;GEO上传指南 </a></dt>
       </dl>
     </div>
   </aside>

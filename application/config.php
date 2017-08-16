@@ -139,6 +139,7 @@ return [
          '__PATH__'=>'http://10.2.2.28',
         '__MPATH__'=>'/result',
         '__PPATH__'=>'/data',
+        '__RNASEQ__'=>'/rnaseq'
 
     ],
     // 默认跳转页面对应的模板文件

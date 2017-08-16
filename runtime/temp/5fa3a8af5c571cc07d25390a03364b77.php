@@ -1,10 +1,10 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:74:"C:\xampp\htdocs\report\public/../application/index\view\index\index_p.html";i:1500362004;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:74:"C:\xampp\htdocs\report\public/../application/index\view\index\index_p.html";i:1502851789;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head lang="en">
   <meta charset="UTF-8">
   <title>上海伯豪报告系统</title>
-  <LINK rel="Shortcut Icon" href="__PUBLIC__/favicon.ico" />
+  <LINK rel="Shortcut Icon" href="favicon.ico" />
   <meta name="keywords" content="芯片报告，表达谱芯片">
   <meta name="description" content="上海伯豪生物报告系统，对客户的实验完成数据完整的展示出来，简洁、清楚、方便的展示各部分的数据信息的在线报告系统！">
   <link rel="stylesheet" href="__PUBLIC__/css/pc/public.css"/>

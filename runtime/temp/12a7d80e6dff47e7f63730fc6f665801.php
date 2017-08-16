@@ -1,12 +1,13 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"C:\xampp\htdocs\report\public/../application/pc\view\welcome\welcome.html";i:1502349805;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"C:\xampp\htdocs\report\public/../application/pc\view\welcome\welcome.html";i:1502851814;}*/ ?>
 ﻿<!DOCTYPE HTML>
 <html>
 <head>
-<meta charset="utf-8">
-<meta name="renderer" content="webkit|ie-comp|ie-stand">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<meta charset="utf-8">
+	<meta name="renderer" content="webkit|ie-comp|ie-stand">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<LINK rel="Shortcut Icon" href="favicon.ico" />
 	<!--[if lt IE 9]>
 	<script type="text/javascript" src="__PUBLIC__/js/html5.js"></script>
 	<script type="text/javascript" src="__PUBLIC__/js/respond.min.js"></script>
@@ -18,10 +19,10 @@
 	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/pc/icheck.css" />
 	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/pc/skin/default/skin.css" id="skin" />
 	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/pc/style.css" />
-<!--[if IE 6]>
+	<!--[if IE 6]>
 	<script type="text/javascript" src="__PUBLIC__/js/DD_belatedPNG_0.0.8a-min.js" ></script>
-<script>DD_belatedPNG.fix('*');</script>
-<![endif]-->
+	<script>DD_belatedPNG.fix('*');</script>
+	<![endif]-->
 <title>我的桌面</title>
 </head>
 <body>
