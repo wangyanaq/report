@@ -1,0 +1,357 @@
+﻿{include file="pc@common/_meta"}
+<title>基因组比对</title>
+</head>
+<body onLoad="setupZoom();">
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span>BC150548-1<span class="c-gray en">&gt;</span>基因组比对（Mapping genome）<a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<div class="page-container">
+	<div class="main_content">
+		<div class="HuiTab">
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;应用bowtie2（version: 2-2.0.5）[2]采用局部比对对预处理后reads进行Genome mapping，较适用于原核转录组测序数据</p>
+			<p>	采用基因组版本为 Mycobacterium_smegmatis_MC2_155_uid57701，下载地址为：http://www.ncbi.nlm.nih.gov/genome/?term=Mycobacterium%20smegmatis%20MC2%20155。</p>
+	</div>
+		<br/>
+		<br/>
+		<h3 class="main_title" >基因组比对结果统计</h3>
+		<div class="HuiTab">
+			<table class="table table-border table-bordered table-bg mt-20">
+				<tbody>
+				<tr>
+					<td  style="text-align:center"><b>	Samples_ID</b></td>
+					<td style="text-align:center"><b>All reads	</b></td>
+					<td style="text-align:center"><b>Mapped reads</b></td>
+					<td style="text-align:center"><b>	Mapped <br>Pair<br> Reads</b></td>
+					<td style="text-align:center"><b>	Mapped <br>broken-pair<br> reads</b></td>
+					<td style="text-align:center"><b>	Mapped <br>Unique<br> reads</b></td>
+					<td style="text-align:center"><b>	Mapped<br> Multi <br> reads</b></td>
+					<td style="text-align:center"><b>	Mapping ratio</b></td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L15351</td>
+					<td style="text-align:center">18,856,908</td>
+					<td style="text-align:center">18,033,043</td>
+					<td style="text-align:center">17,831,552 </td>
+					<td style="text-align:center">201,491</td>
+					<td style="text-align:center">17,189,116</td>
+					<td style="text-align:center">177,665 </td>
+					<td style="text-align:center">95.63%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L15352</td>
+					<td style="text-align:center">26,197,638</td>
+					<td style="text-align:center">17,892,300</td>
+					<td style="text-align:center">17,831,552 </td>
+					<td style="text-align:center">201,491</td>
+					<td style="text-align:center">17,189,116</td>
+					<td style="text-align:center">177,665 </td>
+					<td style="text-align:center">95.63%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L15351</td>
+					<td style="text-align:center">18,856,908</td>
+					<td style="text-align:center">18,033,043</td>
+					<td style="text-align:center">17,831,552 </td>
+					<td style="text-align:center">201,491</td>
+					<td style="text-align:center">17,189,116</td>
+					<td style="text-align:center">177,665 </td>
+					<td style="text-align:center">95.63%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L15352</td>
+					<td style="text-align:center">26,197,638</td>
+					<td style="text-align:center">17,892,300</td>
+					<td style="text-align:center">17,831,552 </td>
+					<td style="text-align:center">201,491</td>
+					<td style="text-align:center">17,189,116</td>
+					<td style="text-align:center">177,665 </td>
+					<td style="text-align:center">95.63%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L15351</td>
+					<td style="text-align:center">18,856,908</td>
+					<td style="text-align:center">18,033,043</td>
+					<td style="text-align:center">17,831,552 </td>
+					<td style="text-align:center">201,491</td>
+					<td style="text-align:center">17,189,116</td>
+					<td style="text-align:center">177,665 </td>
+					<td style="text-align:center">95.63%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L15352</td>
+					<td style="text-align:center">26,197,638</td>
+					<td style="text-align:center">17,892,300</td>
+					<td style="text-align:center">17,831,552 </td>
+					<td style="text-align:center">201,491</td>
+					<td style="text-align:center">17,189,116</td>
+					<td style="text-align:center">177,665 </td>
+					<td style="text-align:center">95.63%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L15351</td>
+					<td style="text-align:center">18,856,908</td>
+					<td style="text-align:center">18,033,043</td>
+					<td style="text-align:center">17,831,552 </td>
+					<td style="text-align:center">201,491</td>
+					<td style="text-align:center">17,189,116</td>
+					<td style="text-align:center">177,665 </td>
+					<td style="text-align:center">95.63%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L15352</td>
+					<td style="text-align:center">26,197,638</td>
+					<td style="text-align:center">17,892,300</td>
+					<td style="text-align:center">17,831,552 </td>
+					<td style="text-align:center">201,491</td>
+					<td style="text-align:center">17,189,116</td>
+					<td style="text-align:center">177,665 </td>
+					<td style="text-align:center">95.63%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L15351</td>
+					<td style="text-align:center">18,856,908</td>
+					<td style="text-align:center">18,033,043</td>
+					<td style="text-align:center">17,831,552 </td>
+					<td style="text-align:center">201,491</td>
+					<td style="text-align:center">17,189,116</td>
+					<td style="text-align:center">177,665 </td>
+					<td style="text-align:center">95.63%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L15352</td>
+					<td style="text-align:center">26,197,638</td>
+					<td style="text-align:center">17,892,300</td>
+					<td style="text-align:center">17,831,552 </td>
+					<td style="text-align:center">201,491</td>
+					<td style="text-align:center">17,189,116</td>
+					<td style="text-align:center">177,665 </td>
+					<td style="text-align:center">95.63%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L15351</td>
+					<td style="text-align:center">18,856,908</td>
+					<td style="text-align:center">18,033,043</td>
+					<td style="text-align:center">17,831,552 </td>
+					<td style="text-align:center">201,491</td>
+					<td style="text-align:center">17,189,116</td>
+					<td style="text-align:center">177,665 </td>
+					<td style="text-align:center">95.63%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L15352</td>
+					<td style="text-align:center">26,197,638</td>
+					<td style="text-align:center">17,892,300</td>
+					<td style="text-align:center">17,831,552 </td>
+					<td style="text-align:center">201,491</td>
+					<td style="text-align:center">17,189,116</td>
+					<td style="text-align:center">177,665 </td>
+					<td style="text-align:center">95.63%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L15351</td>
+					<td style="text-align:center">18,856,908</td>
+					<td style="text-align:center">18,033,043</td>
+					<td style="text-align:center">17,831,552 </td>
+					<td style="text-align:center">201,491</td>
+					<td style="text-align:center">17,189,116</td>
+					<td style="text-align:center">177,665 </td>
+					<td style="text-align:center">95.63%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L15352</td>
+					<td style="text-align:center">26,197,638</td>
+					<td style="text-align:center">17,892,300</td>
+					<td style="text-align:center">17,831,552 </td>
+					<td style="text-align:center">201,491</td>
+					<td style="text-align:center">17,189,116</td>
+					<td style="text-align:center">177,665 </td>
+					<td style="text-align:center">95.63%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L15351</td>
+					<td style="text-align:center">18,856,908</td>
+					<td style="text-align:center">18,033,043</td>
+					<td style="text-align:center">17,831,552 </td>
+					<td style="text-align:center">201,491</td>
+					<td style="text-align:center">17,189,116</td>
+					<td style="text-align:center">177,665 </td>
+					<td style="text-align:center">95.63%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L15352</td>
+					<td style="text-align:center">26,197,638</td>
+					<td style="text-align:center">17,892,300</td>
+					<td style="text-align:center">17,831,552 </td>
+					<td style="text-align:center">201,491</td>
+					<td style="text-align:center">17,189,116</td>
+					<td style="text-align:center">177,665 </td>
+					<td style="text-align:center">95.63%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L15351</td>
+					<td style="text-align:center">18,856,908</td>
+					<td style="text-align:center">18,033,043</td>
+					<td style="text-align:center">17,831,552 </td>
+					<td style="text-align:center">201,491</td>
+					<td style="text-align:center">17,189,116</td>
+					<td style="text-align:center">177,665 </td>
+					<td style="text-align:center">95.63%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L15352</td>
+					<td style="text-align:center">26,197,638</td>
+					<td style="text-align:center">17,892,300</td>
+					<td style="text-align:center">17,831,552 </td>
+					<td style="text-align:center">201,491</td>
+					<td style="text-align:center">17,189,116</td>
+					<td style="text-align:center">177,665 </td>
+					<td style="text-align:center">95.63%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L15351</td>
+					<td style="text-align:center">18,856,908</td>
+					<td style="text-align:center">18,033,043</td>
+					<td style="text-align:center">17,831,552 </td>
+					<td style="text-align:center">201,491</td>
+					<td style="text-align:center">17,189,116</td>
+					<td style="text-align:center">177,665 </td>
+					<td style="text-align:center">95.63%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L15352</td>
+					<td style="text-align:center">26,197,638</td>
+					<td style="text-align:center">17,892,300</td>
+					<td style="text-align:center">17,831,552 </td>
+					<td style="text-align:center">201,491</td>
+					<td style="text-align:center">17,189,116</td>
+					<td style="text-align:center">177,665 </td>
+					<td style="text-align:center">95.63%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L15351</td>
+					<td style="text-align:center">18,856,908</td>
+					<td style="text-align:center">18,033,043</td>
+					<td style="text-align:center">17,831,552 </td>
+					<td style="text-align:center">201,491</td>
+					<td style="text-align:center">17,189,116</td>
+					<td style="text-align:center">177,665 </td>
+					<td style="text-align:center">95.63%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L15352</td>
+					<td style="text-align:center">26,197,638</td>
+					<td style="text-align:center">17,892,300</td>
+					<td style="text-align:center">17,831,552 </td>
+					<td style="text-align:center">201,491</td>
+					<td style="text-align:center">17,189,116</td>
+					<td style="text-align:center">177,665 </td>
+					<td style="text-align:center">95.63%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L15351</td>
+					<td style="text-align:center">18,856,908</td>
+					<td style="text-align:center">18,033,043</td>
+					<td style="text-align:center">17,831,552 </td>
+					<td style="text-align:center">201,491</td>
+					<td style="text-align:center">17,189,116</td>
+					<td style="text-align:center">177,665 </td>
+					<td style="text-align:center">95.63%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L15352</td>
+					<td style="text-align:center">26,197,638</td>
+					<td style="text-align:center">17,892,300</td>
+					<td style="text-align:center">17,831,552 </td>
+					<td style="text-align:center">201,491</td>
+					<td style="text-align:center">17,189,116</td>
+					<td style="text-align:center">177,665 </td>
+					<td style="text-align:center">95.63%</td>
+				</tr>
+
+				</tr>
+				</tbody>
+			</table>
+			<p style="margin-top: 20px">备注：1.Mapping ratio=Mapped reads/All reads,2. Mapped Unique reads：在基因组仅有一个位置匹配的reads。</p>
+	</div>
+	</div>
+</div>
+
+{include file="pc@common/_footer"}
+<script type="text/javascript">
+
+	$(function(){
+		$.Huifold("#Huifold1 .item h4","#Huifold1 .item .info","fast",3,"click"); /*5个参数顺序不可打乱，分别是：相应区,隐藏显示的内容,速度,类型,事件*/
+	});
+/*三种RNA显示图*/
+	$(function() {
+		$.Huitab("#tab_demo .tabBar span","#tab_demo .tabCon","current","click","1")
+	});
+
+
+/*中间图显示*/
+	$(document).ready(function() {
+		//Horizontal Tab
+		$('#parentHorizontalTab').easyResponsiveTabs({
+			type: 'default', //Types: default, vertical, accordion
+			width: 'auto', //auto or any width like 600px
+			fit: true, // 100% fit in a container
+			tabidentify: 'hor_1', // The tab groups identifier
+			activate: function(event) { // Callback function if tab is switched
+				var $tab = $(this);
+				var $info = $('#nested-tabInfo');
+				var $name = $('span', $info);
+				$name.text($tab.text());
+				$info.show();
+			}
+		});
+
+		// Child Tab
+		$('#ChildVerticalTab_1').easyResponsiveTabs({
+			type: 'vertical',
+			width: 'auto',
+			fit: true,
+			tabidentify: 'ver_1', // The tab groups identifier
+			activetab_bg: '#fff', // background color for active tabs in this group
+			inactive_bg: '#F5F5F5', // background color for inactive tabs in this group
+			active_border_color: '#c1c1c1', // border color for active tabs heads in this group
+			active_content_border_color: '#5AB1D0' // border color for active tabs contect in this group so that it matches the tab head border
+		});
+		$('#ChildVerticalTab_2').easyResponsiveTabs({
+			type: 'vertical',
+			width: 'auto',
+			fit: true,
+			tabidentify: 'ver_2', // The tab groups identifier
+			activetab_bg: '#fff', // background color for active tabs in this group
+			inactive_bg: '#F5F5F5', // background color for inactive tabs in this group
+			active_border_color: '#c1c1c1', // border color for active tabs heads in this group
+			active_content_border_color: '#5AB1D0' // border color for active tabs contect in this group so that it matches the tab head border
+		});
+		$('#ChildVerticalTab_3').easyResponsiveTabs({
+			type: 'vertical',
+			width: 'auto',
+			fit: true,
+			tabidentify: 'ver_3', // The tab groups identifier
+			activetab_bg: '#fff', // background color for active tabs in this group
+			inactive_bg: '#F5F5F5', // background color for inactive tabs in this group
+			active_border_color: '#c1c1c1', // border color for active tabs heads in this group
+			active_content_border_color: '#5AB1D0' // border color for active tabs contect in this group so that it matches the tab head border
+		});
+
+		//Vertical Tab
+		$('#parentVerticalTab').easyResponsiveTabs({
+			type: 'vertical', //Types: default, vertical, accordion
+			width: 'auto', //auto or any width like 600px
+			fit: true, // 100% fit in a container
+			closed: 'accordion', // Start closed if in accordion view
+			tabidentify: 'hor_1', // The tab groups identifier
+			activate: function(event) { // Callback function if tab is switched
+				var $tab = $(this);
+				var $info = $('#nested-tabInfo2');
+				var $name = $('span', $info);
+				$name.text($tab.text());
+				$info.show();
+			}
+		});
+	});
+
+</script>
+</body>
+</html>

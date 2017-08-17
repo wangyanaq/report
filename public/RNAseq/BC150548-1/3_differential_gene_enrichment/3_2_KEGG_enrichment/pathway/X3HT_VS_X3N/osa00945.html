@@ -1,0 +1,285 @@
+<html>
+<!---
+ENTRY       osa00945
+DEFINITION  Stilbenoid, diarylheptanoid and gingerol biosynthesis - Oryza sativa japonica (Japanese rice) (RefSeq)
+--->
+<head>
+<title>
+KEGG PATHWAY: Stilbenoid, diarylheptanoid and gingerol biosynthesis - Oryza sativa japonica (Japanese rice) (RefSeq)
+</title>
+<style type="text/css">
+<!--
+div.poplay {
+  position: absolute;
+  padding: 2px;
+  background-color: #ffff99;
+  border-top: solid 1px #c0c0c0;
+  border-left: solid 1px #c0c0c0;
+  border-bottom: solid 1px #808080;
+  border-right: solid 1px #808080;
+  visibility: hidden;
+}
+
+span.popup
+{
+  font-weight: bold;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+form {
+  margin: 0px;
+}
+
+div.image {
+  position: absolute;
+  padding: 0px;
+  top: 0px;
+  padding: 0px;
+  border: solid 1px #000000;
+}
+
+img {
+  border: none;
+}
+
+
+-->
+</style>
+<link rel="stylesheet" href="http://www.genome.jp/css/kegg.css" type="text/css" />
+<script language="JavaScript" src="http://www.genome.jp/js/dhtml.js"></script>
+
+<script language="JavaScript">
+<!---
+var image_height;
+$(function(){
+	$(window).bind('load',function(){
+  image_height = $("div.image").height()-10;
+	$("div.control").height(image_height-5);
+	$("#resizable").height(image_height);
+	});
+});
+
+
+function resize_map(scale){
+  var form = document.forms["form2"];
+  form.scale.value = scale;
+  form.submit();
+}
+
+function select_menu(){
+  var form = document.forms["selmenu"];
+  if(form.org_name.value == 'set_cookie' || form.org_name.value == 'reset_cookie'){
+    window.open('http://www.genome.jp/kegg/misc/kegg2_select.html','sel_org','toolbar=no,location=no,directories=no,width=500,height=320,resizable=yes');
+  }else{
+    form.action='http://www.genome.jp/kegg-bin/show_pathway';
+    form.submit();
+  }
+}
+
+var timer = 0;
+var p_entry, p_title, p_bgcolor;
+function popupTimer(entry, title, bgcolor)
+{
+  p_entry = entry;
+  p_title = title;
+  p_bgcolor = bgcolor;
+
+  if(timer == 0){
+    var func = "showThumbnail()";
+    timer = setTimeout(func, 1200);
+  }
+}
+
+
+function showThumbnail()
+{
+
+  var url = "";
+  if(p_entry.match(/^[A-Z]+\d+$/))
+  {
+    url = "http://www.genome.jp/kegg/misc/thumbnail/" + p_entry + ".gif";
+  }
+  else if(p_entry.match(/(\d+)$/))
+  {
+    url = "http://www.genome.jp/kegg/misc/thumbnail/map" + RegExp.$1 + ".gif";
+  }
+
+  var html = "";
+
+  if(p_bgcolor != "#ffffff")
+  {
+    html += "<span class=\"popup\">" + p_entry + "</span><br />";
+  }
+
+  html += "<img src=\"" + url + "\" alt=\"Loading...\">";
+
+  var x = getCurrentMouseX();
+  var y = getCurrentMouseY();
+
+  var layer = new Component("poplay");
+  layer.backgroundColor(p_bgcolor);
+  layer.HTML(html);
+  layer.move(x, y+40);
+  layer.visible(true);
+
+  timer = 0;
+}
+
+function hideMapTn(){
+  var layer = new Component("poplay");
+  layer.visible(false);
+
+  if(timer != 0){
+    clearTimeout(timer);
+    timer = 0;
+  }
+}
+
+function switchDescription(){
+  var form = document.forms[0];
+  var status = form.show_description.value;
+
+  if(status == "hide"){
+    document.getElementById("description").style.display = "";
+    document.getElementById("descLink").innerHTML = "Hide description";
+    form.show_description.value='show';
+
+    if(document.forms[1]){
+    	document.forms[1].show_description.value='show';
+    }
+  }
+  else
+  {
+    document.getElementById("description").style.display = 'none';
+    document.getElementById("descLink").innerHTML = "Show description";
+    form.show_description.value='hide';
+
+    if(document.forms[1]){
+      document.forms[1].show_description.value='hide';
+    }
+  }
+}
+
+function btn(bobj,img) { bobj.src = "http://www.genome.jp/Fig/bget/button_" + img + ".gif"; }
+//--->
+</script>
+</head>
+<body>
+<table cellpadding="0" width="100%" cellspacing="0" border="0">
+ <tr>
+  <td>
+   <a href="http://www.genome.jp/kegg/kegg2.html"><img align="middle" alt="KEGG" border="0" src="http://www.genome.jp/Fig/bget/kegg3.gif" /></a>
+   &nbsp;&nbsp;&nbsp;<font class="title3"><b>Stilbenoid, diarylheptanoid and gingerol biosynthesis - Oryza sativa japonica (Japanese rice) (RefSeq)</b></font>
+  </td>
+  <td valign="bottom" align="right">
+   <a href="javascript:void(window.open('http://www.genome.jp/kegg/document/help_pathway.html','KEGG_Help','toolbar=no,location=no,directories=no,width=720,height=640,resizable=yes,scrollbars=yes'))"><img name="help" src="http://www.genome.jp/Fig/bget/button_Hb.gif" border="0" align="middle" alt="Help" onmouseout="btn(this,'Hb')" onmousedown="btn(this,'Hbd')" onmouseover="btn(this,'Hbh')" onmouseup="btn(this,'Hb')" /></a>
+  </td>
+ </tr>
+</table>
+
+  
+[
+<a href="http://www.genome.jp/kegg-bin/get_htext?query=00945&htext=br08901.keg&option=-a">Pathway menu</a>
+| <a href="http://www.genome.jp/kegg-bin/get_htext?htext=br08601_map00945.keg&query=osa&option=-a">Organism menu</a>
+| <a href="http://www.genome.jp/dbget-bin/www_bget?pathway+osa00945">Pathway entry</a>
+
+| <a href="http://www.kegg.jp/kegg-bin/download?entry=osa00945&format=kgml">Download KGML</a>
+| <a id="descLink" href="javascript:switchDescription()">Show description</a>
+| <a href="javascript:void(window.open('http://www.genome.jp/kegg/tool/color_a_pathway.html','KEGG_Help','height=300,width=600,resizable=yes,scrollbars=yes'))">User data mapping</a>
+
+]
+  
+<table id="description" cellpadding="10" width="800" style="display: none;"><tr><td>
+Stilbenoids are a group of phenolic compounds, biosynthetically interrelated through their common origin from a C6-C2-C6 intermediate, such as resveratol found in grapes. Stilbenoids can also exist as glycosides (e.g., piceid). Combretastatins are potentially useful stilbenoid natural products with known antitumor activity. Diarylheptanoid is a compound group having phenyl rings at 1,7 positions of n-heptane (C6-C7-C6), such as curcumin found in the ginger family. [6]-Gingerol is a major active component of ginger and has diverse pharmacologic effects.</td></tr></table>
+<table><tr><td>
+<form name="selmenu" method="get">
+<select name="org_name">
+<option value="map">Reference pathway</option>
+<option value="ko">Reference pathway (KO)</option>
+<option value="ec">Reference pathway (EC)</option>
+<option value="rn">Reference pathway (Reaction)</option>
+<option value="set_cookie">-----&lt; Set personalized menu &gt;-----</option>
+<option value="osa.sort_alp">-----&lt; Sort below by alphabet &gt;-----</option>
+<option value="ath">Arabidopsis thaliana (thale cress)</option>
+<option value="pop">Populus trichocarpa (black cottonwood)</option>
+<option value="osa" selected>Oryza sativa japonica (Japanese rice) (RefSeq)</option>
+</select>
+<input type="hidden" name="mapno" value="00945" />
+<input type="hidden" name="mapscale" value=>
+<input type="button" value="Go" onclick="select_menu(this.form)" />
+<input type="hidden" name="show_description" value="hide">
+
+</form>
+</td><td>
+<form name="form2" method="get" action="http://www.genome.jp/kegg-bin/show_pathway">
+&nbsp;&nbsp;&nbsp;&nbsp;
+<select name="scale" onChange="resize_map(this.form.scale.value)">
+<option value="1.84" >184%</option>
+<option value="1.5" >150%</option>
+<option value="1.22" >122%</option>
+<option value="1.0" selected>100%</option>
+<option value="0.82" >82%</option>
+<option value="0.67" >67%</option>
+<option value="0.55" >55%</option>
+</select>
+&nbsp;&nbsp;<input type="text" name="query" size=20 value="">
+<input type="hidden" name="map" value="osa00945" />
+<input type="hidden" name="scale" value=>
+<input type="hidden" name="image" value=/share/www//mark_pathway146062554346684/osa00945.png>
+<input type="hidden" name="use" value="reference">
+<input type="hidden" name="nmap_args" value="146062484268696">
+<input type="hidden" name="auto_image" value="">
+<input type="hidden" name="show_description" value="hide">
+<input type="hidden" name="multi_query" />
+
+<!--</form>-->
+</td></tr></table>
+
+
+<img src="osa00945.png" name="pathwayimage" name="pathwayimage" usemap="#mapdata" border="0" />
+
+<map name="mapdata">
+<area shape=circle	coords=236,490,4	href="http://www.genome.jp/dbget-bin/www_bget?C17747"	title="C17747 (5-Hydroxy-1-(4-hydroxyphenyl)-3-decanone)" onmouseover="popupTimer(&quot;C17747&quot;, &quot;C17747 (5-Hydroxy-1-(4-hydroxyphenyl)-3-decanone)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=610,490,4	href="http://www.genome.jp/dbget-bin/www_bget?C10462"	title="C10462 ([6]-Gingerol)" onmouseover="popupTimer(&quot;C10462&quot;, &quot;C10462 ([6]-Gingerol)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=427,490,4	href="http://www.genome.jp/dbget-bin/www_bget?C17748"	title="C17748 (1-(3,4-Dihydroxyphenyl)-5-hydroxy-3-decanone)" onmouseover="popupTimer(&quot;C17748&quot;, &quot;C17748 (1-(3,4-Dihydroxyphenyl)-5-hydroxy-3-decanone)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=236,412,4	href="http://www.genome.jp/dbget-bin/www_bget?C17744"	title="C17744 (1-(4-Hydroxyphenyl)-1-decene-3,5-dione)" onmouseover="popupTimer(&quot;C17744&quot;, &quot;C17744 (1-(4-Hydroxyphenyl)-1-decene-3,5-dione)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=610,412,4	href="http://www.genome.jp/dbget-bin/www_bget?C17746"	title="C17746 (1-Dehydro-[6]-gingerdione)" onmouseover="popupTimer(&quot;C17746&quot;, &quot;C17746 (1-Dehydro-[6]-gingerdione)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=427,412,4	href="http://www.genome.jp/dbget-bin/www_bget?C17745"	title="C17745 (1-(3,4-Dihydroxyphenyl)-1-decene-3,5-dione)" onmouseover="popupTimer(&quot;C17745&quot;, &quot;C17745 (1-(3,4-Dihydroxyphenyl)-1-decene-3,5-dione)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=610,305,4	href="http://www.genome.jp/dbget-bin/www_bget?C00406"	title="C00406 (Feruloyl-CoA)" onmouseover="popupTimer(&quot;C00406&quot;, &quot;C00406 (Feruloyl-CoA)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=239,194,4	href="http://www.genome.jp/dbget-bin/www_bget?C17740"	title="C17740 (p-Coumaroyl-diketide-CoA)" onmouseover="popupTimer(&quot;C17740&quot;, &quot;C17740 (p-Coumaroyl-diketide-CoA)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=610,194,4	href="http://www.genome.jp/dbget-bin/www_bget?C17741"	title="C17741 (Feruloyl-diketide-CoA)" onmouseover="popupTimer(&quot;C17741&quot;, &quot;C17741 (Feruloyl-diketide-CoA)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=239,116,4	href="http://www.genome.jp/dbget-bin/www_bget?C17743"	title="C17743 (Bisdemethoxycurcumin)" onmouseover="popupTimer(&quot;C17743&quot;, &quot;C17743 (Bisdemethoxycurcumin)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=610,116,4	href="http://www.genome.jp/dbget-bin/www_bget?C10443"	title="C10443 (Curcumin)" onmouseover="popupTimer(&quot;C10443&quot;, &quot;C10443 (Curcumin)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=710,116,4	href="http://www.genome.jp/dbget-bin/www_bget?C17749"	title="C17749 (Curcumin monoglucoside)" onmouseover="popupTimer(&quot;C17749&quot;, &quot;C17749 (Curcumin monoglucoside)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=809,116,4	href="http://www.genome.jp/dbget-bin/www_bget?C17750"	title="C17750 (Curcumin diglucoside)" onmouseover="popupTimer(&quot;C17750&quot;, &quot;C17750 (Curcumin diglucoside)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=69,305,4	href="http://www.genome.jp/dbget-bin/www_bget?C00540"	title="C00540 (Cinnamoyl-CoA)" onmouseover="popupTimer(&quot;C00540&quot;, &quot;C00540 (Cinnamoyl-CoA)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=69,391,4	href="http://www.genome.jp/dbget-bin/www_bget?C01745"	title="C01745 (Pinosylvin)" onmouseover="popupTimer(&quot;C01745&quot;, &quot;C01745 (Pinosylvin)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=149,391,4	href="http://www.genome.jp/dbget-bin/www_bget?C03582"	title="C03582 (Resveratrol)" onmouseover="popupTimer(&quot;C03582&quot;, &quot;C03582 (Resveratrol)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=149,490,4	href="http://www.genome.jp/dbget-bin/www_bget?C05901"	title="C05901 (Piceatannol)" onmouseover="popupTimer(&quot;C05901&quot;, &quot;C05901 (Piceatannol)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=511,305,4	href="http://www.genome.jp/dbget-bin/www_bget?C00323"	title="C00323 (Caffeoyl-CoA)" onmouseover="popupTimer(&quot;C00323&quot;, &quot;C00323 (Caffeoyl-CoA)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=334,258,4	href="http://www.genome.jp/dbget-bin/www_bget?C02947"	title="C02947 (4-Coumaroylshikimate)" onmouseover="popupTimer(&quot;C02947&quot;, &quot;C02947 (4-Coumaroylshikimate)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=426,258,4	href="http://www.genome.jp/dbget-bin/www_bget?C10434"	title="C10434 (5-O-Caffeoylshikimic acid)" onmouseover="popupTimer(&quot;C10434&quot;, &quot;C10434 (5-O-Caffeoylshikimic acid)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=334,361,4	href="http://www.genome.jp/dbget-bin/www_bget?C12208"	title="C12208 (p-Coumaroyl quinic acid)" onmouseover="popupTimer(&quot;C12208&quot;, &quot;C12208 (p-Coumaroyl quinic acid)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=427,361,4	href="http://www.genome.jp/dbget-bin/www_bget?C00852"	title="C00852 (Chlorogenate)" onmouseover="popupTimer(&quot;C00852&quot;, &quot;C00852 (Chlorogenate)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=427,116,4	href="http://www.genome.jp/dbget-bin/www_bget?C17742"	title="C17742 (Demethoxycurcumin)" onmouseover="popupTimer(&quot;C17742&quot;, &quot;C17742 (Demethoxycurcumin)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=99,490,4	href="http://www.genome.jp/dbget-bin/www_bget?C10287"	title="C10287 (Pterostilbene)" onmouseover="popupTimer(&quot;C10287&quot;, &quot;C10287 (Pterostilbene)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=239,305,4	href="http://www.genome.jp/dbget-bin/www_bget?C00223"	title="C00223 (p-Coumaroyl-CoA)" onmouseover="popupTimer(&quot;C00223&quot;, &quot;C00223 (p-Coumaroyl-CoA)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=127,420,173,437	href="http://www.genome.jp/dbget-bin/www_bget?osa:4333118+osa:4334183+osa:4335759"	title="4333118, 4334183, 4335759" />
+<area shape=rect	coords=94,297,140,314	href="http://www.genome.jp/dbget-bin/www_bget?osa:4329324+osa:4329329+osa:4338409"	title="4329324, 4329329, 4338409" />
+<area shape=rect	coords=262,250,308,267	href="http://www.genome.jp/dbget-bin/www_bget?osa:4329959+osa:4336306"	title="4329959, 4336306" />
+<area shape=rect	coords=352,250,398,267	href="http://www.genome.jp/dbget-bin/www_bget?osa:4339188"	title="4339188" />
+<area shape=rect	coords=447,250,493,267	href="http://www.genome.jp/dbget-bin/www_bget?osa:4329959+osa:4336306"	title="4329959, 4336306" />
+<area shape=rect	coords=262,353,308,370	href="http://www.genome.jp/dbget-bin/www_bget?osa:4329959+osa:4336306"	title="4329959, 4336306" />
+<area shape=rect	coords=352,353,398,370	href="http://www.genome.jp/dbget-bin/www_bget?osa:4339188"	title="4339188" />
+<area shape=rect	coords=530,297,576,314	href="http://www.genome.jp/dbget-bin/www_bget?osa:4340240+osa:4347397"	title="4340240, 4347397" />
+<area shape=rect	coords=447,353,493,370	href="http://www.genome.jp/dbget-bin/www_bget?osa:4329959+osa:4336306"	title="4329959, 4336306" />
+<area shape=rect	coords=171,188,217,205	href="http://www.genome.jp/dbget-bin/www_bget?osa:4342896"	title="4342896" />
+<area shape=rect	coords=40,45,512,70	href="http://www.genome.jp/dbget-bin/www_bget?osa00945"	title="osa00945: Stilbenoid, diarylheptanoid and gingerol biosynthesis" onmouseover="popupTimer(&quot;osa00945&quot;, &quot;osa00945: Stilbenoid, diarylheptanoid and gingerol biosynthesis&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=23,231,119,265	href="http://www.genome.jp/kegg-bin/show_pathway?osa00940"	title="osa00940: Phenylpropanoid biosynthesis" onmouseover="popupTimer(&quot;osa00940&quot;, &quot;osa00940: Phenylpropanoid biosynthesis&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+</map>
+<div id="poplay" class="poplay" />
+
+</form>
+</body>
+</html>

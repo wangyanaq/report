@@ -1,0 +1,264 @@
+<html>
+<!---
+ENTRY       osa04933
+DEFINITION  AGE-RAGE signaling pathway in diabetic complications - Oryza sativa japonica (Japanese rice) (RefSeq)
+--->
+<head>
+<title>
+KEGG PATHWAY: AGE-RAGE signaling pathway in diabetic complications - Oryza sativa japonica (Japanese rice) (RefSeq)
+</title>
+<style type="text/css">
+<!--
+div.poplay {
+  position: absolute;
+  padding: 2px;
+  background-color: #ffff99;
+  border-top: solid 1px #c0c0c0;
+  border-left: solid 1px #c0c0c0;
+  border-bottom: solid 1px #808080;
+  border-right: solid 1px #808080;
+  visibility: hidden;
+}
+
+span.popup
+{
+  font-weight: bold;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+form {
+  margin: 0px;
+}
+
+div.image {
+  position: absolute;
+  padding: 0px;
+  top: 0px;
+  padding: 0px;
+  border: solid 1px #000000;
+}
+
+img {
+  border: none;
+}
+
+
+-->
+</style>
+<link rel="stylesheet" href="http://www.genome.jp/css/kegg.css" type="text/css" />
+<script language="JavaScript" src="http://www.genome.jp/js/dhtml.js"></script>
+
+<script language="JavaScript">
+<!---
+var image_height;
+$(function(){
+	$(window).bind('load',function(){
+  image_height = $("div.image").height()-10;
+	$("div.control").height(image_height-5);
+	$("#resizable").height(image_height);
+	});
+});
+
+
+function resize_map(scale){
+  var form = document.forms["form2"];
+  form.scale.value = scale;
+  form.submit();
+}
+
+function select_menu(){
+  var form = document.forms["selmenu"];
+  if(form.org_name.value == 'set_cookie' || form.org_name.value == 'reset_cookie'){
+    window.open('http://www.genome.jp/kegg/misc/kegg2_select.html','sel_org','toolbar=no,location=no,directories=no,width=500,height=320,resizable=yes');
+  }else{
+    form.action='http://www.genome.jp/kegg-bin/show_pathway';
+    form.submit();
+  }
+}
+
+var timer = 0;
+var p_entry, p_title, p_bgcolor;
+function popupTimer(entry, title, bgcolor)
+{
+  p_entry = entry;
+  p_title = title;
+  p_bgcolor = bgcolor;
+
+  if(timer == 0){
+    var func = "showThumbnail()";
+    timer = setTimeout(func, 1200);
+  }
+}
+
+
+function showThumbnail()
+{
+
+  var url = "";
+  if(p_entry.match(/^[A-Z]+\d+$/))
+  {
+    url = "http://www.genome.jp/kegg/misc/thumbnail/" + p_entry + ".gif";
+  }
+  else if(p_entry.match(/(\d+)$/))
+  {
+    url = "http://www.genome.jp/kegg/misc/thumbnail/map" + RegExp.$1 + ".gif";
+  }
+
+  var html = "";
+
+  if(p_bgcolor != "#ffffff")
+  {
+    html += "<span class=\"popup\">" + p_entry + "</span><br />";
+  }
+
+  html += "<img src=\"" + url + "\" alt=\"Loading...\">";
+
+  var x = getCurrentMouseX();
+  var y = getCurrentMouseY();
+
+  var layer = new Component("poplay");
+  layer.backgroundColor(p_bgcolor);
+  layer.HTML(html);
+  layer.move(x, y+40);
+  layer.visible(true);
+
+  timer = 0;
+}
+
+function hideMapTn(){
+  var layer = new Component("poplay");
+  layer.visible(false);
+
+  if(timer != 0){
+    clearTimeout(timer);
+    timer = 0;
+  }
+}
+
+function switchDescription(){
+  var form = document.forms[0];
+  var status = form.show_description.value;
+
+  if(status == "hide"){
+    document.getElementById("description").style.display = "";
+    document.getElementById("descLink").innerHTML = "Hide description";
+    form.show_description.value='show';
+
+    if(document.forms[1]){
+    	document.forms[1].show_description.value='show';
+    }
+  }
+  else
+  {
+    document.getElementById("description").style.display = 'none';
+    document.getElementById("descLink").innerHTML = "Show description";
+    form.show_description.value='hide';
+
+    if(document.forms[1]){
+      document.forms[1].show_description.value='hide';
+    }
+  }
+}
+
+function btn(bobj,img) { bobj.src = "http://www.genome.jp/Fig/bget/button_" + img + ".gif"; }
+//--->
+</script>
+</head>
+<body>
+<table cellpadding="0" width="100%" cellspacing="0" border="0">
+ <tr>
+  <td>
+   <a href="http://www.genome.jp/kegg/kegg2.html"><img align="middle" alt="KEGG" border="0" src="http://www.genome.jp/Fig/bget/kegg3.gif" /></a>
+   &nbsp;&nbsp;&nbsp;<font class="title3"><b>AGE-RAGE signaling pathway in diabetic complications - Oryza sativa japonica (Japanese rice) (RefSeq)</b></font>
+  </td>
+  <td valign="bottom" align="right">
+   <a href="javascript:void(window.open('http://www.genome.jp/kegg/document/help_pathway.html','KEGG_Help','toolbar=no,location=no,directories=no,width=720,height=640,resizable=yes,scrollbars=yes'))"><img name="help" src="http://www.genome.jp/Fig/bget/button_Hb.gif" border="0" align="middle" alt="Help" onmouseout="btn(this,'Hb')" onmousedown="btn(this,'Hbd')" onmouseover="btn(this,'Hbh')" onmouseup="btn(this,'Hb')" /></a>
+  </td>
+ </tr>
+</table>
+
+  
+[
+<a href="http://www.genome.jp/kegg-bin/get_htext?query=04933&htext=br08901.keg&option=-a">Pathway menu</a>
+| <a href="http://www.genome.jp/kegg-bin/get_htext?htext=br08601_map04933.keg&query=osa&option=-a">Organism menu</a>
+| <a href="http://www.genome.jp/dbget-bin/www_bget?pathway+osa04933">Pathway entry</a>
+
+| <a href="http://www.kegg.jp/kegg-bin/download?entry=osa04933&format=kgml">Download KGML</a>
+| <a id="descLink" href="javascript:switchDescription()">Show description</a>
+| <a href="javascript:void(window.open('http://www.genome.jp/kegg/tool/color_a_pathway.html','KEGG_Help','height=300,width=600,resizable=yes,scrollbars=yes'))">User data mapping</a>
+
+]
+  
+<table id="description" cellpadding="10" width="800" style="display: none;"><tr><td>
+Advanced glycation end products (AGEs) are a complex group of compounds produced through the non-enzymatic glycation and oxidation of proteins, lipids and nucleic acids, primarily due to aging and under certain pathologic condition such as huperglycemia. Some of the best chemically characterized AGEs include N-epsilon-carboxy-methyl-lysine (CML), N-epsilon-carboxy-ethyl-lysine (CEL), and Imidazolone. The major receptor for AGEs, known as receptor for advanced glycation end products (RAGE or AGER), belongs to the immunoglobulin superfamily and has been described as a pattern recognition receptor. AGE/RAGE signaling elicits activation of multiple intracellular signal pathways involving NADPH oxidase,  protein kinase C, and MAPKs, then resulting in NF-kappaB activity. NF-kappa B promotes the expression of pro-inflammatory cytokines such as IL-1, IL-6 and TNF-alpha and a variety of atherosclerosis-related genes, including VCAM-1, tissue factor, VEGF, and RAGE. In addition, JAK-STAT-mediated and PI3K-Akt-dependent pathways are induced via RAGE, which in turn participate in cell proliferation and apoptosis respectively. Hypoxia-mediated induction of Egr-1 was also shown to require the AGE-RAGE interaction. The results of these signal transductions have been reported to be the possible mechanism that initates diabetic complications.</td></tr></table>
+<table><tr><td>
+<form name="selmenu" method="get">
+<select name="org_name">
+<option value="map">Reference pathway</option>
+<option value="ko">Reference pathway (KO)</option>
+<option value="set_cookie">-----&lt; Set personalized menu &gt;-----</option>
+<option value="osa.sort_alp">-----&lt; Sort below by alphabet &gt;-----</option>
+<option value="hsa">Homo sapiens (human)</option>
+<option value="hsadd">Homo sapiens (human) + Disease/drug</option>
+</select>
+<input type="hidden" name="mapno" value="04933" />
+<input type="hidden" name="mapscale" value=>
+<input type="button" value="Go" onclick="select_menu(this.form)" />
+<input type="hidden" name="show_description" value="hide">
+
+</form>
+</td><td>
+<form name="form2" method="get" action="http://www.genome.jp/kegg-bin/show_pathway">
+&nbsp;&nbsp;&nbsp;&nbsp;
+<select name="scale" onChange="resize_map(this.form.scale.value)">
+<option value="1.84" >184%</option>
+<option value="1.5" >150%</option>
+<option value="1.22" >122%</option>
+<option value="1.0" selected>100%</option>
+<option value="0.82" >82%</option>
+<option value="0.67" >67%</option>
+<option value="0.55" >55%</option>
+</select>
+&nbsp;&nbsp;<input type="text" name="query" size=20 value="">
+<input type="hidden" name="map" value="osa04933" />
+<input type="hidden" name="scale" value=>
+<input type="hidden" name="image" value=/share/www//mark_pathway146062955753956/osa04933.png>
+<input type="hidden" name="use" value="reference">
+<input type="hidden" name="nmap_args" value="146062903466383">
+<input type="hidden" name="auto_image" value="">
+<input type="hidden" name="show_description" value="hide">
+<input type="hidden" name="multi_query" />
+
+<!--</form>-->
+</td></tr></table>
+
+
+<img src="osa04933.png" name="pathwayimage" name="pathwayimage" usemap="#mapdata" border="0" />
+
+<map name="mapdata">
+<area shape=circle	coords=137,509,4	href="http://www.genome.jp/dbget-bin/www_bget?C00031"	title="C00031 (D-Glucose)" onmouseover="popupTimer(&quot;C00031&quot;, &quot;C00031 (D-Glucose)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=669,598,4	href="http://www.genome.jp/dbget-bin/www_bget?C00195"	title="C00195 (N-Acylsphingosine)" onmouseover="popupTimer(&quot;C00195&quot;, &quot;C00195 (N-Acylsphingosine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=216,509,4	href="http://www.genome.jp/dbget-bin/www_bget?C21011+C21012+C21013+C21014"	title="C21011 ([Protein]-N(epsilon)-(carboxymethyl)lysine), C21012 ([Protein]-N(epsilon)-(carboxyethyl)lysine), C21013 ([Protein]-pyrraline), C21014 ([Protein]-pentosidine)" onmouseover="popupTimer(&quot;C21011&quot;, &quot;C21011 ([Protein]-N(epsilon)-(carboxymethyl)lysine), C21012 ([Protein]-N(epsilon)-(carboxyethyl)lysine), C21013 ([Protein]-pyrraline), C21014 ([Protein]-pentosidine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=216,903,4	href="http://www.genome.jp/dbget-bin/www_bget?C21011+C21012+C21013+C21014"	title="C21011 ([Protein]-N(epsilon)-(carboxymethyl)lysine), C21012 ([Protein]-N(epsilon)-(carboxyethyl)lysine), C21013 ([Protein]-pyrraline), C21014 ([Protein]-pentosidine)" onmouseover="popupTimer(&quot;C21011&quot;, &quot;C21011 ([Protein]-N(epsilon)-(carboxymethyl)lysine), C21012 ([Protein]-N(epsilon)-(carboxyethyl)lysine), C21013 ([Protein]-pyrraline), C21014 ([Protein]-pentosidine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=467,357,4	href="http://www.genome.jp/dbget-bin/www_bget?C00165"	title="C00165 (Diacylglycerol)" onmouseover="popupTimer(&quot;C00165&quot;, &quot;C00165 (Diacylglycerol)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=465,409,4	href="http://www.genome.jp/dbget-bin/www_bget?C01245"	title="C01245 (D-myo-Inositol 1,4,5-trisphosphate)" onmouseover="popupTimer(&quot;C01245&quot;, &quot;C01245 (D-myo-Inositol 1,4,5-trisphosphate)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=511,409,4	href="http://www.genome.jp/dbget-bin/www_bget?C00076"	title="C00076 (Calcium cation)" onmouseover="popupTimer(&quot;C00076&quot;, &quot;C00076 (Calcium cation)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=216,268,4	href="http://www.genome.jp/dbget-bin/www_bget?C02135"	title="C02135 (Angiotensin II)" onmouseover="popupTimer(&quot;C02135&quot;, &quot;C02135 (Angiotensin II)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=751,328,797,345	href="http://www.genome.jp/dbget-bin/www_bget?osa:4328297+osa:4332475+osa:4341956+osa:4344698+osa:4349225"	title="4328297, 4332475, 4341956, 4344698, 4349225" />
+<area shape=rect	coords=646,498,692,515	href="http://www.genome.jp/dbget-bin/www_bget?osa:4325879+osa:4328116+osa:4329132+osa:4330693+osa:4331272+osa:4339304+osa:4340590"	title="4325879, 4328116, 4329132, 4330693, 4331272, 4339304, 4340590" />
+<area shape=rect	coords=389,372,435,389	href="http://www.genome.jp/dbget-bin/www_bget?osa:4332497+osa:4337686+osa:4344391"	title="4332497, 4337686, 4344391" />
+<area shape=rect	coords=40,45,510,70	href="http://www.genome.jp/dbget-bin/www_bget?osa04933"	title="osa04933: AGE-RAGE signaling pathway in diabetic complications" onmouseover="popupTimer(&quot;osa04933&quot;, &quot;osa04933: AGE-RAGE signaling pathway in diabetic complications&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=811,263,915,297	href="http://www.genome.jp/kegg-bin/show_pathway?map04010"	title="map04010: MAPK signaling pathway" onmouseover="popupTimer(&quot;map04010&quot;, &quot;map04010: MAPK signaling pathway&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=369,172,473,206	href="http://www.genome.jp/kegg-bin/show_pathway?map04350"	title="map04350: TGF-beta signaling pathway" onmouseover="popupTimer(&quot;map04350&quot;, &quot;map04350: TGF-beta signaling pathway&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=362,606,471,640	href="http://www.genome.jp/kegg-bin/show_pathway?map04151"	title="map04151: PI3K-Akt signaling pathway" onmouseover="popupTimer(&quot;map04151&quot;, &quot;map04151: PI3K-Akt signaling pathway&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=358,704,480,738	href="http://www.genome.jp/kegg-bin/show_pathway?map04630"	title="map04630: Jak-STAT signaling pathway" onmouseover="popupTimer(&quot;map04630&quot;, &quot;map04630: Jak-STAT signaling pathway&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=1105,807,1174,832	href="http://www.genome.jp/kegg-bin/show_pathway?map04110"	title="map04110: Cell cycle" onmouseover="popupTimer(&quot;map04110&quot;, &quot;map04110: Cell cycle&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=371,265,478,299	href="http://www.genome.jp/kegg-bin/show_pathway?map04614"	title="map04614: Renin-angiotensin system" onmouseover="popupTimer(&quot;map04614&quot;, &quot;map04614: Renin-angiotensin system&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=517,330,617,364	href="http://www.genome.jp/kegg-bin/show_pathway?map04020"	title="map04020: Calcium signaling pathway" onmouseover="popupTimer(&quot;map04020&quot;, &quot;map04020: Calcium signaling pathway&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+</map>
+<div id="poplay" class="poplay" />
+
+</form>
+</body>
+</html>

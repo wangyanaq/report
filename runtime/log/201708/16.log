@@ -1,0 +1,3390 @@
+[ 2017-08-16T10:51:17+08:00 ] 10.2.2.28 10.2.2.28 GET /plogin
+[ log ] 10.2.2.28/plogin [运行时间：0.126007s][吞吐率：7.94req/s] [内存消耗：2,779.84kb] [文件加载：56]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pc',
+    1 => 'Login',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] Method [ <user> public method login ] {
+  @@ C:\xampp\htdocs\report\application\pc\controller\Login.php 11 - 83
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/pc\view\login\login.html [ array (
+  0 => 'status',
+  1 => 'username',
+  2 => 'bh_id_all',
+  3 => 'curr_bh',
+  4 => 'bh_id',
+  5 => 'bh_status',
+  6 => 'ana_row',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_reportinfo` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_reportinfo` WHERE  `username` = 'demo'   [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bc_seq_reportinfo` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `bc_seq_reportinfo` WHERE  `username` = 'demo'   [ RunTime:0.002001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `bc_seq_reportinfo` WHERE  `username` = 'demo'  AND `add_date` = '2017-05-03 13:32:43' LIMIT 1     [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_analysis` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_analysis` WHERE  `bh_id` = 'BC150548-1' LIMIT 1    [ RunTime:0.003000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_analysis` WHERE  `bh_id` = 'BC150548-1' LIMIT 1    [ RunTime:0.003000s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T10:51:17+08:00 ] 10.2.2.28 10.2.2.28 GET /welcome/BC123
+[ log ] 10.2.2.28/welcome/BC123 [运行时间：0.127007s][吞吐率：7.87req/s] [内存消耗：2,535.41kb] [文件加载：55]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pc',
+    1 => 'Welcome',
+    2 => 'welcome',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/plogin',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'bh_id' => 'BC123',
+)
+[ info ] [ RUN ] Method [ <user> public method welcome ] {
+  @@ C:\xampp\htdocs\report\application\pc\controller\Welcome.php 10 - 39
+
+  - Parameters [1] {
+    Parameter #0 [ <required> $bh_id ]
+  }
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/pc\view\welcome\welcome.html [ array (
+  0 => 'bh_id',
+  1 => 'bh_status',
+  2 => 'curr_bh',
+  3 => 'ana_row',
+  4 => 'last_login_time',
+  5 => 'last_login_ip',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_analysis` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_analysis` WHERE  `bh_id` = 'BC123' LIMIT 1    [ RunTime:0.003000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_reportinfo` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_reportinfo` WHERE  `bh_id` = 'BC123' LIMIT 1    [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_login` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_login` WHERE  `username` IS NULL LIMIT 1   [ RunTime:0.003000s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T10:51:20+08:00 ] 10.2.2.28 10.2.2.28 GET /project
+[ log ] 10.2.2.28/project [运行时间：0.078005s][吞吐率：12.82req/s] [内存消耗：2,234.23kb] [文件加载：53]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'rnaseq',
+    1 => 'Project',
+    2 => 'project',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/plogin',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] Method [ <user> public method project ] {
+  @@ C:\xampp\htdocs\report\application\rnaseq\controller\Project.php 10 - 25
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/rnaseq\view\project\project.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-16T10:51:20+08:00 ] 10.2.2.28 10.2.2.28 GET /chart
+[ log ] 10.2.2.28/chart [运行时间：0.063004s][吞吐率：15.87req/s] [内存消耗：2,195.04kb] [文件加载：53]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'rnaseq',
+    1 => 'Chart',
+    2 => 'chart',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/plogin',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] Method [ <user> public method chart ] {
+  @@ C:\xampp\htdocs\report\application\rnaseq\controller\Chart.php 10 - 25
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/rnaseq\view\chart\chart.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-16T10:51:21+08:00 ] 10.2.2.28 10.2.2.28 GET /evaluate
+[ log ] 10.2.2.28/evaluate [运行时间：0.060004s][吞吐率：16.67req/s] [内存消耗：2,210.29kb] [文件加载：53]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'rnaseq',
+    1 => 'Evaluate',
+    2 => 'evaluate',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/plogin',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] Method [ <user> public method evaluate ] {
+  @@ C:\xampp\htdocs\report\application\rnaseq\controller\Evaluate.php 10 - 25
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/rnaseq\view\evaluate\evaluate.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-16T10:51:22+08:00 ] 10.2.2.28 10.2.2.28 GET /format
+[ log ] 10.2.2.28/format [运行时间：0.068004s][吞吐率：14.70req/s] [内存消耗：2,195.92kb] [文件加载：53]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'rnaseq',
+    1 => 'Format',
+    2 => 'format',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/plogin',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] Method [ <user> public method format ] {
+  @@ C:\xampp\htdocs\report\application\rnaseq\controller\Format.php 10 - 25
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/rnaseq\view\format\format.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-16T10:51:23+08:00 ] 10.2.2.28 10.2.2.28 GET /chart
+[ log ] 10.2.2.28/chart [运行时间：0.048003s][吞吐率：20.83req/s] [内存消耗：2,063.27kb] [文件加载：51]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'rnaseq',
+    1 => 'Chart',
+    2 => 'chart',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/plogin',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] Method [ <user> public method chart ] {
+  @@ C:\xampp\htdocs\report\application\rnaseq\controller\Chart.php 10 - 25
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/rnaseq\view\chart\chart.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-16T10:51:24+08:00 ] 10.2.2.28 10.2.2.28 GET /project
+[ log ] 10.2.2.28/project [运行时间：0.047003s][吞吐率：21.28req/s] [内存消耗：2,071.34kb] [文件加载：51]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'rnaseq',
+    1 => 'Project',
+    2 => 'project',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/plogin',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] Method [ <user> public method project ] {
+  @@ C:\xampp\htdocs\report\application\rnaseq\controller\Project.php 10 - 25
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/rnaseq\view\project\project.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-16T10:51:25+08:00 ] 10.2.2.28 10.2.2.28 GET /mapping
+[ log ] 10.2.2.28/mapping [运行时间：0.071004s][吞吐率：14.08req/s] [内存消耗：2,234.23kb] [文件加载：53]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'rnaseq',
+    1 => 'Mapping',
+    2 => 'mapping',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/plogin',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] Method [ <user> public method mapping ] {
+  @@ C:\xampp\htdocs\report\application\rnaseq\controller\Mapping.php 10 - 25
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/rnaseq\view\mapping\mapping.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-16T10:51:27+08:00 ] 10.2.2.28 10.2.2.28 GET /correlationAnalysis
+[ log ] 10.2.2.28/correlationAnalysis [运行时间：0.088005s][吞吐率：11.36req/s] [内存消耗：2,210.61kb] [文件加载：53]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'rnaseq',
+    1 => 'CorrelationAnalysis',
+    2 => 'correlationAnalysis',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/plogin',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] Method [ <user> public method correlationAnalysis ] {
+  @@ C:\xampp\htdocs\report\application\rnaseq\controller\CorrelationAnalysis.php 10 - 25
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/rnaseq\view\correlation_analysis\correlationAnalysis.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-16T10:51:28+08:00 ] 10.2.2.28 10.2.2.28 GET /geneExpression
+[ log ] 10.2.2.28/geneExpression [运行时间：0.073004s][吞吐率：13.70req/s] [内存消耗：2,202.47kb] [文件加载：53]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'rnaseq',
+    1 => 'GeneExpression',
+    2 => 'geneExpression',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/plogin',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] Method [ <user> public method geneExpression ] {
+  @@ C:\xampp\htdocs\report\application\rnaseq\controller\GeneExpression.php 10 - 25
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/rnaseq\view\gene_expression\geneExpression.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-16T10:51:28+08:00 ] 10.2.2.28 10.2.2.28 GET /correlationAnalysis
+[ log ] 10.2.2.28/correlationAnalysis [运行时间：0.051003s][吞吐率：19.61req/s] [内存消耗：2,063.74kb] [文件加载：51]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'rnaseq',
+    1 => 'CorrelationAnalysis',
+    2 => 'correlationAnalysis',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/plogin',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] Method [ <user> public method correlationAnalysis ] {
+  @@ C:\xampp\htdocs\report\application\rnaseq\controller\CorrelationAnalysis.php 10 - 25
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/rnaseq\view\correlation_analysis\correlationAnalysis.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-16T10:51:29+08:00 ] 10.2.2.28 10.2.2.28 GET /diffGene
+[ log ] 10.2.2.28/diffGene [运行时间：0.054003s][吞吐率：18.52req/s] [内存消耗：2,278.32kb] [文件加载：53]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'rnaseq',
+    1 => 'DiffGene',
+    2 => 'diffGene',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/plogin',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] Method [ <user> public method diffGene ] {
+  @@ C:\xampp\htdocs\report\application\rnaseq\controller\DiffGene.php 10 - 25
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/rnaseq\view\diff_gene\diffGene.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-16T10:51:31+08:00 ] 10.2.2.28 10.2.2.28 GET /go
+[ log ] 10.2.2.28/go [运行时间：0.076004s][吞吐率：13.16req/s] [内存消耗：2,258.07kb] [文件加载：53]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'rnaseq',
+    1 => 'Go',
+    2 => 'go',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/plogin',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] Method [ <user> public method go ] {
+  @@ C:\xampp\htdocs\report\application\rnaseq\controller\Go.php 10 - 25
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/rnaseq\view\go\go.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-16T10:51:31+08:00 ] 10.2.2.28 10.2.2.28 GET /kegg
+[ log ] 10.2.2.28/kegg [运行时间：0.087005s][吞吐率：11.49req/s] [内存消耗：2,266.12kb] [文件加载：53]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'rnaseq',
+    1 => 'Kegg',
+    2 => 'kegg',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/plogin',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] Method [ <user> public method kegg ] {
+  @@ C:\xampp\htdocs\report\application\rnaseq\controller\Kegg.php 10 - 25
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/rnaseq\view\kegg\kegg.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-16T10:51:32+08:00 ] 10.2.2.28 10.2.2.28 GET /diffNovel
+[ log ] 10.2.2.28/diffNovel [运行时间：0.062004s][吞吐率：16.13req/s] [内存消耗：2,278.32kb] [文件加载：53]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'rnaseq',
+    1 => 'DiffNovel',
+    2 => 'diffNovel',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/plogin',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] Method [ <user> public method diffNovel ] {
+  @@ C:\xampp\htdocs\report\application\rnaseq\controller\DiffNovel.php 10 - 25
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/rnaseq\view\diff_novel\diffNovel.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-16T10:51:33+08:00 ] 10.2.2.28 10.2.2.28 GET /novelGene
+[ log ] 10.2.2.28/novelGene [运行时间：0.066004s][吞吐率：15.15req/s] [内存消耗：2,202.32kb] [文件加载：53]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'rnaseq',
+    1 => 'NovelGene',
+    2 => 'novelGene',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/plogin',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] Method [ <user> public method novelGene ] {
+  @@ C:\xampp\htdocs\report\application\rnaseq\controller\NovelGene.php 10 - 25
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/rnaseq\view\novel_gene\novelGene.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-16T10:51:34+08:00 ] 10.2.2.28 10.2.2.28 GET /diff
+[ log ] 10.2.2.28/diff [运行时间：0.068003s][吞吐率：14.71req/s] [内存消耗：2,270.12kb] [文件加载：53]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'rnaseq',
+    1 => 'Diff',
+    2 => 'diff',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/plogin',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] Method [ <user> public method diff ] {
+  @@ C:\xampp\htdocs\report\application\rnaseq\controller\Diff.php 10 - 25
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/rnaseq\view\diff\diff.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-16T10:51:35+08:00 ] 10.2.2.28 10.2.2.28 GET /expression
+[ log ] 10.2.2.28/expression [运行时间：0.067004s][吞吐率：14.92req/s] [内存消耗：2,202.32kb] [文件加载：53]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'rnaseq',
+    1 => 'Expression',
+    2 => 'expression',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/plogin',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] Method [ <user> public method expression ] {
+  @@ C:\xampp\htdocs\report\application\rnaseq\controller\Expression.php 10 - 25
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/rnaseq\view\expression\expression.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-16T10:51:35+08:00 ] 10.2.2.28 10.2.2.28 GET /prediction
+[ log ] 10.2.2.28/prediction [运行时间：0.066004s][吞吐率：15.15req/s] [内存消耗：2,202.32kb] [文件加载：53]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'rnaseq',
+    1 => 'Prediction',
+    2 => 'prediction',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/plogin',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] Method [ <user> public method prediction ] {
+  @@ C:\xampp\htdocs\report\application\rnaseq\controller\Prediction.php 10 - 25
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/rnaseq\view\prediction\prediction.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-16T10:51:36+08:00 ] 10.2.2.28 10.2.2.28 GET /target
+[ log ] 10.2.2.28/target [运行时间：0.083005s][吞吐率：12.05req/s] [内存消耗：2,206.17kb] [文件加载：53]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'rnaseq',
+    1 => 'Target',
+    2 => 'target',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/plogin',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] Method [ <user> public method target ] {
+  @@ C:\xampp\htdocs\report\application\rnaseq\controller\Target.php 10 - 25
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/rnaseq\view\target\target.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-16T10:51:36+08:00 ] 10.2.2.28 10.2.2.28 GET /targetEnrichment
+[ log ] 10.2.2.28/targetEnrichment [运行时间：0.095005s][吞吐率：10.53req/s] [内存消耗：2,270.58kb] [文件加载：53]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'rnaseq',
+    1 => 'TargetEnrichment',
+    2 => 'targetEnrichment',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/plogin',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] Method [ <user> public method targetEnrichment ] {
+  @@ C:\xampp\htdocs\report\application\rnaseq\controller\TargetEnrichment.php 10 - 25
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/rnaseq\view\target_enrichment\targetEnrichment.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-16T10:51:37+08:00 ] 10.2.2.28 10.2.2.28 GET /coExpression
+[ log ] 10.2.2.28/coExpression [运行时间：0.074004s][吞吐率：13.51req/s] [内存消耗：2,206.37kb] [文件加载：53]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'rnaseq',
+    1 => 'CoExpression',
+    2 => 'coExpression',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/plogin',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] Method [ <user> public method coExpression ] {
+  @@ C:\xampp\htdocs\report\application\rnaseq\controller\CoExpression.php 10 - 25
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/rnaseq\view\co_expression\coExpression.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-16T10:51:39+08:00 ] 10.2.2.28 10.2.2.28 POST /plogin
+[ log ] 10.2.2.28/plogin [运行时间：0.062003s][吞吐率：16.13req/s] [内存消耗：2,254.46kb] [文件加载：52]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pc',
+    1 => 'Login',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://10.2.2.28',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'referer' => 'http://10.2.2.28/plogin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '16',
+)
+[ info ] [ PARAM ] array (
+  'bh_id' => 'BHdemo2345',
+)
+[ info ] [ RUN ] Method [ <user> public method login ] {
+  @@ C:\xampp\htdocs\report\application\pc\controller\Login.php 11 - 83
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_analysis` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_analysis` WHERE  `bh_id` = 'BHdemo2345' LIMIT 1    [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T10:51:39+08:00 ] 10.2.2.28 10.2.2.28 GET /current
+[ log ] 10.2.2.28/current [运行时间：0.101006s][吞吐率：9.90req/s] [内存消耗：2,493.22kb] [文件加载：54]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pc',
+    1 => 'Login',
+    2 => 'current',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/plogin',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] Method [ <user> public method current ] {
+  @@ C:\xampp\htdocs\report\application\pc\controller\Login.php 84 - 123
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/pc\view\login\login.html [ array (
+  0 => 'status',
+  1 => 'username',
+  2 => 'bh_id_all',
+  3 => 'bh_id',
+  4 => 'bh_status',
+  5 => 'curr_bh',
+  6 => 'ana_row',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_reportinfo` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_reportinfo` WHERE  `username` = 'demo'   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bc_seq_reportinfo` [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT * FROM `bc_seq_reportinfo` WHERE  `username` = 'demo'   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_reportinfo` WHERE  `bh_id` = 'BHdemo2345' LIMIT 1    [ RunTime:0.002001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_analysis` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_analysis` WHERE  `bh_id` = 'BHdemo2345' LIMIT 1    [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T10:51:39+08:00 ] 10.2.2.28 10.2.2.28 GET /welcome/BHdemo2345
+[ log ] 10.2.2.28/welcome/BHdemo2345 [运行时间：0.106006s][吞吐率：9.43req/s] [内存消耗：2,395.47kb] [文件加载：53]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pc',
+    1 => 'Welcome',
+    2 => 'welcome',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/current',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'bh_id' => 'BHdemo2345',
+)
+[ info ] [ RUN ] Method [ <user> public method welcome ] {
+  @@ C:\xampp\htdocs\report\application\pc\controller\Welcome.php 10 - 39
+
+  - Parameters [1] {
+    Parameter #0 [ <required> $bh_id ]
+  }
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/pc\view\welcome\welcome.html [ array (
+  0 => 'bh_id',
+  1 => 'bh_status',
+  2 => 'curr_bh',
+  3 => 'ana_row',
+  4 => 'last_login_time',
+  5 => 'last_login_ip',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_analysis` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_analysis` WHERE  `bh_id` = 'BHdemo2345' LIMIT 1    [ RunTime:0.003000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_reportinfo` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_reportinfo` WHERE  `bh_id` = 'BHdemo2345' LIMIT 1    [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_login` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_login` WHERE  `username` = 'demo' LIMIT 1    [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T10:51:49+08:00 ] 10.2.2.28 10.2.2.28 GET /
+[ log ] 10.2.2.28/ [运行时间：0.059004s][吞吐率：16.95req/s] [内存消耗：2,211.66kb] [文件加载：55]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/current',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] Method [ <user> public method index ] {
+  @@ C:\xampp\htdocs\report\application\index\controller\Index.php 10 - 24
+}
+
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/index\view\index\index_p.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-16T10:51:51+08:00 ] 10.2.2.28 10.2.2.28 POST /index.php/index/Login/login
+[ log ] 10.2.2.28/index.php/index/Login/login [运行时间：0.314018s][吞吐率：3.18req/s] [内存消耗：2,418.78kb] [文件加载：52]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://10.2.2.28',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'referer' => 'http://10.2.2.28/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '151',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'demo',
+  'password' => '123',
+  'ip_info' => 
+  array (
+    'ip' => '124.74.110.46',
+    'address' => '上海市黄浦区 电信',
+  ),
+)
+[ info ] [ RUN ] Method [ <user> public method login ] {
+  @@ C:\xampp\htdocs\report\application\index\controller\Login.php 11 - 38
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_login` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_login` WHERE  `username` = 'demo'  AND `password` = 'adcd7048512e64b48da55b027577886ee5a36350' LIMIT 1     [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `bh_login` WHERE  `username` = 'demo' LIMIT 1    [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] UPDATE `bh_login`  SET `last_login_time`='2017-08-16 10:51:51',`last_login_ip`='124.74.110.46'  WHERE  `username` = 'demo'      [ RunTime:0.123007s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `bh_login` WHERE  `username` = 'demo' LIMIT 1    [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_login_log` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] INSERT INTO `bh_login_log` (`login_id` , `login_date` , `login_ip` , `login_addr`) VALUES (16 , '2017-08-16 10:51:51' , '124.74.110.46' , '上海市黄浦区 电信')      [ RunTime:0.054003s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_reportinfo` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_reportinfo` WHERE  `username` = 'demo'   [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T10:51:51+08:00 ] 10.2.2.28 10.2.2.28 GET /plogin
+[ log ] 10.2.2.28/plogin [运行时间：0.102006s][吞吐率：9.80req/s] [内存消耗：2,565.35kb] [文件加载：54]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pc',
+    1 => 'Login',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] Method [ <user> public method login ] {
+  @@ C:\xampp\htdocs\report\application\pc\controller\Login.php 11 - 83
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/pc\view\login\login.html [ array (
+  0 => 'status',
+  1 => 'username',
+  2 => 'bh_id_all',
+  3 => 'curr_bh',
+  4 => 'bh_id',
+  5 => 'bh_status',
+  6 => 'ana_row',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_reportinfo` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_reportinfo` WHERE  `username` = 'demo'   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bc_seq_reportinfo` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `bc_seq_reportinfo` WHERE  `username` = 'demo'   [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `bc_seq_reportinfo` WHERE  `username` = 'demo'  AND `add_date` = '2017-05-03 13:32:43' LIMIT 1     [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_analysis` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_analysis` WHERE  `bh_id` = 'BC150548-1' LIMIT 1    [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_analysis` WHERE  `bh_id` = 'BC150548-1' LIMIT 1    [ RunTime:0.003000s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T10:51:51+08:00 ] 10.2.2.28 10.2.2.28 POST /index.php/index/Login/login
+[ log ] 10.2.2.28/index.php/index/Login/login [运行时间：0.197011s][吞吐率：5.08req/s] [内存消耗：2,419.26kb] [文件加载：52]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://10.2.2.28',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'referer' => 'http://10.2.2.28/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '151',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'demo',
+  'password' => '123',
+  'ip_info' => 
+  array (
+    'ip' => '124.74.110.46',
+    'address' => '上海市黄浦区 电信',
+  ),
+)
+[ info ] [ RUN ] Method [ <user> public method login ] {
+  @@ C:\xampp\htdocs\report\application\index\controller\Login.php 11 - 38
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_login` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_login` WHERE  `username` = 'demo'  AND `password` = 'adcd7048512e64b48da55b027577886ee5a36350' LIMIT 1     [ RunTime:0.003000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `bh_login` WHERE  `username` = 'demo' LIMIT 1    [ RunTime:0.003000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] UPDATE `bh_login`  SET `last_login_time`='2017-08-16 10:51:51',`last_login_ip`='124.74.110.46'  WHERE  `username` = 'demo'      [ RunTime:0.021002s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `bh_login` WHERE  `username` = 'demo' LIMIT 1    [ RunTime:0.003000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_login_log` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] INSERT INTO `bh_login_log` (`login_id` , `login_date` , `login_ip` , `login_addr`) VALUES (16 , '2017-08-16 10:51:51' , '124.74.110.46' , '上海市黄浦区 电信')      [ RunTime:0.017001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_reportinfo` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_reportinfo` WHERE  `username` = 'demo'   [ RunTime:0.003000s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T10:51:51+08:00 ] 10.2.2.28 10.2.2.28 GET /welcome/BC123
+[ log ] 10.2.2.28/welcome/BC123 [运行时间：0.183011s][吞吐率：5.46req/s] [内存消耗：2,388.34kb] [文件加载：53]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pc',
+    1 => 'Welcome',
+    2 => 'welcome',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/plogin',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'bh_id' => 'BC123',
+)
+[ info ] [ RUN ] Method [ <user> public method welcome ] {
+  @@ C:\xampp\htdocs\report\application\pc\controller\Welcome.php 10 - 39
+
+  - Parameters [1] {
+    Parameter #0 [ <required> $bh_id ]
+  }
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/pc\view\welcome\welcome.html [ array (
+  0 => 'bh_id',
+  1 => 'bh_status',
+  2 => 'curr_bh',
+  3 => 'ana_row',
+  4 => 'last_login_time',
+  5 => 'last_login_ip',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_analysis` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_analysis` WHERE  `bh_id` = 'BC123' LIMIT 1    [ RunTime:0.004000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_reportinfo` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_reportinfo` WHERE  `bh_id` = 'BC123' LIMIT 1    [ RunTime:0.003000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_login` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_login` WHERE  `username` IS NULL LIMIT 1   [ RunTime:0.003000s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T11:11:54+08:00 ] 10.2.2.28 10.2.2.128 GET /
+[ log ] 10.2.2.28/ [运行时间：0.089005s][吞吐率：11.24req/s] [内存消耗：2,066.98kb] [文件加载：53]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36 SE 2.X MetaSr 1.0',
+  'accept-encoding' => 'gzip,deflate,sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1493706540',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] Method [ <user> public method index ] {
+  @@ C:\xampp\htdocs\report\application\index\controller\Index.php 10 - 24
+}
+
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/index\view\index\index_p.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-16T12:58:00+08:00 ] 10.2.2.28 10.2.2.28 POST /plogin
+[ log ] 10.2.2.28/plogin [运行时间：0.110007s][吞吐率：9.09req/s] [内存消耗：2,254.46kb] [文件加载：52]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pc',
+    1 => 'Login',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://10.2.2.28',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'referer' => 'http://10.2.2.28/plogin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '16',
+)
+[ info ] [ PARAM ] array (
+  'bh_id' => 'BHdemo2345',
+)
+[ info ] [ RUN ] Method [ <user> public method login ] {
+  @@ C:\xampp\htdocs\report\application\pc\controller\Login.php 11 - 83
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_analysis` [ RunTime:0.027002s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_analysis` WHERE  `bh_id` = 'BHdemo2345' LIMIT 1    [ RunTime:0.004000s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T12:58:00+08:00 ] 10.2.2.28 10.2.2.28 GET /current
+[ log ] 10.2.2.28/current [运行时间：0.101006s][吞吐率：9.90req/s] [内存消耗：2,493.22kb] [文件加载：54]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pc',
+    1 => 'Login',
+    2 => 'current',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/plogin',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] Method [ <user> public method current ] {
+  @@ C:\xampp\htdocs\report\application\pc\controller\Login.php 84 - 123
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/pc\view\login\login.html [ array (
+  0 => 'status',
+  1 => 'username',
+  2 => 'bh_id_all',
+  3 => 'bh_id',
+  4 => 'bh_status',
+  5 => 'curr_bh',
+  6 => 'ana_row',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_reportinfo` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_reportinfo` WHERE  `username` = 'demo'   [ RunTime:0.003000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bc_seq_reportinfo` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `bc_seq_reportinfo` WHERE  `username` = 'demo'   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_reportinfo` WHERE  `bh_id` = 'BHdemo2345' LIMIT 1    [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_analysis` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_analysis` WHERE  `bh_id` = 'BHdemo2345' LIMIT 1    [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T12:58:00+08:00 ] 10.2.2.28 10.2.2.28 GET /welcome/BHdemo2345
+[ log ] 10.2.2.28/welcome/BHdemo2345 [运行时间：0.113007s][吞吐率：8.85req/s] [内存消耗：2,395.47kb] [文件加载：53]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pc',
+    1 => 'Welcome',
+    2 => 'welcome',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/current',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'bh_id' => 'BHdemo2345',
+)
+[ info ] [ RUN ] Method [ <user> public method welcome ] {
+  @@ C:\xampp\htdocs\report\application\pc\controller\Welcome.php 10 - 39
+
+  - Parameters [1] {
+    Parameter #0 [ <required> $bh_id ]
+  }
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/pc\view\welcome\welcome.html [ array (
+  0 => 'bh_id',
+  1 => 'bh_status',
+  2 => 'curr_bh',
+  3 => 'ana_row',
+  4 => 'last_login_time',
+  5 => 'last_login_ip',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_analysis` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_analysis` WHERE  `bh_id` = 'BHdemo2345' LIMIT 1    [ RunTime:0.003001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_reportinfo` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_reportinfo` WHERE  `bh_id` = 'BHdemo2345' LIMIT 1    [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_login` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_login` WHERE  `username` = 'demo' LIMIT 1    [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T12:58:01+08:00 ] 10.2.2.28 10.2.2.28 POST /plogin
+[ log ] 10.2.2.28/plogin [运行时间：0.055003s][吞吐率：18.18req/s] [内存消耗：2,255.29kb] [文件加载：52]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pc',
+    1 => 'Login',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://10.2.2.28',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'referer' => 'http://10.2.2.28/current',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '16',
+)
+[ info ] [ PARAM ] array (
+  'bh_id' => 'BC150548-1',
+)
+[ info ] [ RUN ] Method [ <user> public method login ] {
+  @@ C:\xampp\htdocs\report\application\pc\controller\Login.php 11 - 83
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_analysis` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_analysis` WHERE  `bh_id` = 'BC150548-1' LIMIT 1    [ RunTime:0.003001s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T12:58:02+08:00 ] 10.2.2.28 10.2.2.28 GET /current
+[ log ] 10.2.2.28/current [运行时间：0.107007s][吞吐率：9.35req/s] [内存消耗：2,492.90kb] [文件加载：54]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pc',
+    1 => 'Login',
+    2 => 'current',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/current',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] Method [ <user> public method current ] {
+  @@ C:\xampp\htdocs\report\application\pc\controller\Login.php 84 - 123
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/pc\view\login\login.html [ array (
+  0 => 'status',
+  1 => 'username',
+  2 => 'bh_id_all',
+  3 => 'bh_id',
+  4 => 'bh_status',
+  5 => 'curr_bh',
+  6 => 'ana_row',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_reportinfo` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_reportinfo` WHERE  `username` = 'demo'   [ RunTime:0.003001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bc_seq_reportinfo` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `bc_seq_reportinfo` WHERE  `username` = 'demo'   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `bc_seq_reportinfo` WHERE  `bh_id` = 'BC150548-1' LIMIT 1    [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bc_seq_analysis` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `bc_seq_analysis` WHERE  `bh_id` = 'BC150548-1' LIMIT 1    [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T12:58:02+08:00 ] 10.2.2.28 10.2.2.28 GET /welcome/BC123
+[ log ] 10.2.2.28/welcome/BC123 [运行时间：0.119007s][吞吐率：8.40req/s] [内存消耗：2,390.99kb] [文件加载：53]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pc',
+    1 => 'Welcome',
+    2 => 'welcome',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/current',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'bh_id' => 'BC123',
+)
+[ info ] [ RUN ] Method [ <user> public method welcome ] {
+  @@ C:\xampp\htdocs\report\application\pc\controller\Welcome.php 10 - 39
+
+  - Parameters [1] {
+    Parameter #0 [ <required> $bh_id ]
+  }
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/pc\view\welcome\welcome.html [ array (
+  0 => 'bh_id',
+  1 => 'bh_status',
+  2 => 'curr_bh',
+  3 => 'ana_row',
+  4 => 'last_login_time',
+  5 => 'last_login_ip',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_analysis` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_analysis` WHERE  `bh_id` = 'BC123' LIMIT 1    [ RunTime:0.003000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_reportinfo` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_reportinfo` WHERE  `bh_id` = 'BC123' LIMIT 1    [ RunTime:0.003001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_login` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_login` WHERE  `username` IS NULL LIMIT 1   [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T12:58:09+08:00 ] 10.2.2.28 10.2.2.28 GET /plogin
+[ log ] 10.2.2.28/plogin [运行时间：0.117007s][吞吐率：8.55req/s] [内存消耗：2,567.58kb] [文件加载：54]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pc',
+    1 => 'Login',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] Method [ <user> public method login ] {
+  @@ C:\xampp\htdocs\report\application\pc\controller\Login.php 11 - 83
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/pc\view\login\login.html [ array (
+  0 => 'status',
+  1 => 'username',
+  2 => 'bh_id_all',
+  3 => 'curr_bh',
+  4 => 'bh_id',
+  5 => 'bh_status',
+  6 => 'ana_row',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_reportinfo` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_reportinfo` WHERE  `username` = 'demo'   [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bc_seq_reportinfo` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `bc_seq_reportinfo` WHERE  `username` = 'demo'   [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `bc_seq_reportinfo` WHERE  `username` = 'demo'  AND `add_date` = '2017-05-03 13:32:43' LIMIT 1     [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_analysis` [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_analysis` WHERE  `bh_id` = 'BC150548-1' LIMIT 1    [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_analysis` WHERE  `bh_id` = 'BC150548-1' LIMIT 1    [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T12:58:09+08:00 ] 10.2.2.28 10.2.2.28 GET /welcome/BC123
+[ log ] 10.2.2.28/welcome/BC123 [运行时间：0.102006s][吞吐率：9.80req/s] [内存消耗：2,390.98kb] [文件加载：53]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pc',
+    1 => 'Welcome',
+    2 => 'welcome',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/plogin',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'bh_id' => 'BC123',
+)
+[ info ] [ RUN ] Method [ <user> public method welcome ] {
+  @@ C:\xampp\htdocs\report\application\pc\controller\Welcome.php 10 - 39
+
+  - Parameters [1] {
+    Parameter #0 [ <required> $bh_id ]
+  }
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/pc\view\welcome\welcome.html [ array (
+  0 => 'bh_id',
+  1 => 'bh_status',
+  2 => 'curr_bh',
+  3 => 'ana_row',
+  4 => 'last_login_time',
+  5 => 'last_login_ip',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_analysis` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_analysis` WHERE  `bh_id` = 'BC123' LIMIT 1    [ RunTime:0.003000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_reportinfo` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_reportinfo` WHERE  `bh_id` = 'BC123' LIMIT 1    [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_login` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_login` WHERE  `username` IS NULL LIMIT 1   [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T12:58:15+08:00 ] 10.2.2.28 10.2.2.28 POST /plogin
+[ log ] 10.2.2.28/plogin [运行时间：0.053003s][吞吐率：18.87req/s] [内存消耗：2,255.13kb] [文件加载：52]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pc',
+    1 => 'Login',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://10.2.2.28',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'referer' => 'http://10.2.2.28/plogin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '16',
+)
+[ info ] [ PARAM ] array (
+  'bh_id' => 'BHdemo1234',
+)
+[ info ] [ RUN ] Method [ <user> public method login ] {
+  @@ C:\xampp\htdocs\report\application\pc\controller\Login.php 11 - 83
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_analysis` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_analysis` WHERE  `bh_id` = 'BHdemo1234' LIMIT 1    [ RunTime:0.003000s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T12:58:15+08:00 ] 10.2.2.28 10.2.2.28 GET /current
+[ log ] 10.2.2.28/current [运行时间：0.113007s][吞吐率：8.85req/s] [内存消耗：2,493.47kb] [文件加载：54]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pc',
+    1 => 'Login',
+    2 => 'current',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/plogin',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] Method [ <user> public method current ] {
+  @@ C:\xampp\htdocs\report\application\pc\controller\Login.php 84 - 123
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/pc\view\login\login.html [ array (
+  0 => 'status',
+  1 => 'username',
+  2 => 'bh_id_all',
+  3 => 'bh_id',
+  4 => 'bh_status',
+  5 => 'curr_bh',
+  6 => 'ana_row',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_reportinfo` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_reportinfo` WHERE  `username` = 'demo'   [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bc_seq_reportinfo` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `bc_seq_reportinfo` WHERE  `username` = 'demo'   [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_reportinfo` WHERE  `bh_id` = 'BHdemo1234' LIMIT 1    [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_analysis` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_analysis` WHERE  `bh_id` = 'BHdemo1234' LIMIT 1    [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T12:58:15+08:00 ] 10.2.2.28 10.2.2.28 GET /welcome/BHdemo1234
+[ log ] 10.2.2.28/welcome/BHdemo1234 [运行时间：0.124007s][吞吐率：8.06req/s] [内存消耗：2,395.72kb] [文件加载：53]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pc',
+    1 => 'Welcome',
+    2 => 'welcome',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/current',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'bh_id' => 'BHdemo1234',
+)
+[ info ] [ RUN ] Method [ <user> public method welcome ] {
+  @@ C:\xampp\htdocs\report\application\pc\controller\Welcome.php 10 - 39
+
+  - Parameters [1] {
+    Parameter #0 [ <required> $bh_id ]
+  }
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/pc\view\welcome\welcome.html [ array (
+  0 => 'bh_id',
+  1 => 'bh_status',
+  2 => 'curr_bh',
+  3 => 'ana_row',
+  4 => 'last_login_time',
+  5 => 'last_login_ip',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_analysis` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_analysis` WHERE  `bh_id` = 'BHdemo1234' LIMIT 1    [ RunTime:0.003000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_reportinfo` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_reportinfo` WHERE  `bh_id` = 'BHdemo1234' LIMIT 1    [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_login` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_login` WHERE  `username` = 'demo' LIMIT 1    [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T12:58:19+08:00 ] 10.2.2.28 10.2.2.28 POST /plogin
+[ log ] 10.2.2.28/plogin [运行时间：0.067004s][吞吐率：14.92req/s] [内存消耗：2,255.27kb] [文件加载：52]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pc',
+    1 => 'Login',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://10.2.2.28',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'referer' => 'http://10.2.2.28/current',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '16',
+)
+[ info ] [ PARAM ] array (
+  'bh_id' => 'BHdemo1234',
+)
+[ info ] [ RUN ] Method [ <user> public method login ] {
+  @@ C:\xampp\htdocs\report\application\pc\controller\Login.php 11 - 83
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_analysis` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_analysis` WHERE  `bh_id` = 'BHdemo1234' LIMIT 1    [ RunTime:0.003000s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T12:58:19+08:00 ] 10.2.2.28 10.2.2.28 GET /current
+[ log ] 10.2.2.28/current [运行时间：0.082004s][吞吐率：12.19req/s] [内存消耗：2,493.48kb] [文件加载：54]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pc',
+    1 => 'Login',
+    2 => 'current',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/current',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] Method [ <user> public method current ] {
+  @@ C:\xampp\htdocs\report\application\pc\controller\Login.php 84 - 123
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/pc\view\login\login.html [ array (
+  0 => 'status',
+  1 => 'username',
+  2 => 'bh_id_all',
+  3 => 'bh_id',
+  4 => 'bh_status',
+  5 => 'curr_bh',
+  6 => 'ana_row',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_reportinfo` [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_reportinfo` WHERE  `username` = 'demo'   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bc_seq_reportinfo` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `bc_seq_reportinfo` WHERE  `username` = 'demo'   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_reportinfo` WHERE  `bh_id` = 'BHdemo1234' LIMIT 1    [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_analysis` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_analysis` WHERE  `bh_id` = 'BHdemo1234' LIMIT 1    [ RunTime:0.003000s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T12:58:20+08:00 ] 10.2.2.28 10.2.2.28 GET /welcome/BHdemo1234
+[ log ] 10.2.2.28/welcome/BHdemo1234 [运行时间：0.123007s][吞吐率：8.13req/s] [内存消耗：2,395.72kb] [文件加载：53]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pc',
+    1 => 'Welcome',
+    2 => 'welcome',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/current',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'bh_id' => 'BHdemo1234',
+)
+[ info ] [ RUN ] Method [ <user> public method welcome ] {
+  @@ C:\xampp\htdocs\report\application\pc\controller\Welcome.php 10 - 39
+
+  - Parameters [1] {
+    Parameter #0 [ <required> $bh_id ]
+  }
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/pc\view\welcome\welcome.html [ array (
+  0 => 'bh_id',
+  1 => 'bh_status',
+  2 => 'curr_bh',
+  3 => 'ana_row',
+  4 => 'last_login_time',
+  5 => 'last_login_ip',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_analysis` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_analysis` WHERE  `bh_id` = 'BHdemo1234' LIMIT 1    [ RunTime:0.002001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_reportinfo` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_reportinfo` WHERE  `bh_id` = 'BHdemo1234' LIMIT 1    [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_login` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_login` WHERE  `username` = 'demo' LIMIT 1    [ RunTime:0.003000s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T12:58:27+08:00 ] 10.2.2.28 10.2.2.28 POST /plogin
+[ log ] 10.2.2.28/plogin [运行时间：0.061004s][吞吐率：16.39req/s] [内存消耗：2,255.48kb] [文件加载：52]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pc',
+    1 => 'Login',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://10.2.2.28',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'referer' => 'http://10.2.2.28/current',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '16',
+)
+[ info ] [ PARAM ] array (
+  'bh_id' => 'BC150548-1',
+)
+[ info ] [ RUN ] Method [ <user> public method login ] {
+  @@ C:\xampp\htdocs\report\application\pc\controller\Login.php 11 - 83
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_analysis` [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_analysis` WHERE  `bh_id` = 'BC150548-1' LIMIT 1    [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T12:58:27+08:00 ] 10.2.2.28 10.2.2.28 GET /current
+[ log ] 10.2.2.28/current [运行时间：0.110006s][吞吐率：9.09req/s] [内存消耗：2,493.09kb] [文件加载：54]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pc',
+    1 => 'Login',
+    2 => 'current',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/current',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] Method [ <user> public method current ] {
+  @@ C:\xampp\htdocs\report\application\pc\controller\Login.php 84 - 123
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/pc\view\login\login.html [ array (
+  0 => 'status',
+  1 => 'username',
+  2 => 'bh_id_all',
+  3 => 'bh_id',
+  4 => 'bh_status',
+  5 => 'curr_bh',
+  6 => 'ana_row',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_reportinfo` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_reportinfo` WHERE  `username` = 'demo'   [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bc_seq_reportinfo` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `bc_seq_reportinfo` WHERE  `username` = 'demo'   [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `bc_seq_reportinfo` WHERE  `bh_id` = 'BC150548-1' LIMIT 1    [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bc_seq_analysis` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `bc_seq_analysis` WHERE  `bh_id` = 'BC150548-1' LIMIT 1    [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T12:58:27+08:00 ] 10.2.2.28 10.2.2.28 GET /welcome/BC123
+[ log ] 10.2.2.28/welcome/BC123 [运行时间：0.100006s][吞吐率：10.00req/s] [内存消耗：2,391.18kb] [文件加载：53]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pc',
+    1 => 'Welcome',
+    2 => 'welcome',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/current',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'bh_id' => 'BC123',
+)
+[ info ] [ RUN ] Method [ <user> public method welcome ] {
+  @@ C:\xampp\htdocs\report\application\pc\controller\Welcome.php 10 - 39
+
+  - Parameters [1] {
+    Parameter #0 [ <required> $bh_id ]
+  }
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/pc\view\welcome\welcome.html [ array (
+  0 => 'bh_id',
+  1 => 'bh_status',
+  2 => 'curr_bh',
+  3 => 'ana_row',
+  4 => 'last_login_time',
+  5 => 'last_login_ip',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_analysis` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_analysis` WHERE  `bh_id` = 'BC123' LIMIT 1    [ RunTime:0.003001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_reportinfo` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_reportinfo` WHERE  `bh_id` = 'BC123' LIMIT 1    [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_login` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_login` WHERE  `username` IS NULL LIMIT 1   [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T12:58:32+08:00 ] 10.2.2.28 10.2.2.28 POST /plogin
+[ log ] 10.2.2.28/plogin [运行时间：0.077004s][吞吐率：12.99req/s] [内存消耗：2,255.27kb] [文件加载：52]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pc',
+    1 => 'Login',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://10.2.2.28',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'referer' => 'http://10.2.2.28/current',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '16',
+)
+[ info ] [ PARAM ] array (
+  'bh_id' => 'BHdemo1234',
+)
+[ info ] [ RUN ] Method [ <user> public method login ] {
+  @@ C:\xampp\htdocs\report\application\pc\controller\Login.php 11 - 83
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_analysis` [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_analysis` WHERE  `bh_id` = 'BHdemo1234' LIMIT 1    [ RunTime:0.003000s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T12:58:32+08:00 ] 10.2.2.28 10.2.2.28 GET /current
+[ log ] 10.2.2.28/current [运行时间：0.116006s][吞吐率：8.62req/s] [内存消耗：2,493.48kb] [文件加载：54]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pc',
+    1 => 'Login',
+    2 => 'current',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/current',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] Method [ <user> public method current ] {
+  @@ C:\xampp\htdocs\report\application\pc\controller\Login.php 84 - 123
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/pc\view\login\login.html [ array (
+  0 => 'status',
+  1 => 'username',
+  2 => 'bh_id_all',
+  3 => 'bh_id',
+  4 => 'bh_status',
+  5 => 'curr_bh',
+  6 => 'ana_row',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_reportinfo` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_reportinfo` WHERE  `username` = 'demo'   [ RunTime:0.003000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bc_seq_reportinfo` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `bc_seq_reportinfo` WHERE  `username` = 'demo'   [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_reportinfo` WHERE  `bh_id` = 'BHdemo1234' LIMIT 1    [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_analysis` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_analysis` WHERE  `bh_id` = 'BHdemo1234' LIMIT 1    [ RunTime:0.004000s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T12:58:32+08:00 ] 10.2.2.28 10.2.2.28 GET /welcome/BHdemo1234
+[ log ] 10.2.2.28/welcome/BHdemo1234 [运行时间：0.108006s][吞吐率：9.26req/s] [内存消耗：2,395.72kb] [文件加载：53]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pc',
+    1 => 'Welcome',
+    2 => 'welcome',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/current',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'bh_id' => 'BHdemo1234',
+)
+[ info ] [ RUN ] Method [ <user> public method welcome ] {
+  @@ C:\xampp\htdocs\report\application\pc\controller\Welcome.php 10 - 39
+
+  - Parameters [1] {
+    Parameter #0 [ <required> $bh_id ]
+  }
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/pc\view\welcome\welcome.html [ array (
+  0 => 'bh_id',
+  1 => 'bh_status',
+  2 => 'curr_bh',
+  3 => 'ana_row',
+  4 => 'last_login_time',
+  5 => 'last_login_ip',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_analysis` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_analysis` WHERE  `bh_id` = 'BHdemo1234' LIMIT 1    [ RunTime:0.004001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_reportinfo` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_reportinfo` WHERE  `bh_id` = 'BHdemo1234' LIMIT 1    [ RunTime:0.003000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_login` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_login` WHERE  `username` = 'demo' LIMIT 1    [ RunTime:0.003000s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T12:58:34+08:00 ] 10.2.2.28 10.2.2.28 GET /article/BHdemo1234
+[ log ] 10.2.2.28/article/BHdemo1234 [运行时间：0.164009s][吞吐率：6.10req/s] [内存消耗：2,803.14kb] [文件加载：56]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pc',
+    1 => 'Article',
+    2 => 'article_list',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/current',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'bh_id' => 'BHdemo1234',
+)
+[ info ] [ RUN ] Method [ <user> public method article_list ] {
+  @@ C:\xampp\htdocs\report\application\pc\controller\Article.php 12 - 53
+
+  - Parameters [1] {
+    Parameter #0 [ <required> $bh_id ]
+  }
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/pc\view\article\article_list.html [ array (
+  0 => 'bh_id',
+  1 => 'analysis_id',
+  2 => 'sample',
+  3 => 'qc_img',
+  4 => 'qc_report',
+  5 => 'qc_box',
+  6 => 'sample_group',
+  7 => 'data_doc',
+  8 => 'exp_doc',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_analysis` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_analysis` WHERE  `bh_id` = 'BHdemo1234' LIMIT 1    [ RunTime:0.004000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_analysis` WHERE  `analysis_id` = 'pUItWJC9vOTfmsv6xZje8gczoYpKQ79b1ihrcJOgwAdpZtnTDW' LIMIT 1    [ RunTime:0.003000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_reportinfo` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_reportinfo` WHERE  `bh_id` = 'BHdemo1234' LIMIT 1    [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_reportinfo` WHERE  `bh_id` = 'BHdemo1234' LIMIT 1    [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T12:58:39+08:00 ] 10.2.2.28 10.2.2.28 GET /novelGene
+[ log ] 10.2.2.28/novelGene [运行时间：0.088005s][吞吐率：11.36req/s] [内存消耗：2,066.28kb] [文件加载：51]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'rnaseq',
+    1 => 'NovelGene',
+    2 => 'novelGene',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/current',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] Method [ <user> public method novelGene ] {
+  @@ C:\xampp\htdocs\report\application\rnaseq\controller\NovelGene.php 10 - 25
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/rnaseq\view\novel_gene\novelGene.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-16T12:58:40+08:00 ] 10.2.2.28 10.2.2.28 GET /diffNovel
+[ log ] 10.2.2.28/diffNovel [运行时间：0.075004s][吞吐率：13.33req/s] [内存消耗：2,090.28kb] [文件加载：51]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'rnaseq',
+    1 => 'DiffNovel',
+    2 => 'diffNovel',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/current',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] Method [ <user> public method diffNovel ] {
+  @@ C:\xampp\htdocs\report\application\rnaseq\controller\DiffNovel.php 10 - 25
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/rnaseq\view\diff_novel\diffNovel.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-16T15:38:13+08:00 ] 10.2.2.28 10.2.2.28 POST /plogin
+[ log ] 10.2.2.28/plogin [运行时间：0.075004s][吞吐率：13.33req/s] [内存消耗：2,255.27kb] [文件加载：52]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pc',
+    1 => 'Login',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://10.2.2.28',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'referer' => 'http://10.2.2.28/current',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '16',
+)
+[ info ] [ PARAM ] array (
+  'bh_id' => 'BHdemo1234',
+)
+[ info ] [ RUN ] Method [ <user> public method login ] {
+  @@ C:\xampp\htdocs\report\application\pc\controller\Login.php 11 - 83
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_analysis` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_analysis` WHERE  `bh_id` = 'BHdemo1234' LIMIT 1    [ RunTime:0.003000s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T15:38:13+08:00 ] 10.2.2.28 10.2.2.28 GET /current
+[ log ] 10.2.2.28/current [运行时间：0.080005s][吞吐率：12.50req/s] [内存消耗：2,493.48kb] [文件加载：54]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pc',
+    1 => 'Login',
+    2 => 'current',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/current',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] Method [ <user> public method current ] {
+  @@ C:\xampp\htdocs\report\application\pc\controller\Login.php 84 - 123
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/pc\view\login\login.html [ array (
+  0 => 'status',
+  1 => 'username',
+  2 => 'bh_id_all',
+  3 => 'bh_id',
+  4 => 'bh_status',
+  5 => 'curr_bh',
+  6 => 'ana_row',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_reportinfo` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_reportinfo` WHERE  `username` = 'demo'   [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bc_seq_reportinfo` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `bc_seq_reportinfo` WHERE  `username` = 'demo'   [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_reportinfo` WHERE  `bh_id` = 'BHdemo1234' LIMIT 1    [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_analysis` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_analysis` WHERE  `bh_id` = 'BHdemo1234' LIMIT 1    [ RunTime:0.003000s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T15:38:13+08:00 ] 10.2.2.28 10.2.2.28 GET /welcome/BHdemo1234
+[ log ] 10.2.2.28/welcome/BHdemo1234 [运行时间：0.090005s][吞吐率：11.11req/s] [内存消耗：2,395.72kb] [文件加载：53]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pc',
+    1 => 'Welcome',
+    2 => 'welcome',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/current',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'bh_id' => 'BHdemo1234',
+)
+[ info ] [ RUN ] Method [ <user> public method welcome ] {
+  @@ C:\xampp\htdocs\report\application\pc\controller\Welcome.php 10 - 39
+
+  - Parameters [1] {
+    Parameter #0 [ <required> $bh_id ]
+  }
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/pc\view\welcome\welcome.html [ array (
+  0 => 'bh_id',
+  1 => 'bh_status',
+  2 => 'curr_bh',
+  3 => 'ana_row',
+  4 => 'last_login_time',
+  5 => 'last_login_ip',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_analysis` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_analysis` WHERE  `bh_id` = 'BHdemo1234' LIMIT 1    [ RunTime:0.002001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_reportinfo` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_reportinfo` WHERE  `bh_id` = 'BHdemo1234' LIMIT 1    [ RunTime:0.003000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_login` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_login` WHERE  `username` = 'demo' LIMIT 1    [ RunTime:0.003000s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T15:38:15+08:00 ] 10.2.2.28 10.2.2.28 GET /chipDiff/BHdemo1234
+[ log ] 10.2.2.28/chipDiff/BHdemo1234 [运行时间：0.161010s][吞吐率：6.21req/s] [内存消耗：2,620.58kb] [文件加载：56]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pc',
+    1 => 'Diff',
+    2 => 'diff_gene',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/current',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'bh_id' => 'BHdemo1234',
+)
+[ info ] [ RUN ] Method [ <user> public method diff_gene ] {
+  @@ C:\xampp\htdocs\report\application\pc\controller\Diff.php 12 - 55
+
+  - Parameters [1] {
+    Parameter #0 [ <required> $bh_id ]
+  }
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/pc\view\diff\diff_gene.html [ array (
+  0 => 'bh_id',
+  1 => 'analysis_id',
+  2 => 'diff_num',
+  3 => 'diff_list',
+  4 => 'lnc_pre',
+  5 => 'circ_pre',
+  6 => 'volcano',
+  7 => 'scatter',
+  8 => 'heatmap',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_analysis` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_analysis` WHERE  `bh_id` = 'BHdemo1234' LIMIT 1    [ RunTime:0.003000s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T15:41:15+08:00 ] 10.2.2.28 10.2.2.28 GET /chipDiff/BHdemo1234
+[ log ] 10.2.2.28/chipDiff/BHdemo1234 [运行时间：0.148009s][吞吐率：6.76req/s] [内存消耗：2,361.68kb] [文件加载：54]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pc',
+    1 => 'Diff',
+    2 => 'diff_gene',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/current',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'bh_id' => 'BHdemo1234',
+)
+[ info ] [ RUN ] Method [ <user> public method diff_gene ] {
+  @@ C:\xampp\htdocs\report\application\pc\controller\Diff.php 12 - 55
+
+  - Parameters [1] {
+    Parameter #0 [ <required> $bh_id ]
+  }
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/pc\view\diff\diff_gene.html [ array (
+  0 => 'bh_id',
+  1 => 'analysis_id',
+  2 => 'diff_num',
+  3 => 'diff_list',
+  4 => 'lnc_pre',
+  5 => 'circ_pre',
+  6 => 'volcano',
+  7 => 'scatter',
+  8 => 'heatmap',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_analysis` [ RunTime:0.033002s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_analysis` WHERE  `bh_id` = 'BHdemo1234' LIMIT 1    [ RunTime:0.004000s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T16:54:19+08:00 ] 10.2.2.28 10.2.2.28 POST /plogin
+[ log ] 10.2.2.28/plogin [运行时间：0.138008s][吞吐率：7.25req/s] [内存消耗：2,255.48kb] [文件加载：52]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pc',
+    1 => 'Login',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://10.2.2.28',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'referer' => 'http://10.2.2.28/current',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '16',
+)
+[ info ] [ PARAM ] array (
+  'bh_id' => 'BC150548-1',
+)
+[ info ] [ RUN ] Method [ <user> public method login ] {
+  @@ C:\xampp\htdocs\report\application\pc\controller\Login.php 11 - 83
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_analysis` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_analysis` WHERE  `bh_id` = 'BC150548-1' LIMIT 1    [ RunTime:0.003000s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T16:54:19+08:00 ] 10.2.2.28 10.2.2.28 GET /current
+[ log ] 10.2.2.28/current [运行时间：0.127007s][吞吐率：7.87req/s] [内存消耗：2,493.09kb] [文件加载：54]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pc',
+    1 => 'Login',
+    2 => 'current',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/current',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] Method [ <user> public method current ] {
+  @@ C:\xampp\htdocs\report\application\pc\controller\Login.php 84 - 123
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/pc\view\login\login.html [ array (
+  0 => 'status',
+  1 => 'username',
+  2 => 'bh_id_all',
+  3 => 'bh_id',
+  4 => 'bh_status',
+  5 => 'curr_bh',
+  6 => 'ana_row',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_reportinfo` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_reportinfo` WHERE  `username` = 'demo'   [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bc_seq_reportinfo` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `bc_seq_reportinfo` WHERE  `username` = 'demo'   [ RunTime:0.003001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `bc_seq_reportinfo` WHERE  `bh_id` = 'BC150548-1' LIMIT 1    [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bc_seq_analysis` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `bc_seq_analysis` WHERE  `bh_id` = 'BC150548-1' LIMIT 1    [ RunTime:0.003001s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T16:54:19+08:00 ] 10.2.2.28 10.2.2.28 GET /welcome/BC123
+[ log ] 10.2.2.28/welcome/BC123 [运行时间：0.142008s][吞吐率：7.04req/s] [内存消耗：2,391.18kb] [文件加载：53]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pc',
+    1 => 'Welcome',
+    2 => 'welcome',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.2.28',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.2.2.28/current',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_080836300300be57b7f34f4b3e97d911=1500255081,1500357630,1500627312,1500877287; PHPSESSID=gpi9lh84iakna41l5vd7tqpb1q; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'bh_id' => 'BC123',
+)
+[ info ] [ RUN ] Method [ <user> public method welcome ] {
+  @@ C:\xampp\htdocs\report\application\pc\controller\Welcome.php 10 - 39
+
+  - Parameters [1] {
+    Parameter #0 [ <required> $bh_id ]
+  }
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\report\public/../application/pc\view\welcome\welcome.html [ array (
+  0 => 'bh_id',
+  1 => 'bh_status',
+  2 => 'curr_bh',
+  3 => 'ana_row',
+  4 => 'last_login_time',
+  5 => 'last_login_ip',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_analysis` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_analysis` WHERE  `bh_id` = 'BC123' LIMIT 1    [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_reportinfo` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_reportinfo` WHERE  `bh_id` = 'BC123' LIMIT 1    [ RunTime:0.003001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_login` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_login` WHERE  `username` IS NULL LIMIT 1   [ RunTime:0.003000s ]
+
+---------------------------------------------------------------

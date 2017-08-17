@@ -1,0 +1,1 @@
+GO_ID	GO_term	TYPE	diff_gene_in_this_GO	UP_GENE	DOWN_GENE	all_diff_gene_in_all_GO	all_gene_in_this_GO	all_gene_in_all_GO	gene_UP_list	gene_DOWN_list	rich_factor	Pvalue	Qvalue

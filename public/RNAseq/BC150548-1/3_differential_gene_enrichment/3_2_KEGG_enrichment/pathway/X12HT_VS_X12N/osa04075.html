@@ -1,0 +1,313 @@
+<html>
+<!---
+ENTRY       osa04075
+DEFINITION  Plant hormone signal transduction - Oryza sativa japonica (Japanese rice) (RefSeq)
+--->
+<head>
+<title>
+KEGG PATHWAY: Plant hormone signal transduction - Oryza sativa japonica (Japanese rice) (RefSeq)
+</title>
+<style type="text/css">
+<!--
+div.poplay {
+  position: absolute;
+  padding: 2px;
+  background-color: #ffff99;
+  border-top: solid 1px #c0c0c0;
+  border-left: solid 1px #c0c0c0;
+  border-bottom: solid 1px #808080;
+  border-right: solid 1px #808080;
+  visibility: hidden;
+}
+
+span.popup
+{
+  font-weight: bold;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+form {
+  margin: 0px;
+}
+
+div.image {
+  position: absolute;
+  padding: 0px;
+  top: 0px;
+  padding: 0px;
+  border: solid 1px #000000;
+}
+
+img {
+  border: none;
+}
+
+
+-->
+</style>
+<link rel="stylesheet" href="http://www.genome.jp/css/kegg.css" type="text/css" />
+<script language="JavaScript" src="http://www.genome.jp/js/dhtml.js"></script>
+
+<script language="JavaScript">
+<!---
+var image_height;
+$(function(){
+	$(window).bind('load',function(){
+  image_height = $("div.image").height()-10;
+	$("div.control").height(image_height-5);
+	$("#resizable").height(image_height);
+	});
+});
+
+
+function resize_map(scale){
+  var form = document.forms["form2"];
+  form.scale.value = scale;
+  form.submit();
+}
+
+function select_menu(){
+  var form = document.forms["selmenu"];
+  if(form.org_name.value == 'set_cookie' || form.org_name.value == 'reset_cookie'){
+    window.open('http://www.genome.jp/kegg/misc/kegg2_select.html','sel_org','toolbar=no,location=no,directories=no,width=500,height=320,resizable=yes');
+  }else{
+    form.action='http://www.genome.jp/kegg-bin/show_pathway';
+    form.submit();
+  }
+}
+
+var timer = 0;
+var p_entry, p_title, p_bgcolor;
+function popupTimer(entry, title, bgcolor)
+{
+  p_entry = entry;
+  p_title = title;
+  p_bgcolor = bgcolor;
+
+  if(timer == 0){
+    var func = "showThumbnail()";
+    timer = setTimeout(func, 1200);
+  }
+}
+
+
+function showThumbnail()
+{
+
+  var url = "";
+  if(p_entry.match(/^[A-Z]+\d+$/))
+  {
+    url = "http://www.genome.jp/kegg/misc/thumbnail/" + p_entry + ".gif";
+  }
+  else if(p_entry.match(/(\d+)$/))
+  {
+    url = "http://www.genome.jp/kegg/misc/thumbnail/map" + RegExp.$1 + ".gif";
+  }
+
+  var html = "";
+
+  if(p_bgcolor != "#ffffff")
+  {
+    html += "<span class=\"popup\">" + p_entry + "</span><br />";
+  }
+
+  html += "<img src=\"" + url + "\" alt=\"Loading...\">";
+
+  var x = getCurrentMouseX();
+  var y = getCurrentMouseY();
+
+  var layer = new Component("poplay");
+  layer.backgroundColor(p_bgcolor);
+  layer.HTML(html);
+  layer.move(x, y+40);
+  layer.visible(true);
+
+  timer = 0;
+}
+
+function hideMapTn(){
+  var layer = new Component("poplay");
+  layer.visible(false);
+
+  if(timer != 0){
+    clearTimeout(timer);
+    timer = 0;
+  }
+}
+
+function switchDescription(){
+  var form = document.forms[0];
+  var status = form.show_description.value;
+
+  if(status == "hide"){
+    document.getElementById("description").style.display = "";
+    document.getElementById("descLink").innerHTML = "Hide description";
+    form.show_description.value='show';
+
+    if(document.forms[1]){
+    	document.forms[1].show_description.value='show';
+    }
+  }
+  else
+  {
+    document.getElementById("description").style.display = 'none';
+    document.getElementById("descLink").innerHTML = "Show description";
+    form.show_description.value='hide';
+
+    if(document.forms[1]){
+      document.forms[1].show_description.value='hide';
+    }
+  }
+}
+
+function btn(bobj,img) { bobj.src = "http://www.genome.jp/Fig/bget/button_" + img + ".gif"; }
+//--->
+</script>
+</head>
+<body>
+<table cellpadding="0" width="100%" cellspacing="0" border="0">
+ <tr>
+  <td>
+   <a href="http://www.genome.jp/kegg/kegg2.html"><img align="middle" alt="KEGG" border="0" src="http://www.genome.jp/Fig/bget/kegg3.gif" /></a>
+   &nbsp;&nbsp;&nbsp;<font class="title3"><b>Plant hormone signal transduction - Oryza sativa japonica (Japanese rice) (RefSeq)</b></font>
+  </td>
+  <td valign="bottom" align="right">
+   <a href="javascript:void(window.open('http://www.genome.jp/kegg/document/help_pathway.html','KEGG_Help','toolbar=no,location=no,directories=no,width=720,height=640,resizable=yes,scrollbars=yes'))"><img name="help" src="http://www.genome.jp/Fig/bget/button_Hb.gif" border="0" align="middle" alt="Help" onmouseout="btn(this,'Hb')" onmousedown="btn(this,'Hbd')" onmouseover="btn(this,'Hbh')" onmouseup="btn(this,'Hb')" /></a>
+  </td>
+ </tr>
+</table>
+
+  
+[
+<a href="http://www.genome.jp/kegg-bin/get_htext?query=04075&htext=br08901.keg&option=-a">Pathway menu</a>
+| <a href="http://www.genome.jp/kegg-bin/get_htext?htext=br08601_map04075.keg&query=osa&option=-a">Organism menu</a>
+| <a href="http://www.genome.jp/dbget-bin/www_bget?pathway+osa04075">Pathway entry</a>
+
+| <a href="http://www.kegg.jp/kegg-bin/download?entry=osa04075&format=kgml">Download KGML</a>
+
+| <a href="javascript:void(window.open('http://www.genome.jp/kegg/tool/color_a_pathway.html','KEGG_Help','height=300,width=600,resizable=yes,scrollbars=yes'))">User data mapping</a>
+
+]
+  
+
+<table><tr><td>
+<form name="selmenu" method="get">
+<select name="org_name">
+<option value="map">Reference pathway</option>
+<option value="ko">Reference pathway (KO)</option>
+<option value="set_cookie">-----&lt; Set personalized menu &gt;-----</option>
+<option value="osa.sort_alp">-----&lt; Sort below by alphabet &gt;-----</option>
+<option value="ath">Arabidopsis thaliana (thale cress)</option>
+<option value="rcu">Ricinus communis (castor bean)</option>
+<option value="pop">Populus trichocarpa (black cottonwood)</option>
+<option value="vvi">Vitis vinifera (wine grape)</option>
+<option value="osa" selected>Oryza sativa japonica (Japanese rice) (RefSeq)</option>
+<option value="sbi">Sorghum bicolor (sorghum)</option>
+<option value="zma">Zea mays (maize)</option>
+<option value="ppp">Physcomitrella patens subsp. patens</option>
+<option value="cre">Chlamydomonas reinhardtii</option>
+<option value="vcn">Volvox carteri f. nagariensis</option>
+<option value="olu">Ostreococcus lucimarinus</option>
+<option value="ota">Ostreococcus tauri</option>
+</select>
+<input type="hidden" name="mapno" value="04075" />
+<input type="hidden" name="mapscale" value=>
+<input type="button" value="Go" onclick="select_menu(this.form)" />
+<input type="hidden" name="show_description" value="hide">
+
+</form>
+</td><td>
+<form name="form2" method="get" action="http://www.genome.jp/kegg-bin/show_pathway">
+&nbsp;&nbsp;&nbsp;&nbsp;
+<select name="scale" onChange="resize_map(this.form.scale.value)">
+<option value="1.84" >184%</option>
+<option value="1.5" >150%</option>
+<option value="1.22" >122%</option>
+<option value="1.0" selected>100%</option>
+<option value="0.82" >82%</option>
+<option value="0.67" >67%</option>
+<option value="0.55" >55%</option>
+</select>
+&nbsp;&nbsp;<input type="text" name="query" size=20 value="">
+<input type="hidden" name="map" value="osa04075" />
+<input type="hidden" name="scale" value=>
+<input type="hidden" name="image" value=/share/www//mark_pathway1460623335111718/osa04075.png>
+<input type="hidden" name="use" value="reference">
+<input type="hidden" name="nmap_args" value="146062322945814">
+<input type="hidden" name="auto_image" value="">
+<input type="hidden" name="show_description" value="hide">
+<input type="hidden" name="multi_query" />
+
+<!--</form>-->
+</td></tr></table>
+
+
+<img src="osa04075.png" name="pathwayimage" name="pathwayimage" usemap="#mapdata" border="0" />
+
+<map name="mapdata">
+<area shape=circle	coords=229,817,4	href="http://www.genome.jp/dbget-bin/www_bget?C06547"	title="C06547 (Ethylene)" onmouseover="popupTimer(&quot;C06547&quot;, &quot;C06547 (Ethylene)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=229,175,4	href="http://www.genome.jp/dbget-bin/www_bget?C00954"	title="C00954 (Indole-3-acetate)" onmouseover="popupTimer(&quot;C00954&quot;, &quot;C00954 (Indole-3-acetate)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=229,506,4	href="http://www.genome.jp/dbget-bin/www_bget?C00859+C11864"	title="C00859 (Gibberellin A1), C11864 (Gibberellin A4)" onmouseover="popupTimer(&quot;C00859&quot;, &quot;C00859 (Gibberellin A1), C11864 (Gibberellin A4)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=229,667,4	href="http://www.genome.jp/dbget-bin/www_bget?C06082"	title="C06082 (Abscisate)" onmouseover="popupTimer(&quot;C06082&quot;, &quot;C06082 (Abscisate)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=229,987,4	href="http://www.genome.jp/dbget-bin/www_bget?C08814"	title="C08814 (Brassinolide)" onmouseover="popupTimer(&quot;C08814&quot;, &quot;C08814 (Brassinolide)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=229,338,4	href="http://www.genome.jp/dbget-bin/www_bget?C00371+C04083+C02029"	title="C00371 (Zeatin), C04083 (N6-(delta2-Isopentenyl)-adenine), C02029 (Dihydrozeatin)" onmouseover="popupTimer(&quot;C00371&quot;, &quot;C00371 (Zeatin), C04083 (N6-(delta2-Isopentenyl)-adenine), C02029 (Dihydrozeatin)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=229,1156,4	href="http://www.genome.jp/dbget-bin/www_bget?C08491"	title="C08491 ((-)-Jasmonic acid)" onmouseover="popupTimer(&quot;C08491&quot;, &quot;C08491 ((-)-Jasmonic acid)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=229,1324,4	href="http://www.genome.jp/dbget-bin/www_bget?C00805"	title="C00805 (Salicylate)" onmouseover="popupTimer(&quot;C00805&quot;, &quot;C00805 (Salicylate)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=385,1156,4	href="http://www.genome.jp/dbget-bin/www_bget?C18699"	title="C18699 ((-)-Jasmonoyl-L-isoleucine)" onmouseover="popupTimer(&quot;C18699&quot;, &quot;C18699 ((-)-Jasmonoyl-L-isoleucine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=348,839,394,856	href="http://www.genome.jp/dbget-bin/www_bget?osa:4331174+osa:4333832+osa:4335058+osa:4337850+osa:4342865"	title="4331174, 4333832, 4335058, 4337850, 4342865" />
+<area shape=rect	coords=374,498,420,515	href="http://www.genome.jp/dbget-bin/www_bget?osa:4338764"	title="4338764" />
+<area shape=rect	coords=273,978,319,995	href="http://www.genome.jp/dbget-bin/www_bget?osa:4324691"	title="4324691" />
+<area shape=rect	coords=628,1148,674,1165	href="http://www.genome.jp/dbget-bin/www_bget?osa:4349484"	title="4349484" />
+<area shape=rect	coords=426,839,472,856	href="http://www.genome.jp/dbget-bin/www_bget?osa:4329527"	title="4329527" />
+<area shape=rect	coords=510,891,556,908	href="http://www.genome.jp/dbget-bin/www_bget?osa:4340170"	title="4340170" />
+<area shape=rect	coords=595,891,641,908	href="http://www.genome.jp/dbget-bin/www_bget?osa:4333824+osa:4342431"	title="4333824, 4342431" />
+<area shape=rect	coords=703,891,749,908	href="http://www.genome.jp/dbget-bin/www_bget?osa:4332697+osa:4344331+osa:4345992+osa:4347439+osa:9270247"	title="4332697, 4344331, 4345992, 4347439, 9270247" />
+<area shape=rect	coords=703,839,749,856	href="http://www.genome.jp/dbget-bin/www_bget?osa:4328647"	title="4328647" />
+<area shape=rect	coords=801,892,847,909	href="http://www.genome.jp/dbget-bin/www_bget?osa:4334864"	title="4334864" />
+<area shape=rect	coords=496,167,542,184	href="http://www.genome.jp/dbget-bin/www_bget?osa:4325515+osa:4325890+osa:4326541+osa:4326775+osa:4327919+osa:4328796+osa:4330571+osa:4331061+osa:4331149+osa:4333512+osa:4334069+osa:4334431+osa:4337971+osa:4339365+osa:4339588+osa:4340245+osa:4340939+osa:4341432+osa:4342573+osa:4344471+osa:4347643+osa:4350099+osa:4350100+osa:4352721+osa:4352722"	title="4325515, 4325890, 4326541, 4326775, 4327919, 4328796, 4330571, 4331061, 4331149, 4333512, 4334069, 4334431, 4337971, 4339365, 4339588, 4340245, 4340939, 4341432, 4342573, 4344471, 4347643, 4350099, 4350100, 4352721, 4352722" />
+<area shape=rect	coords=396,329,442,346	href="http://www.genome.jp/dbget-bin/www_bget?osa:4326166+osa:4338006+osa:4346300+osa:4347886"	title="4326166, 4338006, 4346300, 4347886" />
+<area shape=rect	coords=592,167,638,184	href="http://www.genome.jp/dbget-bin/www_bget?osa:4325895+osa:4329672+osa:4337309+osa:9268260"	title="4325895, 4329672, 4337309, 9268260" />
+<area shape=rect	coords=520,329,566,346	href="http://www.genome.jp/dbget-bin/www_bget?osa:4325022+osa:4328516+osa:4331008+osa:4332111+osa:4340320+osa:4341665"	title="4325022, 4328516, 4331008, 4332111, 4340320, 4341665" />
+<area shape=rect	coords=375,659,421,676	href="http://www.genome.jp/dbget-bin/www_bget?osa:4328916+osa:4332548+osa:4338104+osa:4339083+osa:4341193+osa:4341194+osa:4341308+osa:4349472+osa:9270643"	title="4328916, 4332548, 4338104, 4339083, 4341193, 4341194, 4341308, 4349472, 9270643" />
+<area shape=rect	coords=471,659,517,676	href="http://www.genome.jp/dbget-bin/www_bget?osa:4324182+osa:4324201+osa:4327465+osa:4332374+osa:4339454+osa:4339671+osa:4339797+osa:4346736+osa:9268838"	title="4324182, 4324201, 4327465, 4332374, 4339454, 4339671, 4339797, 4346736, 9268838" />
+<area shape=rect	coords=567,659,613,676	href="http://www.genome.jp/dbget-bin/www_bget?osa:4324934+osa:4329630+osa:4333017+osa:4333435+osa:4334218+osa:4335877+osa:4337502+osa:4343944+osa:4349411+osa:4352660"	title="4324934, 4329630, 4333017, 4333435, 4334218, 4335877, 4337502, 4343944, 4349411, 4352660" />
+<area shape=rect	coords=501,1022,547,1039	href="http://www.genome.jp/dbget-bin/www_bget?osa:4328830+osa:4338079"	title="4328830, 4338079" />
+<area shape=rect	coords=321,1022,367,1039	href="http://www.genome.jp/dbget-bin/www_bget?osa:4331518+osa:4349455"	title="4331518, 4349455" />
+<area shape=rect	coords=359,978,405,995	href="http://www.genome.jp/dbget-bin/www_bget?osa:4345817+osa:4347277"	title="4345817, 4347277" />
+<area shape=rect	coords=603,1022,649,1039	href="http://www.genome.jp/dbget-bin/www_bget?osa:4343719"	title="4343719" />
+<area shape=rect	coords=474,1316,520,1333	href="http://www.genome.jp/dbget-bin/www_bget?osa:4325063+osa:4326907+osa:4328605+osa:4332660+osa:4338933+osa:4340708+osa:4341530+osa:4344349+osa:4346610+osa:4347436+osa:4349800+osa:4351527"	title="4325063, 4326907, 4328605, 4332660, 4338933, 4340708, 4341530, 4344349, 4346610, 4347436, 4349800, 4351527" />
+<area shape=rect	coords=377,1316,423,1333	href="http://www.genome.jp/dbget-bin/www_bget?osa:4325503+osa:4325758+osa:4327315+osa:4333666+osa:4349742+osa:4351457"	title="4325503, 4325758, 4327315, 4333666, 4349742, 4351457" />
+<area shape=rect	coords=548,1148,594,1165	href="http://www.genome.jp/dbget-bin/www_bget?osa:4331832+osa:4331833+osa:4331834+osa:4333065+osa:4335698+osa:4337240+osa:4343899+osa:4345625+osa:4347000+osa:4347164+osa:4348531+osa:4348533"	title="4331832, 4331833, 4331834, 4333065, 4335698, 4337240, 4343899, 4345625, 4347000, 4347164, 4348531, 4348533" />
+<area shape=rect	coords=471,498,517,515	href="http://www.genome.jp/dbget-bin/www_bget?osa:4333860"	title="4333860" />
+<area shape=rect	coords=316,1160,362,1177	href="http://www.genome.jp/dbget-bin/www_bget?osa:4339756"	title="4339756" />
+<area shape=rect	coords=676,329,722,346	href="http://www.genome.jp/dbget-bin/www_bget?osa:4325747+osa:4329677+osa:4330059+osa:4331245+osa:4335937+osa:4336439+osa:4337372+osa:4349747+osa:4351462"	title="4325747, 4329677, 4330059, 4331245, 4335937, 4336439, 4337372, 4349747, 4351462" />
+<area shape=rect	coords=440,1148,486,1165	href="http://www.genome.jp/dbget-bin/www_bget?osa:4324818+osa:4338955"	title="4324818, 4338955" />
+<area shape=rect	coords=636,1315,682,1332	href="http://www.genome.jp/dbget-bin/www_bget?osa:4325422+osa:4342317+osa:4348237"	title="4325422, 4342317, 4348237" />
+<area shape=rect	coords=770,1044,816,1061	href="http://www.genome.jp/dbget-bin/www_bget?osa:4346394"	title="4346394" />
+<area shape=rect	coords=774,167,820,184	href="http://www.genome.jp/dbget-bin/www_bget?osa:4324650+osa:4326893+osa:4327043+osa:4337780+osa:4339234+osa:4341111+osa:4343704+osa:4343785+osa:4350632"	title="4324650, 4326893, 4327043, 4337780, 4339234, 4341111, 4343704, 4343785, 4350632" />
+<area shape=rect	coords=774,147,820,164	href="http://www.genome.jp/dbget-bin/www_bget?osa:4325515+osa:4325890+osa:4326541+osa:4326775+osa:4327919+osa:4328796+osa:4330571+osa:4331061+osa:4331149+osa:4333512+osa:4334069+osa:4334431+osa:4337971+osa:4339365+osa:4339588+osa:4340245+osa:4340939+osa:4341432+osa:4342573+osa:4344471+osa:4347643+osa:4350099+osa:4350100+osa:4352721+osa:4352722"	title="4325515, 4325890, 4326541, 4326775, 4327919, 4328796, 4330571, 4331061, 4331149, 4333512, 4334069, 4334431, 4337971, 4339365, 4339588, 4340245, 4340939, 4341432, 4342573, 4344471, 4347643, 4350099, 4350100, 4352721, 4352722" />
+<area shape=rect	coords=774,187,820,204	href="http://www.genome.jp/dbget-bin/www_bget?osa:4328276+osa:4328277+osa:4329252+osa:4329253+osa:4329459+osa:4330132+osa:4330855+osa:4336520+osa:4336929+osa:4337294+osa:4337295+osa:4341972+osa:4342060+osa:4344531+osa:4347154+osa:4349090+osa:4352844+osa:9267097+osa:9268702+osa:9271403+osa:9271447"	title="4328276, 4328277, 4329252, 4329253, 4329459, 4330132, 4330855, 4336520, 4336929, 4337294, 4337295, 4341972, 4342060, 4344531, 4347154, 4349090, 4352844, 9267097, 9268702, 9271403, 9271447" />
+<area shape=rect	coords=273,167,319,184	href="http://www.genome.jp/dbget-bin/www_bget?osa:4324749+osa:4332229+osa:4338948+osa:4348107+osa:4349885"	title="4324749, 4332229, 4338948, 4348107, 4349885" />
+<area shape=rect	coords=665,659,711,676	href="http://www.genome.jp/dbget-bin/www_bget?osa:4325061+osa:4325078+osa:4327590+osa:4330838+osa:4338907+osa:4339158+osa:4340462+osa:4344334+osa:4345807+osa:4347257"	title="4325061, 4325078, 4327590, 4330838, 4338907, 4339158, 4340462, 4344334, 4345807, 4347257" />
+<area shape=rect	coords=28,25,352,50	href="http://www.genome.jp/dbget-bin/www_bget?osa04075"	title="osa04075: Plant hormone signal transduction" onmouseover="popupTimer(&quot;osa04075&quot;, &quot;osa04075: Plant hormone signal transduction&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=595,1187,711,1221	href="http://www.genome.jp/kegg-bin/show_pathway?osa04120"	title="osa04120: Ubiquitin mediated proteolysis" onmouseover="popupTimer(&quot;osa04120&quot;, &quot;osa04120: Ubiquitin mediated proteolysis&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=529,536,645,571	href="http://www.genome.jp/kegg-bin/show_pathway?osa04120"	title="osa04120: Ubiquitin mediated proteolysis" onmouseover="popupTimer(&quot;osa04120&quot;, &quot;osa04120: Ubiquitin mediated proteolysis&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=551,207,667,242	href="http://www.genome.jp/kegg-bin/show_pathway?osa04120"	title="osa04120: Ubiquitin mediated proteolysis" onmouseover="popupTimer(&quot;osa04120&quot;, &quot;osa04120: Ubiquitin mediated proteolysis&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=760,933,876,968	href="http://www.genome.jp/kegg-bin/show_pathway?osa04120"	title="osa04120: Ubiquitin mediated proteolysis" onmouseover="popupTimer(&quot;osa04120&quot;, &quot;osa04120: Ubiquitin mediated proteolysis&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=849,1159,1006,1184	href="http://www.genome.jp/kegg-bin/show_pathway?map00901"	title="map00901: Indole alkaloid biosynthesis" onmouseover="popupTimer(&quot;map00901&quot;, &quot;map00901: Indole alkaloid biosynthesis&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=848,1130,1005,1155	href="http://www.genome.jp/kegg-bin/show_pathway?map00902"	title="map00902: Monoterpenoid biosynthesis" onmouseover="popupTimer(&quot;map00902&quot;, &quot;map00902: Monoterpenoid biosynthesis&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=51,163,179,188	href="http://www.genome.jp/kegg-bin/show_pathway?osa00380"	title="osa00380: Tryptophan metabolism" onmouseover="popupTimer(&quot;osa00380&quot;, &quot;osa00380: Tryptophan metabolism&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=51,1307,136,1341	href="http://www.genome.jp/kegg-bin/show_pathway?osa00360"	title="osa00360: Phenylalanine metabolism" onmouseover="popupTimer(&quot;osa00360&quot;, &quot;osa00360: Phenylalanine metabolism&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=51,494,182,519	href="http://www.genome.jp/kegg-bin/show_pathway?osa00904"	title="osa00904: Diterpenoid biosynthesis" onmouseover="popupTimer(&quot;osa00904&quot;, &quot;osa00904: Diterpenoid biosynthesis&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=51,654,180,679	href="http://www.genome.jp/kegg-bin/show_pathway?osa00906"	title="osa00906: Carotenoid biosynthesis" onmouseover="popupTimer(&quot;osa00906&quot;, &quot;osa00906: Carotenoid biosynthesis&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=51,800,176,834	href="http://www.genome.jp/kegg-bin/show_pathway?osa00270"	title="osa00270: Cysteine and methionine metabolism" onmouseover="popupTimer(&quot;osa00270&quot;, &quot;osa00270: Cysteine and methionine metabolism&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=51,971,143,1005	href="http://www.genome.jp/kegg-bin/show_pathway?osa00905"	title="osa00905: Brassinosteroid biosynthesis" onmouseover="popupTimer(&quot;osa00905&quot;, &quot;osa00905: Brassinosteroid biosynthesis&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=51,325,157,350	href="http://www.genome.jp/kegg-bin/show_pathway?osa00908"	title="osa00908: Zeatin biosynthesis" onmouseover="popupTimer(&quot;osa00908&quot;, &quot;osa00908: Zeatin biosynthesis&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=51,1140,143,1174	href="http://www.genome.jp/kegg-bin/show_pathway?osa00592"	title="osa00592: alpha-Linolenic acid metabolism" onmouseover="popupTimer(&quot;osa00592&quot;, &quot;osa00592: alpha-Linolenic acid metabolism&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+</map>
+<div id="poplay" class="poplay" />
+
+</form>
+</body>
+</html>

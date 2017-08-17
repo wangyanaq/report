@@ -1,0 +1,359 @@
+<html>
+<!---
+ENTRY       osa00950
+DEFINITION  Isoquinoline alkaloid biosynthesis - Oryza sativa japonica (Japanese rice) (RefSeq)
+--->
+<head>
+<title>
+KEGG PATHWAY: Isoquinoline alkaloid biosynthesis - Oryza sativa japonica (Japanese rice) (RefSeq)
+</title>
+<style type="text/css">
+<!--
+div.poplay {
+  position: absolute;
+  padding: 2px;
+  background-color: #ffff99;
+  border-top: solid 1px #c0c0c0;
+  border-left: solid 1px #c0c0c0;
+  border-bottom: solid 1px #808080;
+  border-right: solid 1px #808080;
+  visibility: hidden;
+}
+
+span.popup
+{
+  font-weight: bold;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+form {
+  margin: 0px;
+}
+
+div.image {
+  position: absolute;
+  padding: 0px;
+  top: 0px;
+  padding: 0px;
+  border: solid 1px #000000;
+}
+
+img {
+  border: none;
+}
+
+
+-->
+</style>
+<link rel="stylesheet" href="http://www.genome.jp/css/kegg.css" type="text/css" />
+<script language="JavaScript" src="http://www.genome.jp/js/dhtml.js"></script>
+
+<script language="JavaScript">
+<!---
+var image_height;
+$(function(){
+	$(window).bind('load',function(){
+  image_height = $("div.image").height()-10;
+	$("div.control").height(image_height-5);
+	$("#resizable").height(image_height);
+	});
+});
+
+
+function resize_map(scale){
+  var form = document.forms["form2"];
+  form.scale.value = scale;
+  form.submit();
+}
+
+function select_menu(){
+  var form = document.forms["selmenu"];
+  if(form.org_name.value == 'set_cookie' || form.org_name.value == 'reset_cookie'){
+    window.open('http://www.genome.jp/kegg/misc/kegg2_select.html','sel_org','toolbar=no,location=no,directories=no,width=500,height=320,resizable=yes');
+  }else{
+    form.action='http://www.genome.jp/kegg-bin/show_pathway';
+    form.submit();
+  }
+}
+
+var timer = 0;
+var p_entry, p_title, p_bgcolor;
+function popupTimer(entry, title, bgcolor)
+{
+  p_entry = entry;
+  p_title = title;
+  p_bgcolor = bgcolor;
+
+  if(timer == 0){
+    var func = "showThumbnail()";
+    timer = setTimeout(func, 1200);
+  }
+}
+
+
+function showThumbnail()
+{
+
+  var url = "";
+  if(p_entry.match(/^[A-Z]+\d+$/))
+  {
+    url = "http://www.genome.jp/kegg/misc/thumbnail/" + p_entry + ".gif";
+  }
+  else if(p_entry.match(/(\d+)$/))
+  {
+    url = "http://www.genome.jp/kegg/misc/thumbnail/map" + RegExp.$1 + ".gif";
+  }
+
+  var html = "";
+
+  if(p_bgcolor != "#ffffff")
+  {
+    html += "<span class=\"popup\">" + p_entry + "</span><br />";
+  }
+
+  html += "<img src=\"" + url + "\" alt=\"Loading...\">";
+
+  var x = getCurrentMouseX();
+  var y = getCurrentMouseY();
+
+  var layer = new Component("poplay");
+  layer.backgroundColor(p_bgcolor);
+  layer.HTML(html);
+  layer.move(x, y+40);
+  layer.visible(true);
+
+  timer = 0;
+}
+
+function hideMapTn(){
+  var layer = new Component("poplay");
+  layer.visible(false);
+
+  if(timer != 0){
+    clearTimeout(timer);
+    timer = 0;
+  }
+}
+
+function switchDescription(){
+  var form = document.forms[0];
+  var status = form.show_description.value;
+
+  if(status == "hide"){
+    document.getElementById("description").style.display = "";
+    document.getElementById("descLink").innerHTML = "Hide description";
+    form.show_description.value='show';
+
+    if(document.forms[1]){
+    	document.forms[1].show_description.value='show';
+    }
+  }
+  else
+  {
+    document.getElementById("description").style.display = 'none';
+    document.getElementById("descLink").innerHTML = "Show description";
+    form.show_description.value='hide';
+
+    if(document.forms[1]){
+      document.forms[1].show_description.value='hide';
+    }
+  }
+}
+
+function btn(bobj,img) { bobj.src = "http://www.genome.jp/Fig/bget/button_" + img + ".gif"; }
+//--->
+</script>
+</head>
+<body>
+<table cellpadding="0" width="100%" cellspacing="0" border="0">
+ <tr>
+  <td>
+   <a href="http://www.genome.jp/kegg/kegg2.html"><img align="middle" alt="KEGG" border="0" src="http://www.genome.jp/Fig/bget/kegg3.gif" /></a>
+   &nbsp;&nbsp;&nbsp;<font class="title3"><b>Isoquinoline alkaloid biosynthesis - Oryza sativa japonica (Japanese rice) (RefSeq)</b></font>
+  </td>
+  <td valign="bottom" align="right">
+   <a href="javascript:void(window.open('http://www.genome.jp/kegg/document/help_pathway.html','KEGG_Help','toolbar=no,location=no,directories=no,width=720,height=640,resizable=yes,scrollbars=yes'))"><img name="help" src="http://www.genome.jp/Fig/bget/button_Hb.gif" border="0" align="middle" alt="Help" onmouseout="btn(this,'Hb')" onmousedown="btn(this,'Hbd')" onmouseover="btn(this,'Hbh')" onmouseup="btn(this,'Hb')" /></a>
+  </td>
+ </tr>
+</table>
+
+  
+[
+<a href="http://www.genome.jp/kegg-bin/get_htext?query=00950&htext=br08901.keg&option=-a">Pathway menu</a>
+| <a href="http://www.genome.jp/kegg-bin/get_htext?htext=br08601_map00950.keg&query=osa&option=-a">Organism menu</a>
+| <a href="http://www.genome.jp/dbget-bin/www_bget?pathway+osa00950">Pathway entry</a>
+
+| <a href="http://www.kegg.jp/kegg-bin/download?entry=osa00950&format=kgml">Download KGML</a>
+| <a id="descLink" href="javascript:switchDescription()">Show description</a>
+| <a href="javascript:void(window.open('http://www.genome.jp/kegg/tool/color_a_pathway.html','KEGG_Help','height=300,width=600,resizable=yes,scrollbars=yes'))">User data mapping</a>
+
+]
+  
+<table id="description" cellpadding="10" width="800" style="display: none;"><tr><td>
+Isoquinoline alkaloids are tyrosine-derived plant alkaloids with an isoquinoline skeleton. Among them benzylisoquinoline alkaloids form an important group with potent pharmacological activity, including analgesic compounds of morphine and codeine, and anti-infective agents of berberine, palmatine, and magnoflorine. Biosynthesis of isoquinoline alkaloids proceeds via decarboxylation of tyrosine or DOPA to yield dopamine, which together with 4-hydroxyphenylacetaldehyde, an aldehyde derived from tyrosine, is converted to reticuline, an important precursor of various benzylisoquinoline alkaloids.</td></tr></table>
+<table><tr><td>
+<form name="selmenu" method="get">
+<select name="org_name">
+<option value="map">Reference pathway</option>
+<option value="ko">Reference pathway (KO)</option>
+<option value="ec">Reference pathway (EC)</option>
+<option value="rn">Reference pathway (Reaction)</option>
+<option value="set_cookie">-----&lt; Set personalized menu &gt;-----</option>
+<option value="osa.sort_alp">-----&lt; Sort below by alphabet &gt;-----</option>
+<option value="ath">Arabidopsis thaliana (thale cress)</option>
+<option value="rcu">Ricinus communis (castor bean)</option>
+<option value="pop">Populus trichocarpa (black cottonwood)</option>
+<option value="vvi">Vitis vinifera (wine grape)</option>
+<option value="osa" selected>Oryza sativa japonica (Japanese rice) (RefSeq)</option>
+<option value="sbi">Sorghum bicolor (sorghum)</option>
+<option value="zma">Zea mays (maize)</option>
+<option value="ppp">Physcomitrella patens subsp. patens</option>
+<option value="cre">Chlamydomonas reinhardtii</option>
+<option value="vcn">Volvox carteri f. nagariensis</option>
+<option value="cme">Cyanidioschyzon merolae</option>
+</select>
+<input type="hidden" name="mapno" value="00950" />
+<input type="hidden" name="mapscale" value=>
+<input type="button" value="Go" onclick="select_menu(this.form)" />
+<input type="hidden" name="show_description" value="hide">
+
+</form>
+</td><td>
+<form name="form2" method="get" action="http://www.genome.jp/kegg-bin/show_pathway">
+&nbsp;&nbsp;&nbsp;&nbsp;
+<select name="scale" onChange="resize_map(this.form.scale.value)">
+<option value="1.84" >184%</option>
+<option value="1.5" >150%</option>
+<option value="1.22" >122%</option>
+<option value="1.0" selected>100%</option>
+<option value="0.82" >82%</option>
+<option value="0.67" >67%</option>
+<option value="0.55" >55%</option>
+</select>
+&nbsp;&nbsp;<input type="text" name="query" size=20 value="">
+<input type="hidden" name="map" value="osa00950" />
+<input type="hidden" name="scale" value=>
+<input type="hidden" name="image" value=/share/www//mark_pathway146062954750591/osa00950.png>
+<input type="hidden" name="use" value="reference">
+<input type="hidden" name="nmap_args" value="146062903466383">
+<input type="hidden" name="auto_image" value="">
+<input type="hidden" name="show_description" value="hide">
+<input type="hidden" name="multi_query" />
+
+<!--</form>-->
+</td></tr></table>
+
+
+<img src="osa00950.png" name="pathwayimage" name="pathwayimage" usemap="#mapdata" border="0" />
+
+<map name="mapdata">
+<area shape=circle	coords=317,178,4	href="http://www.genome.jp/dbget-bin/www_bget?C00082"	title="C00082 (L-Tyrosine)" onmouseover="popupTimer(&quot;C00082&quot;, &quot;C00082 (L-Tyrosine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=317,257,4	href="http://www.genome.jp/dbget-bin/www_bget?C01179"	title="C01179 (3-(4-Hydroxyphenyl)pyruvate)" onmouseover="popupTimer(&quot;C01179&quot;, &quot;C01179 (3-(4-Hydroxyphenyl)pyruvate)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=317,336,4	href="http://www.genome.jp/dbget-bin/www_bget?C03765"	title="C03765 (4-Hydroxyphenylacetaldehyde)" onmouseover="popupTimer(&quot;C03765&quot;, &quot;C03765 (4-Hydroxyphenylacetaldehyde)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=317,469,4	href="http://www.genome.jp/dbget-bin/www_bget?C06160"	title="C06160 ((S)-Norcoclaurine)" onmouseover="popupTimer(&quot;C06160&quot;, &quot;C06160 ((S)-Norcoclaurine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=317,548,4	href="http://www.genome.jp/dbget-bin/www_bget?C06161"	title="C06161 ((S)-Coclaurine)" onmouseover="popupTimer(&quot;C06161&quot;, &quot;C06161 ((S)-Coclaurine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=317,630,4	href="http://www.genome.jp/dbget-bin/www_bget?C05176"	title="C05176 ((S)-N-Methylcoclaurine)" onmouseover="popupTimer(&quot;C05176&quot;, &quot;C05176 ((S)-N-Methylcoclaurine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=317,709,4	href="http://www.genome.jp/dbget-bin/www_bget?C05202"	title="C05202 (3'-Hydroxy-N-methyl-(S)-coclaurine)" onmouseover="popupTimer(&quot;C05202&quot;, &quot;C05202 (3'-Hydroxy-N-methyl-(S)-coclaurine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=317,838,4	href="http://www.genome.jp/dbget-bin/www_bget?C02105"	title="C02105 ((S)-Reticuline)" onmouseover="popupTimer(&quot;C02105&quot;, &quot;C02105 ((S)-Reticuline)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=317,917,4	href="http://www.genome.jp/dbget-bin/www_bget?C06167"	title="C06167 (1,2-Dehydroreticuline)" onmouseover="popupTimer(&quot;C06167&quot;, &quot;C06167 (1,2-Dehydroreticuline)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=317,996,4	href="http://www.genome.jp/dbget-bin/www_bget?C05178"	title="C05178 ((R)-Reticuline)" onmouseover="popupTimer(&quot;C05178&quot;, &quot;C05178 ((R)-Reticuline)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=317,1154,4	href="http://www.genome.jp/dbget-bin/www_bget?C05220"	title="C05220 (Salutaridinol)" onmouseover="popupTimer(&quot;C05220&quot;, &quot;C05220 (Salutaridinol)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=317,1233,4	href="http://www.genome.jp/dbget-bin/www_bget?C05322"	title="C05322 (7-O-Acetylsalutaridinol)" onmouseover="popupTimer(&quot;C05322&quot;, &quot;C05322 (7-O-Acetylsalutaridinol)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=317,1312,4	href="http://www.genome.jp/dbget-bin/www_bget?C06173"	title="C06173 (Thebaine)" onmouseover="popupTimer(&quot;C06173&quot;, &quot;C06173 (Thebaine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=317,1391,4	href="http://www.genome.jp/dbget-bin/www_bget?C06175"	title="C06175 (Oripavine)" onmouseover="popupTimer(&quot;C06175&quot;, &quot;C06175 (Oripavine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=317,1470,4	href="http://www.genome.jp/dbget-bin/www_bget?C01735"	title="C01735 (Morphinone)" onmouseover="popupTimer(&quot;C01735&quot;, &quot;C01735 (Morphinone)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=317,1549,4	href="http://www.genome.jp/dbget-bin/www_bget?C01516"	title="C01516 (Morphine)" onmouseover="popupTimer(&quot;C01516&quot;, &quot;C01516 (Morphine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=218,1313,4	href="http://www.genome.jp/dbget-bin/www_bget?C06172"	title="C06172 (Neopinone)" onmouseover="popupTimer(&quot;C06172&quot;, &quot;C06172 (Neopinone)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=218,1392,4	href="http://www.genome.jp/dbget-bin/www_bget?C06171"	title="C06171 (Codeinone)" onmouseover="popupTimer(&quot;C06171&quot;, &quot;C06171 (Codeinone)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=416,915,4	href="http://www.genome.jp/dbget-bin/www_bget?C02106"	title="C02106 ((S)-Scoulerine)" onmouseover="popupTimer(&quot;C02106&quot;, &quot;C02106 ((S)-Scoulerine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=416,994,4	href="http://www.genome.jp/dbget-bin/www_bget?C05174"	title="C05174 ((S)-Cheilanthifoline)" onmouseover="popupTimer(&quot;C05174&quot;, &quot;C05174 ((S)-Cheilanthifoline)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=416,1073,4	href="http://www.genome.jp/dbget-bin/www_bget?C05175"	title="C05175 (Stylopine)" onmouseover="popupTimer(&quot;C05175&quot;, &quot;C05175 (Stylopine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=416,1152,4	href="http://www.genome.jp/dbget-bin/www_bget?C06163"	title="C06163 ((S)-cis-N-Methylstylopine)" onmouseover="popupTimer(&quot;C06163&quot;, &quot;C06163 ((S)-cis-N-Methylstylopine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=416,1310,4	href="http://www.genome.jp/dbget-bin/www_bget?C05190"	title="C05190 (6-Hydroxyprotopine)" onmouseover="popupTimer(&quot;C05190&quot;, &quot;C05190 (6-Hydroxyprotopine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=416,1389,4	href="http://www.genome.jp/dbget-bin/www_bget?C05191"	title="C05191 (Dihydrosanguinarine)" onmouseover="popupTimer(&quot;C05191&quot;, &quot;C05191 (Dihydrosanguinarine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=416,1468,4	href="http://www.genome.jp/dbget-bin/www_bget?C06162"	title="C06162 (Sanguinarine)" onmouseover="popupTimer(&quot;C06162&quot;, &quot;C06162 (Sanguinarine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=416,1231,4	href="http://www.genome.jp/dbget-bin/www_bget?C05189"	title="C05189 (Protopine)" onmouseover="popupTimer(&quot;C05189&quot;, &quot;C05189 (Protopine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=234,917,4	href="http://www.genome.jp/dbget-bin/www_bget?C17592"	title="C17592 (Laudanine)" onmouseover="popupTimer(&quot;C17592&quot;, &quot;C17592 (Laudanine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=135,917,4	href="http://www.genome.jp/dbget-bin/www_bget?C17591"	title="C17591 ((S)-Corytuberine)" onmouseover="popupTimer(&quot;C17591&quot;, &quot;C17591 ((S)-Corytuberine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=135,996,4	href="http://www.genome.jp/dbget-bin/www_bget?C09581"	title="C09581 (Magnoflorine)" onmouseover="popupTimer(&quot;C09581&quot;, &quot;C09581 (Magnoflorine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=515,915,4	href="http://www.genome.jp/dbget-bin/www_bget?C04118"	title="C04118 (Isocorypalmine)" onmouseover="popupTimer(&quot;C04118&quot;, &quot;C04118 (Isocorypalmine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=614,915,4	href="http://www.genome.jp/dbget-bin/www_bget?C01795"	title="C01795 (Columbamine)" onmouseover="popupTimer(&quot;C01795&quot;, &quot;C01795 (Columbamine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=714,915,4	href="http://www.genome.jp/dbget-bin/www_bget?C05315"	title="C05315 (Palmatine)" onmouseover="popupTimer(&quot;C05315&quot;, &quot;C05315 (Palmatine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=515,838,4	href="http://www.genome.jp/dbget-bin/www_bget?C02890"	title="C02890 (Tetrahydropalmatine)" onmouseover="popupTimer(&quot;C02890&quot;, &quot;C02890 (Tetrahydropalmatine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=515,994,4	href="http://www.genome.jp/dbget-bin/www_bget?C03329"	title="C03329 ((S)-Canadine)" onmouseover="popupTimer(&quot;C03329&quot;, &quot;C03329 ((S)-Canadine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=614,994,4	href="http://www.genome.jp/dbget-bin/www_bget?C00757"	title="C00757 (Berberine)" onmouseover="popupTimer(&quot;C00757&quot;, &quot;C00757 (Berberine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=515,1152,4	href="http://www.genome.jp/dbget-bin/www_bget?C02915"	title="C02915 ((S)-cis-N-Methylcanadine)" onmouseover="popupTimer(&quot;C02915&quot;, &quot;C02915 ((S)-cis-N-Methylcanadine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=515,1231,4	href="http://www.genome.jp/dbget-bin/www_bget?C02134"	title="C02134 (Allocryptopine)" onmouseover="popupTimer(&quot;C02134&quot;, &quot;C02134 (Allocryptopine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=515,1389,4	href="http://www.genome.jp/dbget-bin/www_bget?C05247"	title="C05247 (10-Hydroxydihydrosanguinarine)" onmouseover="popupTimer(&quot;C05247&quot;, &quot;C05247 (10-Hydroxydihydrosanguinarine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=175,548,4	href="http://www.genome.jp/dbget-bin/www_bget?C06512"	title="C06512 (2'-Norberbamunine)" onmouseover="popupTimer(&quot;C06512&quot;, &quot;C06512 (2'-Norberbamunine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=173,589,4	href="http://www.genome.jp/dbget-bin/www_bget?C06511"	title="C06511 (Guattegaumerine)" onmouseover="popupTimer(&quot;C06511&quot;, &quot;C06511 (Guattegaumerine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=173,630,4	href="http://www.genome.jp/dbget-bin/www_bget?C05177"	title="C05177 (Berbamunine)" onmouseover="popupTimer(&quot;C05177&quot;, &quot;C05177 (Berbamunine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=396,463,4	href="http://www.genome.jp/dbget-bin/www_bget?C04043"	title="C04043 (3,4-Dihydroxyphenylacetaldehyde)" onmouseover="popupTimer(&quot;C04043&quot;, &quot;C04043 (3,4-Dihydroxyphenylacetaldehyde)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=317,1075,4	href="http://www.genome.jp/dbget-bin/www_bget?C05179"	title="C05179 (Salutaridine)" onmouseover="popupTimer(&quot;C05179&quot;, &quot;C05179 (Salutaridine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=472,257,4	href="http://www.genome.jp/dbget-bin/www_bget?C00483"	title="C00483 (Tyramine)" onmouseover="popupTimer(&quot;C00483&quot;, &quot;C00483 (Tyramine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=469,529,4	href="http://www.genome.jp/dbget-bin/www_bget?C02916"	title="C02916 ((S)-Norlaudanosoline)" onmouseover="popupTimer(&quot;C02916&quot;, &quot;C02916 ((S)-Norlaudanosoline)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=614,1389,4	href="http://www.genome.jp/dbget-bin/www_bget?C05194"	title="C05194 (Dihydrochelirubine)" onmouseover="popupTimer(&quot;C05194&quot;, &quot;C05194 (Dihydrochelirubine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=714,1389,4	href="http://www.genome.jp/dbget-bin/www_bget?C05193"	title="C05193 (12-Hydroxydihydrochelirubine)" onmouseover="popupTimer(&quot;C05193&quot;, &quot;C05193 (12-Hydroxydihydrochelirubine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=814,1389,4	href="http://www.genome.jp/dbget-bin/www_bget?C05316"	title="C05316 (Dihydromacarpine)" onmouseover="popupTimer(&quot;C05316&quot;, &quot;C05316 (Dihydromacarpine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=614,1467,4	href="http://www.genome.jp/dbget-bin/www_bget?C06327"	title="C06327 (Chelirubine)" onmouseover="popupTimer(&quot;C06327&quot;, &quot;C06327 (Chelirubine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=814,1467,4	href="http://www.genome.jp/dbget-bin/www_bget?C06165"	title="C06165 (Macarpine)" onmouseover="popupTimer(&quot;C06165&quot;, &quot;C06165 (Macarpine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=218,1472,4	href="http://www.genome.jp/dbget-bin/www_bget?C06174"	title="C06174 (Codeine)" onmouseover="popupTimer(&quot;C06174&quot;, &quot;C06174 (Codeine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=814,915,4	href="http://www.genome.jp/dbget-bin/www_bget?C15530"	title="C15530 (Corydaline)" onmouseover="popupTimer(&quot;C15530&quot;, &quot;C15530 (Corydaline)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=714,994,4	href="http://www.genome.jp/dbget-bin/www_bget?C11818"	title="C11818 ((R)-Canadine)" onmouseover="popupTimer(&quot;C11818&quot;, &quot;C11818 ((R)-Canadine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=670,367,4	href="http://www.genome.jp/dbget-bin/www_bget?C16708"	title="C16708 (Isoandrocymbine)" onmouseover="popupTimer(&quot;C16708&quot;, &quot;C16708 (Isoandrocymbine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=769,367,4	href="http://www.genome.jp/dbget-bin/www_bget?C16709"	title="C16709 (O-Methylandrocymbine)" onmouseover="popupTimer(&quot;C16709&quot;, &quot;C16709 (O-Methylandrocymbine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=571,367,4	href="http://www.genome.jp/dbget-bin/www_bget?C16707"	title="C16707 ((S)-Autumnaline)" onmouseover="popupTimer(&quot;C16707&quot;, &quot;C16707 ((S)-Autumnaline)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=531,325,4	href="http://www.genome.jp/dbget-bin/www_bget?C16706"	title="C16706 (4-Hydroxydihydrocinnamaldehyde)" onmouseover="popupTimer(&quot;C16706&quot;, &quot;C16706 (4-Hydroxydihydrocinnamaldehyde)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=967,367,4	href="http://www.genome.jp/dbget-bin/www_bget?C11250"	title="C11250 (Demecolcine)" onmouseover="popupTimer(&quot;C11250&quot;, &quot;C11250 (Demecolcine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=1066,367,4	href="http://www.genome.jp/dbget-bin/www_bget?C16712"	title="C16712 (Deacetylcolchicine)" onmouseover="popupTimer(&quot;C16712&quot;, &quot;C16712 (Deacetylcolchicine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=1165,367,4	href="http://www.genome.jp/dbget-bin/www_bget?C07592"	title="C07592 (Colchicine)" onmouseover="popupTimer(&quot;C07592&quot;, &quot;C07592 (Colchicine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=868,367,4	href="http://www.genome.jp/dbget-bin/www_bget?C16710"	title="C16710 (N-Formyldemecolcine)" onmouseover="popupTimer(&quot;C16710&quot;, &quot;C16710 (N-Formyldemecolcine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=671,406,4	href="http://www.genome.jp/dbget-bin/www_bget?C16713"	title="C16713 (Floramultine)" onmouseover="popupTimer(&quot;C16713&quot;, &quot;C16713 (Floramultine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=769,405,4	href="http://www.genome.jp/dbget-bin/www_bget?C16714"	title="C16714 (Kreysigine)" onmouseover="popupTimer(&quot;C16714&quot;, &quot;C16714 (Kreysigine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=571,257,4	href="http://www.genome.jp/dbget-bin/www_bget?C16701"	title="C16701 (Norbelladine)" onmouseover="popupTimer(&quot;C16701&quot;, &quot;C16701 (Norbelladine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=670,257,4	href="http://www.genome.jp/dbget-bin/www_bget?C16702"	title="C16702 (4'-O-Methylnorbelladine)" onmouseover="popupTimer(&quot;C16702&quot;, &quot;C16702 (4'-O-Methylnorbelladine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=769,257,4	href="http://www.genome.jp/dbget-bin/www_bget?C16703"	title="C16703 (N-Demethylnarwedine)" onmouseover="popupTimer(&quot;C16703&quot;, &quot;C16703 (N-Demethylnarwedine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=868,257,4	href="http://www.genome.jp/dbget-bin/www_bget?C12173"	title="C12173 (Norgalanthamine)" onmouseover="popupTimer(&quot;C12173&quot;, &quot;C12173 (Norgalanthamine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=967,257,4	href="http://www.genome.jp/dbget-bin/www_bget?C08526"	title="C08526 (Galanthamine)" onmouseover="popupTimer(&quot;C08526&quot;, &quot;C08526 (Galanthamine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=769,221,4	href="http://www.genome.jp/dbget-bin/www_bget?C12162"	title="C12162 (Crinine)" onmouseover="popupTimer(&quot;C12162&quot;, &quot;C12162 (Crinine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=769,187,4	href="http://www.genome.jp/dbget-bin/www_bget?C08532"	title="C08532 (Lycorine)" onmouseover="popupTimer(&quot;C08532&quot;, &quot;C08532 (Lycorine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=591,709,4	href="http://www.genome.jp/dbget-bin/www_bget?C06518"	title="C06518 ((S)-Nororientaline)" onmouseover="popupTimer(&quot;C06518&quot;, &quot;C06518 ((S)-Nororientaline)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=531,214,4	href="http://www.genome.jp/dbget-bin/www_bget?C16700"	title="C16700 (3,4-Dihydroxybenzaldehyde)" onmouseover="popupTimer(&quot;C16700&quot;, &quot;C16700 (3,4-Dihydroxybenzaldehyde)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=389,682,4	href="http://www.genome.jp/dbget-bin/www_bget?C06533"	title="C06533 (Papaverine)" onmouseover="popupTimer(&quot;C06533&quot;, &quot;C06533 (Papaverine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=531,442,4	href="http://www.genome.jp/dbget-bin/www_bget?C01852"	title="C01852 (Secologanin)" onmouseover="popupTimer(&quot;C01852&quot;, &quot;C01852 (Secologanin)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=669,548,4	href="http://www.genome.jp/dbget-bin/www_bget?C07307"	title="C07307 (Deacetylipecoside)" onmouseover="popupTimer(&quot;C07307&quot;, &quot;C07307 (Deacetylipecoside)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=669,630,4	href="http://www.genome.jp/dbget-bin/www_bget?C11813"	title="C11813 (Demethylalangiside)" onmouseover="popupTimer(&quot;C11813&quot;, &quot;C11813 (Demethylalangiside)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=669,709,4	href="http://www.genome.jp/dbget-bin/www_bget?C09330"	title="C09330 (Alangiside)" onmouseover="popupTimer(&quot;C09330&quot;, &quot;C09330 (Alangiside)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=769,548,4	href="http://www.genome.jp/dbget-bin/www_bget?C07304"	title="C07304 (Deacetylisoipecoside)" onmouseover="popupTimer(&quot;C07304&quot;, &quot;C07304 (Deacetylisoipecoside)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=769,630,4	href="http://www.genome.jp/dbget-bin/www_bget?C11814"	title="C11814 (Demethylisoalangiside)" onmouseover="popupTimer(&quot;C11814&quot;, &quot;C11814 (Demethylisoalangiside)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=769,709,4	href="http://www.genome.jp/dbget-bin/www_bget?C11815"	title="C11815 (Isoalangiside)" onmouseover="popupTimer(&quot;C11815&quot;, &quot;C11815 (Isoalangiside)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=967,547,4	href="http://www.genome.jp/dbget-bin/www_bget?C09421"	title="C09421 (Emetine)" onmouseover="popupTimer(&quot;C09421&quot;, &quot;C09421 (Emetine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=868,548,4	href="http://www.genome.jp/dbget-bin/www_bget?C11816"	title="C11816 (Protoemetine)" onmouseover="popupTimer(&quot;C11816&quot;, &quot;C11816 (Protoemetine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=865,630,4	href="http://www.genome.jp/dbget-bin/www_bget?C11817"	title="C11817 (Deoxytubulosine)" onmouseover="popupTimer(&quot;C11817&quot;, &quot;C11817 (Deoxytubulosine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=865,709,4	href="http://www.genome.jp/dbget-bin/www_bget?C09328"	title="C09328 (Alangimarckine)" onmouseover="popupTimer(&quot;C09328&quot;, &quot;C09328 (Alangimarckine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=960,589,4	href="http://www.genome.jp/dbget-bin/www_bget?C09390"	title="C09390 (Cephaeline)" onmouseover="popupTimer(&quot;C09390&quot;, &quot;C09390 (Cephaeline)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=905,632,4	href="http://www.genome.jp/dbget-bin/www_bget?C09248"	title="C09248 (Tubulosine)" onmouseover="popupTimer(&quot;C09248&quot;, &quot;C09248 (Tubulosine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=868,466,4	href="http://www.genome.jp/dbget-bin/www_bget?C09337"	title="C09337 (Ankorine)" onmouseover="popupTimer(&quot;C09337&quot;, &quot;C09337 (Ankorine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=469,709,4	href="http://www.genome.jp/dbget-bin/www_bget?C06517"	title="C06517 ((S)-6-O-Methylnorlaudanosoline)" onmouseover="popupTimer(&quot;C06517&quot;, &quot;C06517 ((S)-6-O-Methylnorlaudanosoline)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=472,370,4	href="http://www.genome.jp/dbget-bin/www_bget?C03758"	title="C03758 (Dopamine)" onmouseover="popupTimer(&quot;C03758&quot;, &quot;C03758 (Dopamine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=273,589,4	href="http://www.genome.jp/dbget-bin/www_bget?C05243"	title="C05243 ((R)-N-Methylcoclaurine)" onmouseover="popupTimer(&quot;C05243&quot;, &quot;C05243 ((R)-N-Methylcoclaurine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=396,288,4	href="http://www.genome.jp/dbget-bin/www_bget?C00355"	title="C00355 (3,4-Dihydroxy-L-phenylalanine)" onmouseover="popupTimer(&quot;C00355&quot;, &quot;C00355 (3,4-Dihydroxy-L-phenylalanine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=469,789,4	href="http://www.genome.jp/dbget-bin/www_bget?C06520"	title="C06520 ((S)-Norreticuline)" onmouseover="popupTimer(&quot;C06520&quot;, &quot;C06520 ((S)-Norreticuline)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=234,1072,4	href="http://www.genome.jp/dbget-bin/www_bget?C06516"	title="C06516 ((R)-Norreticuline)" onmouseover="popupTimer(&quot;C06516&quot;, &quot;C06516 ((R)-Norreticuline)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=389,607,4	href="http://www.genome.jp/dbget-bin/www_bget?C06516"	title="C06516 ((R)-Norreticuline)" onmouseover="popupTimer(&quot;C06516&quot;, &quot;C06516 ((R)-Norreticuline)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=269,213,315,230	href="http://www.genome.jp/dbget-bin/www_bget?osa:4329098+osa:4329101+osa:4340970+osa:4350712+osa:4351017"	title="4329098, 4329101, 4340970, 4350712, 4351017" />
+<area shape=rect	coords=424,205,470,222	href="http://www.genome.jp/dbget-bin/www_bget?osa:4325604+osa:4339281+osa:4343080+osa:4344636+osa:4344637+osa:4348505+osa:4348564"	title="4325604, 4339281, 4343080, 4344636, 4344637, 4348505, 4348564" />
+<area shape=rect	coords=295,194,341,211	href="http://www.genome.jp/dbget-bin/www_bget?osa:4324941+osa:4325621+osa:4328828+osa:4331017+osa:4341252"	title="4324941, 4325621, 4328828, 4331017, 4341252" />
+<area shape=rect	coords=348,312,394,329	href="http://www.genome.jp/dbget-bin/www_bget?osa:4325604+osa:4339281+osa:4343080+osa:4344636+osa:4344637+osa:4348505+osa:4348564"	title="4325604, 4339281, 4343080, 4344636, 4344637, 4348505, 4348564" />
+<area shape=rect	coords=374,228,420,245	href="http://www.genome.jp/dbget-bin/www_bget?osa:4337055"	title="4337055" />
+<area shape=rect	coords=348,419,394,436	href="http://www.genome.jp/dbget-bin/www_bget?osa:4335335+osa:4336153+osa:4340945"	title="4335335, 4336153, 4340945" />
+<area shape=rect	coords=40,45,347,70	href="http://www.genome.jp/dbget-bin/www_bget?osa00950"	title="osa00950: Isoquinoline alkaloid biosynthesis" onmouseover="popupTimer(&quot;osa00950&quot;, &quot;osa00950: Isoquinoline alkaloid biosynthesis&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=243,95,391,129	href="http://www.genome.jp/kegg-bin/show_pathway?osa00400"	title="osa00400: Phenylalanine, tyrosine and tryptophan biosynthesis" onmouseover="popupTimer(&quot;osa00400&quot;, &quot;osa00400: Phenylalanine, tyrosine and tryptophan biosynthesis&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=485,392,560,426	href="http://www.genome.jp/kegg-bin/show_pathway?osa00350"	title="osa00350: Tyrosine metabolism" onmouseover="popupTimer(&quot;osa00350&quot;, &quot;osa00350: Tyrosine metabolism&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+</map>
+<div id="poplay" class="poplay" />
+
+</form>
+</body>
+</html>

@@ -1,0 +1,91 @@
+pathway_3	pathway_3_num	all_diff_gene_list	pathway_2	pathway_2_num	pathway_1	pathway_1_num
+Aminoacyl-tRNA biosynthesis	1	4531196(gatA),	Translation	5	Genetic Information Processing	7
+Ribosome	4	4535014(rplL),4531189(rplJ),4534128(rpmG),4536521(rpsN),	Translation	5	Genetic Information Processing	7
+RNA degradation	1	4534248(MSMEG_5399),	Folding, sorting and degradation	1	Genetic Information Processing	7
+Base excision repair	1	4534190(MSMEG_6083),	Replication and repair	1	Genetic Information Processing	7
+FoxO signaling pathway	1	4532672(MSMEG_6636),	Signal transduction	9	Environmental Information Processing	29
+cAMP signaling pathway	1	4537292(MSMEG_5336),	Signal transduction	9	Environmental Information Processing	29
+Two-component system	7	4536815(MSMEG_5606),4531269(MSMEG_5508),4534172(MSMEG_0125),4535208(algD),4532171(MSMEG_5605),4535389(MSMEG_5987),4536372(MSMEG_5879),	Signal transduction	9	Environmental Information Processing	29
+ABC transporters	20	4530907(MSMEG_2853),4532283(MSMEG_1141),4530919(MSMEG_5807),4532636(MSMEG_6309),4532265(MSMEG_5572),4530938(phnC),4535623(MSMEG_4533),4533467(MSMEG_1373),4531846(MSMEG_3058),4534531(MSMEG_4786),4533679(MSMEG_3236),4537743(MSMEG_6331),4530812(MSMEG_3601),4537145(MSMEG_6307),4534293(MSMEG_5573),4535496(MSMEG_3279),4533940(MSMEG_3248),4533200(MSMEG_5058),4537096(MSMEG_6335),4533861(MSMEG_0550),	Membrane transport	20	Environmental Information Processing	29
+Biosynthesis of antibiotics	21	4534430(sdhC),4533745(MSMEG_4650),4531529(MSMEG_5859),4533133(MSMEG_0276),4535810(sucC),4530814(MSMEG_2034),4536096(katA),4534254(MSMEG_0718),4534127(MSMEG_2491),4531720(MSMEG_6712),4534688(MSMEG_0490),4531053(MSMEG_6022),4537318(lys1),4536218(MSMEG_1813),4534598(rfbA),4533283(MSMEG_4508),4536981(MSMEG_1461),4534634(MSMEG_1762),4537229(MSMEG_2496),4537601(MSMEG_3289),4537303(MSMEG_4329),	Global and overview maps	97	Metabolism	115
+Biosynthesis of amino acids	4	4534127(MSMEG_2491),4537318(lys1),4534577(ectB),4537229(MSMEG_2496),	Global and overview maps	97	Metabolism	115
+Metabolic pathways	84	4536815(MSMEG_5606),4532930(MSMEG_0530),4534430(sdhC),4535332(MSMEG_4817),4531249(MSMEG_1972),4534717(MSMEG_4835),4531171(catA),4533745(MSMEG_4650),4531269(MSMEG_5508),4531224(MSMEG_6713),4534017(MSMEG_1070),4536125(MSMEG_0655),4531529(MSMEG_5859),4533133(MSMEG_0276),4531113(MSMEG_5985),4532034(MSMEG_2852),4535810(sucC),4536005(thiC),4536576(MSMEG_1424),4533257(MSMEG_2078),4534441(surE),4530814(MSMEG_2034),4536320(MSMEG_5802),4532791(MSMEG_1306),4533009(MSMEG_4153),4533439(MSMEG_4881),4535955(MSMEG_4816),4534431(MSMEG_1912),4533764(MSMEG_4880),4536614(gabT),4532825(MSMEG_5305),4536190(MSMEG_4325),4535153(MSMEG_0684),4532701(MSMEG_0528),4534254(MSMEG_0718),4531282(MSMEG_4860),4530828(thiD),4531236(MSMEG_1743),4536575(MSMEG_4812),4532782(MSMEG_1764),4532171(MSMEG_5605),4531295(MSMEG_5297),4534127(MSMEG_2491),4531720(MSMEG_6712),4535452(nuoB),4535262(MSMEG_1371),4532190(MSMEG_3818),4534688(MSMEG_0490),4533815(MSMEG_4074),4533577(MSMEG_4440),4536931(nuoG),4532606(MSMEG_6626),4531551(MSMEG_0686),4531585(MSMEG_3007),4533947(pcaC),4531196(gatA),4535230(MSMEG_4864),4535575(glpK),4534289(MSMEG_1294),4531053(MSMEG_6022),4535897(MSMEG_2103),4537318(lys1),4531604(MSMEG_2548),4536218(MSMEG_1813),4530833(nuoM),4536512(MSMEG_0762),4534598(rfbA),4531164(MSMEG_4419),4534008(add),4536981(MSMEG_1461),4534577(ectB),4535183(glgX),4533174(MSMEG_4080),4536666(MSMEG_3159),4532999(MSMEG_0582),4532674(MSMEG_0685),4534634(MSMEG_1762),4533921(MSMEG_0831),4537229(MSMEG_2496),4537141(hydA),4537601(MSMEG_3289),4532394(aspA),4535186(MSMEG_5858),4537303(MSMEG_4329),	Global and overview maps	97	Metabolism	115
+Carbon metabolism	16	4534430(sdhC),4535810(sucC),4530814(MSMEG_2034),4533439(MSMEG_4881),4533764(MSMEG_4880),4536096(katA),4532701(MSMEG_0528),4534254(MSMEG_0718),4531053(MSMEG_6022),4535897(MSMEG_2103),4536218(MSMEG_1813),4533174(MSMEG_4080),4536666(MSMEG_3159),4537229(MSMEG_2496),4537601(MSMEG_3289),4537303(MSMEG_4329),	Global and overview maps	97	Metabolism	115
+Fatty acid metabolism	16	4532930(MSMEG_0530),4534717(MSMEG_4835),4534017(MSMEG_1070),4536125(MSMEG_0655),4532034(MSMEG_2852),4536320(MSMEG_5802),4536190(MSMEG_4325),4534688(MSMEG_0490),4533815(MSMEG_4074),4533577(MSMEG_4440),4532606(MSMEG_6626),4531604(MSMEG_2548),4531164(MSMEG_4419),4533921(MSMEG_0831),4535186(MSMEG_5858),4537303(MSMEG_4329),	Global and overview maps	97	Metabolism	115
+2-Oxocarboxylic acid metabolism	2	4534127(MSMEG_2491),4534577(ectB),	Global and overview maps	97	Metabolism	115
+Microbial metabolism in diverse environments	48	4535740(mhpA),4537592(MSMEG_3930),4534430(sdhC),4531249(MSMEG_1972),4531171(catA),4533745(MSMEG_4650),4531269(MSMEG_5508),4531224(MSMEG_6713),4531529(MSMEG_5859),4533133(MSMEG_0276),4532402(MSMEG_0377),4535810(sucC),4530814(MSMEG_2034),4532791(MSMEG_1306),4533439(MSMEG_4881),4534431(MSMEG_1912),4533764(MSMEG_4880),4536646(MSMEG_4878),4532809(MSMEG_3925),4535788(nirB),4535153(MSMEG_0684),4532701(MSMEG_0528),4534254(MSMEG_0718),4531282(MSMEG_4860),4531720(MSMEG_6712),4534688(MSMEG_0490),4531551(MSMEG_0686),4531585(MSMEG_3007),4533947(pcaC),4535230(MSMEG_4864),4531053(MSMEG_6022),4535897(MSMEG_2103),4536218(MSMEG_1813),4533198(MSMEG_6230),4536512(MSMEG_0762),4534703(MSMEG_0428),4536981(MSMEG_1461),4534577(ectB),4532525(MSMEG_3931),4533174(MSMEG_4080),4536493(MSMEG_6242),4536666(MSMEG_3159),4532999(MSMEG_0582),4532674(MSMEG_0685),4534634(MSMEG_1762),4537229(MSMEG_2496),4537601(MSMEG_3289),4537303(MSMEG_4329),	Global and overview maps	97	Metabolism	115
+Degradation of aromatic compounds	10	4535740(mhpA),4531249(MSMEG_1972),4531171(catA),4531224(MSMEG_6713),4533133(MSMEG_0276),4530814(MSMEG_2034),4534431(MSMEG_1912),4531282(MSMEG_4860),4531720(MSMEG_6712),4533947(pcaC),	Global and overview maps	97	Metabolism	115
+Biosynthesis of secondary metabolites	22	4534430(sdhC),4533585(MSMEG_6761),4531529(MSMEG_5859),4533133(MSMEG_0276),4535810(sucC),4534441(surE),4530814(MSMEG_2034),4532791(MSMEG_1306),4536096(katA),4534254(MSMEG_0718),4534127(MSMEG_2491),4531720(MSMEG_6712),4535262(MSMEG_1371),4534688(MSMEG_0490),4531053(MSMEG_6022),4537318(lys1),4536512(MSMEG_0762),4536981(MSMEG_1461),4535183(glgX),4534634(MSMEG_1762),4537601(MSMEG_3289),4537303(MSMEG_4329),	Global and overview maps	97	Metabolism	115
+beta-Alanine metabolism	5	4531529(MSMEG_5859),4536614(gabT),4534688(MSMEG_0490),4534634(MSMEG_1762),4537141(hydA),	Metabolism of other amino acids	6	Metabolism	115
+D-Glutamine and D-glutamate metabolism	1	4532190(MSMEG_3818),	Metabolism of other amino acids	6	Metabolism	115
+Limonene and pinene degradation	6	4531529(MSMEG_5859),4534688(MSMEG_0490),4533198(MSMEG_6230),4536512(MSMEG_0762),4536981(MSMEG_1461),4534634(MSMEG_1762),	Metabolism of terpenoids and polyketides	14	Metabolism	115
+Polyketide sugar unit biosynthesis	1	4534598(rfbA),	Metabolism of terpenoids and polyketides	14	Metabolism	115
+Biosynthesis of siderophore group nonribosomal peptides	1	4532105(MSMEG_4511),	Metabolism of terpenoids and polyketides	14	Metabolism	115
+Geraniol degradation	7	4536013(MSMEG_4845),4535674(MSMEG_2234),4534813(MSMEG_4875),4531567(MSMEG_5618),4533785(MSMEG_2993),4534688(MSMEG_0490),4535001(MSMEG_4872),	Metabolism of terpenoids and polyketides	14	Metabolism	115
+Caprolactam degradation	1	4534688(MSMEG_0490),	Xenobiotics biodegradation and metabolism	20	Metabolism	115
+Steroid degradation	4	4532787(MSMEG_2240),4534480(MSMEG_5853),4531282(MSMEG_4860),4535230(MSMEG_4864),	Xenobiotics biodegradation and metabolism	20	Metabolism	115
+Metabolism of xenobiotics by cytochrome P450	1	4530814(MSMEG_2034),	Xenobiotics biodegradation and metabolism	20	Metabolism	115
+Chlorocyclohexane and chlorobenzene degradation	2	4531171(catA),4531224(MSMEG_6713),	Xenobiotics biodegradation and metabolism	20	Metabolism	115
+Fluorobenzoate degradation	4	4531249(MSMEG_1972),4531171(catA),4531224(MSMEG_6713),4532402(MSMEG_0377),	Xenobiotics biodegradation and metabolism	20	Metabolism	115
+Aminobenzoate degradation	5	4531269(MSMEG_5508),4532402(MSMEG_0377),4534688(MSMEG_0490),4533198(MSMEG_6230),4536512(MSMEG_0762),	Xenobiotics biodegradation and metabolism	20	Metabolism	115
+Xylene degradation	1	4531249(MSMEG_1972),	Xenobiotics biodegradation and metabolism	20	Metabolism	115
+Chloroalkane and chloroalkene degradation	6	4531529(MSMEG_5859),4533133(MSMEG_0276),4530814(MSMEG_2034),4531720(MSMEG_6712),4536981(MSMEG_1461),4534634(MSMEG_1762),	Xenobiotics biodegradation and metabolism	20	Metabolism	115
+Bisphenol degradation	1	4536512(MSMEG_0762),	Xenobiotics biodegradation and metabolism	20	Metabolism	115
+Benzoate degradation	6	4531249(MSMEG_1972),4531171(catA),4531224(MSMEG_6713),4534431(MSMEG_1912),4534688(MSMEG_0490),4533947(pcaC),	Xenobiotics biodegradation and metabolism	20	Metabolism	115
+Ethylbenzene degradation	1	4533198(MSMEG_6230),	Xenobiotics biodegradation and metabolism	20	Metabolism	115
+Naphthalene degradation	3	4533133(MSMEG_0276),4530814(MSMEG_2034),4531720(MSMEG_6712),	Xenobiotics biodegradation and metabolism	20	Metabolism	115
+Toluene degradation	2	4531171(catA),4531224(MSMEG_6713),	Xenobiotics biodegradation and metabolism	20	Metabolism	115
+Styrene degradation	1	4532402(MSMEG_0377),	Xenobiotics biodegradation and metabolism	20	Metabolism	115
+Polycyclic aromatic hydrocarbon degradation	1	4536512(MSMEG_0762),	Xenobiotics biodegradation and metabolism	20	Metabolism	115
+Tryptophan metabolism	5	4531529(MSMEG_5859),4532402(MSMEG_0377),4534688(MSMEG_0490),4536981(MSMEG_1461),4534634(MSMEG_1762),	Amino acid metabolism	27	Metabolism	115
+Valine, leucine and isoleucine degradation	11	4531529(MSMEG_5859),4533439(MSMEG_4881),4535955(MSMEG_4816),4533764(MSMEG_4880),4536614(gabT),4534688(MSMEG_0490),4536218(MSMEG_1813),4536981(MSMEG_1461),4536666(MSMEG_3159),4534634(MSMEG_1762),4537303(MSMEG_4329),	Amino acid metabolism	27	Metabolism	115
+Tyrosine metabolism	6	4533133(MSMEG_0276),4530814(MSMEG_2034),4531720(MSMEG_6712),4531585(MSMEG_3007),4533198(MSMEG_6230),4532999(MSMEG_0582),	Amino acid metabolism	27	Metabolism	115
+Lysine biosynthesis	1	4537318(lys1),	Amino acid metabolism	27	Metabolism	115
+Glycine, serine and threonine metabolism	3	4532825(MSMEG_5305),4534577(ectB),4537229(MSMEG_2496),	Amino acid metabolism	27	Metabolism	115
+Phenylalanine metabolism	3	4535740(mhpA),4536646(MSMEG_4878),4534688(MSMEG_0490),	Amino acid metabolism	27	Metabolism	115
+Lysine degradation	6	4531529(MSMEG_5859),4534688(MSMEG_0490),4531585(MSMEG_3007),4537318(lys1),4532999(MSMEG_0582),4534634(MSMEG_1762),	Amino acid metabolism	27	Metabolism	115
+Histidine metabolism	3	4531529(MSMEG_5859),4536981(MSMEG_1461),4534634(MSMEG_1762),	Amino acid metabolism	27	Metabolism	115
+Alanine, aspartate and glutamate metabolism	5	4536614(gabT),4532190(MSMEG_3818),4531585(MSMEG_3007),4532999(MSMEG_0582),4532394(aspA),	Amino acid metabolism	27	Metabolism	115
+Arginine and proline metabolism	2	4531529(MSMEG_5859),4534634(MSMEG_1762),	Amino acid metabolism	27	Metabolism	115
+Arginine biosynthesis	2	4534127(MSMEG_2491),4532190(MSMEG_3818),	Amino acid metabolism	27	Metabolism	115
+Butirosin and neomycin biosynthesis	1	4531053(MSMEG_6022),	Biosynthesis of other secondary metabolites	5	Metabolism	115
+Streptomycin biosynthesis	2	4531053(MSMEG_6022),4534598(rfbA),	Biosynthesis of other secondary metabolites	5	Metabolism	115
+Indole alkaloid biosynthesis	1	4532672(MSMEG_6636),	Biosynthesis of other secondary metabolites	5	Metabolism	115
+Stilbenoid, diarylheptanoid and gingerol biosynthesis	1	4536512(MSMEG_0762),	Biosynthesis of other secondary metabolites	5	Metabolism	115
+Monobactam biosynthesis	1	4533283(MSMEG_4508),	Biosynthesis of other secondary metabolites	5	Metabolism	115
+Carbon fixation pathways in prokaryotes	6	4534430(sdhC),4535810(sucC),4533439(MSMEG_4881),4533764(MSMEG_4880),4534254(MSMEG_0718),4536666(MSMEG_3159),	Energy metabolism	26	Metabolism	115
+Nitrogen metabolism	2	4535788(nirB),4534703(MSMEG_0428),	Energy metabolism	26	Metabolism	115
+Methane metabolism	6	4530814(MSMEG_2034),4532701(MSMEG_0528),4534254(MSMEG_0718),4535897(MSMEG_2103),4533174(MSMEG_4080),4537229(MSMEG_2496),	Energy metabolism	26	Metabolism	115
+Oxidative phosphorylation	7	4536815(MSMEG_5606),4534430(sdhC),4536575(MSMEG_4812),4532171(MSMEG_5605),4535452(nuoB),4536931(nuoG),4530833(nuoM),	Energy metabolism	26	Metabolism	115
+Sulfur metabolism	7	4537592(MSMEG_3930),4535623(MSMEG_4533),4535885(MSMEG_5519),4533553(MSMEG_3928),4534013(MSMEG_3929),4532525(MSMEG_3931),4533861(MSMEG_0550),	Energy metabolism	26	Metabolism	115
+Pyrimidine metabolism	2	4534441(surE),4537141(hydA),	Nucleotide metabolism	7	Metabolism	115
+Purine metabolism	6	4534441(surE),4535153(MSMEG_0684),4531551(MSMEG_0686),4534289(MSMEG_1294),4534008(add),4532674(MSMEG_0685),	Nucleotide metabolism	7	Metabolism	115
+Primary bile acid biosynthesis	1	4534008(add),	Lipid metabolism	28	Metabolism	115
+Sphingolipid metabolism	1	4535310(MSMEG_0514),	Lipid metabolism	28	Metabolism	115
+Fatty acid degradation	7	4531529(MSMEG_5859),4533133(MSMEG_0276),4530814(MSMEG_2034),4531720(MSMEG_6712),4534688(MSMEG_0490),4536981(MSMEG_1461),4534634(MSMEG_1762),	Lipid metabolism	28	Metabolism	115
+Glycerophospholipid metabolism	1	4533585(MSMEG_6761),	Lipid metabolism	28	Metabolism	115
+Fatty acid biosynthesis	15	4532930(MSMEG_0530),4534717(MSMEG_4835),4534017(MSMEG_1070),4536125(MSMEG_0655),4532034(MSMEG_2852),4536320(MSMEG_5802),4536190(MSMEG_4325),4533815(MSMEG_4074),4533577(MSMEG_4440),4532606(MSMEG_6626),4531604(MSMEG_2548),4531164(MSMEG_4419),4533921(MSMEG_0831),4535186(MSMEG_5858),4537303(MSMEG_4329),	Lipid metabolism	28	Metabolism	115
+Glycerolipid metabolism	5	4531529(MSMEG_5859),4533257(MSMEG_2078),4535310(MSMEG_0514),4535575(glpK),4534634(MSMEG_1762),	Lipid metabolism	28	Metabolism	115
+Biosynthesis of unsaturated fatty acids	13	4532930(MSMEG_0530),4534717(MSMEG_4835),4534017(MSMEG_1070),4536125(MSMEG_0655),4532034(MSMEG_2852),4536320(MSMEG_5802),4533815(MSMEG_4074),4533577(MSMEG_4440),4532606(MSMEG_6626),4531604(MSMEG_2548),4531164(MSMEG_4419),4533921(MSMEG_0831),4535186(MSMEG_5858),	Lipid metabolism	28	Metabolism	115
+Linoleic acid metabolism	1	4531236(MSMEG_1743),	Lipid metabolism	28	Metabolism	115
+Pantothenate and CoA biosynthesis	1	4537141(hydA),	Metabolism of cofactors and vitamins	21	Metabolism	115
+Retinol metabolism	1	4530814(MSMEG_2034),	Metabolism of cofactors and vitamins	21	Metabolism	115
+Vitamin B6 metabolism	1	4532809(MSMEG_3925),	Metabolism of cofactors and vitamins	21	Metabolism	115
+Thiamine metabolism	2	4536005(thiC),4530828(thiD),	Metabolism of cofactors and vitamins	21	Metabolism	115
+Nicotinate and nicotinamide metabolism	1	4534441(surE),	Metabolism of cofactors and vitamins	21	Metabolism	115
+Folate biosynthesis	1	4531269(MSMEG_5508),	Metabolism of cofactors and vitamins	21	Metabolism	115
+Biotin metabolism	14	4532930(MSMEG_0530),4534717(MSMEG_4835),4534017(MSMEG_1070),4536125(MSMEG_0655),4532034(MSMEG_2852),4536320(MSMEG_5802),4533009(MSMEG_4153),4533815(MSMEG_4074),4533577(MSMEG_4440),4532606(MSMEG_6626),4531604(MSMEG_2548),4531164(MSMEG_4419),4533921(MSMEG_0831),4535186(MSMEG_5858),	Metabolism of cofactors and vitamins	21	Metabolism	115
+Galactose metabolism	3	4531113(MSMEG_5985),4535310(MSMEG_0514),4531053(MSMEG_6022),	Carbohydrate metabolism	30	Metabolism	115
+C5-Branched dibasic acid metabolism	1	4535810(sucC),	Carbohydrate metabolism	30	Metabolism	115
+Fructose and mannose metabolism	2	4535208(algD),4531845(MSMEG_6819),	Carbohydrate metabolism	30	Metabolism	115
+Glyoxylate and dicarboxylate metabolism	8	4533439(MSMEG_4881),4533764(MSMEG_4880),4536096(katA),4531295(MSMEG_5297),4536218(MSMEG_1813),4536493(MSMEG_6242),4536666(MSMEG_3159),4537303(MSMEG_4329),	Carbohydrate metabolism	30	Metabolism	115
+Propanoate metabolism	10	4535810(sucC),4533439(MSMEG_4881),4533764(MSMEG_4880),4536614(gabT),4534254(MSMEG_0718),4534688(MSMEG_0490),4536218(MSMEG_1813),4536493(MSMEG_6242),4536666(MSMEG_3159),4537303(MSMEG_4329),	Carbohydrate metabolism	30	Metabolism	115
+Citrate cycle (TCA cycle)	3	4534430(sdhC),4535810(sucC),4537601(MSMEG_3289),	Carbohydrate metabolism	30	Metabolism	115
+Starch and sucrose metabolism	2	4531053(MSMEG_6022),4535183(glgX),	Carbohydrate metabolism	30	Metabolism	115
+Amino sugar and nucleotide sugar metabolism	3	4531113(MSMEG_5985),4535208(algD),4531053(MSMEG_6022),	Carbohydrate metabolism	30	Metabolism	115
+Pentose and glucuronate interconversions	3	4531529(MSMEG_5859),4536981(MSMEG_1461),4534634(MSMEG_1762),	Carbohydrate metabolism	30	Metabolism	115
+Glycolysis / Gluconeogenesis	10	4531529(MSMEG_5859),4533133(MSMEG_0276),4530814(MSMEG_2034),4532791(MSMEG_1306),4534254(MSMEG_0718),4531720(MSMEG_6712),4531053(MSMEG_6022),4536981(MSMEG_1461),4534634(MSMEG_1762),4537601(MSMEG_3289),	Carbohydrate metabolism	30	Metabolism	115
+Butanoate metabolism	6	4534430(sdhC),4533133(MSMEG_0276),4536614(gabT),4534688(MSMEG_0490),4531585(MSMEG_3007),4532999(MSMEG_0582),	Carbohydrate metabolism	30	Metabolism	115
+Pyruvate metabolism	9	4531529(MSMEG_5859),4533133(MSMEG_0276),4536576(MSMEG_1424),4532791(MSMEG_1306),4534254(MSMEG_0718),4536981(MSMEG_1461),4534634(MSMEG_1762),4537601(MSMEG_3289),4537303(MSMEG_4329),	Carbohydrate metabolism	30	Metabolism	115
+Ascorbate and aldarate metabolism	2	4531529(MSMEG_5859),4534634(MSMEG_1762),	Carbohydrate metabolism	30	Metabolism	115
+Peroxisome	2	4536096(katA),4532672(MSMEG_6636),	Transport and catabolism	2	Cellular Processes	2

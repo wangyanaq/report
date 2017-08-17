@@ -1,0 +1,423 @@
+<html>
+<!---
+ENTRY       osa00531
+DEFINITION  Glycosaminoglycan degradation - Oryza sativa japonica (Japanese rice) (RefSeq)
+--->
+<head>
+<title>
+KEGG PATHWAY: Glycosaminoglycan degradation - Oryza sativa japonica (Japanese rice) (RefSeq)
+</title>
+<style type="text/css">
+<!--
+div.poplay {
+  position: absolute;
+  padding: 2px;
+  background-color: #ffff99;
+  border-top: solid 1px #c0c0c0;
+  border-left: solid 1px #c0c0c0;
+  border-bottom: solid 1px #808080;
+  border-right: solid 1px #808080;
+  visibility: hidden;
+}
+
+span.popup
+{
+  font-weight: bold;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+form {
+  margin: 0px;
+}
+
+div.image {
+  position: absolute;
+  padding: 0px;
+  top: 0px;
+  padding: 0px;
+  border: solid 1px #000000;
+}
+
+img {
+  border: none;
+}
+
+
+-->
+</style>
+<link rel="stylesheet" href="http://www.genome.jp/css/kegg.css" type="text/css" />
+<script language="JavaScript" src="http://www.genome.jp/js/dhtml.js"></script>
+
+<script language="JavaScript">
+<!---
+var image_height;
+$(function(){
+	$(window).bind('load',function(){
+  image_height = $("div.image").height()-10;
+	$("div.control").height(image_height-5);
+	$("#resizable").height(image_height);
+	});
+});
+
+
+function resize_map(scale){
+  var form = document.forms["form2"];
+  form.scale.value = scale;
+  form.submit();
+}
+
+function select_menu(){
+  var form = document.forms["selmenu"];
+  if(form.org_name.value == 'set_cookie' || form.org_name.value == 'reset_cookie'){
+    window.open('http://www.genome.jp/kegg/misc/kegg2_select.html','sel_org','toolbar=no,location=no,directories=no,width=500,height=320,resizable=yes');
+  }else{
+    form.action='http://www.genome.jp/kegg-bin/show_pathway';
+    form.submit();
+  }
+}
+
+var timer = 0;
+var p_entry, p_title, p_bgcolor;
+function popupTimer(entry, title, bgcolor)
+{
+  p_entry = entry;
+  p_title = title;
+  p_bgcolor = bgcolor;
+
+  if(timer == 0){
+    var func = "showThumbnail()";
+    timer = setTimeout(func, 1200);
+  }
+}
+
+
+function showThumbnail()
+{
+
+  var url = "";
+  if(p_entry.match(/^[A-Z]+\d+$/))
+  {
+    url = "http://www.genome.jp/kegg/misc/thumbnail/" + p_entry + ".gif";
+  }
+  else if(p_entry.match(/(\d+)$/))
+  {
+    url = "http://www.genome.jp/kegg/misc/thumbnail/map" + RegExp.$1 + ".gif";
+  }
+
+  var html = "";
+
+  if(p_bgcolor != "#ffffff")
+  {
+    html += "<span class=\"popup\">" + p_entry + "</span><br />";
+  }
+
+  html += "<img src=\"" + url + "\" alt=\"Loading...\">";
+
+  var x = getCurrentMouseX();
+  var y = getCurrentMouseY();
+
+  var layer = new Component("poplay");
+  layer.backgroundColor(p_bgcolor);
+  layer.HTML(html);
+  layer.move(x, y+40);
+  layer.visible(true);
+
+  timer = 0;
+}
+
+function hideMapTn(){
+  var layer = new Component("poplay");
+  layer.visible(false);
+
+  if(timer != 0){
+    clearTimeout(timer);
+    timer = 0;
+  }
+}
+
+function switchDescription(){
+  var form = document.forms[0];
+  var status = form.show_description.value;
+
+  if(status == "hide"){
+    document.getElementById("description").style.display = "";
+    document.getElementById("descLink").innerHTML = "Hide description";
+    form.show_description.value='show';
+
+    if(document.forms[1]){
+    	document.forms[1].show_description.value='show';
+    }
+  }
+  else
+  {
+    document.getElementById("description").style.display = 'none';
+    document.getElementById("descLink").innerHTML = "Show description";
+    form.show_description.value='hide';
+
+    if(document.forms[1]){
+      document.forms[1].show_description.value='hide';
+    }
+  }
+}
+
+function btn(bobj,img) { bobj.src = "http://www.genome.jp/Fig/bget/button_" + img + ".gif"; }
+//--->
+</script>
+</head>
+<body>
+<table cellpadding="0" width="100%" cellspacing="0" border="0">
+ <tr>
+  <td>
+   <a href="http://www.genome.jp/kegg/kegg2.html"><img align="middle" alt="KEGG" border="0" src="http://www.genome.jp/Fig/bget/kegg3.gif" /></a>
+   &nbsp;&nbsp;&nbsp;<font class="title3"><b>Glycosaminoglycan degradation - Oryza sativa japonica (Japanese rice) (RefSeq)</b></font>
+  </td>
+  <td valign="bottom" align="right">
+   <a href="javascript:void(window.open('http://www.genome.jp/kegg/document/help_pathway.html','KEGG_Help','toolbar=no,location=no,directories=no,width=720,height=640,resizable=yes,scrollbars=yes'))"><img name="help" src="http://www.genome.jp/Fig/bget/button_Hb.gif" border="0" align="middle" alt="Help" onmouseout="btn(this,'Hb')" onmousedown="btn(this,'Hbd')" onmouseover="btn(this,'Hbh')" onmouseup="btn(this,'Hb')" /></a>
+  </td>
+ </tr>
+</table>
+
+  
+[
+<a href="http://www.genome.jp/kegg-bin/get_htext?query=00531&htext=br08901.keg&option=-a">Pathway menu</a>
+| <a href="http://www.genome.jp/kegg-bin/get_htext?htext=br08601_map00531.keg&query=osa&option=-a">Organism menu</a>
+| <a href="http://www.genome.jp/dbget-bin/www_bget?pathway+osa00531">Pathway entry</a>
+
+| <a href="http://www.kegg.jp/kegg-bin/download?entry=osa00531&format=kgml">Download KGML</a>
+
+| <a href="javascript:void(window.open('http://www.genome.jp/kegg/tool/color_a_pathway.html','KEGG_Help','height=300,width=600,resizable=yes,scrollbars=yes'))">User data mapping</a>
+
+]
+  
+
+<table><tr><td>
+<form name="selmenu" method="get">
+<select name="org_name">
+<option value="map">Reference pathway</option>
+<option value="ko">Reference pathway (KO)</option>
+<option value="ec">Reference pathway (EC)</option>
+<option value="rn">Reference pathway (Reaction)</option>
+<option value="set_cookie">-----&lt; Set personalized menu &gt;-----</option>
+<option value="osa.sort_alp">-----&lt; Sort below by alphabet &gt;-----</option>
+<option value="hsa">Homo sapiens (human)</option>
+<option value="hsadd">Homo sapiens (human) + Disease/drug</option>
+<option value="ptr">Pan troglodytes (chimpanzee)</option>
+<option value="pps">Pan paniscus (bonobo)</option>
+<option value="ggo">Gorilla gorilla gorilla (western lowland gorilla)</option>
+<option value="pon">Pongo abelii (Sumatran orangutan)</option>
+<option value="mcc">Macaca mulatta (rhesus monkey)</option>
+<option value="mmu">Mus musculus (mouse)</option>
+<option value="rno">Rattus norvegicus (rat)</option>
+<option value="cfa">Canis familiaris (dog)</option>
+<option value="aml">Ailuropoda melanoleuca (giant panda)</option>
+<option value="fca">Felis catus (domestic cat)</option>
+<option value="bta">Bos taurus (cow)</option>
+<option value="ssc">Sus scrofa (pig)</option>
+<option value="ecb">Equus caballus (horse)</option>
+<option value="mdo">Monodelphis domestica (opossum)</option>
+<option value="shr">Sarcophilus harrisii (Tasmanian devil)</option>
+<option value="oaa">Ornithorhynchus anatinus (platypus)</option>
+<option value="gga">Gallus gallus (chicken)</option>
+<option value="mgp">Meleagris gallopavo (turkey)</option>
+<option value="tgu">Taeniopygia guttata (zebra finch)</option>
+<option value="acs">Anolis carolinensis (green anole)</option>
+<option value="xla">Xenopus laevis (African clawed frog)</option>
+<option value="xtr">Xenopus tropicalis (western clawed frog)</option>
+<option value="dre">Danio rerio (zebrafish)</option>
+<option value="tru">Takifugu rubripes (torafugu)</option>
+<option value="ola">Oryzias latipes (Japanese medaka)</option>
+<option value="bfo">Branchiostoma floridae (Florida lancelet)</option>
+<option value="cin">Ciona intestinalis (sea squirt)</option>
+<option value="spu">Strongylocentrotus purpuratus (purple sea urchin)</option>
+<option value="dme">Drosophila melanogaster (fruit fly)</option>
+<option value="dpo">Drosophila pseudoobscura pseudoobscura</option>
+<option value="dan">Drosophila ananassae</option>
+<option value="der">Drosophila erecta</option>
+<option value="dpe">Drosophila persimilis</option>
+<option value="dse">Drosophila sechellia</option>
+<option value="dsi">Drosophila simulans</option>
+<option value="dwi">Drosophila willistoni</option>
+<option value="dya">Drosophila yakuba</option>
+<option value="dgr">Drosophila grimshawi</option>
+<option value="dmo">Drosophila mojavensis</option>
+<option value="dvi">Drosophila virilis</option>
+<option value="aga">Anopheles gambiae (mosquito)</option>
+<option value="aag">Aedes aegypti (yellow fever mosquito)</option>
+<option value="cqu">Culex quinquefasciatus (southern house mosquito)</option>
+<option value="ame">Apis mellifera (honey bee)</option>
+<option value="nvi">Nasonia vitripennis (jewel wasp)</option>
+<option value="tca">Tribolium castaneum (red flour beetle)</option>
+<option value="api">Acyrthosiphon pisum (pea aphid)</option>
+<option value="phu">Pediculus humanus corporis (human body louse)</option>
+<option value="isc">Ixodes scapularis (black-legged tick)</option>
+<option value="cel">Caenorhabditis elegans (nematode)</option>
+<option value="cbr">Caenorhabditis briggsae</option>
+<option value="bmy">Brugia malayi (filaria)</option>
+<option value="loa">Loa loa (eye worm)</option>
+<option value="tsp">Trichinella spiralis</option>
+<option value="smm">Schistosoma mansoni</option>
+<option value="nve">Nematostella vectensis (sea anemone)</option>
+<option value="hmg">Hydra vulgaris</option>
+<option value="tad">Trichoplax adhaerens</option>
+<option value="aqu">Amphimedon queenslandica (sponge)</option>
+<option value="ath">Arabidopsis thaliana (thale cress)</option>
+<option value="aly">Arabidopsis lyrata (lyrate rockcress)</option>
+<option value="gmx">Glycine max (soybean)</option>
+<option value="mtr">Medicago truncatula (barrel medic)</option>
+<option value="fve">Fragaria vesca (woodland strawberry)</option>
+<option value="csv">Cucumis sativus (cucumber)</option>
+<option value="rcu">Ricinus communis (castor bean)</option>
+<option value="pop">Populus trichocarpa (black cottonwood)</option>
+<option value="vvi">Vitis vinifera (wine grape)</option>
+<option value="sly">Solanum lycopersicum (tomato)</option>
+<option value="osa" selected>Oryza sativa japonica (Japanese rice) (RefSeq)</option>
+<option value="dosa">Oryza sativa japonica (Japanese rice) (RAPDB)</option>
+<option value="bdi">Brachypodium distachyon</option>
+<option value="sbi">Sorghum bicolor (sorghum)</option>
+<option value="zma">Zea mays (maize)</option>
+<option value="smo">Selaginella moellendorffii</option>
+<option value="ppp">Physcomitrella patens subsp. patens</option>
+<option value="dha">Debaryomyces hansenii</option>
+<option value="pic">Scheffersomyces stipitis</option>
+<option value="pgu">Meyerozyma guilliermondii</option>
+<option value="lel">Lodderomyces elongisporus</option>
+<option value="cal">Candida albicans</option>
+<option value="ctp">Candida tropicalis</option>
+<option value="cot">Candida orthopsilosis</option>
+<option value="cdu">Candida dubliniensis</option>
+<option value="clu">Clavispora lusitaniae</option>
+<option value="ncr">Neurospora crassa</option>
+<option value="smp">Sordaria macrospora</option>
+<option value="pan">Podospora anserina</option>
+<option value="ttt">Thielavia terrestris</option>
+<option value="mtm">Myceliophthora thermophila</option>
+<option value="mgr">Magnaporthe oryzae</option>
+<option value="nhe">Nectria haematococca</option>
+<option value="val">Verticillium alfalfae</option>
+<option value="ssl">Sclerotinia sclerotiorum</option>
+<option value="bfu">Botrytis cinerea</option>
+<option value="ani">Aspergillus nidulans</option>
+<option value="afm">Aspergillus fumigatus</option>
+<option value="aor">Aspergillus oryzae</option>
+<option value="ang">Aspergillus niger</option>
+<option value="afv">Aspergillus flavus</option>
+<option value="act">Aspergillus clavatus</option>
+<option value="nfi">Aspergillus fischeri</option>
+<option value="pcs">Penicillium rubens</option>
+<option value="cim">Coccidioides immitis</option>
+<option value="cpw">Coccidioides posadasii</option>
+<option value="pbl">Paracoccidioides lutzii Pb01</option>
+<option value="ure">Uncinocarpus reesii</option>
+<option value="abe">Arthroderma benhamiae</option>
+<option value="tve">Trichophyton verrucosum</option>
+<option value="aje">Histoplasma capsulatum</option>
+<option value="pno">Parastagonospora nodorum</option>
+<option value="pte">Pyrenophora teres</option>
+<option value="ztr">Zymoseptoria tritici</option>
+<option value="tml">Tuber melanosporum</option>
+<option value="cne">Cryptococcus neoformans JEC21</option>
+<option value="cnb">Cryptococcus neoformans B-3501A</option>
+<option value="cgi">Cryptococcus gattii</option>
+<option value="ppl">Postia placenta</option>
+<option value="lbc">Laccaria bicolor</option>
+<option value="mpr">Moniliophthora perniciosa</option>
+<option value="cci">Coprinopsis cinerea</option>
+<option value="scm">Schizophyllum commune</option>
+<option value="uma">Ustilago maydis</option>
+<option value="pgr">Puccinia graminis</option>
+<option value="mbr">Monosiga brevicollis</option>
+<option value="ddi">Dictyostelium discoideum (cellular slime mold)</option>
+<option value="dpp">Dictyostelium purpureum (cellular slime mold)</option>
+<option value="dfa">Dictyostelium fasciculatum (cellular slime mold)</option>
+<option value="ehi">Entamoeba histolytica</option>
+<option value="edi">Entamoeba dispar</option>
+<option value="acan">Acanthamoeba castellanii</option>
+<option value="tet">Tetrahymena thermophila</option>
+<option value="ptm">Paramecium tetraurelia</option>
+<option value="pti">Phaeodactylum tricornutum</option>
+<option value="tps">Thalassiosira pseudonana</option>
+<option value="pif">Phytophthora infestans</option>
+<option value="ngr">Naegleria gruberi</option>
+<option value="tva">Trichomonas vaginalis</option>
+</select>
+<input type="hidden" name="mapno" value="00531" />
+<input type="hidden" name="mapscale" value=>
+<input type="button" value="Go" onclick="select_menu(this.form)" />
+<input type="hidden" name="show_description" value="hide">
+
+</form>
+</td><td>
+<form name="form2" method="get" action="http://www.genome.jp/kegg-bin/show_pathway">
+&nbsp;&nbsp;&nbsp;&nbsp;
+<select name="scale" onChange="resize_map(this.form.scale.value)">
+<option value="1.84" >184%</option>
+<option value="1.5" >150%</option>
+<option value="1.22" >122%</option>
+<option value="1.0" selected>100%</option>
+<option value="0.82" >82%</option>
+<option value="0.67" >67%</option>
+<option value="0.55" >55%</option>
+</select>
+&nbsp;&nbsp;<input type="text" name="query" size=20 value="">
+<input type="hidden" name="map" value="osa00531" />
+<input type="hidden" name="scale" value=>
+<input type="hidden" name="image" value=/share/www//mark_pathway146062673785050/osa00531.png>
+<input type="hidden" name="use" value="reference">
+<input type="hidden" name="nmap_args" value="14606259325178">
+<input type="hidden" name="auto_image" value="">
+<input type="hidden" name="show_description" value="hide">
+<input type="hidden" name="multi_query" />
+
+<!--</form>-->
+</td></tr></table>
+
+
+<img src="osa00531.png" name="pathwayimage" name="pathwayimage" usemap="#mapdata" border="0" />
+
+<map name="mapdata">
+<area shape=circle	coords=647,508,4	href="http://www.genome.jp/dbget-bin/www_bget?G01391"	title="G01391" />
+<area shape=circle	coords=647,447,4	href="http://www.genome.jp/dbget-bin/www_bget?G13074"	title="G13074" />
+<area shape=circle	coords=647,386,4	href="http://www.genome.jp/dbget-bin/www_bget?G13073"	title="G13073" />
+<area shape=circle	coords=647,325,4	href="http://www.genome.jp/dbget-bin/www_bget?G01977"	title="G01977" />
+<area shape=circle	coords=647,264,4	href="http://www.genome.jp/dbget-bin/www_bget?G01945"	title="G01945" />
+<area shape=circle	coords=511,752,4	href="http://www.genome.jp/dbget-bin/www_bget?G02632"	title="G02632" />
+<area shape=circle	coords=511,691,4	href="http://www.genome.jp/dbget-bin/www_bget?G09660"	title="G09660" />
+<area shape=circle	coords=511,630,4	href="http://www.genome.jp/dbget-bin/www_bget?G13040"	title="G13040" />
+<area shape=circle	coords=511,569,4	href="http://www.genome.jp/dbget-bin/www_bget?G13039"	title="G13039" />
+<area shape=circle	coords=511,508,4	href="http://www.genome.jp/dbget-bin/www_bget?G13038"	title="G13038" />
+<area shape=circle	coords=511,447,4	href="http://www.genome.jp/dbget-bin/www_bget?G13037"	title="G13037" />
+<area shape=circle	coords=511,386,4	href="http://www.genome.jp/dbget-bin/www_bget?G13036"	title="G13036" />
+<area shape=circle	coords=511,325,4	href="http://www.genome.jp/dbget-bin/www_bget?G13035"	title="G13035" />
+<area shape=circle	coords=511,264,4	href="http://www.genome.jp/dbget-bin/www_bget?G13034"	title="G13034" />
+<area shape=circle	coords=294,508,4	href="http://www.genome.jp/dbget-bin/www_bget?G00872"	title="G00872 (DWA-2)" onmouseover="popupTimer(&quot;G00872&quot;, &quot;G00872 (DWA-2)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=294,447,4	href="http://www.genome.jp/dbget-bin/www_bget?G13043"	title="G13043" />
+<area shape=circle	coords=294,386,4	href="http://www.genome.jp/dbget-bin/www_bget?G12336"	title="G12336" />
+<area shape=circle	coords=294,325,4	href="http://www.genome.jp/dbget-bin/www_bget?G13042"	title="G13042" />
+<area shape=circle	coords=294,264,4	href="http://www.genome.jp/dbget-bin/www_bget?G13041"	title="G13041" />
+<area shape=circle	coords=511,203,4	href="http://www.genome.jp/dbget-bin/www_bget?C00925"	title="C00925 (Heparan sulfate)" onmouseover="popupTimer(&quot;C00925&quot;, &quot;C00925 (Heparan sulfate)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=294,203,4	href="http://www.genome.jp/dbget-bin/www_bget?C00426"	title="C00426 (Dermatan sulfate)" onmouseover="popupTimer(&quot;C00426&quot;, &quot;C00426 (Dermatan sulfate)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=385,386,4	href="http://www.genome.jp/dbget-bin/www_bget?C00634"	title="C00634 (Chondroitin 4-sulfate)" onmouseover="popupTimer(&quot;C00634&quot;, &quot;C00634 (Chondroitin 4-sulfate)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=647,203,4	href="http://www.genome.jp/dbget-bin/www_bget?C00573"	title="C00573 (Keratan sulfate)" onmouseover="popupTimer(&quot;C00573&quot;, &quot;C00573 (Keratan sulfate)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=73,203,4	href="http://www.genome.jp/dbget-bin/www_bget?G10505"	title="G10505 (Hyaluronic acid)" onmouseover="popupTimer(&quot;G10505&quot;, &quot;G10505 (Hyaluronic acid)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=73,264,4	href="http://www.genome.jp/dbget-bin/www_bget?G00526"	title="G00526" />
+<area shape=circle	coords=73,325,4	href="http://www.genome.jp/dbget-bin/www_bget?G00711"	title="G00711" />
+<area shape=circle	coords=73,386,4	href="http://www.genome.jp/dbget-bin/www_bget?G10008"	title="G10008" />
+<area shape=rect	coords=625,344,671,361	href="http://www.genome.jp/dbget-bin/www_bget?osa:4339457"	title="4339457" />
+<area shape=rect	coords=489,466,535,483	href="http://www.genome.jp/dbget-bin/www_bget?osa:4326815+osa:4337855"	title="4326815, 4337855" />
+<area shape=rect	coords=692,466,738,483	href="http://www.genome.jp/dbget-bin/www_bget?osa:4324914+osa:4332084+osa:4337620+osa:4338802+osa:4343697"	title="4324914, 4332084, 4337620, 4338802, 4343697" />
+<area shape=rect	coords=625,466,671,483	href="http://www.genome.jp/dbget-bin/www_bget?osa:4324914+osa:4332084+osa:4337620+osa:4338802+osa:4343697"	title="4324914, 4332084, 4337620, 4338802, 4343697" />
+<area shape=poly	coords=912,740,942,740,942,744,912,744	href="http://www.genome.jp/dbget-bin/www_bget?osa:4324914+osa:4332084+osa:4337620+osa:4338802+osa:4343697"	title="4324914, 4332084, 4337620, 4338802, 4343697" />
+<area shape=poly	coords=983,740,1013,740,1013,744,983,744	href="http://www.genome.jp/dbget-bin/www_bget?osa:4339457"	title="4339457" />
+<area shape=poly	coords=822,740,852,740,852,744,822,744	href="http://www.genome.jp/dbget-bin/www_bget?osa:4339457"	title="4339457" />
+<area shape=poly	coords=1075,740,1105,740,1105,744,1075,744	href="http://www.genome.jp/dbget-bin/www_bget?osa:4324914+osa:4332084+osa:4337620+osa:4338802+osa:4343697"	title="4324914, 4332084, 4337620, 4338802, 4343697" />
+<area shape=rect	coords=465,113,558,147	href="http://www.genome.jp/kegg-bin/show_pathway?map00534"	title="map00534: Glycosaminoglycan biosynthesis - heparan sulfate / heparin" onmouseover="popupTimer(&quot;map00534&quot;, &quot;map00534: Glycosaminoglycan biosynthesis - heparan sulfate / heparin&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=601,113,694,147	href="http://www.genome.jp/kegg-bin/show_pathway?map00533"	title="map00533: Glycosaminoglycan biosynthesis - keratan sulfate" onmouseover="popupTimer(&quot;map00533&quot;, &quot;map00533: Glycosaminoglycan biosynthesis - keratan sulfate&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=336,113,448,147	href="http://www.genome.jp/kegg-bin/show_pathway?map00532"	title="map00532: Glycosaminoglycan biosynthesis - chondroitin sulfate / dermatan sulfate" onmouseover="popupTimer(&quot;map00532&quot;, &quot;map00532: Glycosaminoglycan biosynthesis - chondroitin sulfate / dermatan sulfate&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=40,45,327,70	href="http://www.genome.jp/dbget-bin/www_bget?osa00531"	title="osa00531: Glycosaminoglycan degradation" onmouseover="popupTimer(&quot;osa00531&quot;, &quot;osa00531: Glycosaminoglycan degradation&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+</map>
+<div id="poplay" class="poplay" />
+
+</form>
+</body>
+</html>

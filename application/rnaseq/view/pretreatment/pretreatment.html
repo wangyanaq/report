@@ -1,0 +1,335 @@
+﻿{include file="pc@common/_meta"}
+<title>数据预处理</title>
+</head>
+<body onLoad="setupZoom();">
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> BC150548-1<span class="c-gray en">&gt;</span>数据预处理<a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<div class="page-container">
+	<div class="main_content">
+		<h3 class="main_title" id="1_1">数据预处理步骤</h3>
+		<div class="HuiTab">
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;测序得到Raw Reads中可能含有总体质量较低、含有测序引物、末端质量偏低等不合格的Reads，这些不合格的Reads很有可能对分析质量造成一定的影响，所以必须对其进行过滤，得到可用于数据分析的clean Reads，应用Seqtk [1]进行过滤，主要步骤如下：</p>
+			<p>1.去除reads中所含有的接头序列；</p>
+			<p>2.去除3’端质量Q低于20的碱基，即碱基错误率小于0.01，其中，Q=-10logerror_ratio；</p>
+			<p>3.去除长度小于25的reads； </p>
+			<p>4.去除所属物种的ribosome RNA reads。</p>
+	</div>
+		<br/>
+		<br/>
+		<h3 class="main_title" id="1_2">数据预处理结果统计</h3>
+		<div class="HuiTab">
+			<table class="table table-border table-bordered table-bg mt-20">
+				<tbody>
+				<tr>
+					<td  style="text-align:center"><b>Sample ID</b></td>
+					<td style="text-align:center"><b>Raw reads</b></td>
+					<td style="text-align:center"><b>Clean reads</b></td>
+					<td style="text-align:center"><b>Clean ratio</b></td>
+					<td style="text-align:center"><b>rRNA trimed</b></td>
+					<td style="text-align:center"><b>rRNA ratio</b></td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L15351</td>
+					<td style="text-align:center">28,723,728</td>
+					<td style="text-align:center">19,711,352</td>
+					<td style="text-align:center">	68.62%</td>
+					<td style="text-align:center">18,856,908</td>
+					<td style="text-align:center">2.97%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L15351</td>
+					<td style="text-align:center">26,197,638</td>
+					<td style="text-align:center">17,892,300</td>
+					<td style="text-align:center">68.30%</td>
+					<td style="text-align:center">17,202,680</td>
+					<td style="text-align:center">2.63%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L15351</td>
+					<td style="text-align:center">19,118,090</td>
+					<td style="text-align:center">12,645,433</td>
+					<td style="text-align:center">	66.14%</td>
+					<td style="text-align:center">12,112,748</td>
+					<td style="text-align:center">2.79%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L58</td>
+					<td style="text-align:center">30,560,752</td>
+					<td style="text-align:center">23,802,440</td>
+					<td style="text-align:center">77.89%</td>
+					<td style="text-align:center">23,073,062</td>
+					<td style="text-align:center">2.39%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L581</td>
+					<td style="text-align:center">30,560,752</td>
+					<td style="text-align:center">23,802,440</td>
+					<td style="text-align:center">77.89%</td>
+					<td style="text-align:center">23,073,062</td>
+					<td style="text-align:center">2.39%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L582</td>
+					<td style="text-align:center">30,560,752</td>
+					<td style="text-align:center">23,802,440</td>
+					<td style="text-align:center">77.89%</td>
+					<td style="text-align:center">23,073,062</td>
+					<td style="text-align:center">2.39%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L583</td>
+					<td style="text-align:center">30,560,752</td>
+					<td style="text-align:center">23,802,440</td>
+					<td style="text-align:center">77.89%</td>
+					<td style="text-align:center">23,073,062</td>
+					<td style="text-align:center">2.39%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L58641</td>
+					<td style="text-align:center">34,555,330</td>
+					<td style="text-align:center">	22,485,207</td>
+					<td style="text-align:center">65.07%</td>
+					<td style="text-align:center">23,073,062</td>
+					<td style="text-align:center">2.39%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L58642</td>
+					<td style="text-align:center">34,555,330</td>
+					<td style="text-align:center">	22,485,207</td>
+					<td style="text-align:center">65.07%</td>
+					<td style="text-align:center">23,073,062</td>
+					<td style="text-align:center">2.39%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L58643</td>
+					<td style="text-align:center">34,555,330</td>
+					<td style="text-align:center">	22,485,207</td>
+					<td style="text-align:center">65.07%</td>
+					<td style="text-align:center">23,073,062</td>
+					<td style="text-align:center">2.39%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L58641</td>
+					<td style="text-align:center">34,555,330</td>
+					<td style="text-align:center">	22,485,207</td>
+					<td style="text-align:center">65.07%</td>
+					<td style="text-align:center">23,073,062</td>
+					<td style="text-align:center">2.39%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L58641</td>
+					<td style="text-align:center">34,555,330</td>
+					<td style="text-align:center">	22,485,207</td>
+					<td style="text-align:center">65.07%</td>
+					<td style="text-align:center">23,073,062</td>
+					<td style="text-align:center">2.39%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L58641</td>
+					<td style="text-align:center">34,555,330</td>
+					<td style="text-align:center">	22,485,207</td>
+					<td style="text-align:center">65.07%</td>
+					<td style="text-align:center">23,073,062</td>
+					<td style="text-align:center">2.39%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L15351</td>
+					<td style="text-align:center">28,723,728</td>
+					<td style="text-align:center">19,711,352</td>
+					<td style="text-align:center">	68.62%</td>
+					<td style="text-align:center">18,856,908</td>
+					<td style="text-align:center">2.97%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L15351</td>
+					<td style="text-align:center">26,197,638</td>
+					<td style="text-align:center">17,892,300</td>
+					<td style="text-align:center">68.30%</td>
+					<td style="text-align:center">17,202,680</td>
+					<td style="text-align:center">2.63%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L15351</td>
+					<td style="text-align:center">19,118,090</td>
+					<td style="text-align:center">12,645,433</td>
+					<td style="text-align:center">	66.14%</td>
+					<td style="text-align:center">12,112,748</td>
+					<td style="text-align:center">2.79%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L58</td>
+					<td style="text-align:center">30,560,752</td>
+					<td style="text-align:center">23,802,440</td>
+					<td style="text-align:center">77.89%</td>
+					<td style="text-align:center">23,073,062</td>
+					<td style="text-align:center">2.39%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L581</td>
+					<td style="text-align:center">30,560,752</td>
+					<td style="text-align:center">23,802,440</td>
+					<td style="text-align:center">77.89%</td>
+					<td style="text-align:center">23,073,062</td>
+					<td style="text-align:center">2.39%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L582</td>
+					<td style="text-align:center">30,560,752</td>
+					<td style="text-align:center">23,802,440</td>
+					<td style="text-align:center">77.89%</td>
+					<td style="text-align:center">23,073,062</td>
+					<td style="text-align:center">2.39%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L583</td>
+					<td style="text-align:center">30,560,752</td>
+					<td style="text-align:center">23,802,440</td>
+					<td style="text-align:center">77.89%</td>
+					<td style="text-align:center">23,073,062</td>
+					<td style="text-align:center">2.39%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L58641</td>
+					<td style="text-align:center">34,555,330</td>
+					<td style="text-align:center">	22,485,207</td>
+					<td style="text-align:center">65.07%</td>
+					<td style="text-align:center">23,073,062</td>
+					<td style="text-align:center">2.39%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L58642</td>
+					<td style="text-align:center">34,555,330</td>
+					<td style="text-align:center">	22,485,207</td>
+					<td style="text-align:center">65.07%</td>
+					<td style="text-align:center">23,073,062</td>
+					<td style="text-align:center">2.39%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L58643</td>
+					<td style="text-align:center">34,555,330</td>
+					<td style="text-align:center">	22,485,207</td>
+					<td style="text-align:center">65.07%</td>
+					<td style="text-align:center">23,073,062</td>
+					<td style="text-align:center">2.39%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L58641</td>
+					<td style="text-align:center">34,555,330</td>
+					<td style="text-align:center">	22,485,207</td>
+					<td style="text-align:center">65.07%</td>
+					<td style="text-align:center">23,073,062</td>
+					<td style="text-align:center">2.39%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L58641</td>
+					<td style="text-align:center">34,555,330</td>
+					<td style="text-align:center">	22,485,207</td>
+					<td style="text-align:center">65.07%</td>
+					<td style="text-align:center">23,073,062</td>
+					<td style="text-align:center">2.39%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L58641</td>
+					<td style="text-align:center">34,555,330</td>
+					<td style="text-align:center">	22,485,207</td>
+					<td style="text-align:center">65.07%</td>
+					<td style="text-align:center">23,073,062</td>
+					<td style="text-align:center">2.39%</td>
+				</tr>
+				<tr>
+					<td   style="text-align:center">L58641</td>
+					<td style="text-align:center">34,555,330</td>
+					<td style="text-align:center">	22,485,207</td>
+					<td style="text-align:center">65.07%</td>
+					<td style="text-align:center">23,073,062</td>
+					<td style="text-align:center">2.39%</td>
+				</tr>
+				</tbody>
+			</table>
+			<p>备注：1.Clean ratio=(Clean reads/Ra reads)%;2. rRNA ratio=[(Clean reads - rRNA trimed)/ Clean reads]%</p>
+	</div>
+	</div>
+</div>
+
+
+{include file="pc@common/_footer"}
+
+<script type="text/javascript">
+
+	$(function(){
+		$.Huifold("#Huifold1 .item h4","#Huifold1 .item .info","fast",3,"click"); /*5个参数顺序不可打乱，分别是：相应区,隐藏显示的内容,速度,类型,事件*/
+	});
+/*三种RNA显示图*/
+	$(function() {
+		$.Huitab("#tab_demo .tabBar span","#tab_demo .tabCon","current","click","1")
+	});
+
+
+/*中间图显示*/
+	$(document).ready(function() {
+		//Horizontal Tab
+		$('#parentHorizontalTab').easyResponsiveTabs({
+			type: 'default', //Types: default, vertical, accordion
+			width: 'auto', //auto or any width like 600px
+			fit: true, // 100% fit in a container
+			tabidentify: 'hor_1', // The tab groups identifier
+			activate: function(event) { // Callback function if tab is switched
+				var $tab = $(this);
+				var $info = $('#nested-tabInfo');
+				var $name = $('span', $info);
+				$name.text($tab.text());
+				$info.show();
+			}
+		});
+
+		// Child Tab
+		$('#ChildVerticalTab_1').easyResponsiveTabs({
+			type: 'vertical',
+			width: 'auto',
+			fit: true,
+			tabidentify: 'ver_1', // The tab groups identifier
+			activetab_bg: '#fff', // background color for active tabs in this group
+			inactive_bg: '#F5F5F5', // background color for inactive tabs in this group
+			active_border_color: '#c1c1c1', // border color for active tabs heads in this group
+			active_content_border_color: '#5AB1D0' // border color for active tabs contect in this group so that it matches the tab head border
+		});
+		$('#ChildVerticalTab_2').easyResponsiveTabs({
+			type: 'vertical',
+			width: 'auto',
+			fit: true,
+			tabidentify: 'ver_2', // The tab groups identifier
+			activetab_bg: '#fff', // background color for active tabs in this group
+			inactive_bg: '#F5F5F5', // background color for inactive tabs in this group
+			active_border_color: '#c1c1c1', // border color for active tabs heads in this group
+			active_content_border_color: '#5AB1D0' // border color for active tabs contect in this group so that it matches the tab head border
+		});
+		$('#ChildVerticalTab_3').easyResponsiveTabs({
+			type: 'vertical',
+			width: 'auto',
+			fit: true,
+			tabidentify: 'ver_3', // The tab groups identifier
+			activetab_bg: '#fff', // background color for active tabs in this group
+			inactive_bg: '#F5F5F5', // background color for inactive tabs in this group
+			active_border_color: '#c1c1c1', // border color for active tabs heads in this group
+			active_content_border_color: '#5AB1D0' // border color for active tabs contect in this group so that it matches the tab head border
+		});
+
+		//Vertical Tab
+		$('#parentVerticalTab').easyResponsiveTabs({
+			type: 'vertical', //Types: default, vertical, accordion
+			width: 'auto', //auto or any width like 600px
+			fit: true, // 100% fit in a container
+			closed: 'accordion', // Start closed if in accordion view
+			tabidentify: 'hor_1', // The tab groups identifier
+			activate: function(event) { // Callback function if tab is switched
+				var $tab = $(this);
+				var $info = $('#nested-tabInfo2');
+				var $name = $('span', $info);
+				$name.text($tab.text());
+				$info.show();
+			}
+		});
+	});
+
+</script>
+</body>
+</html>

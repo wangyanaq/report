@@ -1,0 +1,299 @@
+<html>
+<!---
+ENTRY       osa03008
+DEFINITION  Ribosome biogenesis in eukaryotes - Oryza sativa japonica (Japanese rice) (RefSeq)
+--->
+<head>
+<title>
+KEGG PATHWAY: Ribosome biogenesis in eukaryotes - Oryza sativa japonica (Japanese rice) (RefSeq)
+</title>
+<style type="text/css">
+<!--
+div.poplay {
+  position: absolute;
+  padding: 2px;
+  background-color: #ffff99;
+  border-top: solid 1px #c0c0c0;
+  border-left: solid 1px #c0c0c0;
+  border-bottom: solid 1px #808080;
+  border-right: solid 1px #808080;
+  visibility: hidden;
+}
+
+span.popup
+{
+  font-weight: bold;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+form {
+  margin: 0px;
+}
+
+div.image {
+  position: absolute;
+  padding: 0px;
+  top: 0px;
+  padding: 0px;
+  border: solid 1px #000000;
+}
+
+img {
+  border: none;
+}
+
+
+-->
+</style>
+<link rel="stylesheet" href="http://www.genome.jp/css/kegg.css" type="text/css" />
+<script language="JavaScript" src="http://www.genome.jp/js/dhtml.js"></script>
+
+<script language="JavaScript">
+<!---
+var image_height;
+$(function(){
+	$(window).bind('load',function(){
+  image_height = $("div.image").height()-10;
+	$("div.control").height(image_height-5);
+	$("#resizable").height(image_height);
+	});
+});
+
+
+function resize_map(scale){
+  var form = document.forms["form2"];
+  form.scale.value = scale;
+  form.submit();
+}
+
+function select_menu(){
+  var form = document.forms["selmenu"];
+  if(form.org_name.value == 'set_cookie' || form.org_name.value == 'reset_cookie'){
+    window.open('http://www.genome.jp/kegg/misc/kegg2_select.html','sel_org','toolbar=no,location=no,directories=no,width=500,height=320,resizable=yes');
+  }else{
+    form.action='http://www.genome.jp/kegg-bin/show_pathway';
+    form.submit();
+  }
+}
+
+var timer = 0;
+var p_entry, p_title, p_bgcolor;
+function popupTimer(entry, title, bgcolor)
+{
+  p_entry = entry;
+  p_title = title;
+  p_bgcolor = bgcolor;
+
+  if(timer == 0){
+    var func = "showThumbnail()";
+    timer = setTimeout(func, 1200);
+  }
+}
+
+
+function showThumbnail()
+{
+
+  var url = "";
+  if(p_entry.match(/^[A-Z]+\d+$/))
+  {
+    url = "http://www.genome.jp/kegg/misc/thumbnail/" + p_entry + ".gif";
+  }
+  else if(p_entry.match(/(\d+)$/))
+  {
+    url = "http://www.genome.jp/kegg/misc/thumbnail/map" + RegExp.$1 + ".gif";
+  }
+
+  var html = "";
+
+  if(p_bgcolor != "#ffffff")
+  {
+    html += "<span class=\"popup\">" + p_entry + "</span><br />";
+  }
+
+  html += "<img src=\"" + url + "\" alt=\"Loading...\">";
+
+  var x = getCurrentMouseX();
+  var y = getCurrentMouseY();
+
+  var layer = new Component("poplay");
+  layer.backgroundColor(p_bgcolor);
+  layer.HTML(html);
+  layer.move(x, y+40);
+  layer.visible(true);
+
+  timer = 0;
+}
+
+function hideMapTn(){
+  var layer = new Component("poplay");
+  layer.visible(false);
+
+  if(timer != 0){
+    clearTimeout(timer);
+    timer = 0;
+  }
+}
+
+function switchDescription(){
+  var form = document.forms[0];
+  var status = form.show_description.value;
+
+  if(status == "hide"){
+    document.getElementById("description").style.display = "";
+    document.getElementById("descLink").innerHTML = "Hide description";
+    form.show_description.value='show';
+
+    if(document.forms[1]){
+    	document.forms[1].show_description.value='show';
+    }
+  }
+  else
+  {
+    document.getElementById("description").style.display = 'none';
+    document.getElementById("descLink").innerHTML = "Show description";
+    form.show_description.value='hide';
+
+    if(document.forms[1]){
+      document.forms[1].show_description.value='hide';
+    }
+  }
+}
+
+function btn(bobj,img) { bobj.src = "http://www.genome.jp/Fig/bget/button_" + img + ".gif"; }
+//--->
+</script>
+</head>
+<body>
+<table cellpadding="0" width="100%" cellspacing="0" border="0">
+ <tr>
+  <td>
+   <a href="http://www.genome.jp/kegg/kegg2.html"><img align="middle" alt="KEGG" border="0" src="http://www.genome.jp/Fig/bget/kegg3.gif" /></a>
+   &nbsp;&nbsp;&nbsp;<font class="title3"><b>Ribosome biogenesis in eukaryotes - Oryza sativa japonica (Japanese rice) (RefSeq)</b></font>
+  </td>
+  <td valign="bottom" align="right">
+   <a href="javascript:void(window.open('http://www.genome.jp/kegg/document/help_pathway.html','KEGG_Help','toolbar=no,location=no,directories=no,width=720,height=640,resizable=yes,scrollbars=yes'))"><img name="help" src="http://www.genome.jp/Fig/bget/button_Hb.gif" border="0" align="middle" alt="Help" onmouseout="btn(this,'Hb')" onmousedown="btn(this,'Hbd')" onmouseover="btn(this,'Hbh')" onmouseup="btn(this,'Hb')" /></a>
+  </td>
+ </tr>
+</table>
+
+  
+[
+<a href="http://www.genome.jp/kegg-bin/get_htext?query=03008&htext=br08901.keg&option=-a">Pathway menu</a>
+| <a href="http://www.genome.jp/kegg-bin/get_htext?htext=br08601_map03008.keg&query=osa&option=-a">Organism menu</a>
+| <a href="http://www.genome.jp/dbget-bin/www_bget?pathway+osa03008">Pathway entry</a>
+
+| <a href="http://www.kegg.jp/kegg-bin/download?entry=osa03008&format=kgml">Download KGML</a>
+| <a id="descLink" href="javascript:switchDescription()">Show description</a>
+| <a href="javascript:void(window.open('http://www.genome.jp/kegg/tool/color_a_pathway.html','KEGG_Help','height=300,width=600,resizable=yes,scrollbars=yes'))">User data mapping</a>
+
+]
+  
+<table id="description" cellpadding="10" width="800" style="display: none;"><tr><td>
+Ribosomes are the cellular factories responsible for making proteins. In eukaryotes, ribosome biogenesis involves the production and correct assembly of four rRNAs and about 80 ribosomal proteins. It requires hundreds of factors not present in the mature particle. In the absence of these proteins, ribosome biogenesis is stalled and cell growth is terminated even under optimal growth conditions. The primary pre-rRNA transcript is  assembled into the 90S pre-ribosome, which contains both 40S and 60S assembly factors. Within this complex, the pre-rRNA is cleaved. pre-60S ribosomes are subjected to several sequential processing steps in the nucleoplasm involving numerous assembly intermediates before it is exported to the cytoplasm and matured into the 60S ribosomal subunit. The pre-40S ribosome is matured to the small ribosomal subunit in the cytoplasm by cleavage.</td></tr></table>
+<table><tr><td>
+<form name="selmenu" method="get">
+<select name="org_name">
+<option value="map">Reference pathway</option>
+<option value="ko">Reference pathway (KO)</option>
+<option value="set_cookie">-----&lt; Set personalized menu &gt;-----</option>
+<option value="osa.sort_alp">-----&lt; Sort below by alphabet &gt;-----</option>
+<option value="hsa">Homo sapiens (human)</option>
+<option value="hsadd">Homo sapiens (human) + Disease/drug</option>
+<option value="bta">Bos taurus (cow)</option>
+</select>
+<input type="hidden" name="mapno" value="03008" />
+<input type="hidden" name="mapscale" value=>
+<input type="button" value="Go" onclick="select_menu(this.form)" />
+<input type="hidden" name="show_description" value="hide">
+
+</form>
+</td><td>
+<form name="form2" method="get" action="http://www.genome.jp/kegg-bin/show_pathway">
+&nbsp;&nbsp;&nbsp;&nbsp;
+<select name="scale" onChange="resize_map(this.form.scale.value)">
+<option value="1.84" >184%</option>
+<option value="1.5" >150%</option>
+<option value="1.22" >122%</option>
+<option value="1.0" selected>100%</option>
+<option value="0.82" >82%</option>
+<option value="0.67" >67%</option>
+<option value="0.55" >55%</option>
+</select>
+&nbsp;&nbsp;<input type="text" name="query" size=20 value="">
+<input type="hidden" name="map" value="osa03008" />
+<input type="hidden" name="scale" value=>
+<input type="hidden" name="image" value=/share/www//mark_pathway146062555048095/osa03008.png>
+<input type="hidden" name="use" value="reference">
+<input type="hidden" name="nmap_args" value="146062484268696">
+<input type="hidden" name="auto_image" value="">
+<input type="hidden" name="show_description" value="hide">
+<input type="hidden" name="multi_query" />
+
+<!--</form>-->
+</td></tr></table>
+
+
+<img src="osa03008.png" name="pathwayimage" name="pathwayimage" usemap="#mapdata" border="0" />
+
+<map name="mapdata">
+<area shape=rect	coords=376,695,422,712	href="http://www.genome.jp/dbget-bin/www_bget?osa:4325312+osa:4339683+osa:9266942"	title="4325312, 4339683, 9266942" />
+<area shape=rect	coords=376,712,422,731	href="http://www.genome.jp/dbget-bin/www_bget?osa:4334849"	title="4334849" />
+<area shape=rect	coords=376,729,422,746	href="http://www.genome.jp/dbget-bin/www_bget?osa:4349477"	title="4349477" />
+<area shape=rect	coords=40,132,86,149	href="http://www.genome.jp/dbget-bin/www_bget?osa:3131364+osa:3131380+osa:6450167"	title="3131364 (OrsajCr113), 3131380 (OrsajCr120), 6450167 (rrn18)" />
+<area shape=rect	coords=150,132,196,149	href="http://www.genome.jp/dbget-bin/www_bget?osa:3131367+osa:3131377+osa:6450145"	title="3131367 (OrsajCr114), 3131377 (OrsajCr119), 6450145 (rrn26)" />
+<area shape=rect	coords=205,132,251,149	href="http://www.genome.jp/dbget-bin/www_bget?osa:3131369+osa:3131375+osa:6450136"	title="3131369 (OrsajCr116), 3131375 (OrsajCr117), 6450136 (rrn5)" />
+<area shape=rect	coords=355,229,401,246	href="http://www.genome.jp/dbget-bin/www_bget?osa:4332209+osa:4348007"	title="4332209, 4348007" />
+<area shape=rect	coords=309,229,355,246	href="http://www.genome.jp/dbget-bin/www_bget?osa:4329457+osa:4332840+osa:4332841+osa:4350687+osa:4352036"	title="4329457, 4332840, 4332841, 4350687, 4352036" />
+<area shape=rect	coords=355,212,401,229	href="http://www.genome.jp/dbget-bin/www_bget?osa:4332851+osa:4344186"	title="4332851, 4344186" />
+<area shape=rect	coords=309,212,355,229	href="http://www.genome.jp/dbget-bin/www_bget?osa:4331181"	title="4331181" />
+<area shape=rect	coords=486,229,532,246	href="http://www.genome.jp/dbget-bin/www_bget?osa:9269830"	title="9269830" />
+<area shape=rect	coords=486,212,532,229	href="http://www.genome.jp/dbget-bin/www_bget?osa:4330603+osa:4340741"	title="4330603, 4340741" />
+<area shape=rect	coords=440,229,486,246	href="http://www.genome.jp/dbget-bin/www_bget?osa:4350782"	title="4350782" />
+<area shape=rect	coords=440,212,486,229	href="http://www.genome.jp/dbget-bin/www_bget?osa:4332935+osa:4336736+osa:4344029"	title="4332935, 4336736, 4344029" />
+<area shape=rect	coords=277,290,323,307	href="http://www.genome.jp/dbget-bin/www_bget?osa:4340192"	title="4340192" />
+<area shape=rect	coords=445,373,491,390	href="http://www.genome.jp/dbget-bin/www_bget?osa:4351627"	title="4351627" />
+<area shape=rect	coords=350,373,396,390	href="http://www.genome.jp/dbget-bin/www_bget?osa:4332742"	title="4332742" />
+<area shape=rect	coords=332,401,378,418	href="http://www.genome.jp/dbget-bin/www_bget?osa:4334688"	title="4334688" />
+<area shape=rect	coords=408,481,454,498	href="http://www.genome.jp/dbget-bin/www_bget?osa:4335406+osa:4338260+osa:4339079+osa:4351650+osa:9271052"	title="4335406, 4338260, 4339079, 4351650, 9271052" />
+<area shape=rect	coords=550,582,596,599	href="http://www.genome.jp/dbget-bin/www_bget?osa:4324952+osa:4329368+osa:4334408+osa:4349826"	title="4324952, 4329368, 4334408, 4349826" />
+<area shape=rect	coords=628,542,674,559	href="http://www.genome.jp/dbget-bin/www_bget?osa:4340389+osa:4342225+osa:4344710"	title="4340389, 4342225, 4344710" />
+<area shape=rect	coords=628,574,674,591	href="http://www.genome.jp/dbget-bin/www_bget?osa:4325442+osa:4332852"	title="4325442, 4332852" />
+<area shape=rect	coords=628,616,674,633	href="http://www.genome.jp/dbget-bin/www_bget?osa:4348797"	title="4348797" />
+<area shape=rect	coords=628,595,674,612	href="http://www.genome.jp/dbget-bin/www_bget?osa:4339880"	title="4339880" />
+<area shape=rect	coords=482,582,528,599	href="http://www.genome.jp/dbget-bin/www_bget?osa:4329319+osa:4337228+osa:9270337"	title="4329319, 4337228, 9270337" />
+<area shape=rect	coords=65,458,111,475	href="http://www.genome.jp/dbget-bin/www_bget?osa:4351433"	title="4351433" />
+<area shape=rect	coords=86,475,132,492	href="http://www.genome.jp/dbget-bin/www_bget?osa:4344688"	title="4344688" />
+<area shape=rect	coords=40,475,86,492	href="http://www.genome.jp/dbget-bin/www_bget?osa:4337293"	title="4337293" />
+<area shape=rect	coords=178,350,224,367	href="http://www.genome.jp/dbget-bin/www_bget?osa:4352760"	title="4352760" />
+<area shape=rect	coords=132,333,178,350	href="http://www.genome.jp/dbget-bin/www_bget?osa:4342750"	title="4342750" />
+<area shape=rect	coords=86,350,132,367	href="http://www.genome.jp/dbget-bin/www_bget?osa:4334021"	title="4334021" />
+<area shape=rect	coords=132,350,178,367	href="http://www.genome.jp/dbget-bin/www_bget?osa:4336577"	title="4336577" />
+<area shape=rect	coords=40,341,86,358	href="http://www.genome.jp/dbget-bin/www_bget?osa:4326248+osa:4332567+osa:4352882"	title="4326248, 4332567, 4352882" />
+<area shape=rect	coords=40,394,86,411	href="http://www.genome.jp/dbget-bin/www_bget?osa:4343836"	title="4343836" />
+<area shape=rect	coords=86,394,132,411	href="http://www.genome.jp/dbget-bin/www_bget?osa:4336833"	title="4336833" />
+<area shape=rect	coords=132,403,178,420	href="http://www.genome.jp/dbget-bin/www_bget?osa:4328001"	title="4328001" />
+<area shape=rect	coords=178,403,224,420	href="http://www.genome.jp/dbget-bin/www_bget?osa:4339341"	title="4339341" />
+<area shape=rect	coords=86,411,132,428	href="http://www.genome.jp/dbget-bin/www_bget?osa:4331644"	title="4331644" />
+<area shape=rect	coords=65,273,111,290	href="http://www.genome.jp/dbget-bin/www_bget?osa:4332003+osa:4334206+osa:4342248+osa:9271280"	title="4332003, 4334206, 4342248, 9271280" />
+<area shape=rect	coords=65,256,111,273	href="http://www.genome.jp/dbget-bin/www_bget?osa:4343287+osa:4349414"	title="4343287, 4349414" />
+<area shape=rect	coords=550,778,596,795	href="http://www.genome.jp/dbget-bin/www_bget?osa:4333574+osa:4352809"	title="4333574, 4352809" />
+<area shape=rect	coords=487,788,533,805	href="http://www.genome.jp/dbget-bin/www_bget?osa:4329604+osa:4333588"	title="4329604, 4333588" />
+<area shape=rect	coords=86,290,132,307	href="http://www.genome.jp/dbget-bin/www_bget?osa:4330604"	title="4330604" />
+<area shape=rect	coords=311,772,357,789	href="http://www.genome.jp/dbget-bin/www_bget?osa:4342459"	title="4342459" />
+<area shape=rect	coords=311,795,357,812	href="http://www.genome.jp/dbget-bin/www_bget?osa:4324901"	title="4324901" />
+<area shape=rect	coords=243,795,289,812	href="http://www.genome.jp/dbget-bin/www_bget?osa:4343011"	title="4343011" />
+<area shape=rect	coords=487,713,533,730	href="http://www.genome.jp/dbget-bin/www_bget?osa:4326910+osa:4344055"	title="4326910, 4344055" />
+<area shape=rect	coords=350,351,396,368	href="http://www.genome.jp/dbget-bin/www_bget?osa:4329057"	title="4329057" />
+<area shape=rect	coords=487,771,533,788	href="http://www.genome.jp/dbget-bin/www_bget?osa:4344458"	title="4344458" />
+<area shape=rect	coords=563,637,609,654	href="http://www.genome.jp/dbget-bin/www_bget?osa:4334461+osa:4334625"	title="4334461, 4334625" />
+<area shape=rect	coords=325,651,371,668	href="http://www.genome.jp/dbget-bin/www_bget?osa:4328064"	title="4328064" />
+<area shape=rect	coords=40,45,350,70	href="http://www.genome.jp/dbget-bin/www_bget?osa03008"	title="osa03008: Ribosome biogenesis in eukaryotes" onmouseover="popupTimer(&quot;osa03008&quot;, &quot;osa03008: Ribosome biogenesis in eukaryotes&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=370,880,462,905	href="http://www.genome.jp/kegg-bin/show_pathway?osa03010"	title="osa03010: Ribosome" onmouseover="popupTimer(&quot;osa03010&quot;, &quot;osa03010: Ribosome&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+</map>
+<div id="poplay" class="poplay" />
+
+</form>
+</body>
+</html>

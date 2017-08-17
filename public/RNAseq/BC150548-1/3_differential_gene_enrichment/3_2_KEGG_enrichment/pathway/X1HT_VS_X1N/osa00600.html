@@ -1,0 +1,612 @@
+<html>
+<!---
+ENTRY       osa00600
+DEFINITION  Sphingolipid metabolism - Oryza sativa japonica (Japanese rice) (RefSeq)
+--->
+<head>
+<title>
+KEGG PATHWAY: Sphingolipid metabolism - Oryza sativa japonica (Japanese rice) (RefSeq)
+</title>
+<style type="text/css">
+<!--
+div.poplay {
+  position: absolute;
+  padding: 2px;
+  background-color: #ffff99;
+  border-top: solid 1px #c0c0c0;
+  border-left: solid 1px #c0c0c0;
+  border-bottom: solid 1px #808080;
+  border-right: solid 1px #808080;
+  visibility: hidden;
+}
+
+span.popup
+{
+  font-weight: bold;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+form {
+  margin: 0px;
+}
+
+div.image {
+  position: absolute;
+  padding: 0px;
+  top: 0px;
+  padding: 0px;
+  border: solid 1px #000000;
+}
+
+img {
+  border: none;
+}
+
+
+-->
+</style>
+<link rel="stylesheet" href="http://www.genome.jp/css/kegg.css" type="text/css" />
+<script language="JavaScript" src="http://www.genome.jp/js/dhtml.js"></script>
+
+<script language="JavaScript">
+<!---
+var image_height;
+$(function(){
+	$(window).bind('load',function(){
+  image_height = $("div.image").height()-10;
+	$("div.control").height(image_height-5);
+	$("#resizable").height(image_height);
+	});
+});
+
+
+function resize_map(scale){
+  var form = document.forms["form2"];
+  form.scale.value = scale;
+  form.submit();
+}
+
+function select_menu(){
+  var form = document.forms["selmenu"];
+  if(form.org_name.value == 'set_cookie' || form.org_name.value == 'reset_cookie'){
+    window.open('http://www.genome.jp/kegg/misc/kegg2_select.html','sel_org','toolbar=no,location=no,directories=no,width=500,height=320,resizable=yes');
+  }else{
+    form.action='http://www.genome.jp/kegg-bin/show_pathway';
+    form.submit();
+  }
+}
+
+var timer = 0;
+var p_entry, p_title, p_bgcolor;
+function popupTimer(entry, title, bgcolor)
+{
+  p_entry = entry;
+  p_title = title;
+  p_bgcolor = bgcolor;
+
+  if(timer == 0){
+    var func = "showThumbnail()";
+    timer = setTimeout(func, 1200);
+  }
+}
+
+
+function showThumbnail()
+{
+
+  var url = "";
+  if(p_entry.match(/^[A-Z]+\d+$/))
+  {
+    url = "http://www.genome.jp/kegg/misc/thumbnail/" + p_entry + ".gif";
+  }
+  else if(p_entry.match(/(\d+)$/))
+  {
+    url = "http://www.genome.jp/kegg/misc/thumbnail/map" + RegExp.$1 + ".gif";
+  }
+
+  var html = "";
+
+  if(p_bgcolor != "#ffffff")
+  {
+    html += "<span class=\"popup\">" + p_entry + "</span><br />";
+  }
+
+  html += "<img src=\"" + url + "\" alt=\"Loading...\">";
+
+  var x = getCurrentMouseX();
+  var y = getCurrentMouseY();
+
+  var layer = new Component("poplay");
+  layer.backgroundColor(p_bgcolor);
+  layer.HTML(html);
+  layer.move(x, y+40);
+  layer.visible(true);
+
+  timer = 0;
+}
+
+function hideMapTn(){
+  var layer = new Component("poplay");
+  layer.visible(false);
+
+  if(timer != 0){
+    clearTimeout(timer);
+    timer = 0;
+  }
+}
+
+function switchDescription(){
+  var form = document.forms[0];
+  var status = form.show_description.value;
+
+  if(status == "hide"){
+    document.getElementById("description").style.display = "";
+    document.getElementById("descLink").innerHTML = "Hide description";
+    form.show_description.value='show';
+
+    if(document.forms[1]){
+    	document.forms[1].show_description.value='show';
+    }
+  }
+  else
+  {
+    document.getElementById("description").style.display = 'none';
+    document.getElementById("descLink").innerHTML = "Show description";
+    form.show_description.value='hide';
+
+    if(document.forms[1]){
+      document.forms[1].show_description.value='hide';
+    }
+  }
+}
+
+function btn(bobj,img) { bobj.src = "http://www.genome.jp/Fig/bget/button_" + img + ".gif"; }
+//--->
+</script>
+</head>
+<body>
+<table cellpadding="0" width="100%" cellspacing="0" border="0">
+ <tr>
+  <td>
+   <a href="http://www.genome.jp/kegg/kegg2.html"><img align="middle" alt="KEGG" border="0" src="http://www.genome.jp/Fig/bget/kegg3.gif" /></a>
+   &nbsp;&nbsp;&nbsp;<font class="title3"><b>Sphingolipid metabolism - Oryza sativa japonica (Japanese rice) (RefSeq)</b></font>
+  </td>
+  <td valign="bottom" align="right">
+   <a href="javascript:void(window.open('http://www.genome.jp/kegg/document/help_pathway.html','KEGG_Help','toolbar=no,location=no,directories=no,width=720,height=640,resizable=yes,scrollbars=yes'))"><img name="help" src="http://www.genome.jp/Fig/bget/button_Hb.gif" border="0" align="middle" alt="Help" onmouseout="btn(this,'Hb')" onmousedown="btn(this,'Hbd')" onmouseover="btn(this,'Hbh')" onmouseup="btn(this,'Hb')" /></a>
+  </td>
+ </tr>
+</table>
+
+  
+[
+<a href="http://www.genome.jp/kegg-bin/get_htext?query=00600&htext=br08901.keg&option=-a">Pathway menu</a>
+| <a href="http://www.genome.jp/kegg-bin/get_htext?htext=br08601_map00600.keg&query=osa&option=-a">Organism menu</a>
+| <a href="http://www.genome.jp/dbget-bin/www_bget?pathway+osa00600">Pathway entry</a>
+
+| <a href="http://www.kegg.jp/kegg-bin/download?entry=osa00600&format=kgml">Download KGML</a>
+
+| <a href="javascript:void(window.open('http://www.genome.jp/kegg/tool/color_a_pathway.html','KEGG_Help','height=300,width=600,resizable=yes,scrollbars=yes'))">User data mapping</a>
+
+]
+  
+
+<table><tr><td>
+<form name="selmenu" method="get">
+<select name="org_name">
+<option value="map">Reference pathway</option>
+<option value="ko">Reference pathway (KO)</option>
+<option value="ec">Reference pathway (EC)</option>
+<option value="rn">Reference pathway (Reaction)</option>
+<option value="set_cookie">-----&lt; Set personalized menu &gt;-----</option>
+<option value="osa.sort_alp">-----&lt; Sort below by alphabet &gt;-----</option>
+<option value="hsa">Homo sapiens (human)</option>
+<option value="hsadd">Homo sapiens (human) + Disease/drug</option>
+<option value="ptr">Pan troglodytes (chimpanzee)</option>
+<option value="mcc">Macaca mulatta (rhesus monkey)</option>
+<option value="mmu">Mus musculus (mouse)</option>
+<option value="rno">Rattus norvegicus (rat)</option>
+<option value="cfa">Canis familiaris (dog)</option>
+<option value="bta">Bos taurus (cow)</option>
+<option value="ssc">Sus scrofa (pig)</option>
+<option value="ecb">Equus caballus (horse)</option>
+<option value="mdo">Monodelphis domestica (opossum)</option>
+<option value="oaa">Ornithorhynchus anatinus (platypus)</option>
+<option value="gga">Gallus gallus (chicken)</option>
+<option value="tgu">Taeniopygia guttata (zebra finch)</option>
+<option value="xla">Xenopus laevis (African clawed frog)</option>
+<option value="xtr">Xenopus tropicalis (western clawed frog)</option>
+<option value="dre">Danio rerio (zebrafish)</option>
+<option value="bfo">Branchiostoma floridae (Florida lancelet)</option>
+<option value="cin">Ciona intestinalis (sea squirt)</option>
+<option value="spu">Strongylocentrotus purpuratus (purple sea urchin)</option>
+<option value="dme">Drosophila melanogaster (fruit fly)</option>
+<option value="dpo">Drosophila pseudoobscura pseudoobscura</option>
+<option value="dan">Drosophila ananassae</option>
+<option value="der">Drosophila erecta</option>
+<option value="dpe">Drosophila persimilis</option>
+<option value="dse">Drosophila sechellia</option>
+<option value="dsi">Drosophila simulans</option>
+<option value="dya">Drosophila yakuba</option>
+<option value="dgr">Drosophila grimshawi</option>
+<option value="dmo">Drosophila mojavensis</option>
+<option value="aga">Anopheles gambiae (mosquito)</option>
+<option value="aag">Aedes aegypti (yellow fever mosquito)</option>
+<option value="cqu">Culex quinquefasciatus (southern house mosquito)</option>
+<option value="ame">Apis mellifera (honey bee)</option>
+<option value="nvi">Nasonia vitripennis (jewel wasp)</option>
+<option value="tca">Tribolium castaneum (red flour beetle)</option>
+<option value="api">Acyrthosiphon pisum (pea aphid)</option>
+<option value="cel">Caenorhabditis elegans (nematode)</option>
+<option value="cbr">Caenorhabditis briggsae</option>
+<option value="bmy">Brugia malayi (filaria)</option>
+<option value="smm">Schistosoma mansoni</option>
+<option value="nve">Nematostella vectensis (sea anemone)</option>
+<option value="hmg">Hydra vulgaris</option>
+<option value="tad">Trichoplax adhaerens</option>
+<option value="ath">Arabidopsis thaliana (thale cress)</option>
+<option value="rcu">Ricinus communis (castor bean)</option>
+<option value="pop">Populus trichocarpa (black cottonwood)</option>
+<option value="vvi">Vitis vinifera (wine grape)</option>
+<option value="osa" selected>Oryza sativa japonica (Japanese rice) (RefSeq)</option>
+<option value="sbi">Sorghum bicolor (sorghum)</option>
+<option value="zma">Zea mays (maize)</option>
+<option value="ppp">Physcomitrella patens subsp. patens</option>
+<option value="cre">Chlamydomonas reinhardtii</option>
+<option value="olu">Ostreococcus lucimarinus</option>
+<option value="cme">Cyanidioschyzon merolae</option>
+<option value="sce">Saccharomyces cerevisiae (budding yeast)</option>
+<option value="ago">Ashbya gossypii (Eremothecium gossypii)</option>
+<option value="kla">Kluyveromyces lactis</option>
+<option value="lth">Lachancea thermotolerans</option>
+<option value="vpo">Vanderwaltozyma polyspora</option>
+<option value="cgr">Candida glabrata</option>
+<option value="ppa">Komagataella phaffii</option>
+<option value="dha">Debaryomyces hansenii</option>
+<option value="pic">Scheffersomyces stipitis</option>
+<option value="cal">Candida albicans</option>
+<option value="yli">Yarrowia lipolytica</option>
+<option value="ncr">Neurospora crassa</option>
+<option value="pan">Podospora anserina</option>
+<option value="mgr">Magnaporthe oryzae</option>
+<option value="ssl">Sclerotinia sclerotiorum</option>
+<option value="bfu">Botrytis cinerea</option>
+<option value="ani">Aspergillus nidulans</option>
+<option value="afm">Aspergillus fumigatus</option>
+<option value="aor">Aspergillus oryzae</option>
+<option value="ang">Aspergillus niger</option>
+<option value="afv">Aspergillus flavus</option>
+<option value="nfi">Aspergillus fischeri</option>
+<option value="pcs">Penicillium rubens</option>
+<option value="cim">Coccidioides immitis</option>
+<option value="spo">Schizosaccharomyces pombe (fission yeast)</option>
+<option value="cne">Cryptococcus neoformans JEC21</option>
+<option value="cnb">Cryptococcus neoformans B-3501A</option>
+<option value="lbc">Laccaria bicolor</option>
+<option value="mpr">Moniliophthora perniciosa</option>
+<option value="uma">Ustilago maydis</option>
+<option value="mgl">Malassezia globosa</option>
+<option value="mbr">Monosiga brevicollis</option>
+<option value="ddi">Dictyostelium discoideum (cellular slime mold)</option>
+<option value="ehi">Entamoeba histolytica</option>
+<option value="edi">Entamoeba dispar</option>
+<option value="tet">Tetrahymena thermophila</option>
+<option value="ptm">Paramecium tetraurelia</option>
+<option value="pti">Phaeodactylum tricornutum</option>
+<option value="tps">Thalassiosira pseudonana</option>
+<option value="tbr">Trypanosoma brucei</option>
+<option value="tcr">Trypanosoma cruzi</option>
+<option value="lma">Leishmania major</option>
+<option value="tva">Trichomonas vaginalis</option>
+<option value="eco">Escherichia coli K-12 MG1655</option>
+<option value="ecj">Escherichia coli K-12 W3110</option>
+<option value="ecd">Escherichia coli K-12 DH10B</option>
+<option value="ebw">Escherichia coli BW2952</option>
+<option value="ece">Escherichia coli O157:H7 EDL933 (EHEC)</option>
+<option value="ecs">Escherichia coli O157:H7 Sakai (EHEC)</option>
+<option value="ecf">Escherichia coli O157:H7 EC4115 (EHEC)</option>
+<option value="etw">Escherichia coli O157:H7 TW14359 (EHEC)</option>
+<option value="ecg">Escherichia coli O127:H6 E2348/69 (EPEC)</option>
+<option value="ecc">Escherichia coli O6:K2:H1 CFT073 (UPEC)</option>
+<option value="ecp">Escherichia coli O6:K15:H31 536 (UPEC)</option>
+<option value="eci">Escherichia coli O18:K1:H7 UTI89 (UPEC)</option>
+<option value="ecv">Escherichia coli APEC O1 (APEC)</option>
+<option value="ecx">Escherichia coli O9 HS (commensal)</option>
+<option value="ecw">Escherichia coli E24377A (ETEC)</option>
+<option value="ecm">Escherichia coli SMS-3-5 (environmental)</option>
+<option value="ecy">Escherichia coli O152:H28 SE11 (commensal)</option>
+<option value="ecr">Escherichia coli O8 IAI1 (commensal)</option>
+<option value="ecq">Escherichia coli O81 ED1a (commensal)</option>
+<option value="eck">Escherichia coli 55989 (EAEC)</option>
+<option value="ect">Escherichia coli O7:K1 IAI39 (ExPEC)</option>
+<option value="eum">Escherichia coli O17:K52:H18 UMN026 (ExPEC)</option>
+<option value="ecz">Escherichia coli O45:K1:H7 S88 (ExPEC)</option>
+<option value="ecl">Escherichia coli ATCC 8739</option>
+<option value="ebr">Escherichia coli B REL606</option>
+<option value="ebd">Escherichia coli BL21-Gold(DE3)pLysS AG</option>
+<option value="ebl">Escherichia coli BL21(DE3)</option>
+<option value="elf">Escherichia coli LF82</option>
+<option value="stm">Salmonella enterica subsp. enterica serovar Typhimurium LT2</option>
+<option value="spq">Salmonella enterica subsp. enterica serovar Paratyphi B</option>
+<option value="sei">Salmonella enterica subsp. enterica serovar Paratyphi C</option>
+<option value="sec">Salmonella enterica subsp. enterica serovar Choleraesuis</option>
+<option value="seh">Salmonella enterica subsp. enterica serovar Heidelberg SL476</option>
+<option value="see">Salmonella enterica subsp. enterica serovar Newport SL254</option>
+<option value="sew">Salmonella enterica subsp. enterica serovar Schwarzengrund</option>
+<option value="sea">Salmonella enterica subsp. enterica serovar Agona SL483</option>
+<option value="sed">Salmonella enterica subsp. enterica serovar Dublin</option>
+<option value="seg">Salmonella enterica subsp. enterica serovar Gallinarum 287/91</option>
+<option value="set">Salmonella enterica subsp. enterica serovar Enteritidis P125109</option>
+<option value="ses">Salmonella enterica subsp. arizonae</option>
+<option value="ype">Yersinia pestis CO92 (biovar Orientalis)</option>
+<option value="ypk">Yersinia pestis KIM10+ (biovar Mediaevalis)</option>
+<option value="ypa">Yersinia pestis Antiqua (biovar Antiqua)</option>
+<option value="ypn">Yersinia pestis Nepal516 (biovar Antiqua)</option>
+<option value="ypm">Yersinia pestis 91001 (biovar Microtus)</option>
+<option value="ypp">Yersinia pestis Pestoides F</option>
+<option value="ypg">Yersinia pestis Angola</option>
+<option value="yph">Yersinia pestis biovar Medievalis Harbin 35</option>
+<option value="yps">Yersinia pseudotuberculosis IP32953 (serotype I)</option>
+<option value="ypi">Yersinia pseudotuberculosis IP31758 (serotype O:1b)</option>
+<option value="ypy">Yersinia pseudotuberculosis YPIII</option>
+<option value="ypb">Yersinia pseudotuberculosis PB1/+</option>
+<option value="ssn">Shigella sonnei Ss046</option>
+<option value="sdy">Shigella dysenteriae Sd197</option>
+<option value="eca">Pectobacterium atrosepticum SCRI1043</option>
+<option value="ent">Enterobacter sp. 638</option>
+<option value="esa">Cronobacter sakazakii ATCC BAA-894</option>
+<option value="kpn">Klebsiella pneumoniae subsp. pneumoniae MGH 78578</option>
+<option value="kpu">Klebsiella pneumoniae subsp. pneumoniae NTUH-K2044</option>
+<option value="kpe">Klebsiella pneumoniae 342</option>
+<option value="spe">Serratia proteamaculans</option>
+<option value="dda">Dickeya dadantii Ech703</option>
+<option value="msu">Mannheimia succiniciproducens</option>
+<option value="xcc">Xanthomonas campestris pv. campestris ATCC 33913</option>
+<option value="xcb">Xanthomonas campestris pv. campestris 8004</option>
+<option value="xca">Xanthomonas campestris pv. campestris B100</option>
+<option value="xcv">Xanthomonas campestris pv. vesicatoria</option>
+<option value="xac">Xanthomonas citri pv. citri 306</option>
+<option value="vco">Vibrio cholerae O395</option>
+<option value="vvu">Vibrio vulnificus CMCP6</option>
+<option value="vvy">Vibrio vulnificus YJ016</option>
+<option value="vpa">Vibrio parahaemolyticus RIMD 2210633</option>
+<option value="vfi">Aliivibrio fischeri ES114</option>
+<option value="ppr">Photobacterium profundum</option>
+<option value="avn">Azotobacter vinelandii DJ</option>
+<option value="abm">Acinetobacter baumannii SDF</option>
+<option value="sse">Shewanella sediminis</option>
+<option value="shl">Shewanella halifaxensis</option>
+<option value="swp">Shewanella piezotolerans</option>
+<option value="cps">Colwellia psychrerythraea</option>
+<option value="pat">Pseudoalteromonas atlantica</option>
+<option value="pin">Psychromonas ingrahamii</option>
+<option value="sde">Saccharophagus degradans</option>
+<option value="ftw">Francisella tularensis subsp. tularensis WY96-3418</option>
+<option value="ftl">Francisella tularensis subsp. holarctica LVS</option>
+<option value="fth">Francisella tularensis subsp. holarctica OSU18</option>
+<option value="aha">Aeromonas hydrophila subsp. hydrophila ATCC 7966</option>
+<option value="tau">Tolumonas auensis</option>
+<option value="reu">Ralstonia eutropha JMP134</option>
+<option value="reh">Ralstonia eutropha H16</option>
+<option value="rme">Cupriavidus metallidurans</option>
+<option value="cti">Cupriavidus taiwanensis</option>
+<option value="bps">Burkholderia pseudomallei K96243</option>
+<option value="bpm">Burkholderia pseudomallei 1710b</option>
+<option value="bpl">Burkholderia pseudomallei 1106a</option>
+<option value="bur">Burkholderia lata</option>
+<option value="bch">Burkholderia cenocepacia HI2424</option>
+<option value="bcm">Burkholderia cenocepacia MC0-3</option>
+<option value="bam">Burkholderia ambifaria AMMD</option>
+<option value="bmj">Burkholderia multivorans ATCC 17616 (Tohoku)</option>
+<option value="bxe">Paraburkholderia xenovorans LB400</option>
+<option value="mxa">Myxococcus xanthus</option>
+<option value="scl">Sorangium cellulosum So ce 56</option>
+<option value="hoh">Haliangium ochraceum</option>
+<option value="mlo">Mesorhizobium loti</option>
+<option value="pla">Parvibaculum lavamentivorans</option>
+<option value="sme">Sinorhizobium meliloti 1021</option>
+<option value="rhi">Sinorhizobium fredii NGR234</option>
+<option value="atu">Agrobacterium fabrum</option>
+<option value="avi">Agrobacterium vitis</option>
+<option value="ret">Rhizobium etli CFN 42</option>
+<option value="rle">Rhizobium leguminosarum bv. viciae 3841</option>
+<option value="rlg">Rhizobium leguminosarum bv. trifolii WSM1325</option>
+<option value="mex">Methylobacterium extorquens PA1</option>
+<option value="bid">Beijerinckia indica</option>
+<option value="msl">Methylocella silvestris</option>
+<option value="cak">Caulobacter sp. K31</option>
+<option value="rde">Roseobacter denitrificans</option>
+<option value="dsh">Dinoroseobacter shibae</option>
+<option value="zmo">Zymomonas mobilis subsp. mobilis ZM4</option>
+<option value="nar">Novosphingobium aromaticivorans</option>
+<option value="sal">Sphingopyxis alaskensis</option>
+<option value="gox">Gluconobacter oxydans 621H</option>
+<option value="mag">Magnetospirillum magneticum</option>
+<option value="bsu">Bacillus subtilis subsp. subtilis 168</option>
+<option value="bli">Bacillus licheniformis ATCC 14580</option>
+<option value="bld">Bacillus licheniformis DSM 13 = ATCC 14580</option>
+<option value="bay">Bacillus velezensis FZB42</option>
+<option value="bha">Bacillus halodurans</option>
+<option value="bbe">Brevibacillus brevis</option>
+<option value="pjd">Paenibacillus sp. JDR-2</option>
+<option value="gym">Paenibacillus sp. Y412MC10</option>
+<option value="spn">Streptococcus pneumoniae TIGR4 (virulent serotype 4)</option>
+<option value="spd">Streptococcus pneumoniae D39 (virulent serotype 2)</option>
+<option value="spr">Streptococcus pneumoniae R6 (avirulent)</option>
+<option value="spw">Streptococcus pneumoniae CGSP14 (serotype 14)</option>
+<option value="spv">Streptococcus pneumoniae Hungary19A 6</option>
+<option value="sak">Streptococcus agalactiae A909 (serotype Ia)</option>
+<option value="ssa">Streptococcus sanguinis</option>
+<option value="sez">Streptococcus equi subsp. zooepidemicus MGCS10565</option>
+<option value="lpl">Lactobacillus plantarum WCFS1</option>
+<option value="ljo">Lactobacillus johnsonii NCC 533</option>
+<option value="lac">Lactobacillus acidophilus NCFM</option>
+<option value="lsa">Lactobacillus sakei</option>
+<option value="lsl">Lactobacillus salivarius UCC118</option>
+<option value="lbr">Lactobacillus brevis ATCC 367</option>
+<option value="lre">Lactobacillus reuteri DSM 20016</option>
+<option value="ppe">Pediococcus pentosaceus ATCC 25745</option>
+<option value="ooe">Oenococcus oeni</option>
+<option value="lme">Leuconostoc mesenteroides subsp. mesenteroides ATCC 8293</option>
+<option value="cpe">Clostridium perfringens 13</option>
+<option value="cpf">Clostridium perfringens ATCC 13124</option>
+<option value="cpr">Clostridium perfringens SM101</option>
+<option value="cbe">Clostridium beijerinckii NCIMB 8052</option>
+<option value="cce">Clostridium cellulolyticum</option>
+<option value="cpy">Lachnoclostridium phytofermentans</option>
+<option value="tte">Thermoanaerobacter tengcongensis</option>
+<option value="csc">Caldicellulosiruptor saccharolyticus</option>
+<option value="ate">Caldicellulosiruptor bescii</option>
+<option value="hor">Halothermothrix orenii</option>
+<option value="msm">Mycobacterium smegmatis MC2 155</option>
+<option value="mab">Mycobacterium abscessus ATCC 19977</option>
+<option value="gbr">Gordonia bronchialis</option>
+<option value="sco">Streptomyces coelicolor</option>
+<option value="sma">Streptomyces avermitilis</option>
+<option value="sgr">Streptomyces griseus</option>
+<option value="cmi">Clavibacter michiganensis subsp. michiganensis</option>
+<option value="cms">Clavibacter michiganensis subsp. sepedonicus</option>
+<option value="mim">Microbacterium sp. CGR1</option>
+<option value="art">Arthrobacter sp. FB24</option>
+<option value="aau">Paenarthrobacter aurescens</option>
+<option value="rsa">Renibacterium salmoninarum</option>
+<option value="pac">Propionibacterium acnes KPA171202</option>
+<option value="sen">Saccharopolyspora erythraea</option>
+<option value="ami">Actinosynnema mirum</option>
+<option value="stp">Salinispora tropica</option>
+<option value="saq">Salinispora arenicola</option>
+<option value="cai">Catenulispora acidiphila</option>
+<option value="blo">Bifidobacterium longum NCC2705</option>
+<option value="blj">Bifidobacterium longum DJO10A</option>
+<option value="bln">Bifidobacterium longum subsp. infantis ATCC 15697 (JGI)</option>
+<option value="bad">Bifidobacterium adolescentis ATCC 15703</option>
+<option value="bla">Bifidobacterium animalis subsp. lactis AD011</option>
+<option value="ote">Opitutus terrae</option>
+<option value="amu">Akkermansia muciniphila</option>
+<option value="tde">Treponema denticola</option>
+<option value="lil">Leptospira interrogans serovar Lai 56601</option>
+<option value="lic">Leptospira interrogans serovar Copenhageni</option>
+<option value="lbj">Leptospira borgpetersenii JB197</option>
+<option value="lbl">Leptospira borgpetersenii L550</option>
+<option value="aba">Candidatus Koribacter versatilis</option>
+<option value="aca">Acidobacterium capsulatum</option>
+<option value="sus">Candidatus Solibacter usitatus</option>
+<option value="rba">Rhodopirellula baltica</option>
+<option value="cyt">Cyanothece sp. ATCC 51142</option>
+<option value="cyc">Cyanothece sp. PCC 7424</option>
+<option value="amr">Acaryochloris marina</option>
+<option value="bth">Bacteroides thetaiotaomicron</option>
+<option value="bfr">Bacteroides fragilis YCH46</option>
+<option value="bfs">Bacteroides fragilis NCTC9343</option>
+<option value="bvu">Bacteroides vulgatus</option>
+<option value="pgi">Porphyromonas gingivalis W83</option>
+<option value="pgn">Porphyromonas gingivalis ATCC 33277</option>
+<option value="pdi">Parabacteroides distasonis</option>
+<option value="cpi">Chitinophaga pinensis</option>
+<option value="fjo">Flavobacterium johnsoniae</option>
+<option value="coc">Capnocytophaga ochracea</option>
+<option value="rrs">Roseiflexus sp. RS-1</option>
+<option value="rca">Roseiflexus castenholzii</option>
+<option value="hau">Herpetosiphon aurantiacus</option>
+<option value="tth">Thermus thermophilus HB27</option>
+<option value="ttj">Thermus thermophilus HB8</option>
+<option value="tma">Thermotoga maritima MSB8</option>
+<option value="tpt">Thermotoga petrophila</option>
+<option value="trq">Thermotoga sp. RQ2</option>
+<option value="tle">Thermotoga lettingae</option>
+<option value="taf">Thermosipho africanus</option>
+<option value="fno">Fervidobacterium nodosum</option>
+<option value="dth">Dictyoglomus thermophilum</option>
+<option value="dtu">Dictyoglomus turgidum</option>
+<option value="hma">Haloarcula marismortui</option>
+<option value="tac">Thermoplasma acidophilum</option>
+<option value="cma">Caldivirga maquilingensis</option>
+<option value="tpe">Thermofilum pendens</option>
+</select>
+<input type="hidden" name="mapno" value="00600" />
+<input type="hidden" name="mapscale" value=>
+<input type="button" value="Go" onclick="select_menu(this.form)" />
+<input type="hidden" name="show_description" value="hide">
+
+</form>
+</td><td>
+<form name="form2" method="get" action="http://www.genome.jp/kegg-bin/show_pathway">
+&nbsp;&nbsp;&nbsp;&nbsp;
+<select name="scale" onChange="resize_map(this.form.scale.value)">
+<option value="1.84" >184%</option>
+<option value="1.5" >150%</option>
+<option value="1.22" >122%</option>
+<option value="1.0" selected>100%</option>
+<option value="0.82" >82%</option>
+<option value="0.67" >67%</option>
+<option value="0.55" >55%</option>
+</select>
+&nbsp;&nbsp;<input type="text" name="query" size=20 value="">
+<input type="hidden" name="map" value="osa00600" />
+<input type="hidden" name="scale" value=>
+<input type="hidden" name="image" value=/share/www//mark_pathway1460624392131537/osa00600.png>
+<input type="hidden" name="use" value="reference">
+<input type="hidden" name="nmap_args" value="1460623730124611">
+<input type="hidden" name="auto_image" value="">
+<input type="hidden" name="show_description" value="hide">
+<input type="hidden" name="multi_query" />
+
+<!--</form>-->
+</td></tr></table>
+
+
+<img src="osa00600.png" name="pathwayimage" name="pathwayimage" usemap="#mapdata" border="0" />
+
+<map name="mapdata">
+<area shape=circle	coords=312,366,4	href="http://www.genome.jp/dbget-bin/www_bget?C00836"	title="C00836 (Sphinganine)" onmouseover="popupTimer(&quot;C00836&quot;, &quot;C00836 (Sphinganine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=350,294,4	href="http://www.genome.jp/dbget-bin/www_bget?C12144"	title="C12144 (Phytosphingosine)" onmouseover="popupTimer(&quot;C12144&quot;, &quot;C12144 (Phytosphingosine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=457,294,4	href="http://www.genome.jp/dbget-bin/www_bget?C12145"	title="C12145 (Phytoceramide)" onmouseover="popupTimer(&quot;C12145&quot;, &quot;C12145 (Phytoceramide)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=457,366,4	href="http://www.genome.jp/dbget-bin/www_bget?C12126"	title="C12126 (Dihydroceramide)" onmouseover="popupTimer(&quot;C12126&quot;, &quot;C12126 (Dihydroceramide)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=313,437,4	href="http://www.genome.jp/dbget-bin/www_bget?C01290"	title="C01290 (beta-D-Galactosyl-(1-&gt;4)-beta-D-glucosyl-(1&lt;-&gt;1)-ceramide)" onmouseover="popupTimer(&quot;C01290&quot;, &quot;C01290 (beta-D-Galactosyl-(1-&gt;4)-beta-D-glucosyl-(1&lt;-&gt;1)-ceramide)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=601,146,4	href="http://www.genome.jp/dbget-bin/www_bget?C06124"	title="C06124 (Sphingosine 1-phosphate)" onmouseover="popupTimer(&quot;C06124&quot;, &quot;C06124 (Sphingosine 1-phosphate)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=457,438,4	href="http://www.genome.jp/dbget-bin/www_bget?C01190"	title="C01190 (beta-D-Glucosyl-(1&lt;-&gt;1)-ceramide)" onmouseover="popupTimer(&quot;C01190&quot;, &quot;C01190 (beta-D-Glucosyl-(1&lt;-&gt;1)-ceramide)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=312,146,4	href="http://www.genome.jp/dbget-bin/www_bget?C01120"	title="C01120 (Sphinganine 1-phosphate)" onmouseover="popupTimer(&quot;C01120&quot;, &quot;C01120 (Sphinganine 1-phosphate)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=457,146,4	href="http://www.genome.jp/dbget-bin/www_bget?C00346"	title="C00346 (Ethanolamine phosphate)" onmouseover="popupTimer(&quot;C00346&quot;, &quot;C00346 (Ethanolamine phosphate)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=745,283,4	href="http://www.genome.jp/dbget-bin/www_bget?C06062"	title="C06062 (Ceramide phosphoethanolamine)" onmouseover="popupTimer(&quot;C06062&quot;, &quot;C06062 (Ceramide phosphoethanolamine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=745,308,4	href="http://www.genome.jp/dbget-bin/www_bget?C05681"	title="C05681 (Ceramide 2-aminoethylphosphonate)" onmouseover="popupTimer(&quot;C05681&quot;, &quot;C05681 (Ceramide 2-aminoethylphosphonate)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=205,366,4	href="http://www.genome.jp/dbget-bin/www_bget?C02934"	title="C02934 (3-Dehydrosphinganine)" onmouseover="popupTimer(&quot;C02934&quot;, &quot;C02934 (3-Dehydrosphinganine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=113,307,4	href="http://www.genome.jp/dbget-bin/www_bget?C00065"	title="C00065 (L-Serine)" onmouseover="popupTimer(&quot;C00065&quot;, &quot;C00065 (L-Serine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=95,366,4	href="http://www.genome.jp/dbget-bin/www_bget?C00154"	title="C00154 (Palmitoyl-CoA)" onmouseover="popupTimer(&quot;C00154&quot;, &quot;C00154 (Palmitoyl-CoA)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=601,221,4	href="http://www.genome.jp/dbget-bin/www_bget?C00319"	title="C00319 (Sphingosine)" onmouseover="popupTimer(&quot;C00319&quot;, &quot;C00319 (Sphingosine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=602,365,4	href="http://www.genome.jp/dbget-bin/www_bget?C00195"	title="C00195 (N-Acylsphingosine)" onmouseover="popupTimer(&quot;C00195&quot;, &quot;C00195 (N-Acylsphingosine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=602,510,4	href="http://www.genome.jp/dbget-bin/www_bget?C02686"	title="C02686 (Galactosylceramide)" onmouseover="popupTimer(&quot;C02686&quot;, &quot;C02686 (Galactosylceramide)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=745,149,4	href="http://www.genome.jp/dbget-bin/www_bget?C01747"	title="C01747 (Psychosine)" onmouseover="popupTimer(&quot;C01747&quot;, &quot;C01747 (Psychosine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=868,366,4	href="http://www.genome.jp/dbget-bin/www_bget?C03640"	title="C03640 (Sphingosyl-phosphocholine)" onmouseover="popupTimer(&quot;C03640&quot;, &quot;C03640 (Sphingosyl-phosphocholine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=745,438,4	href="http://www.genome.jp/dbget-bin/www_bget?C02960"	title="C02960 (Ceramide 1-phosphate)" onmouseover="popupTimer(&quot;C02960&quot;, &quot;C02960 (Ceramide 1-phosphate)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=745,365,4	href="http://www.genome.jp/dbget-bin/www_bget?C00550"	title="C00550 (Sphingomyelin)" onmouseover="popupTimer(&quot;C00550&quot;, &quot;C00550 (Sphingomyelin)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=745,510,4	href="http://www.genome.jp/dbget-bin/www_bget?C06125"	title="C06125 (Sulfatide)" onmouseover="popupTimer(&quot;C06125&quot;, &quot;C06125 (Sulfatide)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=457,510,4	href="http://www.genome.jp/dbget-bin/www_bget?C06128"	title="C06128 (GM4)" onmouseover="popupTimer(&quot;C06128&quot;, &quot;C06128 (GM4)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=601,617,4	href="http://www.genome.jp/dbget-bin/www_bget?C06126"	title="C06126 (Digalactosylceramide)" onmouseover="popupTimer(&quot;C06126&quot;, &quot;C06126 (Digalactosylceramide)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=744,618,4	href="http://www.genome.jp/dbget-bin/www_bget?C06127"	title="C06127 (Digalactosylceramide sulfate)" onmouseover="popupTimer(&quot;C06127&quot;, &quot;C06127 (Digalactosylceramide sulfate)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=376,398,422,415	href="http://www.genome.jp/dbget-bin/www_bget?osa:4333811"	title="4333811" />
+<area shape=rect	coords=376,377,422,394	href="http://www.genome.jp/dbget-bin/www_bget?osa:4326680"	title="4326680" />
+<area shape=rect	coords=376,275,422,292	href="http://www.genome.jp/dbget-bin/www_bget?osa:4326680"	title="4326680" />
+<area shape=rect	coords=509,356,555,373	href="http://www.genome.jp/dbget-bin/www_bget?osa:4330104"	title="4330104" />
+<area shape=rect	coords=436,331,482,348	href="http://www.genome.jp/dbget-bin/www_bget?osa:4330718+osa:4340921+osa:4343979+osa:9268279"	title="4330718, 4340921, 4343979, 9268279" />
+<area shape=rect	coords=313,331,359,348	href="http://www.genome.jp/dbget-bin/www_bget?osa:4330718+osa:4340921+osa:4343979+osa:9268279"	title="4330718, 4340921, 4343979, 9268279" />
+<area shape=rect	coords=124,358,170,375	href="http://www.genome.jp/dbget-bin/www_bget?osa:4326965+osa:4326966+osa:4331075+osa:4332274+osa:4348231+osa:4350591"	title="4326965, 4326966, 4331075, 4332274, 4348231, 4350591" />
+<area shape=rect	coords=233,367,279,384	href="http://www.genome.jp/dbget-bin/www_bget?osa:4330439"	title="4330439" />
+<area shape=rect	coords=596,552,642,569	href="http://www.genome.jp/dbget-bin/www_bget?osa:4344290+osa:4348988"	title="4344290, 4348988" />
+<area shape=rect	coords=376,440,422,457	href="http://www.genome.jp/dbget-bin/www_bget?osa:4325748+osa:4339457"	title="4325748, 4339457" />
+<area shape=rect	coords=510,429,556,446	href="http://www.genome.jp/dbget-bin/www_bget?osa:4348876+osa:4350171"	title="4348876, 4350171" />
+<area shape=rect	coords=599,258,645,275	href="http://www.genome.jp/dbget-bin/www_bget?osa:4326680"	title="4326680" />
+<area shape=rect	coords=580,178,626,195	href="http://www.genome.jp/dbget-bin/www_bget?osa:4327845"	title="4327845" />
+<area shape=rect	coords=288,222,334,239	href="http://www.genome.jp/dbget-bin/www_bget?osa:4327845"	title="4327845" />
+<area shape=rect	coords=509,129,555,146	href="http://www.genome.jp/dbget-bin/www_bget?osa:4326459"	title="4326459" />
+<area shape=rect	coords=376,138,422,155	href="http://www.genome.jp/dbget-bin/www_bget?osa:4326459"	title="4326459" />
+<area shape=rect	coords=97,589,267,623	href="http://www.genome.jp/kegg-bin/show_pathway?osa00604"	title="osa00604: Glycosphingolipid biosynthesis - ganglio series" onmouseover="popupTimer(&quot;osa00604&quot;, &quot;osa00604: Glycosphingolipid biosynthesis - ganglio series&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=97,545,267,579	href="http://www.genome.jp/kegg-bin/show_pathway?osa00603"	title="osa00603: Glycosphingolipid biosynthesis - globo series" onmouseover="popupTimer(&quot;osa00603&quot;, &quot;osa00603: Glycosphingolipid biosynthesis - globo series&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=97,501,267,535	href="http://www.genome.jp/kegg-bin/show_pathway?map00601"	title="map00601: Glycosphingolipid biosynthesis - lacto and neolacto series" onmouseover="popupTimer(&quot;map00601&quot;, &quot;map00601: Glycosphingolipid biosynthesis - lacto and neolacto series&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=52,167,178,201	href="http://www.genome.jp/kegg-bin/show_pathway?osa00260"	title="osa00260: Glycine, serine and threonine metabolism" onmouseover="popupTimer(&quot;osa00260&quot;, &quot;osa00260: Glycine, serine and threonine metabolism&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=40,45,254,70	href="http://www.genome.jp/dbget-bin/www_bget?osa00600"	title="osa00600: Sphingolipid metabolism" onmouseover="popupTimer(&quot;osa00600&quot;, &quot;osa00600: Sphingolipid metabolism&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+</map>
+<div id="poplay" class="poplay" />
+
+</form>
+</body>
+</html>

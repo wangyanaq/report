@@ -1,0 +1,327 @@
+<html>
+<!---
+ENTRY       osa00591
+DEFINITION  Linoleic acid metabolism - Oryza sativa japonica (Japanese rice) (RefSeq)
+--->
+<head>
+<title>
+KEGG PATHWAY: Linoleic acid metabolism - Oryza sativa japonica (Japanese rice) (RefSeq)
+</title>
+<style type="text/css">
+<!--
+div.poplay {
+  position: absolute;
+  padding: 2px;
+  background-color: #ffff99;
+  border-top: solid 1px #c0c0c0;
+  border-left: solid 1px #c0c0c0;
+  border-bottom: solid 1px #808080;
+  border-right: solid 1px #808080;
+  visibility: hidden;
+}
+
+span.popup
+{
+  font-weight: bold;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+form {
+  margin: 0px;
+}
+
+div.image {
+  position: absolute;
+  padding: 0px;
+  top: 0px;
+  padding: 0px;
+  border: solid 1px #000000;
+}
+
+img {
+  border: none;
+}
+
+
+-->
+</style>
+<link rel="stylesheet" href="http://www.genome.jp/css/kegg.css" type="text/css" />
+<script language="JavaScript" src="http://www.genome.jp/js/dhtml.js"></script>
+
+<script language="JavaScript">
+<!---
+var image_height;
+$(function(){
+	$(window).bind('load',function(){
+  image_height = $("div.image").height()-10;
+	$("div.control").height(image_height-5);
+	$("#resizable").height(image_height);
+	});
+});
+
+
+function resize_map(scale){
+  var form = document.forms["form2"];
+  form.scale.value = scale;
+  form.submit();
+}
+
+function select_menu(){
+  var form = document.forms["selmenu"];
+  if(form.org_name.value == 'set_cookie' || form.org_name.value == 'reset_cookie'){
+    window.open('http://www.genome.jp/kegg/misc/kegg2_select.html','sel_org','toolbar=no,location=no,directories=no,width=500,height=320,resizable=yes');
+  }else{
+    form.action='http://www.genome.jp/kegg-bin/show_pathway';
+    form.submit();
+  }
+}
+
+var timer = 0;
+var p_entry, p_title, p_bgcolor;
+function popupTimer(entry, title, bgcolor)
+{
+  p_entry = entry;
+  p_title = title;
+  p_bgcolor = bgcolor;
+
+  if(timer == 0){
+    var func = "showThumbnail()";
+    timer = setTimeout(func, 1200);
+  }
+}
+
+
+function showThumbnail()
+{
+
+  var url = "";
+  if(p_entry.match(/^[A-Z]+\d+$/))
+  {
+    url = "http://www.genome.jp/kegg/misc/thumbnail/" + p_entry + ".gif";
+  }
+  else if(p_entry.match(/(\d+)$/))
+  {
+    url = "http://www.genome.jp/kegg/misc/thumbnail/map" + RegExp.$1 + ".gif";
+  }
+
+  var html = "";
+
+  if(p_bgcolor != "#ffffff")
+  {
+    html += "<span class=\"popup\">" + p_entry + "</span><br />";
+  }
+
+  html += "<img src=\"" + url + "\" alt=\"Loading...\">";
+
+  var x = getCurrentMouseX();
+  var y = getCurrentMouseY();
+
+  var layer = new Component("poplay");
+  layer.backgroundColor(p_bgcolor);
+  layer.HTML(html);
+  layer.move(x, y+40);
+  layer.visible(true);
+
+  timer = 0;
+}
+
+function hideMapTn(){
+  var layer = new Component("poplay");
+  layer.visible(false);
+
+  if(timer != 0){
+    clearTimeout(timer);
+    timer = 0;
+  }
+}
+
+function switchDescription(){
+  var form = document.forms[0];
+  var status = form.show_description.value;
+
+  if(status == "hide"){
+    document.getElementById("description").style.display = "";
+    document.getElementById("descLink").innerHTML = "Hide description";
+    form.show_description.value='show';
+
+    if(document.forms[1]){
+    	document.forms[1].show_description.value='show';
+    }
+  }
+  else
+  {
+    document.getElementById("description").style.display = 'none';
+    document.getElementById("descLink").innerHTML = "Show description";
+    form.show_description.value='hide';
+
+    if(document.forms[1]){
+      document.forms[1].show_description.value='hide';
+    }
+  }
+}
+
+function btn(bobj,img) { bobj.src = "http://www.genome.jp/Fig/bget/button_" + img + ".gif"; }
+//--->
+</script>
+</head>
+<body>
+<table cellpadding="0" width="100%" cellspacing="0" border="0">
+ <tr>
+  <td>
+   <a href="http://www.genome.jp/kegg/kegg2.html"><img align="middle" alt="KEGG" border="0" src="http://www.genome.jp/Fig/bget/kegg3.gif" /></a>
+   &nbsp;&nbsp;&nbsp;<font class="title3"><b>Linoleic acid metabolism - Oryza sativa japonica (Japanese rice) (RefSeq)</b></font>
+  </td>
+  <td valign="bottom" align="right">
+   <a href="javascript:void(window.open('http://www.genome.jp/kegg/document/help_pathway.html','KEGG_Help','toolbar=no,location=no,directories=no,width=720,height=640,resizable=yes,scrollbars=yes'))"><img name="help" src="http://www.genome.jp/Fig/bget/button_Hb.gif" border="0" align="middle" alt="Help" onmouseout="btn(this,'Hb')" onmousedown="btn(this,'Hbd')" onmouseover="btn(this,'Hbh')" onmouseup="btn(this,'Hb')" /></a>
+  </td>
+ </tr>
+</table>
+
+  
+[
+<a href="http://www.genome.jp/kegg-bin/get_htext?query=00591&htext=br08901.keg&option=-a">Pathway menu</a>
+| <a href="http://www.genome.jp/kegg-bin/get_htext?htext=br08601_map00591.keg&query=osa&option=-a">Organism menu</a>
+| <a href="http://www.genome.jp/dbget-bin/www_bget?pathway+osa00591">Pathway entry</a>
+
+| <a href="http://www.kegg.jp/kegg-bin/download?entry=osa00591&format=kgml">Download KGML</a>
+
+| <a href="javascript:void(window.open('http://www.genome.jp/kegg/tool/color_a_pathway.html','KEGG_Help','height=300,width=600,resizable=yes,scrollbars=yes'))">User data mapping</a>
+
+]
+  
+
+<table><tr><td>
+<form name="selmenu" method="get">
+<select name="org_name">
+<option value="map">Reference pathway</option>
+<option value="ko">Reference pathway (KO)</option>
+<option value="ec">Reference pathway (EC)</option>
+<option value="rn">Reference pathway (Reaction)</option>
+<option value="set_cookie">-----&lt; Set personalized menu &gt;-----</option>
+<option value="osa.sort_alp">-----&lt; Sort below by alphabet &gt;-----</option>
+<option value="hsa">Homo sapiens (human)</option>
+<option value="hsadd">Homo sapiens (human) + Disease/drug</option>
+<option value="ptr">Pan troglodytes (chimpanzee)</option>
+<option value="pon">Pongo abelii (Sumatran orangutan)</option>
+<option value="mcc">Macaca mulatta (rhesus monkey)</option>
+<option value="mmu">Mus musculus (mouse)</option>
+<option value="rno">Rattus norvegicus (rat)</option>
+<option value="cfa">Canis familiaris (dog)</option>
+<option value="aml">Ailuropoda melanoleuca (giant panda)</option>
+<option value="bta">Bos taurus (cow)</option>
+<option value="ssc">Sus scrofa (pig)</option>
+<option value="ecb">Equus caballus (horse)</option>
+<option value="mdo">Monodelphis domestica (opossum)</option>
+<option value="oaa">Ornithorhynchus anatinus (platypus)</option>
+<option value="gga">Gallus gallus (chicken)</option>
+<option value="tgu">Taeniopygia guttata (zebra finch)</option>
+<option value="xla">Xenopus laevis (African clawed frog)</option>
+<option value="xtr">Xenopus tropicalis (western clawed frog)</option>
+<option value="dre">Danio rerio (zebrafish)</option>
+<option value="bfo">Branchiostoma floridae (Florida lancelet)</option>
+<option value="cin">Ciona intestinalis (sea squirt)</option>
+<option value="spu">Strongylocentrotus purpuratus (purple sea urchin)</option>
+<option value="dme">Drosophila melanogaster (fruit fly)</option>
+<option value="cel">Caenorhabditis elegans (nematode)</option>
+<option value="nve">Nematostella vectensis (sea anemone)</option>
+<option value="tad">Trichoplax adhaerens</option>
+<option value="osa" selected>Oryza sativa japonica (Japanese rice) (RefSeq)</option>
+<option value="olu">Ostreococcus lucimarinus</option>
+<option value="mgr">Magnaporthe oryzae</option>
+<option value="ani">Aspergillus nidulans</option>
+<option value="afm">Aspergillus fumigatus</option>
+<option value="ang">Aspergillus niger</option>
+<option value="pcs">Penicillium rubens</option>
+<option value="tet">Tetrahymena thermophila</option>
+<option value="xcc">Xanthomonas campestris pv. campestris ATCC 33913</option>
+<option value="xcb">Xanthomonas campestris pv. campestris 8004</option>
+<option value="xca">Xanthomonas campestris pv. campestris B100</option>
+<option value="xcv">Xanthomonas campestris pv. vesicatoria</option>
+<option value="xac">Xanthomonas citri pv. citri 306</option>
+<option value="xoo">Xanthomonas oryzae pv. oryzae KACC 10331</option>
+<option value="xom">Xanthomonas oryzae pv. oryzae MAFF 311018</option>
+<option value="xop">Xanthomonas oryzae pv. oryzae PXO99A</option>
+<option value="acb">Acinetobacter baumannii ATCC 17978</option>
+<option value="mpa">Mycobacterium avium subsp. paratuberculosis K-10</option>
+<option value="mav">Mycobacterium avium 104</option>
+<option value="nfa">Nocardia farcinica</option>
+<option value="rha">Rhodococcus jostii</option>
+<option value="chu">Cytophaga hutchinsonii</option>
+</select>
+<input type="hidden" name="mapno" value="00591" />
+<input type="hidden" name="mapscale" value=>
+<input type="button" value="Go" onclick="select_menu(this.form)" />
+<input type="hidden" name="show_description" value="hide">
+
+</form>
+</td><td>
+<form name="form2" method="get" action="http://www.genome.jp/kegg-bin/show_pathway">
+&nbsp;&nbsp;&nbsp;&nbsp;
+<select name="scale" onChange="resize_map(this.form.scale.value)">
+<option value="1.84" >184%</option>
+<option value="1.5" >150%</option>
+<option value="1.22" >122%</option>
+<option value="1.0" selected>100%</option>
+<option value="0.82" >82%</option>
+<option value="0.67" >67%</option>
+<option value="0.55" >55%</option>
+</select>
+&nbsp;&nbsp;<input type="text" name="query" size=20 value="">
+<input type="hidden" name="map" value="osa00591" />
+<input type="hidden" name="scale" value=>
+<input type="hidden" name="image" value=/share/www//mark_pathway1460627400109272/osa00591.png>
+<input type="hidden" name="use" value="reference">
+<input type="hidden" name="nmap_args" value="146062687916849">
+<input type="hidden" name="auto_image" value="">
+<input type="hidden" name="show_description" value="hide">
+<input type="hidden" name="multi_query" />
+
+<!--</form>-->
+</td></tr></table>
+
+
+<img src="osa00591.png" name="pathwayimage" name="pathwayimage" usemap="#mapdata" border="0" />
+
+<map name="mapdata">
+<area shape=circle	coords=705,340,4	href="http://www.genome.jp/dbget-bin/www_bget?C04717"	title="C04717 ((9Z,11E)-(13S)-13-Hydroperoxyoctadeca-9,11-dienoic acid)" onmouseover="popupTimer(&quot;C04717&quot;, &quot;C04717 ((9Z,11E)-(13S)-13-Hydroperoxyoctadeca-9,11-dienoic acid)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=905,170,4	href="http://www.genome.jp/dbget-bin/www_bget?C14833"	title="C14833 (9,12,13-TriHOME)" onmouseover="popupTimer(&quot;C14833&quot;, &quot;C14833 (9,12,13-TriHOME)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=791,170,4	href="http://www.genome.jp/dbget-bin/www_bget?C14832"	title="C14832 (12,13-Epoxy-9-hydroxy-10-octadecenoate)" onmouseover="popupTimer(&quot;C14832&quot;, &quot;C14832 (12,13-Epoxy-9-hydroxy-10-octadecenoate)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=705,113,4	href="http://www.genome.jp/dbget-bin/www_bget?C14766"	title="C14766 (9-OxoODE)" onmouseover="popupTimer(&quot;C14766&quot;, &quot;C14766 (9-OxoODE)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=705,487,4	href="http://www.genome.jp/dbget-bin/www_bget?C14765"	title="C14765 (13-OxoODE)" onmouseover="popupTimer(&quot;C14765&quot;, &quot;C14765 (13-OxoODE)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=705,170,4	href="http://www.genome.jp/dbget-bin/www_bget?C14767"	title="C14767 (9(S)-HODE)" onmouseover="popupTimer(&quot;C14767&quot;, &quot;C14767 (9(S)-HODE)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=905,340,4	href="http://www.genome.jp/dbget-bin/www_bget?C14833"	title="C14833 (9,12,13-TriHOME)" onmouseover="popupTimer(&quot;C14833&quot;, &quot;C14833 (9,12,13-TriHOME)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=905,228,4	href="http://www.genome.jp/dbget-bin/www_bget?C14835"	title="C14835 (9,10,13-TriHOME)" onmouseover="popupTimer(&quot;C14835&quot;, &quot;C14835 (9,10,13-TriHOME)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=791,340,4	href="http://www.genome.jp/dbget-bin/www_bget?C14832"	title="C14832 (12,13-Epoxy-9-hydroxy-10-octadecenoate)" onmouseover="popupTimer(&quot;C14832&quot;, &quot;C14832 (12,13-Epoxy-9-hydroxy-10-octadecenoate)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=791,228,4	href="http://www.genome.jp/dbget-bin/www_bget?C14834"	title="C14834 (9,10-Epoxy-13-hydroxy-11-octadecenoate)" onmouseover="popupTimer(&quot;C14834&quot;, &quot;C14834 (9,10-Epoxy-13-hydroxy-11-octadecenoate)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=492,430,4	href="http://www.genome.jp/dbget-bin/www_bget?C14828"	title="C14828 (9,10-DHOME)" onmouseover="popupTimer(&quot;C14828&quot;, &quot;C14828 (9,10-DHOME)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=377,431,4	href="http://www.genome.jp/dbget-bin/www_bget?C14825"	title="C14825 (9(10)-EpOME)" onmouseover="popupTimer(&quot;C14825&quot;, &quot;C14825 (9(10)-EpOME)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=705,227,4	href="http://www.genome.jp/dbget-bin/www_bget?C14827"	title="C14827 (9(S)-HPODE)" onmouseover="popupTimer(&quot;C14827&quot;, &quot;C14827 (9(S)-HPODE)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=115,227,4	href="http://www.genome.jp/dbget-bin/www_bget?C00219"	title="C00219 (Arachidonate)" onmouseover="popupTimer(&quot;C00219&quot;, &quot;C00219 (Arachidonate)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=379,170,4	href="http://www.genome.jp/dbget-bin/www_bget?C00157"	title="C00157 (Phosphatidylcholine)" onmouseover="popupTimer(&quot;C00157&quot;, &quot;C00157 (Phosphatidylcholine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=459,227,4	href="http://www.genome.jp/dbget-bin/www_bget?C14831"	title="C14831 (8(R)-HPODE)" onmouseover="popupTimer(&quot;C14831&quot;, &quot;C14831 (8(R)-HPODE)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=634,227,4	href="http://www.genome.jp/dbget-bin/www_bget?C07338"	title="C07338 ((9Z,12Z)-(11S)-11-Hydroperoxyoctadeca-9,12-dienoic acid)" onmouseover="popupTimer(&quot;C07338&quot;, &quot;C07338 ((9Z,12Z)-(11S)-11-Hydroperoxyoctadeca-9,12-dienoic acid)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=273,431,4	href="http://www.genome.jp/dbget-bin/www_bget?C14826"	title="C14826 (12(13)-EpOME)" onmouseover="popupTimer(&quot;C14826&quot;, &quot;C14826 (12(13)-EpOME)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=379,283,4	href="http://www.genome.jp/dbget-bin/www_bget?C01595"	title="C01595 (Linoleate)" onmouseover="popupTimer(&quot;C01595&quot;, &quot;C01595 (Linoleate)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=228,227,4	href="http://www.genome.jp/dbget-bin/www_bget?C06426"	title="C06426 ((6Z,9Z,12Z)-Octadecatrienoic acid)" onmouseover="popupTimer(&quot;C06426&quot;, &quot;C06426 ((6Z,9Z,12Z)-Octadecatrienoic acid)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=228,279,4	href="http://www.genome.jp/dbget-bin/www_bget?C07289"	title="C07289 (Crepenynate)" onmouseover="popupTimer(&quot;C07289&quot;, &quot;C07289 (Crepenynate)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=705,430,4	href="http://www.genome.jp/dbget-bin/www_bget?C14762"	title="C14762 (13(S)-HODE)" onmouseover="popupTimer(&quot;C14762&quot;, &quot;C14762 (13(S)-HODE)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=492,340,4	href="http://www.genome.jp/dbget-bin/www_bget?C04056"	title="C04056 (9-cis,11-trans-Octadecadienoate)" onmouseover="popupTimer(&quot;C04056&quot;, &quot;C04056 (9-cis,11-trans-Octadecadienoate)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=514,170,4	href="http://www.genome.jp/dbget-bin/www_bget?C07354"	title="C07354 ((7S,8S)-DiHODE)" onmouseover="popupTimer(&quot;C07354&quot;, &quot;C07354 ((7S,8S)-DiHODE)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=172,431,4	href="http://www.genome.jp/dbget-bin/www_bget?C14829"	title="C14829 (12,13-DHOME)" onmouseover="popupTimer(&quot;C14829&quot;, &quot;C14829 (12,13-DHOME)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=172,227,4	href="http://www.genome.jp/dbget-bin/www_bget?C03242"	title="C03242 ((8Z,11Z,14Z)-Icosatrienoic acid)" onmouseover="popupTimer(&quot;C03242&quot;, &quot;C03242 ((8Z,11Z,14Z)-Icosatrienoic acid)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=325,544,4	href="http://www.genome.jp/dbget-bin/www_bget?C14837"	title="C14837 (9,10-Dihydroxy-12,13-epoxyoctadecanoate)" onmouseover="popupTimer(&quot;C14837&quot;, &quot;C14837 (9,10-Dihydroxy-12,13-epoxyoctadecanoate)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=325,487,4	href="http://www.genome.jp/dbget-bin/www_bget?C14836"	title="C14836 (9,10-12,13-Diepoxyoctadecanoate)" onmouseover="popupTimer(&quot;C14836&quot;, &quot;C14836 (9,10-12,13-Diepoxyoctadecanoate)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=459,170,4	href="http://www.genome.jp/dbget-bin/www_bget?C20186"	title="C20186 (5S,8R-DiHODE)" onmouseover="popupTimer(&quot;C20186&quot;, &quot;C20186 (5S,8R-DiHODE)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=566,224,4	href="http://www.genome.jp/dbget-bin/www_bget?C19937"	title="C19937 ((8E,10R,12Z)-10-Hydroperoxy-8,12-octadecadienoate)" onmouseover="popupTimer(&quot;C19937&quot;, &quot;C19937 ((8E,10R,12Z)-10-Hydroperoxy-8,12-octadecadienoate)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=657,302,703,319	href="http://www.genome.jp/dbget-bin/www_bget?osa:4328603+osa:4331824+osa:4338358+osa:4345993+osa:4345994+osa:4352505+osa:4352509"	title="4328603, 4331824, 4338358, 4345993, 4345994, 4352505, 4352509" />
+<area shape=rect	coords=355,195,401,212	href="http://www.genome.jp/dbget-bin/www_bget?osa:4327023+osa:4333862+osa:4334536"	title="4327023, 4333862, 4334536" />
+<area shape=rect	coords=682,250,728,267	href="http://www.genome.jp/dbget-bin/www_bget?osa:4333818+osa:4333821+osa:4333823+osa:4334049+osa:4350766"	title="4333818, 4333821, 4333823, 4334049, 4350766" />
+<area shape=rect	coords=39,125,201,150	href="http://www.genome.jp/kegg-bin/show_pathway?osa00590"	title="osa00590: Arachidonic acid metabolism" onmouseover="popupTimer(&quot;osa00590&quot;, &quot;osa00590: Arachidonic acid metabolism&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=40,45,269,70	href="http://www.genome.jp/dbget-bin/www_bget?osa00591"	title="osa00591: Linoleic acid metabolism" onmouseover="popupTimer(&quot;osa00591&quot;, &quot;osa00591: Linoleic acid metabolism&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+</map>
+<div id="poplay" class="poplay" />
+
+</form>
+</body>
+</html>

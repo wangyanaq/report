@@ -1,0 +1,724 @@
+<html>
+<!---
+ENTRY       osa00906
+DEFINITION  Carotenoid biosynthesis - Oryza sativa japonica (Japanese rice) (RefSeq)
+--->
+<head>
+<title>
+KEGG PATHWAY: Carotenoid biosynthesis - Oryza sativa japonica (Japanese rice) (RefSeq)
+</title>
+<style type="text/css">
+<!--
+div.poplay {
+  position: absolute;
+  padding: 2px;
+  background-color: #ffff99;
+  border-top: solid 1px #c0c0c0;
+  border-left: solid 1px #c0c0c0;
+  border-bottom: solid 1px #808080;
+  border-right: solid 1px #808080;
+  visibility: hidden;
+}
+
+span.popup
+{
+  font-weight: bold;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+form {
+  margin: 0px;
+}
+
+div.image {
+  position: absolute;
+  padding: 0px;
+  top: 0px;
+  padding: 0px;
+  border: solid 1px #000000;
+}
+
+img {
+  border: none;
+}
+
+
+-->
+</style>
+<link rel="stylesheet" href="http://www.genome.jp/css/kegg.css" type="text/css" />
+<script language="JavaScript" src="http://www.genome.jp/js/dhtml.js"></script>
+
+<script language="JavaScript">
+<!---
+var image_height;
+$(function(){
+	$(window).bind('load',function(){
+  image_height = $("div.image").height()-10;
+	$("div.control").height(image_height-5);
+	$("#resizable").height(image_height);
+	});
+});
+
+
+function resize_map(scale){
+  var form = document.forms["form2"];
+  form.scale.value = scale;
+  form.submit();
+}
+
+function select_menu(){
+  var form = document.forms["selmenu"];
+  if(form.org_name.value == 'set_cookie' || form.org_name.value == 'reset_cookie'){
+    window.open('http://www.genome.jp/kegg/misc/kegg2_select.html','sel_org','toolbar=no,location=no,directories=no,width=500,height=320,resizable=yes');
+  }else{
+    form.action='http://www.genome.jp/kegg-bin/show_pathway';
+    form.submit();
+  }
+}
+
+var timer = 0;
+var p_entry, p_title, p_bgcolor;
+function popupTimer(entry, title, bgcolor)
+{
+  p_entry = entry;
+  p_title = title;
+  p_bgcolor = bgcolor;
+
+  if(timer == 0){
+    var func = "showThumbnail()";
+    timer = setTimeout(func, 1200);
+  }
+}
+
+
+function showThumbnail()
+{
+
+  var url = "";
+  if(p_entry.match(/^[A-Z]+\d+$/))
+  {
+    url = "http://www.genome.jp/kegg/misc/thumbnail/" + p_entry + ".gif";
+  }
+  else if(p_entry.match(/(\d+)$/))
+  {
+    url = "http://www.genome.jp/kegg/misc/thumbnail/map" + RegExp.$1 + ".gif";
+  }
+
+  var html = "";
+
+  if(p_bgcolor != "#ffffff")
+  {
+    html += "<span class=\"popup\">" + p_entry + "</span><br />";
+  }
+
+  html += "<img src=\"" + url + "\" alt=\"Loading...\">";
+
+  var x = getCurrentMouseX();
+  var y = getCurrentMouseY();
+
+  var layer = new Component("poplay");
+  layer.backgroundColor(p_bgcolor);
+  layer.HTML(html);
+  layer.move(x, y+40);
+  layer.visible(true);
+
+  timer = 0;
+}
+
+function hideMapTn(){
+  var layer = new Component("poplay");
+  layer.visible(false);
+
+  if(timer != 0){
+    clearTimeout(timer);
+    timer = 0;
+  }
+}
+
+function switchDescription(){
+  var form = document.forms[0];
+  var status = form.show_description.value;
+
+  if(status == "hide"){
+    document.getElementById("description").style.display = "";
+    document.getElementById("descLink").innerHTML = "Hide description";
+    form.show_description.value='show';
+
+    if(document.forms[1]){
+    	document.forms[1].show_description.value='show';
+    }
+  }
+  else
+  {
+    document.getElementById("description").style.display = 'none';
+    document.getElementById("descLink").innerHTML = "Show description";
+    form.show_description.value='hide';
+
+    if(document.forms[1]){
+      document.forms[1].show_description.value='hide';
+    }
+  }
+}
+
+function btn(bobj,img) { bobj.src = "http://www.genome.jp/Fig/bget/button_" + img + ".gif"; }
+//--->
+</script>
+</head>
+<body>
+<table cellpadding="0" width="100%" cellspacing="0" border="0">
+ <tr>
+  <td>
+   <a href="http://www.genome.jp/kegg/kegg2.html"><img align="middle" alt="KEGG" border="0" src="http://www.genome.jp/Fig/bget/kegg3.gif" /></a>
+   &nbsp;&nbsp;&nbsp;<font class="title3"><b>Carotenoid biosynthesis - Oryza sativa japonica (Japanese rice) (RefSeq)</b></font>
+  </td>
+  <td valign="bottom" align="right">
+   <a href="javascript:void(window.open('http://www.genome.jp/kegg/document/help_pathway.html','KEGG_Help','toolbar=no,location=no,directories=no,width=720,height=640,resizable=yes,scrollbars=yes'))"><img name="help" src="http://www.genome.jp/Fig/bget/button_Hb.gif" border="0" align="middle" alt="Help" onmouseout="btn(this,'Hb')" onmousedown="btn(this,'Hbd')" onmouseover="btn(this,'Hbh')" onmouseup="btn(this,'Hb')" /></a>
+  </td>
+ </tr>
+</table>
+
+  
+[
+<a href="http://www.genome.jp/kegg-bin/get_htext?query=00906&htext=br08901.keg&option=-a">Pathway menu</a>
+| <a href="http://www.genome.jp/kegg-bin/get_htext?htext=br08601_map00906.keg&query=osa&option=-a">Organism menu</a>
+| <a href="http://www.genome.jp/dbget-bin/www_bget?pathway+osa00906">Pathway entry</a>
+
+| <a href="http://www.kegg.jp/kegg-bin/download?entry=osa00906&format=kgml">Download KGML</a>
+
+| <a href="javascript:void(window.open('http://www.genome.jp/kegg/tool/color_a_pathway.html','KEGG_Help','height=300,width=600,resizable=yes,scrollbars=yes'))">User data mapping</a>
+
+]
+  
+
+<table><tr><td>
+<form name="selmenu" method="get">
+<select name="org_name">
+<option value="map">Reference pathway</option>
+<option value="ko">Reference pathway (KO)</option>
+<option value="ec">Reference pathway (EC)</option>
+<option value="rn">Reference pathway (Reaction)</option>
+<option value="set_cookie">-----&lt; Set personalized menu &gt;-----</option>
+<option value="osa.sort_alp">-----&lt; Sort below by alphabet &gt;-----</option>
+<option value="ath">Arabidopsis thaliana (thale cress)</option>
+<option value="aly">Arabidopsis lyrata (lyrate rockcress)</option>
+<option value="rcu">Ricinus communis (castor bean)</option>
+<option value="pop">Populus trichocarpa (black cottonwood)</option>
+<option value="vvi">Vitis vinifera (wine grape)</option>
+<option value="osa" selected>Oryza sativa japonica (Japanese rice) (RefSeq)</option>
+<option value="sbi">Sorghum bicolor (sorghum)</option>
+<option value="zma">Zea mays (maize)</option>
+<option value="ppp">Physcomitrella patens subsp. patens</option>
+<option value="cre">Chlamydomonas reinhardtii</option>
+<option value="vcn">Volvox carteri f. nagariensis</option>
+<option value="olu">Ostreococcus lucimarinus</option>
+<option value="ota">Ostreococcus tauri</option>
+<option value="cme">Cyanidioschyzon merolae</option>
+<option value="plu">Photorhabdus luminescens</option>
+<option value="esa">Cronobacter sakazakii ATCC BAA-894</option>
+<option value="ctu">Cronobacter turicensis</option>
+<option value="pam">Pantoea ananatis LMG 20103</option>
+<option value="pva">Pantoea vagans</option>
+<option value="pao">Pantoea sp. At-9b</option>
+<option value="vha">Vibrio campbellii</option>
+<option value="ppu">Pseudomonas putida KT2440</option>
+<option value="ppf">Pseudomonas putida F1</option>
+<option value="ppg">Pseudomonas putida GB-1</option>
+<option value="ppw">Pseudomonas putida W619</option>
+<option value="ppt">Pseudomonas putida S16</option>
+<option value="pfv">Pseudomonas fulva</option>
+<option value="pen">Pseudomonas entomophila</option>
+<option value="psa">Pseudomonas stutzeri A1501</option>
+<option value="psz">Pseudomonas stutzeri ATCC 17588</option>
+<option value="mmt">Methylomonas methanica</option>
+<option value="alv">Allochromatium vinosum</option>
+<option value="hha">Halorhodospira halophila</option>
+<option value="gpb">Gamma proteobacterium HdN1</option>
+<option value="bct">Burkholderia cepacia GG4</option>
+<option value="vpe">Variovorax paradoxus EPS</option>
+<option value="rta">Ramlibacter tataouinensis</option>
+<option value="bba">Bdellovibrio bacteriovorus HD100</option>
+<option value="afw">Anaeromyxobacter sp. Fw109-5</option>
+<option value="mxa">Myxococcus xanthus</option>
+<option value="mfu">Myxococcus fulvus</option>
+<option value="sur">Stigmatella aurantiaca</option>
+<option value="scl">Sorangium cellulosum So ce 56</option>
+<option value="hoh">Haliangium ochraceum</option>
+<option value="bra">Bradyrhizobium sp. ORS 278</option>
+<option value="bbt">Bradyrhizobium sp. BTAi1</option>
+<option value="rpa">Rhodopseudomonas palustris CGA009</option>
+<option value="rpb">Rhodopseudomonas palustris HaA2</option>
+<option value="rpc">Rhodopseudomonas palustris BisB18</option>
+<option value="rpd">Rhodopseudomonas palustris BisB5</option>
+<option value="rpe">Rhodopseudomonas palustris BisA53</option>
+<option value="rpt">Rhodopseudomonas palustris TIE-1</option>
+<option value="rpx">Rhodopseudomonas palustris DX-1</option>
+<option value="xau">Xanthobacter autotrophicus</option>
+<option value="mex">Methylobacterium extorquens PA1</option>
+<option value="mea">Methylobacterium extorquens AM1</option>
+<option value="mdi">Methylobacterium extorquens DM4</option>
+<option value="mch">Methylobacterium extorquens CM4</option>
+<option value="mrd">Methylobacterium radiotolerans</option>
+<option value="met">Methylobacterium sp. 4-46</option>
+<option value="mpo">Methylobacterium populi</option>
+<option value="msl">Methylocella silvestris</option>
+<option value="rva">Rhodomicrobium vannielii</option>
+<option value="cak">Caulobacter sp. K31</option>
+<option value="bsb">Brevundimonas subvibrioides</option>
+<option value="rsp">Rhodobacter sphaeroides 2.4.1</option>
+<option value="rsh">Rhodobacter sphaeroides ATCC 17029</option>
+<option value="rsq">Rhodobacter sphaeroides ATCC 17025</option>
+<option value="rsk">Rhodobacter sphaeroides KD131</option>
+<option value="rcp">Rhodobacter capsulatus</option>
+<option value="jan">Jannaschia sp. CCS1</option>
+<option value="rde">Roseobacter denitrificans</option>
+<option value="rli">Roseobacter litoralis</option>
+<option value="dsh">Dinoroseobacter shibae</option>
+<option value="nar">Novosphingobium aromaticivorans</option>
+<option value="npp">Novosphingobium sp. PP1Y</option>
+<option value="sal">Sphingopyxis alaskensis</option>
+<option value="swi">Sphingomonas wittichii</option>
+<option value="sjp">Sphingobium japonicum</option>
+<option value="sch">Sphingobium chlorophenolicum</option>
+<option value="eli">Erythrobacter litoralis</option>
+<option value="amv">Acidiphilium multivorum</option>
+<option value="rru">Rhodospirillum rubrum ATCC 11170</option>
+<option value="rce">Rhodospirillum centenum</option>
+<option value="pbr">Parvularcula bermudensis</option>
+<option value="pub">Candidatus Pelagibacter ubique</option>
+<option value="pel">Candidatus Pelagibacter sp. IMCC9063</option>
+<option value="apb">Candidatus Puniceispirillum marinum</option>
+<option value="bpu">Bacillus pumilus SAFR-032</option>
+<option value="bpf">Bacillus pseudofirmus</option>
+<option value="bmq">Bacillus megaterium QM B1551</option>
+<option value="bmd">Bacillus megaterium DSM 319</option>
+<option value="oih">Oceanobacillus iheyensis</option>
+<option value="afl">Anoxybacillus flavithermus</option>
+<option value="bse">Bacillus selenitireducens</option>
+<option value="sau">Staphylococcus aureus subsp. aureus N315 (MRSA/VSSA)</option>
+<option value="sav">Staphylococcus aureus subsp. aureus Mu50 (MRSA/VISA)</option>
+<option value="saw">Staphylococcus aureus subsp. aureus Mu3 (MRSA/hetero-VISA)</option>
+<option value="sah">Staphylococcus aureus subsp. aureus JH1 (MRSA/VSSA)</option>
+<option value="saj">Staphylococcus aureus subsp. aureus JH9 (MRSA/VRSA)</option>
+<option value="sam">Staphylococcus aureus subsp. aureus MW2 (CA-MRSA)</option>
+<option value="sas">Staphylococcus aureus subsp. aureus MSSA476 (MSSA)</option>
+<option value="sar">Staphylococcus aureus subsp. aureus MRSA252 (MRSA)</option>
+<option value="sac">Staphylococcus aureus subsp. aureus COL (MRSA)</option>
+<option value="sax">Staphylococcus aureus subsp. aureus USA300_TCH1516 (CA-MSSA)</option>
+<option value="saa">Staphylococcus aureus subsp. aureus USA300_FPR3757 (CA-MRSA)</option>
+<option value="sao">Staphylococcus aureus subsp. aureus NCTC8325</option>
+<option value="sae">Staphylococcus aureus subsp. aureus Newman</option>
+<option value="sad">Staphylococcus aureus subsp. aureus ED98</option>
+<option value="sab">Staphylococcus aureus RF122</option>
+<option value="sha">Staphylococcus haemolyticus JCSC1435</option>
+<option value="slg">Staphylococcus lugdunensis HKU09-01</option>
+<option value="lmh">Listeria monocytogenes HCC23</option>
+<option value="lmc">Listeria monocytogenes CLIP 80459</option>
+<option value="lmn">Listeria monocytogenes 08-5578</option>
+<option value="lmy">Listeria monocytogenes 08-5923</option>
+<option value="lwe">Listeria welshimeri</option>
+<option value="lsg">Listeria seeligeri</option>
+<option value="esi">Exiguobacterium sibiricum</option>
+<option value="eat">Exiguobacterium sp. AT1b</option>
+<option value="pms">Paenibacillus mucilaginosus KNP414</option>
+<option value="aac">Alicyclobacillus acidocaldarius subsp. acidocaldarius DSM 446</option>
+<option value="lpl">Lactobacillus plantarum WCFS1</option>
+<option value="lpj">Lactobacillus plantarum JDM1</option>
+<option value="lps">Lactobacillus plantarum subsp. plantarum ST-III</option>
+<option value="lme">Leuconostoc mesenteroides subsp. mesenteroides ATCC 8293</option>
+<option value="lci">Leuconostoc citreum</option>
+<option value="lec">Leuconostoc sp. C2</option>
+<option value="crn">Carnobacterium sp. 17-4</option>
+<option value="cbk">Clostridium botulinum B Eklund 17B (NRP)</option>
+<option value="cbt">Clostridium botulinum E3</option>
+<option value="elm">Eubacterium limosum</option>
+<option value="nth">Natranaerobius thermophilus</option>
+<option value="hor">Halothermothrix orenii</option>
+<option value="acl">Acholeplasma laidlawii</option>
+<option value="mpa">Mycobacterium avium subsp. paratuberculosis K-10</option>
+<option value="mav">Mycobacterium avium 104</option>
+<option value="msm">Mycobacterium smegmatis MC2 155</option>
+<option value="mva">Mycobacterium vanbaalenii</option>
+<option value="mgi">Mycobacterium gilvum PYR-GCK</option>
+<option value="msp">Mycobacterium gilvum Spyr1</option>
+<option value="mmc">Mycobacterium sp. MCS</option>
+<option value="mkm">Mycobacterium sp. KMS</option>
+<option value="mjl">Mycobacterium sp. JLS</option>
+<option value="asd">Amycolicicoccus subflavus</option>
+<option value="cgt">Corynebacterium glutamicum R</option>
+<option value="cur">Corynebacterium urealyticum DSM 7109</option>
+<option value="ckp">Corynebacterium kroppenstedtii</option>
+<option value="crd">Corynebacterium resistens</option>
+<option value="cva">Corynebacterium variabile</option>
+<option value="nfa">Nocardia farcinica</option>
+<option value="rha">Rhodococcus jostii</option>
+<option value="rer">Rhodococcus erythropolis PR4</option>
+<option value="rop">Rhodococcus opacus B4</option>
+<option value="req">Rhodococcus equi</option>
+<option value="gbr">Gordonia bronchialis</option>
+<option value="tpr">Tsukamurella paurometabola</option>
+<option value="sco">Streptomyces coelicolor</option>
+<option value="sma">Streptomyces avermitilis</option>
+<option value="sgr">Streptomyces griseus</option>
+<option value="scb">Streptomyces scabiei</option>
+<option value="ssx">Streptomyces sp. SirexAA-E</option>
+<option value="aau">Paenarthrobacter aurescens</option>
+<option value="krh">Kocuria rhizophila</option>
+<option value="mph">Microlunatus phosphovorus</option>
+<option value="kfl">Kribbella flavida</option>
+<option value="tfu">Thermobifida fusca</option>
+<option value="nda">Nocardiopsis dassonvillei</option>
+<option value="nml">Nakamurella multipartita</option>
+<option value="kra">Kineococcus radiotolerans</option>
+<option value="sen">Saccharopolyspora erythraea</option>
+<option value="svi">Saccharomonospora viridis</option>
+<option value="amd">Amycolatopsis mediterranei U32</option>
+<option value="pdx">Pseudonocardia dioxanivorans</option>
+<option value="ami">Actinosynnema mirum</option>
+<option value="stp">Salinispora tropica</option>
+<option value="saq">Salinispora arenicola</option>
+<option value="mau">Micromonospora aurantiaca</option>
+<option value="mil">Micromonospora sp. L5</option>
+<option value="vma">Verrucosispora maris</option>
+<option value="rxy">Rubrobacter xylanophilus</option>
+<option value="afo">Acidimicrobium ferrooxidans</option>
+<option value="ele">Eggerthella lenta</option>
+<option value="eyy">Eggerthella sp. YY7918</option>
+<option value="ote">Opitutus terrae</option>
+<option value="sbu">Sphaerochaeta globosa</option>
+<option value="lbl">Leptospira borgpetersenii L550</option>
+<option value="aba">Candidatus Koribacter versatilis</option>
+<option value="aca">Acidobacterium capsulatum</option>
+<option value="acm">Granulicella tundricola</option>
+<option value="tsa">Terriglobus saanensis</option>
+<option value="ipo">Ilyobacter polytropus</option>
+<option value="gau">Gemmatimonas aurantiaca</option>
+<option value="rba">Rhodopirellula baltica</option>
+<option value="plm">Planctopirus limnophila</option>
+<option value="ipa">Isosphaera pallida</option>
+<option value="syn">Synechocystis sp. PCC 6803</option>
+<option value="syw">Synechococcus sp. WH8102</option>
+<option value="syc">Synechococcus elongatus PCC6301</option>
+<option value="syf">Synechococcus elongatus PCC7942</option>
+<option value="syd">Synechococcus sp. CC9605</option>
+<option value="sye">Synechococcus sp. CC9902</option>
+<option value="syg">Synechococcus sp. CC9311</option>
+<option value="syr">Synechococcus sp. RCC307</option>
+<option value="syx">Synechococcus sp. WH7803</option>
+<option value="syp">Synechococcus sp. PCC7002</option>
+<option value="cya">Synechococcus sp. JA-3-3Ab</option>
+<option value="cyb">Synechococcus sp. JA-2-3B'a(2-13)</option>
+<option value="tel">Thermosynechococcus elongatus</option>
+<option value="mar">Microcystis aeruginosa</option>
+<option value="cyt">Cyanothece sp. ATCC 51142</option>
+<option value="cyp">Cyanothece sp. PCC 8801</option>
+<option value="cyc">Cyanothece sp. PCC 7424</option>
+<option value="cyn">Cyanothece sp. PCC 7425</option>
+<option value="cyh">Cyanothece sp. PCC 8802</option>
+<option value="cyj">Cyanothece sp. PCC 7822</option>
+<option value="amr">Acaryochloris marina</option>
+<option value="cyu">Candidatus Atelocyanobacterium thalassa</option>
+<option value="ter">Trichodesmium erythraeum</option>
+<option value="gvi">Gloeobacter violaceus</option>
+<option value="ana">Nostoc sp. PCC 7120</option>
+<option value="npu">Nostoc punctiforme</option>
+<option value="ava">Anabaena variabilis</option>
+<option value="naz">Anabaena azollae 0708</option>
+<option value="pma">Prochlorococcus marinus SS120</option>
+<option value="pmm">Prochlorococcus marinus MED4</option>
+<option value="pmt">Prochlorococcus marinus MIT 9313</option>
+<option value="pmn">Prochlorococcus marinus NATL2A</option>
+<option value="pmi">Prochlorococcus marinus MIT9312</option>
+<option value="pmb">Prochlorococcus marinus AS9601</option>
+<option value="pmc">Prochlorococcus marinus MIT 9515</option>
+<option value="pmf">Prochlorococcus marinus MIT 9303</option>
+<option value="pmg">Prochlorococcus marinus MIT 9301</option>
+<option value="pmh">Prochlorococcus marinus MIT 9215</option>
+<option value="pmj">Prochlorococcus marinus MIT 9211</option>
+<option value="pme">Prochlorococcus marinus NATL1A</option>
+<option value="sru">Salinibacter ruber DSM 13855</option>
+<option value="srm">Salinibacter ruber M8</option>
+<option value="rmr">Rhodothermus marinus DSM 4252</option>
+<option value="cpi">Chitinophaga pinensis</option>
+<option value="phe">Pedobacter heparinus</option>
+<option value="psn">Pseudopedobacter saltans</option>
+<option value="hhy">Haliscomenobacter hydrossis</option>
+<option value="cmr">Cyclobacterium marinum</option>
+<option value="chu">Cytophaga hutchinsonii</option>
+<option value="dfe">Dyadobacter fermentans</option>
+<option value="sli">Spirosoma linguale</option>
+<option value="rsi">Runella slithyformis</option>
+<option value="mtt">Marivirga tractuosa</option>
+<option value="gfo">Gramella forsetii</option>
+<option value="fjo">Flavobacterium johnsoniae</option>
+<option value="fps">Flavobacterium psychrophilum JIP02/86</option>
+<option value="rbi">Robiginitalea biformata</option>
+<option value="zpr">Zunongwangia profunda</option>
+<option value="cat">Croceibacter atlanticus</option>
+<option value="fbc">Maribacter sp. HTCC2170</option>
+<option value="cao">Cellulophaga algicola</option>
+<option value="cly">Cellulophaga lytica DSM 7489</option>
+<option value="kdi">Dokdonia sp. 4H-3-7-5</option>
+<option value="lan">Lacinutrix sp. 5H-3-7-4</option>
+<option value="mrs">Muricauda ruestringensis</option>
+<option value="fba">Flavobacteriaceae bacterium</option>
+<option value="fte">Fluviicola taffensis</option>
+<option value="cte">Chlorobium tepidum</option>
+<option value="cpc">Chlorobaculum parvum</option>
+<option value="cch">Chlorobium chlorochromatii</option>
+<option value="cph">Chlorobium phaeobacteroides DSM 266</option>
+<option value="cpb">Chlorobium phaeobacteroides BS1</option>
+<option value="cli">Chlorobium limicola</option>
+<option value="pvi">Chlorobium phaeovibrioides</option>
+<option value="plt">Chlorobium luteolum</option>
+<option value="pph">Pelodictyon phaeoclathratiforme</option>
+<option value="paa">Prosthecochloris aestuarii</option>
+<option value="cts">Chloroherpeton thalassium</option>
+<option value="rrs">Roseiflexus sp. RS-1</option>
+<option value="rca">Roseiflexus castenholzii</option>
+<option value="cau">Chloroflexus aurantiacus</option>
+<option value="cag">Chloroflexus aggregans</option>
+<option value="chl">Chloroflexus sp. Y-400-fl</option>
+<option value="hau">Herpetosiphon aurantiacus</option>
+<option value="tro">Thermomicrobium roseum</option>
+<option value="atm">Anaerolinea thermophila</option>
+<option value="dra">Deinococcus radiodurans</option>
+<option value="dge">Deinococcus geothermalis</option>
+<option value="ddr">Deinococcus deserti</option>
+<option value="dmr">Deinococcus maricopensis</option>
+<option value="tra">Truepera radiovictrix</option>
+<option value="tth">Thermus thermophilus HB27</option>
+<option value="ttj">Thermus thermophilus HB8</option>
+<option value="mrb">Meiothermus ruber DSM 1279</option>
+<option value="msv">Meiothermus silvanus</option>
+<option value="ttr">Thermobaculum terrenum</option>
+<option value="mem">Methanoculleus marisnigri</option>
+<option value="mth">Methanothermobacter thermautotrophicus</option>
+<option value="mmg">Methanothermobacter marburgensis</option>
+<option value="hal">Halobacterium sp. NRC-1</option>
+<option value="hsl">Halobacterium salinarum</option>
+<option value="hma">Haloarcula marismortui</option>
+<option value="nph">Natronomonas pharaonis</option>
+<option value="hut">Halorhabdus utahensis</option>
+<option value="hmu">Halomicrobium mukohataei</option>
+<option value="hje">Halalkalicoccus jeotgali</option>
+<option value="hwa">Haloquadratum walsbyi DSM 16790</option>
+<option value="hla">Halorubrum lacusprofundi</option>
+<option value="hvo">Haloferax volcanii</option>
+<option value="hbo">Halogeometricum borinquense</option>
+<option value="htu">Haloterrigena turkmenica</option>
+<option value="nmg">Natrialba magadii</option>
+<option value="pto">Picrophilus torridus</option>
+<option value="sso">Sulfolobus solfataricus P2</option>
+<option value="sai">Sulfolobus acidocaldarius DSM 639</option>
+<option value="sia">Sulfolobus islandicus M.14.25</option>
+<option value="sim">Sulfolobus islandicus M.16.27</option>
+<option value="sid">Sulfolobus islandicus M.16.4</option>
+<option value="siy">Sulfolobus islandicus Y.G.57.14</option>
+<option value="sin">Sulfolobus islandicus Y.N.15.51</option>
+<option value="mse">Metallosphaera sedula</option>
+<option value="mcn">Metallosphaera cuprina</option>
+<option value="pas">Pyrobaculum arsenaticum</option>
+</select>
+<input type="hidden" name="mapno" value="00906" />
+<input type="hidden" name="mapscale" value=>
+<input type="button" value="Go" onclick="select_menu(this.form)" />
+<input type="hidden" name="show_description" value="hide">
+
+</form>
+</td><td>
+<form name="form2" method="get" action="http://www.genome.jp/kegg-bin/show_pathway">
+&nbsp;&nbsp;&nbsp;&nbsp;
+<select name="scale" onChange="resize_map(this.form.scale.value)">
+<option value="1.84" >184%</option>
+<option value="1.5" >150%</option>
+<option value="1.22" >122%</option>
+<option value="1.0" selected>100%</option>
+<option value="0.82" >82%</option>
+<option value="0.67" >67%</option>
+<option value="0.55" >55%</option>
+</select>
+&nbsp;&nbsp;<input type="text" name="query" size=20 value="">
+<input type="hidden" name="map" value="osa00906" />
+<input type="hidden" name="scale" value=>
+<input type="hidden" name="image" value=/share/www//mark_pathway1460627425115666/osa00906.png>
+<input type="hidden" name="use" value="reference">
+<input type="hidden" name="nmap_args" value="146062687916849">
+<input type="hidden" name="auto_image" value="">
+<input type="hidden" name="show_description" value="hide">
+<input type="hidden" name="multi_query" />
+
+<!--</form>-->
+</td></tr></table>
+
+
+<img src="osa00906.png" name="pathwayimage" name="pathwayimage" usemap="#mapdata" border="0" />
+
+<map name="mapdata">
+<area shape=circle	coords=1108,951,4	href="http://www.genome.jp/dbget-bin/www_bget?C16486"	title="C16486 (Astaxanthin diester)" onmouseover="popupTimer(&quot;C16486&quot;, &quot;C16486 (Astaxanthin diester)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=939,596,4	href="http://www.genome.jp/dbget-bin/www_bget?C16340"	title="C16340 (beta-Isorenieratene)" onmouseover="popupTimer(&quot;C16340&quot;, &quot;C16340 (beta-Isorenieratene)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=351,767,4	href="http://www.genome.jp/dbget-bin/www_bget?C16291"	title="C16291 (7,8-Dihydro-beta-carotene)" onmouseover="popupTimer(&quot;C16291&quot;, &quot;C16291 (7,8-Dihydro-beta-carotene)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=351,657,4	href="http://www.genome.jp/dbget-bin/www_bget?C05434"	title="C05434 (beta-Zeacarotene)" onmouseover="popupTimer(&quot;C05434&quot;, &quot;C05434 (beta-Zeacarotene)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=1172,540,4	href="http://www.genome.jp/dbget-bin/www_bget?C16284"	title="C16284 (Nostoxanthin)" onmouseover="popupTimer(&quot;C16284&quot;, &quot;C16284 (Nostoxanthin)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=1172,590,4	href="http://www.genome.jp/dbget-bin/www_bget?C16282"	title="C16282 (Caloxanthin)" onmouseover="popupTimer(&quot;C16282&quot;, &quot;C16282 (Caloxanthin)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=1116,365,4	href="http://www.genome.jp/dbget-bin/www_bget?C15981"	title="C15981 (alpha-Cryptoxanthin)" onmouseover="popupTimer(&quot;C15981&quot;, &quot;C15981 (alpha-Cryptoxanthin)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=983,282,4	href="http://www.genome.jp/dbget-bin/www_bget?C16276"	title="C16276 (epsilon-Carotene)" onmouseover="popupTimer(&quot;C16276&quot;, &quot;C16276 (epsilon-Carotene)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=590,229,4	href="http://www.genome.jp/dbget-bin/www_bget?C16270"	title="C16270 (Rhodopinal)" onmouseover="popupTimer(&quot;C16270&quot;, &quot;C16270 (Rhodopinal)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=590,155,4	href="http://www.genome.jp/dbget-bin/www_bget?C16271"	title="C16271 (Rhodopinal glucoside)" onmouseover="popupTimer(&quot;C16271&quot;, &quot;C16271 (Rhodopinal glucoside)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=238,239,4	href="http://www.genome.jp/dbget-bin/www_bget?C16148"	title="C16148 (Staphyloxanthin)" onmouseover="popupTimer(&quot;C16148&quot;, &quot;C16148 (Staphyloxanthin)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=334,239,4	href="http://www.genome.jp/dbget-bin/www_bget?C16147"	title="C16147 (Glycosyl-4,4'-diaponeurosporenoate)" onmouseover="popupTimer(&quot;C16147&quot;, &quot;C16147 (Glycosyl-4,4'-diaponeurosporenoate)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=429,239,4	href="http://www.genome.jp/dbget-bin/www_bget?C16146"	title="C16146 (4,4'-Diaponeurosporenic acid)" onmouseover="popupTimer(&quot;C16146&quot;, &quot;C16146 (4,4'-Diaponeurosporenic acid)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=429,163,4	href="http://www.genome.jp/dbget-bin/www_bget?C16145"	title="C16145 (4,4'-Diaponeurosporene)" onmouseover="popupTimer(&quot;C16145&quot;, &quot;C16145 (4,4'-Diaponeurosporene)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=333,163,4	href="http://www.genome.jp/dbget-bin/www_bget?C16144"	title="C16144 (4,4'-Diapophytoene)" onmouseover="popupTimer(&quot;C16144&quot;, &quot;C16144 (4,4'-Diapophytoene)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=74,199,4	href="http://www.genome.jp/dbget-bin/www_bget?C00353"	title="C00353 (Geranylgeranyl diphosphate)" onmouseover="popupTimer(&quot;C00353&quot;, &quot;C00353 (Geranylgeranyl diphosphate)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=137,163,4	href="http://www.genome.jp/dbget-bin/www_bget?C00448"	title="C00448 (trans,trans-Farnesyl diphosphate)" onmouseover="popupTimer(&quot;C00448&quot;, &quot;C00448 (trans,trans-Farnesyl diphosphate)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=1213,794,4	href="http://www.genome.jp/dbget-bin/www_bget?C13456"	title="C13456 (Abscisic alcohol)" onmouseover="popupTimer(&quot;C13456&quot;, &quot;C13456 (Abscisic alcohol)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=1255,980,4	href="http://www.genome.jp/dbget-bin/www_bget?C15970"	title="C15970 (Abscisic acid glucose ester)" onmouseover="popupTimer(&quot;C15970&quot;, &quot;C15970 (Abscisic acid glucose ester)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=1414,951,4	href="http://www.genome.jp/dbget-bin/www_bget?C15971"	title="C15971 (Dihydrophaseic acid)" onmouseover="popupTimer(&quot;C15971&quot;, &quot;C15971 (Dihydrophaseic acid)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=1333,951,4	href="http://www.genome.jp/dbget-bin/www_bget?C09707"	title="C09707 (Phaseic acid)" onmouseover="popupTimer(&quot;C09707&quot;, &quot;C09707 (Phaseic acid)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=1255,951,4	href="http://www.genome.jp/dbget-bin/www_bget?C15514"	title="C15514 (8'-Hydroxyabscisate)" onmouseover="popupTimer(&quot;C15514&quot;, &quot;C15514 (8'-Hydroxyabscisate)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=1172,827,4	href="http://www.genome.jp/dbget-bin/www_bget?C06082"	title="C06082 (Abscisate)" onmouseover="popupTimer(&quot;C06082&quot;, &quot;C06082 (Abscisate)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=1255,867,4	href="http://www.genome.jp/dbget-bin/www_bget?C13454"	title="C13454 (Xanthoxic acid)" onmouseover="popupTimer(&quot;C13454&quot;, &quot;C13454 (Xanthoxic acid)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=1255,827,4	href="http://www.genome.jp/dbget-bin/www_bget?C13455"	title="C13455 (Abscisic aldehyde)" onmouseover="popupTimer(&quot;C13455&quot;, &quot;C13455 (Abscisic aldehyde)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=1333,827,4	href="http://www.genome.jp/dbget-bin/www_bget?C13453"	title="C13453 (Xanthoxin)" onmouseover="popupTimer(&quot;C13453&quot;, &quot;C13453 (Xanthoxin)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=1414,769,4	href="http://www.genome.jp/dbget-bin/www_bget?C13431"	title="C13431 (9'-cis-Neoxanthin)" onmouseover="popupTimer(&quot;C13431&quot;, &quot;C13431 (9'-cis-Neoxanthin)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=1334,540,4	href="http://www.genome.jp/dbget-bin/www_bget?C08585"	title="C08585 (Capsorubin)" onmouseover="popupTimer(&quot;C08585&quot;, &quot;C08585 (Capsorubin)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=1333,769,4	href="http://www.genome.jp/dbget-bin/www_bget?C13433"	title="C13433 (9-cis-Violaxanthin)" onmouseover="popupTimer(&quot;C13433&quot;, &quot;C13433 (9-cis-Violaxanthin)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=1414,709,4	href="http://www.genome.jp/dbget-bin/www_bget?C08606"	title="C08606 (Neoxanthin)" onmouseover="popupTimer(&quot;C08606&quot;, &quot;C08606 (Neoxanthin)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=1222,540,4	href="http://www.genome.jp/dbget-bin/www_bget?C08584"	title="C08584 (Capsanthin)" onmouseover="popupTimer(&quot;C08584&quot;, &quot;C08584 (Capsanthin)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=1333,657,4	href="http://www.genome.jp/dbget-bin/www_bget?C08614"	title="C08614 (Violaxanthin)" onmouseover="popupTimer(&quot;C08614&quot;, &quot;C08614 (Violaxanthin)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=1222,657,4	href="http://www.genome.jp/dbget-bin/www_bget?C08579"	title="C08579 (Antheraxanthin)" onmouseover="popupTimer(&quot;C08579&quot;, &quot;C08579 (Antheraxanthin)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=1105,540,4	href="http://www.genome.jp/dbget-bin/www_bget?C15969"	title="C15969 (Zeaxanthin diglucoside)" onmouseover="popupTimer(&quot;C15969&quot;, &quot;C15969 (Zeaxanthin diglucoside)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=1108,900,4	href="http://www.genome.jp/dbget-bin/www_bget?C08580"	title="C08580 (Astaxanthin)" onmouseover="popupTimer(&quot;C08580&quot;, &quot;C08580 (Astaxanthin)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=1108,769,4	href="http://www.genome.jp/dbget-bin/www_bget?C15968"	title="C15968 (Adonixanthin)" onmouseover="popupTimer(&quot;C15968&quot;, &quot;C15968 (Adonixanthin)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=978,900,4	href="http://www.genome.jp/dbget-bin/www_bget?C15967"	title="C15967 (Phoenicoxanthin)" onmouseover="popupTimer(&quot;C15967&quot;, &quot;C15967 (Phoenicoxanthin)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=845,900,4	href="http://www.genome.jp/dbget-bin/www_bget?C08583"	title="C08583 (Canthaxanthin)" onmouseover="popupTimer(&quot;C08583&quot;, &quot;C08583 (Canthaxanthin)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=978,769,4	href="http://www.genome.jp/dbget-bin/www_bget?C15966"	title="C15966 (3-Hydroxyechinenone)" onmouseover="popupTimer(&quot;C15966&quot;, &quot;C15966 (3-Hydroxyechinenone)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=930,827,4	href="http://www.genome.jp/dbget-bin/www_bget?C15965"	title="C15965 (3'-Hydroxyechinenone)" onmouseover="popupTimer(&quot;C15965&quot;, &quot;C15965 (3'-Hydroxyechinenone)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=1039,540,4	href="http://www.genome.jp/dbget-bin/www_bget?C15984"	title="C15984 (Thermobiszeaxanthin)" onmouseover="popupTimer(&quot;C15984&quot;, &quot;C15984 (Thermobiszeaxanthin)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=1039,596,4	href="http://www.genome.jp/dbget-bin/www_bget?C15983"	title="C15983 (Thermozeaxanthin)" onmouseover="popupTimer(&quot;C15983&quot;, &quot;C15983 (Thermozeaxanthin)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=978,596,4	href="http://www.genome.jp/dbget-bin/www_bget?C15982"	title="C15982 (Thermocryptoxanthin)" onmouseover="popupTimer(&quot;C15982&quot;, &quot;C15982 (Thermocryptoxanthin)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=939,542,4	href="http://www.genome.jp/dbget-bin/www_bget?C15943"	title="C15943 (Isorenieratene)" onmouseover="popupTimer(&quot;C15943&quot;, &quot;C15943 (Isorenieratene)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=1108,657,4	href="http://www.genome.jp/dbget-bin/www_bget?C06098"	title="C06098 (Zeaxanthin)" onmouseover="popupTimer(&quot;C06098&quot;, &quot;C06098 (Zeaxanthin)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=978,657,4	href="http://www.genome.jp/dbget-bin/www_bget?C08591"	title="C08591 (beta-Cryptoxanthin)" onmouseover="popupTimer(&quot;C08591&quot;, &quot;C08591 (beta-Cryptoxanthin)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=845,769,4	href="http://www.genome.jp/dbget-bin/www_bget?C08592"	title="C08592 (Echinenone)" onmouseover="popupTimer(&quot;C08592&quot;, &quot;C08592 (Echinenone)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=668,970,4	href="http://www.genome.jp/dbget-bin/www_bget?C15942"	title="C15942 ((3S,2'S)-4-Ketomyxol 2'-alpha-L-fucoside)" onmouseover="popupTimer(&quot;C15942&quot;, &quot;C15942 ((3S,2'S)-4-Ketomyxol 2'-alpha-L-fucoside)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=668,919,4	href="http://www.genome.jp/dbget-bin/www_bget?C15941"	title="C15941 ((3R,2'S)-Myxol 2'-alpha-L-fucoside)" onmouseover="popupTimer(&quot;C15941&quot;, &quot;C15941 ((3R,2'S)-Myxol 2'-alpha-L-fucoside)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=668,846,4	href="http://www.genome.jp/dbget-bin/www_bget?C15940"	title="C15940 ((2'S)-Deoxymyxol 2'-alpha-L-fucoside)" onmouseover="popupTimer(&quot;C15940&quot;, &quot;C15940 ((2'S)-Deoxymyxol 2'-alpha-L-fucoside)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=529,919,4	href="http://www.genome.jp/dbget-bin/www_bget?C15937"	title="C15937 ((3R,2'S)-Myxol 2'-(2,4-di-O-methyl-alpha-L-fucoside))" onmouseover="popupTimer(&quot;C15937&quot;, &quot;C15937 ((3R,2'S)-Myxol 2'-(2,4-di-O-methyl-alpha-L-fucoside))&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=529,846,4	href="http://www.genome.jp/dbget-bin/www_bget?C15935"	title="C15935 ((2'S)-Deoxymyxol 2'-(2,4-di-O-methyl-alpha-L-fucoside))" onmouseover="popupTimer(&quot;C15935&quot;, &quot;C15935 ((2'S)-Deoxymyxol 2'-(2,4-di-O-methyl-alpha-L-fucoside))&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=586,748,4	href="http://www.genome.jp/dbget-bin/www_bget?C15864"	title="C15864 (1'-Hydroxy-gamma-carotene glucoside ester)" onmouseover="popupTimer(&quot;C15864&quot;, &quot;C15864 (1'-Hydroxy-gamma-carotene glucoside ester)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=586,686,4	href="http://www.genome.jp/dbget-bin/www_bget?C15861"	title="C15861 (1'-Hydroxy-gamma-carotene glucoside)" onmouseover="popupTimer(&quot;C15861&quot;, &quot;C15861 (1'-Hydroxy-gamma-carotene glucoside)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=458,748,4	href="http://www.genome.jp/dbget-bin/www_bget?C15917"	title="C15917 (Hydroxychlorobactene glucoside ester)" onmouseover="popupTimer(&quot;C15917&quot;, &quot;C15917 (Hydroxychlorobactene glucoside ester)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=458,686,4	href="http://www.genome.jp/dbget-bin/www_bget?C15914"	title="C15914 (Hydroxychlorobactene glucoside)" onmouseover="popupTimer(&quot;C15914&quot;, &quot;C15914 (Hydroxychlorobactene glucoside)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=458,624,4	href="http://www.genome.jp/dbget-bin/www_bget?C15911"	title="C15911 (Hydroxychlorobactene)" onmouseover="popupTimer(&quot;C15911&quot;, &quot;C15911 (Hydroxychlorobactene)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=458,506,4	href="http://www.genome.jp/dbget-bin/www_bget?C15908"	title="C15908 (Chlorobactene)" onmouseover="popupTimer(&quot;C15908&quot;, &quot;C15908 (Chlorobactene)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=150,928,4	href="http://www.genome.jp/dbget-bin/www_bget?C15905"	title="C15905 (Hydroxyspheroidenone)" onmouseover="popupTimer(&quot;C15905&quot;, &quot;C15905 (Hydroxyspheroidenone)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=240,928,4	href="http://www.genome.jp/dbget-bin/www_bget?C15903"	title="C15903 (Spheroidenone)" onmouseover="popupTimer(&quot;C15903&quot;, &quot;C15903 (Spheroidenone)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=150,797,4	href="http://www.genome.jp/dbget-bin/www_bget?C15902"	title="C15902 (Hydroxyspheroidene)" onmouseover="popupTimer(&quot;C15902&quot;, &quot;C15902 (Hydroxyspheroidene)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=240,797,4	href="http://www.genome.jp/dbget-bin/www_bget?C15900"	title="C15900 (Spheroidene)" onmouseover="popupTimer(&quot;C15900&quot;, &quot;C15900 (Spheroidene)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=240,685,4	href="http://www.genome.jp/dbget-bin/www_bget?C15898"	title="C15898 (Demethylspheroidene)" onmouseover="popupTimer(&quot;C15898&quot;, &quot;C15898 (Demethylspheroidene)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=150,624,4	href="http://www.genome.jp/dbget-bin/www_bget?C15895"	title="C15895 (3,4-Dihydrospheroidene)" onmouseover="popupTimer(&quot;C15895&quot;, &quot;C15895 (3,4-Dihydrospheroidene)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=240,624,4	href="http://www.genome.jp/dbget-bin/www_bget?C15892"	title="C15892 (Chloroxanthin)" onmouseover="popupTimer(&quot;C15892&quot;, &quot;C15892 (Chloroxanthin)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=953,228,4	href="http://www.genome.jp/dbget-bin/www_bget?C15888"	title="C15888 (3,4,3',4'-Tetrahydrospirilloxanthin)" onmouseover="popupTimer(&quot;C15888&quot;, &quot;C15888 (3,4,3',4'-Tetrahydrospirilloxanthin)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=859,228,4	href="http://www.genome.jp/dbget-bin/www_bget?C15887"	title="C15887 (3',4'-Dihydrorhodovibrin)" onmouseover="popupTimer(&quot;C15887&quot;, &quot;C15887 (3',4'-Dihydrorhodovibrin)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=766,228,4	href="http://www.genome.jp/dbget-bin/www_bget?C15886"	title="C15886 (3,4-Dihydroanhydrorhodovibrin)" onmouseover="popupTimer(&quot;C15886&quot;, &quot;C15886 (3,4-Dihydroanhydrorhodovibrin)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=1329,157,4	href="http://www.genome.jp/dbget-bin/www_bget?C15885"	title="C15885 (2,2'-Diketospirilloxanthin)" onmouseover="popupTimer(&quot;C15885&quot;, &quot;C15885 (2,2'-Diketospirilloxanthin)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=1234,157,4	href="http://www.genome.jp/dbget-bin/www_bget?C15884"	title="C15884 (2-Ketospirilloxanthin)" onmouseover="popupTimer(&quot;C15884&quot;, &quot;C15884 (2-Ketospirilloxanthin)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=1140,157,4	href="http://www.genome.jp/dbget-bin/www_bget?C15881"	title="C15881 (Spirilloxanthin)" onmouseover="popupTimer(&quot;C15881&quot;, &quot;C15881 (Spirilloxanthin)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=1047,157,4	href="http://www.genome.jp/dbget-bin/www_bget?C15879"	title="C15879 (Hydroxyspirilloxanthin)" onmouseover="popupTimer(&quot;C15879&quot;, &quot;C15879 (Hydroxyspirilloxanthin)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=953,157,4	href="http://www.genome.jp/dbget-bin/www_bget?C15878"	title="C15878 (Rhodovibrin)" onmouseover="popupTimer(&quot;C15878&quot;, &quot;C15878 (Rhodovibrin)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=858,157,4	href="http://www.genome.jp/dbget-bin/www_bget?C15877"	title="C15877 (Anhydrorhodovibrin)" onmouseover="popupTimer(&quot;C15877&quot;, &quot;C15877 (Anhydrorhodovibrin)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=765,157,4	href="http://www.genome.jp/dbget-bin/www_bget?C15874"	title="C15874 (3,4-Dehydrorhodopin)" onmouseover="popupTimer(&quot;C15874&quot;, &quot;C15874 (3,4-Dehydrorhodopin)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=667,229,4	href="http://www.genome.jp/dbget-bin/www_bget?C19795"	title="C19795 (1-Hydroxy-1,2-dihydrolycopene)" onmouseover="popupTimer(&quot;C19795&quot;, &quot;C19795 (1-Hydroxy-1,2-dihydrolycopene)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=510,624,4	href="http://www.genome.jp/dbget-bin/www_bget?C15860"	title="C15860 (1'-Hydroxytorulene)" onmouseover="popupTimer(&quot;C15860&quot;, &quot;C15860 (1'-Hydroxytorulene)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=586,624,4	href="http://www.genome.jp/dbget-bin/www_bget?C15859"	title="C15859 (1'-Hydroxy-gamma-carotene)" onmouseover="popupTimer(&quot;C15859&quot;, &quot;C15859 (1'-Hydroxy-gamma-carotene)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=845,657,4	href="http://www.genome.jp/dbget-bin/www_bget?C02094"	title="C02094 (beta-Carotene)" onmouseover="popupTimer(&quot;C02094&quot;, &quot;C02094 (beta-Carotene)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=668,507,4	href="http://www.genome.jp/dbget-bin/www_bget?C05435"	title="C05435 (gamma-Carotene)" onmouseover="popupTimer(&quot;C05435&quot;, &quot;C05435 (gamma-Carotene)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=1241,324,4	href="http://www.genome.jp/dbget-bin/www_bget?C08601"	title="C08601 (Lutein)" onmouseover="popupTimer(&quot;C08601&quot;, &quot;C08601 (Lutein)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=1116,324,4	href="http://www.genome.jp/dbget-bin/www_bget?C08590"	title="C08590 (Zeinoxanthin)" onmouseover="popupTimer(&quot;C08590&quot;, &quot;C08590 (Zeinoxanthin)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=983,324,4	href="http://www.genome.jp/dbget-bin/www_bget?C05433"	title="C05433 (alpha-Carotene)" onmouseover="popupTimer(&quot;C05433&quot;, &quot;C05433 (alpha-Carotene)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=809,282,4	href="http://www.genome.jp/dbget-bin/www_bget?C08586"	title="C08586 (delta-Carotene)" onmouseover="popupTimer(&quot;C08586&quot;, &quot;C08586 (delta-Carotene)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=855,350,4	href="http://www.genome.jp/dbget-bin/www_bget?C16275"	title="C16275 ((2S,2'S)-Oscillol 2,2'-di(alpha-L-fucoside))" onmouseover="popupTimer(&quot;C16275&quot;, &quot;C16275 ((2S,2'S)-Oscillol 2,2'-di(alpha-L-fucoside))&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=762,350,4	href="http://www.genome.jp/dbget-bin/www_bget?C16274"	title="C16274 ((2S,2'S)-Oscillol)" onmouseover="popupTimer(&quot;C16274&quot;, &quot;C16274 ((2S,2'S)-Oscillol)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=996,443,4	href="http://www.genome.jp/dbget-bin/www_bget?C16280"	title="C16280 (Okenone)" onmouseover="popupTimer(&quot;C16280&quot;, &quot;C16280 (Okenone)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=828,492,4	href="http://www.genome.jp/dbget-bin/www_bget?C16278"	title="C16278 (R.g.-Keto III)" onmouseover="popupTimer(&quot;C16278&quot;, &quot;C16278 (R.g.-Keto III)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=912,443,4	href="http://www.genome.jp/dbget-bin/www_bget?C16279"	title="C16279 (Thiothece-474)" onmouseover="popupTimer(&quot;C16279&quot;, &quot;C16279 (Thiothece-474)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=828,443,4	href="http://www.genome.jp/dbget-bin/www_bget?C16277"	title="C16277 (R.g.-Keto I)" onmouseover="popupTimer(&quot;C16277&quot;, &quot;C16277 (R.g.-Keto I)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=748,909,4	href="http://www.genome.jp/dbget-bin/www_bget?C18037"	title="C18037 (5-Deoxystrigol)" onmouseover="popupTimer(&quot;C18037&quot;, &quot;C18037 (5-Deoxystrigol)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=748,970,4	href="http://www.genome.jp/dbget-bin/www_bget?C09190"	title="C09190 (Strigol)" onmouseover="popupTimer(&quot;C09190&quot;, &quot;C09190 (Strigol)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=74,266,4	href="http://www.genome.jp/dbget-bin/www_bget?C03427"	title="C03427 (Prephytoene diphosphate)" onmouseover="popupTimer(&quot;C03427&quot;, &quot;C03427 (Prephytoene diphosphate)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=222,408,4	href="http://www.genome.jp/dbget-bin/www_bget?C05414"	title="C05414 (all-trans-Phytofluene)" onmouseover="popupTimer(&quot;C05414&quot;, &quot;C05414 (all-trans-Phytofluene)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=667,408,4	href="http://www.genome.jp/dbget-bin/www_bget?C05432"	title="C05432 (Lycopene)" onmouseover="popupTimer(&quot;C05432&quot;, &quot;C05432 (Lycopene)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=74,408,4	href="http://www.genome.jp/dbget-bin/www_bget?C05421+C05413"	title="C05421 (15-cis-Phytoene), C05413 (all-trans-Phytoene)" onmouseover="popupTimer(&quot;C05421&quot;, &quot;C05421 (15-cis-Phytoene), C05413 (all-trans-Phytoene)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=174,341,4	href="http://www.genome.jp/dbget-bin/www_bget?C19765"	title="C19765 (15,9'-dicis-Phytofluene)" onmouseover="popupTimer(&quot;C19765&quot;, &quot;C19765 (15,9'-dicis-Phytofluene)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=470,341,4	href="http://www.genome.jp/dbget-bin/www_bget?C19759"	title="C19759 (7,9,9'-tricis-Neurosporene)" onmouseover="popupTimer(&quot;C19759&quot;, &quot;C19759 (7,9,9'-tricis-Neurosporene)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=371,341,4	href="http://www.genome.jp/dbget-bin/www_bget?C15857"	title="C15857 (9,9'-dicis-zeta-Carotene)" onmouseover="popupTimer(&quot;C15857&quot;, &quot;C15857 (9,9'-dicis-zeta-Carotene)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=272,341,4	href="http://www.genome.jp/dbget-bin/www_bget?C19764"	title="C19764 (9,15,9'-tricis-zeta-Carotene)" onmouseover="popupTimer(&quot;C19764&quot;, &quot;C19764 (9,15,9'-tricis-zeta-Carotene)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=568,341,4	href="http://www.genome.jp/dbget-bin/www_bget?C15858"	title="C15858 (7,9,7',9'-tetracis-Lycopene)" onmouseover="popupTimer(&quot;C15858&quot;, &quot;C15858 (7,9,7',9'-tetracis-Lycopene)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=371,408,4	href="http://www.genome.jp/dbget-bin/www_bget?C05430"	title="C05430 (all-trans-zeta-Carotene)" onmouseover="popupTimer(&quot;C05430&quot;, &quot;C05430 (all-trans-zeta-Carotene)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=525,239,4	href="http://www.genome.jp/dbget-bin/www_bget?C19798"	title="C19798 (4,4'-Diapolycopenedial)" onmouseover="popupTimer(&quot;C19798&quot;, &quot;C19798 (4,4'-Diapolycopenedial)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=525,163,4	href="http://www.genome.jp/dbget-bin/www_bget?C19797"	title="C19797 (4,4'-Diapolycopene)" onmouseover="popupTimer(&quot;C19797&quot;, &quot;C19797 (4,4'-Diapolycopene)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=232,163,4	href="http://www.genome.jp/dbget-bin/www_bget?C03428"	title="C03428 (Presqualene diphosphate)" onmouseover="popupTimer(&quot;C03428&quot;, &quot;C03428 (Presqualene diphosphate)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=519,408,4	href="http://www.genome.jp/dbget-bin/www_bget?C05431"	title="C05431 (all-trans-Neurosporene)" onmouseover="popupTimer(&quot;C05431&quot;, &quot;C05431 (all-trans-Neurosporene)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=801,408,4	href="http://www.genome.jp/dbget-bin/www_bget?C15867"	title="C15867 (3,4-Dehydrolycopene)" onmouseover="popupTimer(&quot;C15867&quot;, &quot;C15867 (3,4-Dehydrolycopene)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=935,408,4	href="http://www.genome.jp/dbget-bin/www_bget?C08613"	title="C08613 (Torulene)" onmouseover="popupTimer(&quot;C08613&quot;, &quot;C08613 (Torulene)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=1069,408,4	href="http://www.genome.jp/dbget-bin/www_bget?C19892"	title="C19892 (4'-Apo-beta,psi-caroten-4'-al)" onmouseover="popupTimer(&quot;C19892&quot;, &quot;C19892 (4'-Apo-beta,psi-caroten-4'-al)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=1203,408,4	href="http://www.genome.jp/dbget-bin/www_bget?C08607"	title="C08607 (Neurosporaxanthin)" onmouseover="popupTimer(&quot;C08607&quot;, &quot;C08607 (Neurosporaxanthin)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=748,729,4	href="http://www.genome.jp/dbget-bin/www_bget?C20484"	title="C20484 (9-cis-beta-Carotene)" onmouseover="popupTimer(&quot;C20484&quot;, &quot;C20484 (9-cis-beta-Carotene)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=748,789,4	href="http://www.genome.jp/dbget-bin/www_bget?C20692"	title="C20692 (9-cis-10'-Apo-beta-carotenal)" onmouseover="popupTimer(&quot;C20692&quot;, &quot;C20692 (9-cis-10'-Apo-beta-carotenal)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=748,852,4	href="http://www.genome.jp/dbget-bin/www_bget?C20693"	title="C20693 (Carlactone)" onmouseover="popupTimer(&quot;C20693&quot;, &quot;C20693 (Carlactone)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=707,657,4	href="http://www.genome.jp/dbget-bin/www_bget?C18036"	title="C18036 (Strigolactone ABC-rings)" onmouseover="popupTimer(&quot;C18036&quot;, &quot;C18036 (Strigolactone ABC-rings)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=328,697,374,714	href="http://www.genome.jp/dbget-bin/www_bget?osa:4328572"	title="4328572" />
+<area shape=rect	coords=328,560,374,577	href="http://www.genome.jp/dbget-bin/www_bget?osa:4328572"	title="4328572" />
+<area shape=rect	coords=867,275,913,292	href="http://www.genome.jp/dbget-bin/www_bget?osa:4324196"	title="4324196" />
+<area shape=rect	coords=1159,356,1205,373	href="http://www.genome.jp/dbget-bin/www_bget?osa:4331460+osa:4336753+osa:4349224"	title="4331460, 4336753, 4349224" />
+<area shape=rect	coords=1020,358,1066,375	href="http://www.genome.jp/dbget-bin/www_bget?osa:4349290"	title="4349290" />
+<area shape=rect	coords=1183,943,1229,960	href="http://www.genome.jp/dbget-bin/www_bget?osa:4345810+osa:4347261"	title="4345810, 4347261" />
+<area shape=rect	coords=1277,819,1323,836	href="http://www.genome.jp/dbget-bin/www_bget?osa:4334535"	title="4334535" />
+<area shape=rect	coords=1354,818,1400,835	href="http://www.genome.jp/dbget-bin/www_bget?osa:4330451+osa:4333566+osa:4342424+osa:4352125+osa:9270250"	title="4330451, 4333566, 4342424, 4352125, 9270250" />
+<area shape=rect	coords=1310,787,1356,804	href="http://www.genome.jp/dbget-bin/www_bget?osa:4330451+osa:4333566+osa:4342424+osa:4352125+osa:9270250"	title="4330451, 4333566, 4342424, 4352125, 9270250" />
+<area shape=rect	coords=1257,675,1303,692	href="http://www.genome.jp/dbget-bin/www_bget?osa:4335625"	title="4335625" />
+<area shape=rect	coords=1144,675,1190,692	href="http://www.genome.jp/dbget-bin/www_bget?osa:4335625"	title="4335625" />
+<area shape=rect	coords=1257,623,1303,640	href="http://www.genome.jp/dbget-bin/www_bget?osa:4335984"	title="4335984" />
+<area shape=rect	coords=1144,623,1190,640	href="http://www.genome.jp/dbget-bin/www_bget?osa:4335984"	title="4335984" />
+<area shape=rect	coords=862,829,908,846	href="http://www.genome.jp/dbget-bin/www_bget?osa:4331460+osa:4336753+osa:4349224"	title="4331460, 4336753, 4349224" />
+<area shape=rect	coords=883,892,929,909	href="http://www.genome.jp/dbget-bin/www_bget?osa:4331460+osa:4336753+osa:4349224"	title="4331460, 4336753, 4349224" />
+<area shape=rect	coords=1018,893,1064,910	href="http://www.genome.jp/dbget-bin/www_bget?osa:4331460+osa:4336753+osa:4349224"	title="4331460, 4336753, 4349224" />
+<area shape=rect	coords=1039,820,1085,837	href="http://www.genome.jp/dbget-bin/www_bget?osa:4331460+osa:4336753+osa:4349224"	title="4331460, 4336753, 4349224" />
+<area shape=rect	coords=1039,762,1085,779	href="http://www.genome.jp/dbget-bin/www_bget?osa:4331460+osa:4336753+osa:4349224"	title="4331460, 4336753, 4349224" />
+<area shape=rect	coords=862,762,908,779	href="http://www.genome.jp/dbget-bin/www_bget?osa:4331460+osa:4336753+osa:4349224"	title="4331460, 4336753, 4349224" />
+<area shape=rect	coords=1160,319,1206,336	href="http://www.genome.jp/dbget-bin/www_bget?osa:4349290"	title="4349290" />
+<area shape=rect	coords=1035,659,1081,676	href="http://www.genome.jp/dbget-bin/www_bget?osa:4331460+osa:4336753+osa:4349224"	title="4331460, 4336753, 4349224" />
+<area shape=rect	coords=859,659,905,676	href="http://www.genome.jp/dbget-bin/www_bget?osa:4331460+osa:4336753+osa:4349224"	title="4331460, 4336753, 4349224" />
+<area shape=rect	coords=1019,326,1065,343	href="http://www.genome.jp/dbget-bin/www_bget?osa:4331460+osa:4336753+osa:4349224"	title="4331460, 4336753, 4349224" />
+<area shape=rect	coords=722,560,768,577	href="http://www.genome.jp/dbget-bin/www_bget?osa:4328572"	title="4328572" />
+<area shape=rect	coords=644,449,690,466	href="http://www.genome.jp/dbget-bin/www_bget?osa:4328572"	title="4328572" />
+<area shape=rect	coords=867,316,913,333	href="http://www.genome.jp/dbget-bin/www_bget?osa:4328572"	title="4328572" />
+<area shape=rect	coords=714,274,760,291	href="http://www.genome.jp/dbget-bin/www_bget?osa:4324196"	title="4324196" />
+<area shape=rect	coords=567,438,613,455	href="http://www.genome.jp/dbget-bin/www_bget?osa:4342680"	title="4342680" />
+<area shape=rect	coords=419,438,465,455	href="http://www.genome.jp/dbget-bin/www_bget?osa:4342680"	title="4342680" />
+<area shape=rect	coords=269,438,315,455	href="http://www.genome.jp/dbget-bin/www_bget?osa:4331854"	title="4331854" />
+<area shape=rect	coords=126,438,172,455	href="http://www.genome.jp/dbget-bin/www_bget?osa:4331854"	title="4331854" />
+<area shape=rect	coords=51,296,97,313	href="http://www.genome.jp/dbget-bin/www_bget?osa:4342137+osa:4347813+osa:4352846"	title="4342137, 4347813, 4352846" />
+<area shape=rect	coords=51,219,97,236	href="http://www.genome.jp/dbget-bin/www_bget?osa:4342137+osa:4347813+osa:4352846"	title="4342137, 4347813, 4352846" />
+<area shape=rect	coords=99,333,145,350	href="http://www.genome.jp/dbget-bin/www_bget?osa:4331854"	title="4331854" />
+<area shape=rect	coords=194,333,240,350	href="http://www.genome.jp/dbget-bin/www_bget?osa:4331854"	title="4331854" />
+<area shape=rect	coords=294,333,340,350	href="http://www.genome.jp/dbget-bin/www_bget?osa:4352042"	title="4352042" />
+<area shape=rect	coords=395,333,441,350	href="http://www.genome.jp/dbget-bin/www_bget?osa:4342680"	title="4342680" />
+<area shape=rect	coords=492,333,538,350	href="http://www.genome.jp/dbget-bin/www_bget?osa:4342680"	title="4342680" />
+<area shape=rect	coords=590,333,636,350	href="http://www.genome.jp/dbget-bin/www_bget?osa:4350758"	title="4350758" />
+<area shape=rect	coords=1019,305,1065,322	href="http://www.genome.jp/dbget-bin/www_bget?osa:4331152"	title="4331152" />
+<area shape=rect	coords=908,638,954,655	href="http://www.genome.jp/dbget-bin/www_bget?osa:4331152"	title="4331152" />
+<area shape=rect	coords=986,638,1032,655	href="http://www.genome.jp/dbget-bin/www_bget?osa:4331152"	title="4331152" />
+<area shape=rect	coords=725,745,771,762	href="http://www.genome.jp/dbget-bin/www_bget?osa:4336591"	title="4336591" />
+<area shape=rect	coords=725,809,771,826	href="http://www.genome.jp/dbget-bin/www_bget?osa:4326177"	title="4326177" />
+<area shape=rect	coords=787,527,899,552	href="http://www.genome.jp/kegg-bin/show_pathway?map00830"	title="map00830: Retinol metabolism" onmouseover="popupTimer(&quot;map00830&quot;, &quot;map00830: Retinol metabolism&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=19,98,132,132	href="http://www.genome.jp/kegg-bin/show_pathway?osa00900"	title="osa00900: Terpenoid backbone biosynthesis" onmouseover="popupTimer(&quot;osa00900&quot;, &quot;osa00900: Terpenoid backbone biosynthesis&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=40,45,257,70	href="http://www.genome.jp/dbget-bin/www_bget?osa00906"	title="osa00906: Carotenoid biosynthesis" onmouseover="popupTimer(&quot;osa00906&quot;, &quot;osa00906: Carotenoid biosynthesis&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+</map>
+<div id="poplay" class="poplay" />
+
+</form>
+</body>
+</html>

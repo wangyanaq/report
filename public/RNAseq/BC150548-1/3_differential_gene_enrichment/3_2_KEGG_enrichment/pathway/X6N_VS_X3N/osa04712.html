@@ -1,0 +1,279 @@
+<html>
+<!---
+ENTRY       osa04712
+DEFINITION  Circadian rhythm - plant - Oryza sativa japonica (Japanese rice) (RefSeq)
+--->
+<head>
+<title>
+KEGG PATHWAY: Circadian rhythm - plant - Oryza sativa japonica (Japanese rice) (RefSeq)
+</title>
+<style type="text/css">
+<!--
+div.poplay {
+  position: absolute;
+  padding: 2px;
+  background-color: #ffff99;
+  border-top: solid 1px #c0c0c0;
+  border-left: solid 1px #c0c0c0;
+  border-bottom: solid 1px #808080;
+  border-right: solid 1px #808080;
+  visibility: hidden;
+}
+
+span.popup
+{
+  font-weight: bold;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+form {
+  margin: 0px;
+}
+
+div.image {
+  position: absolute;
+  padding: 0px;
+  top: 0px;
+  padding: 0px;
+  border: solid 1px #000000;
+}
+
+img {
+  border: none;
+}
+
+
+-->
+</style>
+<link rel="stylesheet" href="http://www.genome.jp/css/kegg.css" type="text/css" />
+<script language="JavaScript" src="http://www.genome.jp/js/dhtml.js"></script>
+
+<script language="JavaScript">
+<!---
+var image_height;
+$(function(){
+	$(window).bind('load',function(){
+  image_height = $("div.image").height()-10;
+	$("div.control").height(image_height-5);
+	$("#resizable").height(image_height);
+	});
+});
+
+
+function resize_map(scale){
+  var form = document.forms["form2"];
+  form.scale.value = scale;
+  form.submit();
+}
+
+function select_menu(){
+  var form = document.forms["selmenu"];
+  if(form.org_name.value == 'set_cookie' || form.org_name.value == 'reset_cookie'){
+    window.open('http://www.genome.jp/kegg/misc/kegg2_select.html','sel_org','toolbar=no,location=no,directories=no,width=500,height=320,resizable=yes');
+  }else{
+    form.action='http://www.genome.jp/kegg-bin/show_pathway';
+    form.submit();
+  }
+}
+
+var timer = 0;
+var p_entry, p_title, p_bgcolor;
+function popupTimer(entry, title, bgcolor)
+{
+  p_entry = entry;
+  p_title = title;
+  p_bgcolor = bgcolor;
+
+  if(timer == 0){
+    var func = "showThumbnail()";
+    timer = setTimeout(func, 1200);
+  }
+}
+
+
+function showThumbnail()
+{
+
+  var url = "";
+  if(p_entry.match(/^[A-Z]+\d+$/))
+  {
+    url = "http://www.genome.jp/kegg/misc/thumbnail/" + p_entry + ".gif";
+  }
+  else if(p_entry.match(/(\d+)$/))
+  {
+    url = "http://www.genome.jp/kegg/misc/thumbnail/map" + RegExp.$1 + ".gif";
+  }
+
+  var html = "";
+
+  if(p_bgcolor != "#ffffff")
+  {
+    html += "<span class=\"popup\">" + p_entry + "</span><br />";
+  }
+
+  html += "<img src=\"" + url + "\" alt=\"Loading...\">";
+
+  var x = getCurrentMouseX();
+  var y = getCurrentMouseY();
+
+  var layer = new Component("poplay");
+  layer.backgroundColor(p_bgcolor);
+  layer.HTML(html);
+  layer.move(x, y+40);
+  layer.visible(true);
+
+  timer = 0;
+}
+
+function hideMapTn(){
+  var layer = new Component("poplay");
+  layer.visible(false);
+
+  if(timer != 0){
+    clearTimeout(timer);
+    timer = 0;
+  }
+}
+
+function switchDescription(){
+  var form = document.forms[0];
+  var status = form.show_description.value;
+
+  if(status == "hide"){
+    document.getElementById("description").style.display = "";
+    document.getElementById("descLink").innerHTML = "Hide description";
+    form.show_description.value='show';
+
+    if(document.forms[1]){
+    	document.forms[1].show_description.value='show';
+    }
+  }
+  else
+  {
+    document.getElementById("description").style.display = 'none';
+    document.getElementById("descLink").innerHTML = "Show description";
+    form.show_description.value='hide';
+
+    if(document.forms[1]){
+      document.forms[1].show_description.value='hide';
+    }
+  }
+}
+
+function btn(bobj,img) { bobj.src = "http://www.genome.jp/Fig/bget/button_" + img + ".gif"; }
+//--->
+</script>
+</head>
+<body>
+<table cellpadding="0" width="100%" cellspacing="0" border="0">
+ <tr>
+  <td>
+   <a href="http://www.genome.jp/kegg/kegg2.html"><img align="middle" alt="KEGG" border="0" src="http://www.genome.jp/Fig/bget/kegg3.gif" /></a>
+   &nbsp;&nbsp;&nbsp;<font class="title3"><b>Circadian rhythm - plant - Oryza sativa japonica (Japanese rice) (RefSeq)</b></font>
+  </td>
+  <td valign="bottom" align="right">
+   <a href="javascript:void(window.open('http://www.genome.jp/kegg/document/help_pathway.html','KEGG_Help','toolbar=no,location=no,directories=no,width=720,height=640,resizable=yes,scrollbars=yes'))"><img name="help" src="http://www.genome.jp/Fig/bget/button_Hb.gif" border="0" align="middle" alt="Help" onmouseout="btn(this,'Hb')" onmousedown="btn(this,'Hbd')" onmouseover="btn(this,'Hbh')" onmouseup="btn(this,'Hb')" /></a>
+  </td>
+ </tr>
+</table>
+
+  
+[
+<a href="http://www.genome.jp/kegg-bin/get_htext?query=04712&htext=br08901.keg&option=-a">Pathway menu</a>
+| <a href="http://www.genome.jp/kegg-bin/get_htext?htext=br08601_map04712.keg&query=osa&option=-a">Organism menu</a>
+| <a href="http://www.genome.jp/dbget-bin/www_bget?pathway+osa04712">Pathway entry</a>
+
+| <a href="http://www.kegg.jp/kegg-bin/download?entry=osa04712&format=kgml">Download KGML</a>
+| <a id="descLink" href="javascript:switchDescription()">Show description</a>
+| <a href="javascript:void(window.open('http://www.genome.jp/kegg/tool/color_a_pathway.html','KEGG_Help','height=300,width=600,resizable=yes,scrollbars=yes'))">User data mapping</a>
+
+]
+  
+<table id="description" cellpadding="10" width="800" style="display: none;"><tr><td>
+The circadian system is an endogenous rhythm with the period of about 24 hours to provide temporal organization of biological activity. In Arabidopsis the circadian oscillator at the core of this system is composed of the interlocked feedback loop formed by the major transcriptional factors CCA1 (circadian clock associated), LHY (late elongated hypocotyl) and TOC1 (timing of cab), a pseudo response regulator (PRR). The morning-expressed CCA1/LHY Myb transcription factors suppress TOC1 expression by binding to its promoter. Moreover, CCA1/LHY activates the expression of PRR7/9 in the morning and then PRR7/9 repress the transcription of CCA1/LHY during the rest of the day. By contrast, the evening-expressed TOC1 activates the expression of CCA1/LHY.</td></tr></table>
+<table><tr><td>
+<form name="selmenu" method="get">
+<select name="org_name">
+<option value="map">Reference pathway</option>
+<option value="ko">Reference pathway (KO)</option>
+<option value="set_cookie">-----&lt; Set personalized menu &gt;-----</option>
+<option value="osa.sort_alp">-----&lt; Sort below by alphabet &gt;-----</option>
+<option value="ath">Arabidopsis thaliana (thale cress)</option>
+<option value="rcu">Ricinus communis (castor bean)</option>
+<option value="pop">Populus trichocarpa (black cottonwood)</option>
+<option value="vvi">Vitis vinifera (wine grape)</option>
+<option value="osa" selected>Oryza sativa japonica (Japanese rice) (RefSeq)</option>
+<option value="sbi">Sorghum bicolor (sorghum)</option>
+<option value="zma">Zea mays (maize)</option>
+<option value="ppp">Physcomitrella patens subsp. patens</option>
+<option value="cre">Chlamydomonas reinhardtii</option>
+<option value="olu">Ostreococcus lucimarinus</option>
+<option value="cme">Cyanidioschyzon merolae</option>
+</select>
+<input type="hidden" name="mapno" value="04712" />
+<input type="hidden" name="mapscale" value=>
+<input type="button" value="Go" onclick="select_menu(this.form)" />
+<input type="hidden" name="show_description" value="hide">
+
+</form>
+</td><td>
+<form name="form2" method="get" action="http://www.genome.jp/kegg-bin/show_pathway">
+&nbsp;&nbsp;&nbsp;&nbsp;
+<select name="scale" onChange="resize_map(this.form.scale.value)">
+<option value="1.84" >184%</option>
+<option value="1.5" >150%</option>
+<option value="1.22" >122%</option>
+<option value="1.0" selected>100%</option>
+<option value="0.82" >82%</option>
+<option value="0.67" >67%</option>
+<option value="0.55" >55%</option>
+</select>
+&nbsp;&nbsp;<input type="text" name="query" size=20 value="">
+<input type="hidden" name="map" value="osa04712" />
+<input type="hidden" name="scale" value=>
+<input type="hidden" name="image" value=/share/www//mark_pathway146062893041374/osa04712.png>
+<input type="hidden" name="use" value="reference">
+<input type="hidden" name="nmap_args" value="1460628674123116">
+<input type="hidden" name="auto_image" value="">
+<input type="hidden" name="show_description" value="hide">
+<input type="hidden" name="multi_query" />
+
+<!--</form>-->
+</td></tr></table>
+
+
+<img src="osa04712.png" name="pathwayimage" name="pathwayimage" usemap="#mapdata" border="0" />
+
+<map name="mapdata">
+<area shape=rect	coords=647,484,693,501	href="http://www.genome.jp/dbget-bin/www_bget?osa:4330000"	title="4330000" />
+<area shape=rect	coords=773,336,819,353	href="http://www.genome.jp/dbget-bin/www_bget?osa:4344703"	title="4344703" />
+<area shape=rect	coords=647,217,693,234	href="http://www.genome.jp/dbget-bin/www_bget?osa:4332464+osa:4344399"	title="4332464, 4344399" />
+<area shape=rect	coords=647,238,693,255	href="http://www.genome.jp/dbget-bin/www_bget?osa:4347674+osa:4349831"	title="4347674, 4349831" />
+<area shape=rect	coords=1126,539,1172,556	href="http://www.genome.jp/dbget-bin/www_bget?osa:4324585+osa:4340185"	title="4324585, 4340185" />
+<area shape=rect	coords=568,557,614,574	href="http://www.genome.jp/dbget-bin/www_bget?osa:4341923"	title="4341923" />
+<area shape=rect	coords=568,574,614,591	href="http://www.genome.jp/dbget-bin/www_bget?osa:4325329"	title="4325329" />
+<area shape=rect	coords=489,631,535,648	href="http://www.genome.jp/dbget-bin/www_bget?osa:4350698"	title="4350698" />
+<area shape=rect	coords=489,648,535,665	href="http://www.genome.jp/dbget-bin/www_bget?osa:4325329"	title="4325329" />
+<area shape=rect	coords=328,594,374,611	href="http://www.genome.jp/dbget-bin/www_bget?osa:4330868"	title="4330868" />
+<area shape=rect	coords=413,603,459,620	href="http://www.genome.jp/dbget-bin/www_bget?osa:4325329"	title="4325329" />
+<area shape=rect	coords=273,525,319,542	href="http://www.genome.jp/dbget-bin/www_bget?osa:4329738+osa:4336008"	title="4329738, 4336008" />
+<area shape=rect	coords=119,230,165,247	href="http://www.genome.jp/dbget-bin/www_bget?osa:4332623"	title="4332623" />
+<area shape=rect	coords=780,565,826,582	href="http://www.genome.jp/dbget-bin/www_bget?osa:4325329"	title="4325329" />
+<area shape=rect	coords=1126,492,1172,509	href="http://www.genome.jp/dbget-bin/www_bget?osa:4350636"	title="4350636" />
+<area shape=rect	coords=887,353,933,370	href="http://www.genome.jp/dbget-bin/www_bget?osa:4332003+osa:4334206+osa:4342248+osa:9271280"	title="4332003, 4334206, 4342248, 9271280" />
+<area shape=rect	coords=887,370,933,387	href="http://www.genome.jp/dbget-bin/www_bget?osa:4343287+osa:4349414"	title="4343287, 4349414" />
+<area shape=rect	coords=328,694,374,711	href="http://www.genome.jp/dbget-bin/www_bget?osa:4330868"	title="4330868" />
+<area shape=rect	coords=328,711,374,728	href="http://www.genome.jp/dbget-bin/www_bget?osa:4339663"	title="4339663" />
+<area shape=rect	coords=413,703,459,720	href="http://www.genome.jp/dbget-bin/www_bget?osa:4328662"	title="4328662" />
+<area shape=rect	coords=119,281,165,298	href="http://www.genome.jp/dbget-bin/www_bget?osa:4332623"	title="4332623" />
+<area shape=rect	coords=119,311,165,328	href="http://www.genome.jp/dbget-bin/www_bget?osa:4333930"	title="4333930" />
+<area shape=rect	coords=119,363,165,380	href="http://www.genome.jp/dbget-bin/www_bget?osa:4333930"	title="4333930" />
+<area shape=rect	coords=40,45,260,70	href="http://www.genome.jp/dbget-bin/www_bget?osa04712"	title="osa04712: Circadian rhythm - plant" onmouseover="popupTimer(&quot;osa04712&quot;, &quot;osa04712: Circadian rhythm - plant&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=1211,392,1303,417	href="http://www.genome.jp/kegg-bin/show_pathway?osa00196"	title="osa00196: Photosynthesis - antenna proteins" onmouseover="popupTimer(&quot;osa00196&quot;, &quot;osa00196: Photosynthesis - antenna proteins&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+</map>
+<div id="poplay" class="poplay" />
+
+</form>
+</body>
+</html>

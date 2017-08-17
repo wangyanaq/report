@@ -1,0 +1,297 @@
+<html>
+<!---
+ENTRY       osa03015
+DEFINITION  mRNA surveillance pathway - Oryza sativa japonica (Japanese rice) (RefSeq)
+--->
+<head>
+<title>
+KEGG PATHWAY: mRNA surveillance pathway - Oryza sativa japonica (Japanese rice) (RefSeq)
+</title>
+<style type="text/css">
+<!--
+div.poplay {
+  position: absolute;
+  padding: 2px;
+  background-color: #ffff99;
+  border-top: solid 1px #c0c0c0;
+  border-left: solid 1px #c0c0c0;
+  border-bottom: solid 1px #808080;
+  border-right: solid 1px #808080;
+  visibility: hidden;
+}
+
+span.popup
+{
+  font-weight: bold;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+form {
+  margin: 0px;
+}
+
+div.image {
+  position: absolute;
+  padding: 0px;
+  top: 0px;
+  padding: 0px;
+  border: solid 1px #000000;
+}
+
+img {
+  border: none;
+}
+
+
+-->
+</style>
+<link rel="stylesheet" href="http://www.genome.jp/css/kegg.css" type="text/css" />
+<script language="JavaScript" src="http://www.genome.jp/js/dhtml.js"></script>
+
+<script language="JavaScript">
+<!---
+var image_height;
+$(function(){
+	$(window).bind('load',function(){
+  image_height = $("div.image").height()-10;
+	$("div.control").height(image_height-5);
+	$("#resizable").height(image_height);
+	});
+});
+
+
+function resize_map(scale){
+  var form = document.forms["form2"];
+  form.scale.value = scale;
+  form.submit();
+}
+
+function select_menu(){
+  var form = document.forms["selmenu"];
+  if(form.org_name.value == 'set_cookie' || form.org_name.value == 'reset_cookie'){
+    window.open('http://www.genome.jp/kegg/misc/kegg2_select.html','sel_org','toolbar=no,location=no,directories=no,width=500,height=320,resizable=yes');
+  }else{
+    form.action='http://www.genome.jp/kegg-bin/show_pathway';
+    form.submit();
+  }
+}
+
+var timer = 0;
+var p_entry, p_title, p_bgcolor;
+function popupTimer(entry, title, bgcolor)
+{
+  p_entry = entry;
+  p_title = title;
+  p_bgcolor = bgcolor;
+
+  if(timer == 0){
+    var func = "showThumbnail()";
+    timer = setTimeout(func, 1200);
+  }
+}
+
+
+function showThumbnail()
+{
+
+  var url = "";
+  if(p_entry.match(/^[A-Z]+\d+$/))
+  {
+    url = "http://www.genome.jp/kegg/misc/thumbnail/" + p_entry + ".gif";
+  }
+  else if(p_entry.match(/(\d+)$/))
+  {
+    url = "http://www.genome.jp/kegg/misc/thumbnail/map" + RegExp.$1 + ".gif";
+  }
+
+  var html = "";
+
+  if(p_bgcolor != "#ffffff")
+  {
+    html += "<span class=\"popup\">" + p_entry + "</span><br />";
+  }
+
+  html += "<img src=\"" + url + "\" alt=\"Loading...\">";
+
+  var x = getCurrentMouseX();
+  var y = getCurrentMouseY();
+
+  var layer = new Component("poplay");
+  layer.backgroundColor(p_bgcolor);
+  layer.HTML(html);
+  layer.move(x, y+40);
+  layer.visible(true);
+
+  timer = 0;
+}
+
+function hideMapTn(){
+  var layer = new Component("poplay");
+  layer.visible(false);
+
+  if(timer != 0){
+    clearTimeout(timer);
+    timer = 0;
+  }
+}
+
+function switchDescription(){
+  var form = document.forms[0];
+  var status = form.show_description.value;
+
+  if(status == "hide"){
+    document.getElementById("description").style.display = "";
+    document.getElementById("descLink").innerHTML = "Hide description";
+    form.show_description.value='show';
+
+    if(document.forms[1]){
+    	document.forms[1].show_description.value='show';
+    }
+  }
+  else
+  {
+    document.getElementById("description").style.display = 'none';
+    document.getElementById("descLink").innerHTML = "Show description";
+    form.show_description.value='hide';
+
+    if(document.forms[1]){
+      document.forms[1].show_description.value='hide';
+    }
+  }
+}
+
+function btn(bobj,img) { bobj.src = "http://www.genome.jp/Fig/bget/button_" + img + ".gif"; }
+//--->
+</script>
+</head>
+<body>
+<table cellpadding="0" width="100%" cellspacing="0" border="0">
+ <tr>
+  <td>
+   <a href="http://www.genome.jp/kegg/kegg2.html"><img align="middle" alt="KEGG" border="0" src="http://www.genome.jp/Fig/bget/kegg3.gif" /></a>
+   &nbsp;&nbsp;&nbsp;<font class="title3"><b>mRNA surveillance pathway - Oryza sativa japonica (Japanese rice) (RefSeq)</b></font>
+  </td>
+  <td valign="bottom" align="right">
+   <a href="javascript:void(window.open('http://www.genome.jp/kegg/document/help_pathway.html','KEGG_Help','toolbar=no,location=no,directories=no,width=720,height=640,resizable=yes,scrollbars=yes'))"><img name="help" src="http://www.genome.jp/Fig/bget/button_Hb.gif" border="0" align="middle" alt="Help" onmouseout="btn(this,'Hb')" onmousedown="btn(this,'Hbd')" onmouseover="btn(this,'Hbh')" onmouseup="btn(this,'Hb')" /></a>
+  </td>
+ </tr>
+</table>
+
+  
+[
+<a href="http://www.genome.jp/kegg-bin/get_htext?query=03015&htext=br08901.keg&option=-a">Pathway menu</a>
+| <a href="http://www.genome.jp/kegg-bin/get_htext?htext=br08601_map03015.keg&query=osa&option=-a">Organism menu</a>
+| <a href="http://www.genome.jp/dbget-bin/www_bget?pathway+osa03015">Pathway entry</a>
+
+| <a href="http://www.kegg.jp/kegg-bin/download?entry=osa03015&format=kgml">Download KGML</a>
+| <a id="descLink" href="javascript:switchDescription()">Show description</a>
+| <a href="javascript:void(window.open('http://www.genome.jp/kegg/tool/color_a_pathway.html','KEGG_Help','height=300,width=600,resizable=yes,scrollbars=yes'))">User data mapping</a>
+
+]
+  
+<table id="description" cellpadding="10" width="800" style="display: none;"><tr><td>
+The mRNA surveillance pathway is a quality control mechanism that detects and degrades abnormal mRNAs. These  pathways include nonsense-mediated mRNA decay (NMD), nonstop mRNA decay (NSD), and no-go decay (NGD). NMD is a mechanism that eliminates mRNAs containing premature translation-termination codons (PTCs). In vertebrates, PTCs trigger efficient NMD when located upstream of an exon junction complex (EJC). Upf3, together with Upf1 and Upf2, may signal the presence of the PTC to the 5'end of the transcript, resulting in decapping and rapid exonucleolytic digestion of the mRNA. In the NSD pathway, which targets mRNAs lacking termination codons, the ribosome is believed to translate through the 3' untranslated region and stall at the end of the poly(A) tail. NSD involves an eRF3-like protein, Ski7p, which is hypothesized to bind the empty A site of the ribosome and recruit the exosome to degrade the mRNA from the 3' end. NGD targets mRNAs with stalls in translation elongation for endonucleolytic cleavage in a process involving the Dom34 and Hbs1 proteins.</td></tr></table>
+<table><tr><td>
+<form name="selmenu" method="get">
+<select name="org_name">
+<option value="map">Reference pathway</option>
+<option value="ko">Reference pathway (KO)</option>
+<option value="set_cookie">-----&lt; Set personalized menu &gt;-----</option>
+<option value="osa.sort_alp">-----&lt; Sort below by alphabet &gt;-----</option>
+<option value="hsa">Homo sapiens (human)</option>
+<option value="hsadd">Homo sapiens (human) + Disease/drug</option>
+<option value="bta">Bos taurus (cow)</option>
+</select>
+<input type="hidden" name="mapno" value="03015" />
+<input type="hidden" name="mapscale" value=>
+<input type="button" value="Go" onclick="select_menu(this.form)" />
+<input type="hidden" name="show_description" value="hide">
+
+</form>
+</td><td>
+<form name="form2" method="get" action="http://www.genome.jp/kegg-bin/show_pathway">
+&nbsp;&nbsp;&nbsp;&nbsp;
+<select name="scale" onChange="resize_map(this.form.scale.value)">
+<option value="1.84" >184%</option>
+<option value="1.5" >150%</option>
+<option value="1.22" >122%</option>
+<option value="1.0" selected>100%</option>
+<option value="0.82" >82%</option>
+<option value="0.67" >67%</option>
+<option value="0.55" >55%</option>
+</select>
+&nbsp;&nbsp;<input type="text" name="query" size=20 value="">
+<input type="hidden" name="map" value="osa03015" />
+<input type="hidden" name="scale" value=>
+<input type="hidden" name="image" value=/share/www//mark_pathway146062847375356/osa03015.png>
+<input type="hidden" name="use" value="reference">
+<input type="hidden" name="nmap_args" value="146062786275104">
+<input type="hidden" name="auto_image" value="">
+<input type="hidden" name="show_description" value="hide">
+<input type="hidden" name="multi_query" />
+
+<!--</form>-->
+</td></tr></table>
+
+
+<img src="osa03015.png" name="pathwayimage" name="pathwayimage" usemap="#mapdata" border="0" />
+
+<map name="mapdata">
+<area shape=rect	coords=84,232,130,249	href="http://www.genome.jp/dbget-bin/www_bget?osa:4334528+osa:4337757"	title="4334528, 4337757" />
+<area shape=rect	coords=84,249,130,266	href="http://www.genome.jp/dbget-bin/www_bget?osa:4344462+osa:4351998"	title="4344462, 4351998" />
+<area shape=rect	coords=130,249,176,266	href="http://www.genome.jp/dbget-bin/www_bget?osa:4326580+osa:4333273"	title="4326580, 4333273" />
+<area shape=rect	coords=222,215,268,232	href="http://www.genome.jp/dbget-bin/www_bget?osa:4332988+osa:4343967"	title="4332988, 4343967" />
+<area shape=rect	coords=222,232,268,249	href="http://www.genome.jp/dbget-bin/www_bget?osa:4325394+osa:4337561"	title="4325394, 4337561" />
+<area shape=rect	coords=176,232,222,249	href="http://www.genome.jp/dbget-bin/www_bget?osa:4328127"	title="4328127" />
+<area shape=rect	coords=184,295,230,312	href="http://www.genome.jp/dbget-bin/www_bget?osa:4332383"	title="4332383" />
+<area shape=rect	coords=176,249,222,266	href="http://www.genome.jp/dbget-bin/www_bget?osa:4333834"	title="4333834" />
+<area shape=rect	coords=222,249,268,266	href="http://www.genome.jp/dbget-bin/www_bget?osa:4332426+osa:4340675+osa:4342793+osa:4345621+osa:4349526+osa:4351236"	title="4332426, 4340675, 4342793, 4345621, 4349526, 4351236" />
+<area shape=rect	coords=130,146,176,163	href="http://www.genome.jp/dbget-bin/www_bget?osa:4332822"	title="4332822" />
+<area shape=rect	coords=84,215,130,232	href="http://www.genome.jp/dbget-bin/www_bget?osa:4335928"	title="4335928" />
+<area shape=rect	coords=132,295,178,312	href="http://www.genome.jp/dbget-bin/www_bget?osa:4326192+osa:4326193"	title="4326192, 4326193" />
+<area shape=rect	coords=132,316,178,333	href="http://www.genome.jp/dbget-bin/www_bget?osa:4332324"	title="4332324" />
+<area shape=rect	coords=596,589,642,606	href="http://www.genome.jp/dbget-bin/www_bget?osa:4343292"	title="4343292" />
+<area shape=rect	coords=596,623,642,640	href="http://www.genome.jp/dbget-bin/www_bget?osa:4335928"	title="4335928" />
+<area shape=rect	coords=668,589,714,606	href="http://www.genome.jp/dbget-bin/www_bget?osa:4334045"	title="4334045" />
+<area shape=rect	coords=668,612,714,629	href="http://www.genome.jp/dbget-bin/www_bget?osa:4345227"	title="4345227" />
+<area shape=rect	coords=550,598,596,615	href="http://www.genome.jp/dbget-bin/www_bget?osa:4326511+osa:4333840+osa:4338603+osa:4343757"	title="4326511, 4333840, 4338603, 4343757" />
+<area shape=rect	coords=550,615,596,632	href="http://www.genome.jp/dbget-bin/www_bget?osa:4329282+osa:4335338"	title="4329282, 4335338" />
+<area shape=rect	coords=413,99,459,116	href="http://www.genome.jp/dbget-bin/www_bget?osa:4350086+osa:4351709"	title="4350086, 4351709" />
+<area shape=rect	coords=413,78,459,95	href="http://www.genome.jp/dbget-bin/www_bget?osa:4330921+osa:4344818"	title="4330921, 4344818" />
+<area shape=rect	coords=841,170,887,187	href="http://www.genome.jp/dbget-bin/www_bget?osa:4337444+osa:4345502"	title="4337444, 4345502" />
+<area shape=rect	coords=953,171,999,188	href="http://www.genome.jp/dbget-bin/www_bget?osa:4324242+osa:4328790+osa:4330872+osa:4340886+osa:4344356+osa:9268632+osa:9272301"	title="4324242, 4328790, 4330872, 4340886, 4344356, 9268632, 9272301" />
+<area shape=rect	coords=887,211,933,228	href="http://www.genome.jp/dbget-bin/www_bget?osa:4344833+osa:4347878"	title="4344833, 4347878" />
+<area shape=rect	coords=841,211,887,228	href="http://www.genome.jp/dbget-bin/www_bget?osa:4328733"	title="4328733" />
+<area shape=rect	coords=887,170,933,187	href="http://www.genome.jp/dbget-bin/www_bget?osa:4345901+osa:4347363"	title="4345901, 4347363" />
+<area shape=rect	coords=934,263,980,280	href="http://www.genome.jp/dbget-bin/www_bget?osa:4334816"	title="4334816" />
+<area shape=rect	coords=888,263,934,280	href="http://www.genome.jp/dbget-bin/www_bget?osa:4347905"	title="4347905" />
+<area shape=rect	coords=842,263,888,280	href="http://www.genome.jp/dbget-bin/www_bget?osa:9266269"	title="9266269" />
+<area shape=rect	coords=842,280,888,297	href="http://www.genome.jp/dbget-bin/www_bget?osa:4327595+osa:4341840"	title="4327595, 4341840" />
+<area shape=rect	coords=841,330,887,347	href="http://www.genome.jp/dbget-bin/www_bget?osa:4334149"	title="4334149" />
+<area shape=rect	coords=887,330,933,347	href="http://www.genome.jp/dbget-bin/www_bget?osa:4341950+osa:4349923"	title="4341950, 4349923" />
+<area shape=rect	coords=933,330,979,347	href="http://www.genome.jp/dbget-bin/www_bget?osa:4352587"	title="4352587" />
+<area shape=rect	coords=889,356,935,373	href="http://www.genome.jp/dbget-bin/www_bget?osa:4344390"	title="4344390" />
+<area shape=rect	coords=130,163,176,180	href="http://www.genome.jp/dbget-bin/www_bget?osa:4329963"	title="4329963" />
+<area shape=rect	coords=590,284,636,301	href="http://www.genome.jp/dbget-bin/www_bget?osa:4330785+osa:4340509"	title="4330785, 4340509" />
+<area shape=rect	coords=620,534,666,551	href="http://www.genome.jp/dbget-bin/www_bget?osa:4332428+osa:4336331+osa:4337438+osa:4341408+osa:4345242+osa:4346409"	title="4332428, 4336331, 4337438, 4341408, 4345242, 4346409" />
+<area shape=rect	coords=714,619,760,636	href="http://www.genome.jp/dbget-bin/www_bget?osa:4328580+osa:4328734+osa:4328769+osa:4331747+osa:4333730+osa:4334494+osa:4334757+osa:4336207+osa:4337821+osa:4337970+osa:4339558+osa:4341313+osa:4341364+osa:4342912+osa:4344549+osa:4346507+osa:4348601+osa:4348893"	title="4328580, 4328734, 4328769, 4331747, 4333730, 4334494, 4334757, 4336207, 4337821, 4337970, 4339558, 4341313, 4341364, 4342912, 4344549, 4346507, 4348601, 4348893" />
+<area shape=rect	coords=979,536,1025,553	href="http://www.genome.jp/dbget-bin/www_bget?osa:4332428+osa:4336331+osa:4337438+osa:4341408+osa:4345242+osa:4346409"	title="4332428, 4336331, 4337438, 4341408, 4345242, 4346409" />
+<area shape=rect	coords=925,608,971,625	href="http://www.genome.jp/dbget-bin/www_bget?osa:4326095+osa:4336848+osa:4337409"	title="4326095, 4336848, 4337409" />
+<area shape=rect	coords=925,625,971,642	href="http://www.genome.jp/dbget-bin/www_bget?osa:9269039"	title="9269039" />
+<area shape=rect	coords=620,505,666,522	href="http://www.genome.jp/dbget-bin/www_bget?osa:4325826+osa:4342307+osa:4343740+osa:4348867+osa:4350986+osa:9267674"	title="4325826, 4342307, 4343740, 4348867, 4350986, 9267674" />
+<area shape=rect	coords=1036,263,1082,280	href="http://www.genome.jp/dbget-bin/www_bget?osa:4325772"	title="4325772" />
+<area shape=rect	coords=990,280,1036,297	href="http://www.genome.jp/dbget-bin/www_bget?osa:4339488+osa:4343770"	title="4339488, 4343770" />
+<area shape=rect	coords=990,297,1036,314	href="http://www.genome.jp/dbget-bin/www_bget?osa:4326473+osa:4331166+osa:4332369+osa:4340228+osa:4345748"	title="4326473, 4331166, 4332369, 4340228, 4345748" />
+<area shape=rect	coords=1036,297,1082,314	href="http://www.genome.jp/dbget-bin/www_bget?osa:4351607"	title="4351607" />
+<area shape=rect	coords=528,147,620,172	href="http://www.genome.jp/kegg-bin/show_pathway?osa03040"	title="osa03040: Spliceosome" onmouseover="popupTimer(&quot;osa03040&quot;, &quot;osa03040: Spliceosome&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=40,45,290,70	href="http://www.genome.jp/dbget-bin/www_bget?osa03015"	title="osa03015: mRNA surveillance pathway" onmouseover="popupTimer(&quot;osa03015&quot;, &quot;osa03015: mRNA surveillance pathway&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=347,353,439,378	href="http://www.genome.jp/kegg-bin/show_pathway?osa03013"	title="osa03013: RNA transport" onmouseover="popupTimer(&quot;osa03013&quot;, &quot;osa03013: RNA transport&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=666,732,758,757	href="http://www.genome.jp/kegg-bin/show_pathway?osa03018"	title="osa03018: RNA degradation" onmouseover="popupTimer(&quot;osa03018&quot;, &quot;osa03018: RNA degradation&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=666,288,758,313	href="http://www.genome.jp/kegg-bin/show_pathway?osa03018"	title="osa03018: RNA degradation" onmouseover="popupTimer(&quot;osa03018&quot;, &quot;osa03018: RNA degradation&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+</map>
+<div id="poplay" class="poplay" />
+
+</form>
+</body>
+</html>

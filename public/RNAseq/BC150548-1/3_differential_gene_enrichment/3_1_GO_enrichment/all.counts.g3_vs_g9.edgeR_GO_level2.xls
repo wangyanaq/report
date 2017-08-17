@@ -1,0 +1,8 @@
+levels	GO_id	Term	GO_namespace	gene_num	gene_list
+2	GO:0016020	membrane	cellular_component	1	4532020,
+2	GO:0044464	cell part	cellular_component	1	4532020,
+2	GO:0044699	single-organism process	biological_process	2	4533828,4533856,
+2	GO:0003824	catalytic activity	molecular_function	2	4533828,4533856,
+2	GO:0005623	cell	cellular_component	1	4532020,
+2	GO:0008152	metabolic process	biological_process	2	4533828,4533856,
+2	GO:0009987	cellular process	biological_process	2	4533856,4533828,

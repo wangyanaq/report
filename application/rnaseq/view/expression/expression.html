@@ -1,0 +1,98 @@
+﻿{include file="pc@common/_meta"}
+<title>ncRNA表达定量</title>
+</head>
+<body onLoad="setupZoom();">
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span>BC150548-1<span class="c-gray en">&gt;</span>ncRNA表达定量<a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<div class="page-container">
+	<div class="main_content">
+		<h3 class="main_title"  >ncRNA表达定量结果</h3>
+		<div id="tab_demo" class="HuiTab">
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;应用BEDTools（version:2.16.1）[10,11]对bowtie2的mapping结果进行ncRNA覆盖reads定量，利用perl脚本进行ncRNA表达值定量。</p>
+			<h4>表头说明：</h4>
+				<table class="table table-border table-bordered table-bg mt-20">
+					<tbody>
+					<tr class="text-c">
+						<th> 项目说明</th>
+						<th >说明</th>
+					</tr>
+					<tr class="text-c">
+						<td style="text-align: left;">ncRNA_id</td>
+						<td  >ncRNA的ID号</td>
+					</tr>
+					<tr class="text-c">
+						<td style="text-align: left;">length</td>
+						<td  >ncRNA的长度</td>
+
+					</tr>
+					<tr class="text-c">
+						<td style="text-align: left;">*_FPKM</td>
+						<td >ncRNA在各个样本中的表达量</td>
+					</tr>
+					<tr class="text-c">
+						<td style="text-align: left;">*_count</td>
+						<td  >ncRNA在各个样本中的fragments个数</td>
+					</tr>
+					</tbody>
+				</table>
+			<p class="lable" class="clearfix" style="height: 40px;line-height: 40px;margin-top:25px"> 点击右侧下载ncRNA表达定量结果文档   <a   href="__RNASEQ__/BC150548-1/5_ncRNA/5_2_ncRNA_expression/ncRNA_expression.xls"  > <img src="__PUBLIC__/image/downloading.gif"  style="float: right;width: 120px;height: 40px"/></a></p>
+		</div>
+	</div>
+</div>
+{include file="pc@common/_footer"}
+
+<script type="text/javascript">
+/*三种RNA显示图*/
+	$(function() {
+		$.Huitab("#tab_demo .tabBar span","#tab_demo .tabCon","current","click","1")
+	});
+$(function() {
+	$.Huitab("#tab_dem .tabBar span","#tab_dem .tabCon","current","click","1")
+});
+
+
+/*中间图显示*/
+	$(document).ready(function() {
+		//Horizontal Tab
+		$('#parentHorizontalTab_mRNA').easyResponsiveTabs({
+			type: 'default', //Types: default, vertical, accordion
+			width: 'auto', //auto or any width like 600px
+			fit: true, // 100% fit in a container
+			tabidentify: 'hor_1', // The tab groups identifier
+			activate: function(event) { // Callback function if tab is switched
+				var $tab = $(this);
+				var $info = $('#nested-tabInfo');
+				var $name = $('span', $info);
+				$name.text($tab.text());
+				$info.show();
+			}
+		});
+		$('#parentHorizontalTab_lncRNA').easyResponsiveTabs({
+			type: 'default', //Types: default, vertical, accordion
+			width: 'auto', //auto or any width like 600px
+			fit: true, // 100% fit in a container
+			tabidentify: 'hor_1', // The tab groups identifier
+			activate: function(event) { // Callback function if tab is switched
+				var $tab = $(this);
+				var $info = $('#nested-tabInfo');
+				var $name = $('span', $info);
+				$name.text($tab.text());
+				$info.show();
+			}
+		});
+		$('#parentHorizontalTab_circRNA').easyResponsiveTabs({
+			type: 'default', //Types: default, vertical, accordion
+			width: 'auto', //auto or any width like 600px
+			fit: true, // 100% fit in a container
+			tabidentify: 'hor_1', // The tab groups identifier
+			activate: function(event) { // Callback function if tab is switched
+				var $tab = $(this);
+				var $info = $('#nested-tabInfo');
+				var $name = $('span', $info);
+				$name.text($tab.text());
+				$info.show();
+			}
+		});
+	});
+</script> 
+</body>
+</html>

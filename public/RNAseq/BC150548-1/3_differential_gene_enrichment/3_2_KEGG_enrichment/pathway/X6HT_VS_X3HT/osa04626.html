@@ -1,0 +1,294 @@
+<html>
+<!---
+ENTRY       osa04626
+DEFINITION  Plant-pathogen interaction - Oryza sativa japonica (Japanese rice) (RefSeq)
+--->
+<head>
+<title>
+KEGG PATHWAY: Plant-pathogen interaction - Oryza sativa japonica (Japanese rice) (RefSeq)
+</title>
+<style type="text/css">
+<!--
+div.poplay {
+  position: absolute;
+  padding: 2px;
+  background-color: #ffff99;
+  border-top: solid 1px #c0c0c0;
+  border-left: solid 1px #c0c0c0;
+  border-bottom: solid 1px #808080;
+  border-right: solid 1px #808080;
+  visibility: hidden;
+}
+
+span.popup
+{
+  font-weight: bold;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+form {
+  margin: 0px;
+}
+
+div.image {
+  position: absolute;
+  padding: 0px;
+  top: 0px;
+  padding: 0px;
+  border: solid 1px #000000;
+}
+
+img {
+  border: none;
+}
+
+
+-->
+</style>
+<link rel="stylesheet" href="http://www.genome.jp/css/kegg.css" type="text/css" />
+<script language="JavaScript" src="http://www.genome.jp/js/dhtml.js"></script>
+
+<script language="JavaScript">
+<!---
+var image_height;
+$(function(){
+	$(window).bind('load',function(){
+  image_height = $("div.image").height()-10;
+	$("div.control").height(image_height-5);
+	$("#resizable").height(image_height);
+	});
+});
+
+
+function resize_map(scale){
+  var form = document.forms["form2"];
+  form.scale.value = scale;
+  form.submit();
+}
+
+function select_menu(){
+  var form = document.forms["selmenu"];
+  if(form.org_name.value == 'set_cookie' || form.org_name.value == 'reset_cookie'){
+    window.open('http://www.genome.jp/kegg/misc/kegg2_select.html','sel_org','toolbar=no,location=no,directories=no,width=500,height=320,resizable=yes');
+  }else{
+    form.action='http://www.genome.jp/kegg-bin/show_pathway';
+    form.submit();
+  }
+}
+
+var timer = 0;
+var p_entry, p_title, p_bgcolor;
+function popupTimer(entry, title, bgcolor)
+{
+  p_entry = entry;
+  p_title = title;
+  p_bgcolor = bgcolor;
+
+  if(timer == 0){
+    var func = "showThumbnail()";
+    timer = setTimeout(func, 1200);
+  }
+}
+
+
+function showThumbnail()
+{
+
+  var url = "";
+  if(p_entry.match(/^[A-Z]+\d+$/))
+  {
+    url = "http://www.genome.jp/kegg/misc/thumbnail/" + p_entry + ".gif";
+  }
+  else if(p_entry.match(/(\d+)$/))
+  {
+    url = "http://www.genome.jp/kegg/misc/thumbnail/map" + RegExp.$1 + ".gif";
+  }
+
+  var html = "";
+
+  if(p_bgcolor != "#ffffff")
+  {
+    html += "<span class=\"popup\">" + p_entry + "</span><br />";
+  }
+
+  html += "<img src=\"" + url + "\" alt=\"Loading...\">";
+
+  var x = getCurrentMouseX();
+  var y = getCurrentMouseY();
+
+  var layer = new Component("poplay");
+  layer.backgroundColor(p_bgcolor);
+  layer.HTML(html);
+  layer.move(x, y+40);
+  layer.visible(true);
+
+  timer = 0;
+}
+
+function hideMapTn(){
+  var layer = new Component("poplay");
+  layer.visible(false);
+
+  if(timer != 0){
+    clearTimeout(timer);
+    timer = 0;
+  }
+}
+
+function switchDescription(){
+  var form = document.forms[0];
+  var status = form.show_description.value;
+
+  if(status == "hide"){
+    document.getElementById("description").style.display = "";
+    document.getElementById("descLink").innerHTML = "Hide description";
+    form.show_description.value='show';
+
+    if(document.forms[1]){
+    	document.forms[1].show_description.value='show';
+    }
+  }
+  else
+  {
+    document.getElementById("description").style.display = 'none';
+    document.getElementById("descLink").innerHTML = "Show description";
+    form.show_description.value='hide';
+
+    if(document.forms[1]){
+      document.forms[1].show_description.value='hide';
+    }
+  }
+}
+
+function btn(bobj,img) { bobj.src = "http://www.genome.jp/Fig/bget/button_" + img + ".gif"; }
+//--->
+</script>
+</head>
+<body>
+<table cellpadding="0" width="100%" cellspacing="0" border="0">
+ <tr>
+  <td>
+   <a href="http://www.genome.jp/kegg/kegg2.html"><img align="middle" alt="KEGG" border="0" src="http://www.genome.jp/Fig/bget/kegg3.gif" /></a>
+   &nbsp;&nbsp;&nbsp;<font class="title3"><b>Plant-pathogen interaction - Oryza sativa japonica (Japanese rice) (RefSeq)</b></font>
+  </td>
+  <td valign="bottom" align="right">
+   <a href="javascript:void(window.open('http://www.genome.jp/kegg/document/help_pathway.html','KEGG_Help','toolbar=no,location=no,directories=no,width=720,height=640,resizable=yes,scrollbars=yes'))"><img name="help" src="http://www.genome.jp/Fig/bget/button_Hb.gif" border="0" align="middle" alt="Help" onmouseout="btn(this,'Hb')" onmousedown="btn(this,'Hbd')" onmouseover="btn(this,'Hbh')" onmouseup="btn(this,'Hb')" /></a>
+  </td>
+ </tr>
+</table>
+
+  
+[
+<a href="http://www.genome.jp/kegg-bin/get_htext?query=04626&htext=br08901.keg&option=-a">Pathway menu</a>
+| <a href="http://www.genome.jp/kegg-bin/get_htext?htext=br08601_map04626.keg&query=osa&option=-a">Organism menu</a>
+| <a href="http://www.genome.jp/dbget-bin/www_bget?pathway+osa04626">Pathway entry</a>
+
+| <a href="http://www.kegg.jp/kegg-bin/download?entry=osa04626&format=kgml">Download KGML</a>
+| <a id="descLink" href="javascript:switchDescription()">Show description</a>
+| <a href="javascript:void(window.open('http://www.genome.jp/kegg/tool/color_a_pathway.html','KEGG_Help','height=300,width=600,resizable=yes,scrollbars=yes'))">User data mapping</a>
+
+]
+  
+<table id="description" cellpadding="10" width="800" style="display: none;"><tr><td>
+Plants lack animal-like adaptive immunity mechanisms, and therefore have evolved a specific system with multiple layers against invading pathogens. The primary response includes the perception of pathogens by cell-surface pattern-recognition receptors (PRRs) and is referred to as PAMP-triggered immunity (PTI). Activation of FLS2 and EFR triggers MAPK signaling pathway that activates defense genes for antimictobial compounds. The increase in the cytosolic Ca2+ concentration is also a regulator for production of reactive oxygen species and localized programmed cell death/hypersensitive response. The secondary response is called effector-triggered immunity (ETI). Pathogens can acquire the ability to suppress PTI by directly injecting effector proteins into the plant cell through secretion systems. In addition, pathogens can manipulate plant hormone signaling pathways to evade host immune responses using coronatine toxin. Some plants possess specific intracellular surveillance proteins (R proteins) to monitor the presence of pathogen virulence proteins. This ETI occurs with localized programmed cell death to arrest pathogen growth, resulting in cultivar-specific disease resistance.</td></tr></table>
+<table><tr><td>
+<form name="selmenu" method="get">
+<select name="org_name">
+<option value="map">Reference pathway</option>
+<option value="ko">Reference pathway (KO)</option>
+<option value="set_cookie">-----&lt; Set personalized menu &gt;-----</option>
+<option value="osa.sort_alp">-----&lt; Sort below by alphabet &gt;-----</option>
+<option value="ath">Arabidopsis thaliana (thale cress)</option>
+<option value="rcu">Ricinus communis (castor bean)</option>
+<option value="pop">Populus trichocarpa (black cottonwood)</option>
+<option value="vvi">Vitis vinifera (wine grape)</option>
+<option value="osa" selected>Oryza sativa japonica (Japanese rice) (RefSeq)</option>
+<option value="sbi">Sorghum bicolor (sorghum)</option>
+<option value="zma">Zea mays (maize)</option>
+<option value="xcc">Xanthomonas campestris pv. campestris ATCC 33913</option>
+<option value="xcb">Xanthomonas campestris pv. campestris 8004</option>
+<option value="xca">Xanthomonas campestris pv. campestris B100</option>
+<option value="xcv">Xanthomonas campestris pv. vesicatoria</option>
+<option value="xom">Xanthomonas oryzae pv. oryzae MAFF 311018</option>
+<option value="xop">Xanthomonas oryzae pv. oryzae PXO99A</option>
+<option value="pst">Pseudomonas syringae pv. tomato DC3000</option>
+<option value="psb">Pseudomonas syringae pv. syringae B728a</option>
+<option value="psp">Pseudomonas savastanoi pv. phaseolicola 1448A</option>
+<option value="pmy">Pseudomonas mendocina ymp</option>
+<option value="bac">Burkholderia ambifaria MC40-6</option>
+</select>
+<input type="hidden" name="mapno" value="04626" />
+<input type="hidden" name="mapscale" value=>
+<input type="button" value="Go" onclick="select_menu(this.form)" />
+<input type="hidden" name="show_description" value="hide">
+
+</form>
+</td><td>
+<form name="form2" method="get" action="http://www.genome.jp/kegg-bin/show_pathway">
+&nbsp;&nbsp;&nbsp;&nbsp;
+<select name="scale" onChange="resize_map(this.form.scale.value)">
+<option value="1.84" >184%</option>
+<option value="1.5" >150%</option>
+<option value="1.22" >122%</option>
+<option value="1.0" selected>100%</option>
+<option value="0.82" >82%</option>
+<option value="0.67" >67%</option>
+<option value="0.55" >55%</option>
+</select>
+&nbsp;&nbsp;<input type="text" name="query" size=20 value="">
+<input type="hidden" name="map" value="osa04626" />
+<input type="hidden" name="scale" value=>
+<input type="hidden" name="image" value=/share/www//mark_pathway146062779659453/osa04626.png>
+<input type="hidden" name="use" value="reference">
+<input type="hidden" name="nmap_args" value="1460627548145703">
+<input type="hidden" name="auto_image" value="">
+<input type="hidden" name="show_description" value="hide">
+<input type="hidden" name="multi_query" />
+
+<!--</form>-->
+</td></tr></table>
+
+
+<img src="osa04626.png" name="pathwayimage" name="pathwayimage" usemap="#mapdata" border="0" />
+
+<map name="mapdata">
+<area shape=circle	coords=382,190,4	href="http://www.genome.jp/dbget-bin/www_bget?C00076"	title="C00076 (Calcium cation)" onmouseover="popupTimer(&quot;C00076&quot;, &quot;C00076 (Calcium cation)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=131,190,4	href="http://www.genome.jp/dbget-bin/www_bget?C00076"	title="C00076 (Calcium cation)" onmouseover="popupTimer(&quot;C00076&quot;, &quot;C00076 (Calcium cation)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=723,149,4	href="http://www.genome.jp/dbget-bin/www_bget?C00027+C00704+C16844"	title="C00027 (Hydrogen peroxide), C00704 (O2.-), C16844 (Hydroxyl radical)" onmouseover="popupTimer(&quot;C00027&quot;, &quot;C00027 (Hydrogen peroxide), C00704 (O2.-), C16844 (Hydroxyl radical)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=723,190,4	href="http://www.genome.jp/dbget-bin/www_bget?C00533"	title="C00533 (Nitric oxide)" onmouseover="popupTimer(&quot;C00533&quot;, &quot;C00533 (Nitric oxide)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=280,278,326,295	href="http://www.genome.jp/dbget-bin/www_bget?osa:4337016"	title="4337016" />
+<area shape=rect	coords=539,297,585,314	href="http://www.genome.jp/dbget-bin/www_bget?osa:4332325+osa:4333845"	title="4332325, 4333845" />
+<area shape=rect	coords=637,344,683,361	href="http://www.genome.jp/dbget-bin/www_bget?osa:4330957+osa:4340367"	title="4330957, 4340367" />
+<area shape=rect	coords=637,297,683,314	href="http://www.genome.jp/dbget-bin/www_bget?osa:4324023+osa:4340126"	title="4324023, 4340126" />
+<area shape=rect	coords=414,278,460,295	href="http://www.genome.jp/dbget-bin/www_bget?osa:4337016"	title="4337016" />
+<area shape=rect	coords=878,240,924,257	href="http://www.genome.jp/dbget-bin/www_bget?osa:4327518+osa:4338474+osa:4339092"	title="4327518, 4338474, 4339092" />
+<area shape=rect	coords=280,182,326,199	href="http://www.genome.jp/dbget-bin/www_bget?osa:4330041+osa:4330882+osa:4330967+osa:4333569+osa:4334172+osa:4339240+osa:4341189+osa:4347834+osa:4351579"	title="4330041, 4330882, 4330967, 4333569, 4334172, 4339240, 4341189, 4347834, 4351579" />
+<area shape=rect	coords=472,182,518,199	href="http://www.genome.jp/dbget-bin/www_bget?osa:4324037+osa:4324100+osa:4324384+osa:4325408+osa:4325488+osa:4325693+osa:4325760+osa:4325762+osa:4326903+osa:4327351+osa:4328628+osa:4332664+osa:4332731+osa:4334072+osa:4334250+osa:4336258+osa:4338633+osa:4339172+osa:4339701+osa:4341500+osa:4343922+osa:4344304+osa:4344344+osa:4344525+osa:4344651+osa:4346304+osa:4346325+osa:4347274+osa:4349547+osa:4349736+osa:4351256+osa:4351450+osa:4351825+osa:9269542"	title="4324037, 4324100, 4324384, 4325408, 4325488, 4325693, 4325760, 4325762, 4326903, 4327351, 4328628, 4332664, 4332731, 4334072, 4334250, 4336258, 4338633, 4339172, 4339701, 4341500, 4343922, 4344304, 4344344, 4344525, 4344651, 4346304, 4346325, 4347274, 4349547, 4349736, 4351256, 4351450, 4351825, 9269542" />
+<area shape=rect	coords=555,589,601,606	href="http://www.genome.jp/dbget-bin/www_bget?osa:4334782+osa:4346097"	title="4334782, 4346097" />
+<area shape=rect	coords=555,619,601,636	href="http://www.genome.jp/dbget-bin/www_bget?osa:4326180+osa:4342596+osa:4346575+osa:4347381+osa:4348062+osa:4350733+osa:4351886+osa:4352270"	title="4326180, 4342596, 4346575, 4347381, 4348062, 4350733, 4351886, 4352270" />
+<area shape=rect	coords=555,647,601,664	href="http://www.genome.jp/dbget-bin/www_bget?osa:4334782+osa:4346097"	title="4334782, 4346097" />
+<area shape=rect	coords=555,676,601,693	href="http://www.genome.jp/dbget-bin/www_bget?osa:4325862"	title="4325862" />
+<area shape=rect	coords=555,705,601,722	href="http://www.genome.jp/dbget-bin/www_bget?osa:4329463"	title="4329463" />
+<area shape=rect	coords=1094,355,1140,372	href="http://www.genome.jp/dbget-bin/www_bget?osa:4337206"	title="4337206" />
+<area shape=rect	coords=471,142,517,159	href="http://www.genome.jp/dbget-bin/www_bget?osa:4326027+osa:4339397+osa:4347158"	title="4326027, 4339397, 4347158" />
+<area shape=rect	coords=394,142,440,159	href="http://www.genome.jp/dbget-bin/www_bget?osa:4326638+osa:4327560+osa:4328155+osa:4330351+osa:4331257+osa:4331490+osa:4333767+osa:4334366+osa:4334371+osa:4334519+osa:4336653+osa:4336783+osa:4339053+osa:4339177+osa:4339751+osa:4342456+osa:4343002+osa:4343373+osa:4343644+osa:4346187+osa:4347564+osa:4349249+osa:4349714+osa:4349899+osa:4351620+osa:4351829+osa:4352234+osa:9266580"	title="4326638, 4327560, 4328155, 4330351, 4331257, 4331490, 4333767, 4334366, 4334371, 4334519, 4336653, 4336783, 4339053, 4339177, 4339751, 4342456, 4343002, 4343373, 4343644, 4346187, 4347564, 4349249, 4349714, 4349899, 4351620, 4351829, 4352234, 9266580" />
+<area shape=rect	coords=1094,376,1140,393	href="http://www.genome.jp/dbget-bin/www_bget?osa:4325422+osa:4342317+osa:4348237"	title="4325422, 4342317, 4348237" />
+<area shape=rect	coords=562,182,608,199	href="http://www.genome.jp/dbget-bin/www_bget?osa:4328006"	title="4328006" />
+<area shape=rect	coords=117,637,163,654	href="http://www.genome.jp/dbget-bin/www_bget?osa:4331523"	title="4331523" />
+<area shape=rect	coords=117,660,163,677	href="http://www.genome.jp/dbget-bin/www_bget?osa:4346173"	title="4346173" />
+<area shape=rect	coords=719,646,765,663	href="http://www.genome.jp/dbget-bin/www_bget?osa:4342077+osa:4345893+osa:4345951+osa:4347356+osa:4347402+osa:4347405+osa:4347688+osa:4352339+osa:9267802"	title="4342077, 4345893, 4345951, 4347356, 4347402, 4347405, 4347688, 4352339, 9267802" />
+<area shape=rect	coords=719,629,765,646	href="http://www.genome.jp/dbget-bin/www_bget?osa:4326682"	title="4326682" />
+<area shape=rect	coords=644,496,690,513	href="http://www.genome.jp/dbget-bin/www_bget?osa:4337734"	title="4337734" />
+<area shape=rect	coords=555,765,601,782	href="http://www.genome.jp/dbget-bin/www_bget?osa:4326682"	title="4326682" />
+<area shape=rect	coords=555,843,601,860	href="http://www.genome.jp/dbget-bin/www_bget?osa:4346962"	title="4346962" />
+<area shape=rect	coords=867,1234,913,1251	href="http://www.genome.jp/dbget-bin/www_bget?osa:4345940"	title="4345940" />
+<area shape=rect	coords=252,641,344,675	href="http://www.genome.jp/kegg-bin/show_pathway?map03070"	title="map03070: Bacterial secretion system" onmouseover="popupTimer(&quot;map03070&quot;, &quot;map03070: Bacterial secretion system&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=360,227,438,252	href="http://www.genome.jp/kegg-bin/show_pathway?osa04144"	title="osa04144: Endocytosis" onmouseover="popupTimer(&quot;osa04144&quot;, &quot;osa04144: Endocytosis&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=40,45,296,70	href="http://www.genome.jp/dbget-bin/www_bget?osa04626"	title="osa04626: Plant-pathogen interaction" onmouseover="popupTimer(&quot;osa04626&quot;, &quot;osa04626: Plant-pathogen interaction&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+</map>
+<div id="poplay" class="poplay" />
+
+</form>
+</body>
+</html>

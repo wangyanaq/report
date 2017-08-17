@@ -1,0 +1,381 @@
+GO_ID	GO_term	TYPE	target_gene_in_this_GO	all_target_gene_in_all_GO	all_gene_in_this_GO	all_gene_in_all_GO	gene_list	Pvalue	Qvalue
+GO:0006273	lagging strand elongation	biological_process	2	377	2	5261	4537064,4533888,	0.00539596212937477	0.0824811354061572
+GO:0004039	allophanate hydrolase activity	molecular_function	2	377	2	5261	4532364,4537083,	0.00539596212937477	0.0824811354061572
+GO:0004847	urea carboxylase activity	molecular_function	2	377	2	5261	4532364,4537083,	0.00539596212937477	0.0824811354061572
+GO:0043419	urea catabolic process	biological_process	2	377	2	5261	4532364,4537083,	0.00539596212937477	0.0824811354061572
+GO:0042174	negative regulation of sporulation resulting in formation of a cellular spore	biological_process	2	377	2	5261	4537682,4536563,	0.00539596212937477	0.0824811354061572
+GO:0071469	cellular response to alkalinity	biological_process	2	377	2	5261	4532364,4537083,	0.00539596212937477	0.0824811354061572
+GO:0019872	streptomycin biosynthetic process	biological_process	2	377	2	5261	4537682,4536563,	0.00539596212937477	0.0824811354061572
+GO:0019740	nitrogen utilization	biological_process	3	377	4	5261	4531700,4532364,4537083,	0.0022482047600284	0.240557909323039
+GO:0003910	DNA ligase (ATP) activity	molecular_function	2	377	3	5261	4537064,4533888,	0.0102545327808881	0.0731490005036687
+GO:0046789	host cell surface receptor binding	molecular_function	2	377	3	5261	4532951,4534178,	0.0102545327808881	0.0731490005036687
+GO:0004777	succinate-semialdehyde dehydrogenase (NAD+) activity	molecular_function	2	377	3	5261	4536774,4537589,	0.0102545327808881	0.0731490005036687
+GO:0052157	modulation by symbiont of microbe-associated molecular pattern-induced host innate immune response	biological_process	2	377	3	5261	4532951,4534178,	0.0102545327808881	0.0731490005036687
+GO:0008691	3-hydroxybutyryl-CoA dehydrogenase activity	molecular_function	3	377	5	5261	4533563,4535064,4535886,	0.00383236565549978	0.102515781284619
+GO:0009450	gamma-aminobutyric acid catabolic process	biological_process	3	377	5	5261	4536774,4537589,4531585,	0.00383236565549978	0.102515781284619
+GO:0009083	branched-chain amino acid catabolic process	biological_process	2	377	4	5261	4536508,4532023,	0.0170550667107255	0.0729956855219053
+GO:0047044	androstan-3-alpha,17-beta-diol dehydrogenase activity	molecular_function	2	377	4	5261	4537503,4533941,	0.0170550667107255	0.0729956855219053
+GO:0006266	DNA ligation	biological_process	2	377	4	5261	4537064,4533888,	0.0170550667107255	0.0729956855219053
+GO:0005694	chromosome	cellular_component	2	377	4	5261	4537064,4533888,	0.0170550667107255	0.0729956855219053
+GO:0006289	nucleotide-excision repair	biological_process	2	377	4	5261	4537064,4533888,	0.0170550667107255	0.0729956855219053
+GO:0045717	negative regulation of fatty acid biosynthetic process	biological_process	3	377	6	5261	4533717,4531520,4535848,	0.00604971324447111	0.0462370940827435
+GO:0042413	carnitine catabolic process	biological_process	2	377	4	5261	4535848,4531544,	0.0170550667107255	0.0729956855219053
+GO:0009437	carnitine metabolic process	biological_process	2	377	4	5261	4534341,4531544,	0.0170550667107255	0.0729956855219053
+GO:0016836	hydro-lyase activity	molecular_function	2	377	5	5261	4532732,4531544,	0.025939183881148	0.0867341461025886
+GO:0043956	3-hydroxypropionyl-CoA dehydratase activity	molecular_function	2	377	5	5261	4535913,4534569,	0.025939183881148	0.0867341461025886
+GO:0015440	peptide-transporting ATPase activity	molecular_function	4	377	10	5261	4536709,4531514,4531821,4533597,	0.00454637715981616	0.0810770593500548
+GO:0006090	pyruvate metabolic process	biological_process	2	377	5	5261	4533318,4535660,	0.025939183881148	0.0867341461025886
+GO:0004148	dihydrolipoyl dehydrogenase activity	molecular_function	2	377	5	5261	4536508,4532023,	0.025939183881148	0.0867341461025886
+GO:0008679	2-hydroxy-3-oxopropionate reductase activity	molecular_function	2	377	5	5261	4535332,4535955,	0.025939183881148	0.0867341461025886
+GO:0019626	short-chain fatty acid catabolic process	biological_process	5	377	13	5261	4532692,4534466,4533563,4535064,4535886,	0.00226616335947735	0.121239739732038
+GO:0009013	succinate-semialdehyde dehydrogenase [NAD(P)+] activity	molecular_function	3	377	8	5261	4536774,4537589,4531585,	0.0127980338973894	0.0684694813510333
+GO:0009058	biosynthetic process	biological_process	3	377	8	5261	4533014,4537671,4531419,	0.0127980338973894	0.0684694813510333
+GO:0042918	alkanesulfonate transport	biological_process	3	377	8	5261	4533612,4530867,4536413,	0.0127980338973894	0.0684694813510333
+GO:0004315	3-oxoacyl-[acyl-carrier-protein] synthase activity	molecular_function	2	377	6	5261	4531966,4536280,	0.0369925929939814	0.0942430345322859
+GO:0009061	anaerobic respiration	biological_process	2	377	6	5261	4532200,4531311,	0.0369925929939814	0.0942430345322859
+GO:0051187	cofactor catabolic process	biological_process	2	377	6	5261	4531698,4536172,	0.0369925929939814	0.0942430345322859
+GO:0052689	carboxylic ester hydrolase activity	molecular_function	4	377	13	5261	4533622,4533666,4534118,4536511,	0.0109596916251661	0.0617203686259355
+GO:0006637	acyl-CoA metabolic process	biological_process	2	377	7	5261	4537733,4532919,	0.05025382717236	0.10973794913148
+GO:0016811	hydrolase activity, acting on carbon-nitrogen (but not peptide) bonds, in linear amides	molecular_function	2	377	7	5261	4533750,4535725,	0.05025382717236	0.10973794913148
+GO:0043190	ATP-binding cassette (ABC) transporter complex	cellular_component	7	377	26	5261	4536709,4531514,4533612,4530867,4536413,4531821,4533597,	0.0030026106538466	0.107093113320529
+GO:0006826	iron ion transport	biological_process	2	377	8	5261	4534454,4536322,	0.0657219348817649	0.137887196712722
+GO:0003735	structural constituent of ribosome	molecular_function	3	377	12	5261	4531515,4534128,4531534,	0.0379674661533372	0.090278197297935
+GO:0006099	tricarboxylic acid cycle	biological_process	3	377	12	5261	4531824,4536508,4532023,	0.0379674661533372	0.090278197297935
+GO:0006412	translation	biological_process	3	377	12	5261	4531515,4534128,4531534,	0.0379674661533372	0.090278197297935
+GO:0010033	response to organic substance	biological_process	3	377	12	5261	4534704,4535640,4535518,	0.0379674661533372	0.090278197297935
+GO:0016831	carboxy-lyase activity	molecular_function	2	377	8	5261	4537407,4537130,	0.0657219348817649	0.137887196712722
+GO:0017111	nucleoside-triphosphatase activity	molecular_function	4	377	17	5261	4533612,4530867,4536413,4534252,	0.0269489851378556	0.075882668677646
+GO:0071768	mycolic acid biosynthetic process	biological_process	4	377	17	5261	4536332,4536280,4533780,4533392,	0.0269489851378556	0.075882668677646
+GO:0097502	mannosylation	biological_process	2	377	9	5261	4537700,4533530,	0.0833632352099267	0.153790795990727
+GO:0015833	peptide transport	biological_process	4	377	18	5261	4536709,4531514,4531821,4533597,	0.032576334317799	0.0871416943001122
+GO:0009898	cytoplasmic side of plasma membrane	cellular_component	2	377	9	5261	4531821,4533597,	0.0833632352099267	0.153790795990727
+GO:0052553	modulation by symbiont of host immune response	biological_process	2	377	9	5261	4532951,4534178,	0.0833632352099267	0.153790795990727
+GO:0030497	fatty acid elongation	biological_process	6	377	28	5261	4534580,4536280,4534489,4534711,4534717,4531991,	0.0152438450224852	0.0679621423919131
+GO:0050661	NADP binding	molecular_function	5	377	26	5261	4534580,4534489,4534711,4534717,4531991,	0.0358891311653357	0.0936618788949005
+GO:0044351	macropinocytosis	biological_process	3	377	16	5261	4531511,4536794,4534715,	0.0817491603816012	0.156199288586274
+GO:0019439	aromatic compound catabolic process	biological_process	3	377	16	5261	4535531,4533750,4535181,	0.0817491603816012	0.156199288586274
+GO:0016620	oxidoreductase activity, acting on the aldehyde or oxo group of donors, NAD or NADP as acceptor	molecular_function	2	377	11	5261	4536774,4537589,	0.12490180489964	0.2056075865271
+GO:0004467	long-chain fatty acid-CoA ligase activity	molecular_function	2	377	11	5261	4536787,4537397,	0.12490180489964	0.2056075865271
+GO:0004674	protein serine/threonine kinase activity	molecular_function	3	377	17	5261	4533717,4531520,4535464,	0.0958042906810526	0.165339662949558
+GO:0009395	phospholipid catabolic process	biological_process	3	377	19	5261	4537389,4537465,4532039,	0.12763791924291	0.203839662074498
+GO:0008202	steroid metabolic process	biological_process	2	377	13	5261	4537503,4533941,	0.174152333487693	0.262454925115256
+GO:0016887	ATPase activity	molecular_function	5	377	33	5261	4533612,4530867,4536413,4533238,4534252,	0.0870594471044638	0.152710833445535
+GO:0004316	3-oxoacyl-[acyl-carrier-protein] reductase (NADPH) activity	molecular_function	6	377	40	5261	4534580,4534489,4535005,4534711,4534717,4531991,	0.071216489391079	0.14377668612916
+GO:0008610	lipid biosynthetic process	biological_process	3	377	20	5261	4536332,4537397,4533780,	0.145378926631768	0.22875801690587
+GO:0006096	glycolytic process	biological_process	2	377	14	5261	4534436,4533146,	0.201383440784402	0.291189569782852
+GO:0006807	nitrogen compound metabolic process	biological_process	2	377	14	5261	4536774,4537589,	0.201383440784402	0.291189569782852
+GO:0043085	positive regulation of catalytic activity	biological_process	2	377	14	5261	4531520,4535464,	0.201383440784402	0.291189569782852
+GO:0009062	fatty acid catabolic process	biological_process	5	377	35	5261	4537389,4537465,4532823,4536772,4532039,	0.107283066282095	0.182210922098162
+GO:0051409	response to nitrosative stress	biological_process	4	377	29	5261	4534460,4531520,4531856,4536110,	0.14753568684143	0.228787224522218
+GO:0003995	acyl-CoA dehydrogenase activity	molecular_function	4	377	30	5261	4537389,4537465,4536290,4532039,	0.163084655358871	0.249286544619989
+GO:0043086	negative regulation of catalytic activity	biological_process	2	377	15	5261	4531520,4535464,	0.230181697179063	0.307868019976997
+GO:0016787	hydrolase activity	molecular_function	9	377	69	5261	4537406,4537501,4532470,4533612,4530867,4536413,4532328,4532513,4533559,	0.0752309622174718	0.1463584174049
+GO:0045892	negative regulation of transcription, DNA-templated	biological_process	6	377	46	5261	4537682,4534258,4533878,4531934,4536563,4533571,	0.12396455837119	0.207253246026833
+GO:0009247	glycolipid biosynthetic process	biological_process	3	377	24	5261	4537700,4533530,4534966,	0.227738500304539	0.316467786137476
+GO:0006281	DNA repair	biological_process	3	377	24	5261	4536980,4532433,4536540,	0.227738500304539	0.316467786137476
+GO:0008168	methyltransferase activity	molecular_function	2	377	16	5261	4536332,4536277,	0.260413353839913	0.344002825442848
+GO:0004672	protein kinase activity	molecular_function	3	377	24	5261	4533717,4531520,4535464,	0.227738500304539	0.316467786137476
+GO:0008233	peptidase activity	molecular_function	2	377	16	5261	4537406,4534533,	0.260413353839913	0.344002825442848
+GO:0006200	ATP catabolic process	biological_process	6	377	51	5261	4533612,4530867,4536413,4533238,4532765,4534252,	0.182297601779592	0.270914491533561
+GO:0009055	electron carrier activity	molecular_function	3	377	26	5261	4532378,4534752,4537075,	0.275121277270255	0.35467441768575
+GO:0003700	sequence-specific DNA binding transcription factor activity	molecular_function	31	377	270	5261	4537462,4537707,4537651,4537722,4533811,4531147,4530885,4537682,4536368,4534539,4533962,4536650,4531653,4531577,4537631,4537030,4532096,4536692,4537687,4536550,4537671,4531419,4536530,4534638,4532350,4531934,4535421,4537605,4536563,4533571,4536601,	0.0142583968758213	0.0663325419875164
+GO:0006950	response to stress	biological_process	2	377	18	5261	4531856,4535464,	0.32463200223545	0.408654402814037
+GO:0008152	metabolic process	biological_process	34	377	317	5261	4537501,4533622,4535593,4534727,4536774,4537407,4533612,4537222,4530867,4531296,4534512,4533750,4534341,4531511,4536413,4532328,4531164,4532513,4534349,4532064,4537589,4531715,4533122,4533768,4535619,4533529,4536794,4535181,4536511,4532459,4534252,4533559,4531544,4531842,	0.0260214623294326	0.0752512559256564
+GO:0050660	flavin adenine dinucleotide binding	molecular_function	3	377	28	5261	4535848,4536290,4533749,	0.326060158677893	0.405679499750402
+GO:0006113	fermentation	biological_process	3	377	29	5261	4537385,4537715,4533897,	0.352712199170538	0.428865969445995
+GO:0016829	lyase activity	molecular_function	2	377	20	5261	4533768,4531544,	0.392953037699214	0.452107258428128
+GO:0005739	mitochondrion	cellular_component	5	377	50	5261	4532240,4535848,4536290,4537715,4530886,	0.339753945858591	0.417858301228382
+GO:0022857	transmembrane transporter activity	molecular_function	3	377	30	5261	4537080,4533388,4534716,	0.380069067481103	0.446894398027231
+GO:0006355	regulation of transcription, DNA-templated	biological_process	32	377	323	5261	4537462,4537707,4537651,4537722,4533811,4531147,4530885,4536368,4534539,4531856,4533962,4536650,4531653,4531577,4537631,4531900,4537030,4532096,4534218,4536692,4537687,4536550,4537671,4531419,4536530,4534638,4532350,4531934,4535421,4537605,4535065,4536601,	0.0745842661020023	0.147787342091005
+GO:0006508	proteolysis	biological_process	4	377	41	5261	4537406,4531731,4534533,4531352,	0.383955307517554	0.446556716351938
+GO:0030288	outer membrane-bounded periplasmic space	cellular_component	2	377	21	5261	4536520,4534737,	0.428320767851792	0.487556618724912
+GO:0046777	protein autophosphorylation	biological_process	3	377	32	5261	4533717,4531520,4535464,	0.436642180532809	0.491796982284322
+GO:0003824	catalytic activity	molecular_function	14	377	157	5261	4533014,4534727,4537222,4534512,4534341,4531308,4533122,4533768,4536227,4536794,4536772,4532459,4531544,4534335,	0.355254568167583	0.427103806673387
+GO:0005575	cellular_component	cellular_component	43	377	490	5261	4535344,4537406,4536297,4537263,4535877,4534167,4537470,4534186,4536021,4534882,4535918,4532025,4534993,4533232,4531559,4533756,4535718,4531226,4536716,4534925,4533877,4531904,4535553,4530958,4537255,4534117,4535819,4536377,4531552,4534695,4531195,4534443,4535204,4535759,4533872,4537237,4536867,4536070,4532921,4534103,4535811,4535114,4532459,	0.182757291026931	0.267877125203858
+GO:0046872	metal ion binding	molecular_function	6	377	69	5261	4537406,4537622,4537715,4533768,4537130,4537083,	0.490064240841689	0.546217435104799
+GO:0005737	cytoplasm	cellular_component	6	377	70	5261	4537501,4536774,4537682,4537589,4536563,4537083,	0.510635356640085	0.557530440413154
+GO:0008150	biological_process	biological_process	49	377	588	5261	4535344,4537263,4535877,4534167,4537470,4534186,4536021,4534882,4532025,4537493,4532082,4532150,4533232,4533375,4531559,4533756,4532470,4532351,4535718,4531632,4536716,4534925,4536330,4533455,4532010,4533877,4536771,4535553,4537255,4534117,4535819,4536377,4534695,4533730,4531195,4534443,4531308,4535204,4535759,4537237,4536504,4536867,4536070,4532921,4534103,4535811,4535114,4537500,4535852,	0.279733360780574	0.356327019089541
+GO:0055114	oxidation-reduction process	biological_process	14	377	169	5261	4531700,4536131,4536774,4535954,4536516,4536290,4531091,4531511,4537715,4536531,4537589,4532732,4535181,4537195,	0.500867063807373	0.552502843581329
+GO:0000166	nucleotide binding	molecular_function	4	377	49	5261	4533612,4530867,4536413,4534252,	0.585861366203461	0.620665011720498
+GO:0003674	molecular_function	molecular_function	42	377	515	5261	4535344,4537263,4535877,4534167,4537470,4534186,4536021,4534882,4532025,4537493,4533232,4533375,4531559,4533756,4532351,4535718,4536716,4536330,4533455,4532010,4533877,4536771,4535553,4537255,4535819,4536377,4531552,4534695,4533730,4531195,4534443,4535204,4535759,4536504,4536867,4536070,4532921,4534103,4535811,4535114,4537500,4531842,	0.376025006376034	0.44705195202484
+GO:0016491	oxidoreductase activity	molecular_function	13	377	161	5261	4531700,4535593,4536774,4537622,4536516,4531091,4531511,4531164,4537715,4532064,4537589,4532732,4535181,	0.565386459394508	0.611074254093054
+GO:0042626	ATPase activity, coupled to transmembrane movement of substances	molecular_function	10	377	124	5261	4534554,4537145,4533612,4534454,4532636,4530867,4536413,4534195,4536322,4534737,	0.586225620123652	0.614962170129714
+GO:0006631	fatty acid metabolic process	biological_process	2	377	25	5261	4536787,4531638,	0.57495749977275	0.615204524756842
+GO:0044117	growth of symbiont in host	biological_process	5	377	64	5261	4532951,4534178,4535081,4533696,4533749,	0.652379033980275	0.671197659960476
+GO:0005524	ATP binding	molecular_function	8	377	104	5261	4533612,4532636,4530867,4536413,4531821,4533597,4534252,4537083,	0.687062895553446	0.693544620983195
+GO:0030145	manganese ion binding	molecular_function	3	377	40	5261	4536829,4537458,4533160,	0.678537801001686	0.691462330544575
+GO:0003333	amino acid transmembrane transport	biological_process	2	377	27	5261	4537080,4534715,	0.649811259873172	0.675046648606111
+GO:0006979	response to oxidative stress	biological_process	3	377	41	5261	4534063,4531856,4536110,	0.709553867787487	0.709553867787487
+GO:0043101	purine-containing compound salvage	biological_process	1	377	1	5261	4531743,	-	-
+GO:0019622	3-(3-hydroxy)phenylpropionate catabolic process	biological_process	1	377	3	5261	4535181,	-	-
+GO:0015725	gluconate transport	biological_process	1	377	2	5261	4532005,	-	-
+GO:0016401	palmitoyl-CoA oxidase activity	molecular_function	1	377	1	5261	4535848,	-	-
+GO:0044121	growth of symbiont in host organelle	biological_process	1	377	12	5261	4533696,	-	-
+GO:0005313	L-glutamate transmembrane transporter activity	molecular_function	1	377	2	5261	4530886,	-	-
+GO:0033539	fatty acid beta-oxidation using acyl-CoA dehydrogenase	biological_process	1	377	1	5261	4535848,	-	-
+GO:0000155	phosphorelay sensor kinase activity	molecular_function	1	377	17	5261	4531047,	-	-
+GO:0008872	glucarate dehydratase activity	molecular_function	1	377	1	5261	4533768,	-	-
+GO:0019543	propionate catabolic process	biological_process	1	377	2	5261	4535918,	-	-
+GO:0071766	Actinobacterium-type cell wall biogenesis	biological_process	1	377	19	5261	4537397,	-	-
+GO:0018456	aryl-alcohol dehydrogenase (NAD+) activity	molecular_function	1	377	2	5261	4535531,	-	-
+GO:0015733	shikimate transport	biological_process	1	377	18	5261	4533388,	-	-
+GO:0000104	succinate dehydrogenase activity	molecular_function	1	377	1	5261	4532200,	-	-
+GO:0009650	UV protection	biological_process	1	377	1	5261	4533238,	-	-
+GO:0007157	heterophilic cell-cell adhesion	biological_process	1	377	5	5261	4533696,	-	-
+GO:0015851	nucleobase transport	biological_process	1	377	4	5261	4532400,	-	-
+GO:0007165	signal transduction	biological_process	1	377	4	5261	4531047,	-	-
+GO:0015421	oligopeptide-transporting ATPase activity	molecular_function	1	377	7	5261	4536108,	-	-
+GO:0008113	peptide-methionine (S)-S-oxide reductase activity	molecular_function	1	377	2	5261	4536110,	-	-
+GO:0052556	positive regulation by symbiont of host immune response	biological_process	1	377	12	5261	4533786,	-	-
+GO:0051537	2 iron, 2 sulfur cluster binding	molecular_function	1	377	14	5261	4537622,	-	-
+GO:0019343	cysteine biosynthetic process via cystathionine	biological_process	1	377	1	5261	4532874,	-	-
+GO:0051701	interaction with host	biological_process	1	377	40	5261	4536110,	-	-
+GO:0003859	3-hydroxybutyryl-CoA dehydratase activity	molecular_function	1	377	3	5261	4532692,	-	-
+GO:0070403	NAD+ binding	molecular_function	1	377	8	5261	4531638,	-	-
+GO:0006750	glutathione biosynthetic process	biological_process	1	377	6	5261	4535892,	-	-
+GO:0003857	3-hydroxyacyl-CoA dehydrogenase activity	molecular_function	1	377	6	5261	4531638,	-	-
+GO:0046133	pyrimidine ribonucleoside catabolic process	biological_process	1	377	1	5261	4537501,	-	-
+GO:0006188	IMP biosynthetic process	biological_process	1	377	1	5261	4531743,	-	-
+GO:0009085	lysine biosynthetic process	biological_process	1	377	1	5261	4537318,	-	-
+GO:0006694	steroid biosynthetic process	biological_process	1	377	20	5261	4533749,	-	-
+GO:0004252	serine-type endopeptidase activity	molecular_function	1	377	5	5261	4537406,	-	-
+GO:0004108	citrate (Si)-synthase activity	molecular_function	1	377	1	5261	4531824,	-	-
+GO:0001101	response to acid	biological_process	1	377	9	5261	4532811,	-	-
+GO:0005381	iron ion transmembrane transporter activity	molecular_function	1	377	6	5261	4534454,	-	-
+GO:0005509	calcium ion binding	molecular_function	1	377	10	5261	4537501,	-	-
+GO:0019254	carnitine metabolic process, CoA-linked	biological_process	1	377	1	5261	4535848,	-	-
+GO:0000026	alpha-1,2-mannosyltransferase activity	molecular_function	1	377	1	5261	4533530,	-	-
+GO:0015180	L-alanine transmembrane transporter activity	molecular_function	1	377	3	5261	4530886,	-	-
+GO:0006520	cellular amino acid metabolic process	biological_process	1	377	6	5261	4532138,	-	-
+GO:0006526	arginine biosynthetic process	biological_process	1	377	2	5261	4534127,	-	-
+GO:0008509	anion transmembrane transporter activity	molecular_function	1	377	8	5261	4537217,	-	-
+GO:0051109	crotonobetaine-CoA ligase activity	molecular_function	1	377	1	5261	4534341,	-	-
+GO:0006974	cellular response to DNA damage stimulus	biological_process	1	377	26	5261	4531700,	-	-
+GO:0035527	3-hydroxypropionate dehydrogenase (NADP+) activity	molecular_function	1	377	1	5261	4531700,	-	-
+GO:0030091	protein repair	biological_process	1	377	1	5261	4534063,	-	-
+GO:0015205	nucleobase transmembrane transporter activity	molecular_function	1	377	6	5261	4532400,	-	-
+GO:0004644	phosphoribosylglycinamide formyltransferase activity	molecular_function	1	377	1	5261	4531280,	-	-
+GO:0042759	long-chain fatty acid biosynthetic process	biological_process	1	377	8	5261	4535722,	-	-
+GO:0018919	gamma-1,2,3,4,5,6-hexachlorocyclohexane metabolic process	biological_process	1	377	2	5261	4531737,	-	-
+GO:0085014	dormancy entry of symbiont in host	biological_process	1	377	5	5261	4533696,	-	-
+GO:0008685	2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase activity	molecular_function	1	377	1	5261	4536746,	-	-
+GO:0005297	hydrogen:proline symporter activity	molecular_function	1	377	6	5261	4537080,	-	-
+GO:0070733	protein adenylyltransferase activity	molecular_function	1	377	1	5261	4535864,	-	-
+GO:0016213	linoleoyl-CoA desaturase activity	molecular_function	1	377	5	5261	4535722,	-	-
+GO:0004075	biotin carboxylase activity	molecular_function	1	377	1	5261	4537083,	-	-
+GO:0004803	transposase activity	molecular_function	1	377	36	5261	4535283,	-	-
+GO:0015812	gamma-aminobutyric acid transport	biological_process	1	377	2	5261	4530886,	-	-
+GO:0015992	proton transport	biological_process	1	377	12	5261	4537080,	-	-
+GO:0009514	glyoxysome	cellular_component	1	377	4	5261	4536531,	-	-
+GO:0042785	active evasion of host immune response via regulation of host cytokine network	biological_process	1	377	4	5261	4533696,	-	-
+GO:0016848	carbon-halide lyase activity	molecular_function	1	377	2	5261	4531737,	-	-
+GO:0016859	cis-trans isomerase activity	molecular_function	1	377	1	5261	4536332,	-	-
+GO:0000030	mannosyltransferase activity	molecular_function	1	377	2	5261	4537700,	-	-
+GO:0009095	aromatic amino acid family biosynthetic process, prephenate pathway	biological_process	1	377	1	5261	4536816,	-	-
+GO:0006820	anion transport	biological_process	1	377	8	5261	4537217,	-	-
+GO:0015949	nucleobase-containing small molecule interconversion	biological_process	1	377	1	5261	4537501,	-	-
+GO:0019279	L-methionine biosynthetic process from L-homoserine via cystathionine	biological_process	1	377	1	5261	4532874,	-	-
+GO:0046685	response to arsenic-containing substance	biological_process	1	377	4	5261	4533398,	-	-
+GO:0008479	queuine tRNA-ribosyltransferase activity	molecular_function	1	377	1	5261	4532694,	-	-
+GO:0051051	negative regulation of transport	biological_process	1	377	1	5261	4531169,	-	-
+GO:0000105	histidine biosynthetic process	biological_process	1	377	6	5261	4535060,	-	-
+GO:0006212	uracil catabolic process	biological_process	1	377	4	5261	4531700,	-	-
+GO:0009063	cellular amino acid catabolic process	biological_process	1	377	4	5261	4532823,	-	-
+GO:0042276	error-prone translesion synthesis	biological_process	1	377	1	5261	4536540,	-	-
+GO:0008616	queuosine biosynthetic process	biological_process	1	377	1	5261	4532694,	-	-
+GO:0052657	guanine phosphoribosyltransferase activity	molecular_function	1	377	1	5261	4531743,	-	-
+GO:0016799	hydrolase activity, hydrolyzing N-glycosyl compounds	molecular_function	1	377	5	5261	4537501,	-	-
+GO:0004301	epoxide hydrolase activity	molecular_function	1	377	3	5261	4533666,	-	-
+GO:0044406	adhesion of symbiont to host	biological_process	1	377	5	5261	4533696,	-	-
+GO:0005777	peroxisome	cellular_component	1	377	18	5261	4533666,	-	-
+GO:0004629	phospholipase C activity	molecular_function	1	377	2	5261	4534118,	-	-
+GO:0008777	acetylornithine deacetylase activity	molecular_function	1	377	1	5261	4534127,	-	-
+GO:0004399	histidinol dehydrogenase activity	molecular_function	1	377	2	5261	4535060,	-	-
+GO:0006707	cholesterol catabolic process	biological_process	1	377	21	5261	4533749,	-	-
+GO:0015185	gamma-aminobutyric acid transmembrane transporter activity	molecular_function	1	377	2	5261	4530886,	-	-
+GO:0042538	hyperosmotic salinity response	biological_process	1	377	6	5261	4537080,	-	-
+GO:1901530	response to hypochlorite	biological_process	1	377	1	5261	4535139,	-	-
+GO:0042854	eugenol metabolic process	biological_process	1	377	1	5261	4533134,	-	-
+GO:0030436	asexual sporulation	biological_process	1	377	3	5261	4531824,	-	-
+GO:0008240	tripeptidyl-peptidase activity	molecular_function	1	377	1	5261	4537406,	-	-
+GO:0010447	response to acidity	biological_process	1	377	2	5261	4534118,	-	-
+GO:0043718	2-hydroxymethylglutarate dehydrogenase activity	molecular_function	1	377	1	5261	4531698,	-	-
+GO:0051484	isopentenyl diphosphate biosynthetic process, methylerythritol 4-phosphate pathway involved in terpenoid biosynthetic process	biological_process	1	377	2	5261	4536829,	-	-
+GO:0008825	cyclopropane-fatty-acyl-phospholipid synthase activity	molecular_function	1	377	5	5261	4533780,	-	-
+GO:0015697	quaternary ammonium group transport	biological_process	1	377	7	5261	4537080,	-	-
+GO:0009236	cobalamin biosynthetic process	biological_process	1	377	17	5261	4536227,	-	-
+GO:0071500	cellular response to nitrosative stress	biological_process	1	377	15	5261	4534969,	-	-
+GO:0051483	terpenoid biosynthetic process, mevalonate-independent	biological_process	1	377	2	5261	4536746,	-	-
+GO:0006564	L-serine biosynthetic process	biological_process	1	377	2	5261	4535201,	-	-
+GO:0043042	amino acid adenylylation by nonribosomal peptide synthase	biological_process	1	377	2	5261	4534335,	-	-
+GO:0050525	cutinase activity	molecular_function	1	377	11	5261	4537200,	-	-
+GO:0003867	4-aminobutyrate transaminase activity	molecular_function	1	377	2	5261	4533529,	-	-
+GO:0016757	transferase activity, transferring glycosyl groups	molecular_function	1	377	14	5261	4536668,	-	-
+GO:0006805	xenobiotic metabolic process	biological_process	1	377	15	5261	4533864,	-	-
+GO:0015807	L-amino acid transport	biological_process	1	377	9	5261	4537080,	-	-
+GO:0050518	2-C-methyl-D-erythritol 4-phosphate cytidylyltransferase activity	molecular_function	1	377	1	5261	4536829,	-	-
+GO:0008080	N-acetyltransferase activity	molecular_function	1	377	10	5261	4531632,	-	-
+GO:0004871	signal transducer activity	molecular_function	1	377	4	5261	4536448,	-	-
+GO:0008094	DNA-dependent ATPase activity	molecular_function	1	377	4	5261	4533238,	-	-
+GO:0030260	entry into host cell	biological_process	1	377	4	5261	4533696,	-	-
+GO:0006424	glutamyl-tRNA aminoacylation	biological_process	1	377	4	5261	4536560,	-	-
+GO:0018117	protein adenylylation	biological_process	1	377	1	5261	4535864,	-	-
+GO:0004659	prenyltransferase activity	molecular_function	1	377	2	5261	4535492,	-	-
+GO:0072337	modified amino acid transport	biological_process	1	377	6	5261	4537080,	-	-
+GO:0015695	organic cation transport	biological_process	1	377	6	5261	4537080,	-	-
+GO:0015181	arginine transmembrane transporter activity	molecular_function	1	377	2	5261	4530886,	-	-
+GO:0016655	oxidoreductase activity, acting on NAD(P)H, quinone or similar compound as acceptor	molecular_function	1	377	9	5261	4531296,	-	-
+GO:0015838	amino-acid betaine transport	biological_process	1	377	6	5261	4537080,	-	-
+GO:0005811	lipid particle	cellular_component	1	377	7	5261	4533666,	-	-
+GO:0008236	serine-type peptidase activity	molecular_function	1	377	2	5261	4537406,	-	-
+GO:0018537	coenzyme F420-dependent N5,N10-methenyltetrahydromethanopterin reductase activity	molecular_function	1	377	9	5261	4535237,	-	-
+GO:0047995	hydroxyphenylpyruvate reductase activity	molecular_function	1	377	1	5261	4535954,	-	-
+GO:0032564	dATP binding	molecular_function	1	377	2	5261	4533238,	-	-
+GO:0004422	hypoxanthine phosphoribosyltransferase activity	molecular_function	1	377	1	5261	4531743,	-	-
+GO:0019380	3-phenylpropionate catabolic process	biological_process	1	377	6	5261	4535181,	-	-
+GO:0004807	triose-phosphate isomerase activity	molecular_function	1	377	2	5261	4533146,	-	-
+GO:0008743	L-threonine 3-dehydrogenase activity	molecular_function	1	377	1	5261	4532762,	-	-
+GO:0005976	polysaccharide metabolic process	biological_process	1	377	4	5261	4531086,	-	-
+GO:0047405	pyrimidine-5'-nucleotide nucleosidase activity	molecular_function	1	377	1	5261	4537501,	-	-
+GO:0016810	hydrolase activity, acting on carbon-nitrogen (but not peptide) bonds	molecular_function	1	377	15	5261	4535619,	-	-
+GO:0043856	anti-sigma factor antagonist activity	molecular_function	1	377	2	5261	4531900,	-	-
+GO:0015824	proline transport	biological_process	1	377	7	5261	4537080,	-	-
+GO:0015530	shikimate transmembrane transporter activity	molecular_function	1	377	18	5261	4533388,	-	-
+GO:0045335	phagocytic vesicle	cellular_component	1	377	4	5261	4531511,	-	-
+GO:0016208	AMP binding	molecular_function	1	377	8	5261	4531308,	-	-
+GO:0045437	uridine nucleosidase activity	molecular_function	1	377	1	5261	4537501,	-	-
+GO:1902475	L-alpha-amino acid transmembrane transport	biological_process	1	377	10	5261	4537080,	-	-
+GO:0018107	peptidyl-threonine phosphorylation	biological_process	1	377	2	5261	4533717,	-	-
+GO:0006208	pyrimidine nucleobase catabolic process	biological_process	1	377	4	5261	4531700,	-	-
+GO:0006790	sulfur compound metabolic process	biological_process	1	377	24	5261	4532874,	-	-
+GO:0044409	entry into host	biological_process	1	377	4	5261	4533696,	-	-
+GO:0043388	positive regulation of DNA binding	biological_process	1	377	6	5261	4535464,	-	-
+GO:0050897	cobalt ion binding	molecular_function	1	377	15	5261	4532240,	-	-
+GO:0006177	GMP biosynthetic process	biological_process	1	377	2	5261	4531743,	-	-
+GO:0033744	L-methionine:thioredoxin-disulfide S-oxidoreductase activity	molecular_function	1	377	2	5261	4536110,	-	-
+GO:0044550	secondary metabolite biosynthetic process	biological_process	1	377	2	5261	4535995,	-	-
+GO:0004427	inorganic diphosphatase activity	molecular_function	1	377	1	5261	4531949,	-	-
+GO:0047547	2-methylcitrate dehydratase activity	molecular_function	1	377	2	5261	4535918,	-	-
+GO:0046417	chorismate metabolic process	biological_process	1	377	2	5261	4536816,	-	-
+GO:0015653	glycine betaine:proton symporter activity	molecular_function	1	377	6	5261	4537080,	-	-
+GO:0019394	glucarate catabolic process	biological_process	1	377	2	5261	4533768,	-	-
+GO:0016301	kinase activity	molecular_function	1	377	17	5261	4535852,	-	-
+GO:0045926	negative regulation of growth	biological_process	1	377	8	5261	4535464,	-	-
+GO:0042838	D-glucarate catabolic process	biological_process	1	377	3	5261	4533768,	-	-
+GO:0051108	carnitine-CoA ligase activity	molecular_function	1	377	1	5261	4534341,	-	-
+GO:0018580	nitronate monooxygenase activity	molecular_function	1	377	2	5261	4536531,	-	-
+GO:0035524	proline transmembrane transport	biological_process	1	377	6	5261	4537080,	-	-
+GO:0050269	coniferyl-aldehyde dehydrogenase activity	molecular_function	1	377	1	5261	4533134,	-	-
+GO:0000271	polysaccharide biosynthetic process	biological_process	1	377	9	5261	4536668,	-	-
+GO:0004466	long-chain-acyl-CoA dehydrogenase activity	molecular_function	1	377	1	5261	4535848,	-	-
+GO:0006468	protein phosphorylation	biological_process	1	377	5	5261	4531520,	-	-
+GO:0004658	propionyl-CoA carboxylase activity	molecular_function	1	377	5	5261	4532823,	-	-
+GO:0015171	amino acid transmembrane transporter activity	molecular_function	1	377	16	5261	4534715,	-	-
+GO:0047529	2,3-dimethylmalate lyase activity	molecular_function	1	377	3	5261	4536172,	-	-
+GO:0004029	aldehyde dehydrogenase (NAD) activity	molecular_function	1	377	9	5261	4537385,	-	-
+GO:0015128	gluconate transmembrane transporter activity	molecular_function	1	377	4	5261	4532005,	-	-
+GO:0006857	oligopeptide transport	biological_process	1	377	11	5261	4536108,	-	-
+GO:0016884	carbon-nitrogen ligase activity, with glutamine as amido-N-donor	molecular_function	1	377	3	5261	4537083,	-	-
+GO:0016878	acid-thiol ligase activity	molecular_function	1	377	1	5261	4534341,	-	-
+GO:0050608	vanillin dehydrogenase activity	molecular_function	1	377	1	5261	4533691,	-	-
+GO:0070967	coenzyme F420 binding	molecular_function	1	377	5	5261	4536131,	-	-
+GO:0016812	hydrolase activity, acting on carbon-nitrogen (but not peptide) bonds, in cyclic amides	molecular_function	1	377	6	5261	4532138,	-	-
+GO:0052170	negative regulation by symbiont of host innate immune response	biological_process	1	377	4	5261	4534956,	-	-
+GO:0006313	transposition, DNA-mediated	biological_process	1	377	36	5261	4535283,	-	-
+GO:0008809	carnitine racemase activity	molecular_function	1	377	3	5261	4531544,	-	-
+GO:0001659	temperature homeostasis	biological_process	1	377	1	5261	4535848,	-	-
+GO:0006567	threonine catabolic process	biological_process	1	377	2	5261	4532762,	-	-
+GO:0045333	cellular respiration	biological_process	1	377	5	5261	4534336,	-	-
+GO:0008765	UDP-N-acetylmuramoylalanyl-D-glutamate-2,6-diaminopimelate ligase activity	molecular_function	1	377	1	5261	4532765,	-	-
+GO:0003779	actin binding	molecular_function	1	377	5	5261	4533696,	-	-
+GO:0010181	FMN binding	molecular_function	1	377	9	5261	4531700,	-	-
+GO:0003960	NADPH:quinone reductase activity	molecular_function	1	377	1	5261	4537195,	-	-
+GO:0060543	negative regulation of strand invasion	biological_process	1	377	2	5261	4533238,	-	-
+GO:0009102	biotin biosynthetic process	biological_process	1	377	7	5261	4532787,	-	-
+GO:0008111	alpha-methylacyl-CoA racemase activity	molecular_function	1	377	3	5261	4537733,	-	-
+GO:0009108	coenzyme biosynthetic process	biological_process	1	377	5	5261	4534460,	-	-
+GO:0009408	response to heat	biological_process	1	377	18	5261	4531856,	-	-
+GO:0006935	chemotaxis	biological_process	1	377	6	5261	4536448,	-	-
+GO:0043140	ATP-dependent 3'-5' DNA helicase activity	molecular_function	1	377	3	5261	4533238,	-	-
+GO:0016712	oxidoreductase activity, acting on paired donors, with incorporation or reduction of molecular oxygen, reduced flavin or flavoprotein as one donor, and incorporation of one atom of oxygen	molecular_function	1	377	4	5261	4533749,	-	-
+GO:0019213	deacetylase activity	molecular_function	1	377	5	5261	4531086,	-	-
+GO:0006091	generation of precursor metabolites and energy	biological_process	1	377	2	5261	4535955,	-	-
+GO:0008017	microtubule binding	molecular_function	1	377	4	5261	4533696,	-	-
+GO:0051301	cell division	biological_process	1	377	5	5261	4531550,	-	-
+GO:0046271	phenylpropanoid catabolic process	biological_process	1	377	3	5261	4535181,	-	-
+GO:0000096	sulfur amino acid metabolic process	biological_process	1	377	9	5261	4532874,	-	-
+GO:0004022	alcohol dehydrogenase (NAD) activity	molecular_function	1	377	3	5261	4537715,	-	-
+GO:0003840	gamma-glutamyltransferase activity	molecular_function	1	377	3	5261	4535892,	-	-
+GO:0031460	glycine betaine transport	biological_process	1	377	11	5261	4537080,	-	-
+GO:0004085	butyryl-CoA dehydrogenase activity	molecular_function	1	377	3	5261	4534466,	-	-
+GO:0002135	CTP binding	molecular_function	1	377	2	5261	4536829,	-	-
+GO:0003849	3-deoxy-7-phosphoheptulonate synthase activity	molecular_function	1	377	2	5261	4537458,	-	-
+GO:0008688	3-(3-hydroxyphenyl)propionate hydroxylase activity	molecular_function	1	377	2	5261	4535181,	-	-
+GO:0010125	mycothiol biosynthetic process	biological_process	1	377	6	5261	4535725,	-	-
+GO:0016853	isomerase activity	molecular_function	1	377	9	5261	4533014,	-	-
+GO:0016747	transferase activity, transferring acyl groups other than amino-acyl groups	molecular_function	1	377	12	5261	4536794,	-	-
+GO:0090181	regulation of cholesterol metabolic process	biological_process	1	377	3	5261	4535848,	-	-
+GO:0008901	ferredoxin hydrogenase activity	molecular_function	1	377	2	5261	4536575,	-	-
+GO:0001760	aminocarboxymuconate-semialdehyde decarboxylase activity	molecular_function	1	377	3	5261	4537130,	-	-
+GO:0004024	alcohol dehydrogenase activity, zinc-dependent	molecular_function	1	377	12	5261	4533897,	-	-
+GO:0019184	nonribosomal peptide biosynthetic process	biological_process	1	377	2	5261	4534335,	-	-
+GO:0000947	amino acid catabolic process to alcohol via Ehrlich pathway	biological_process	1	377	1	5261	4537715,	-	-
+GO:0004805	trehalose-phosphatase activity	molecular_function	1	377	3	5261	4530913,	-	-
+GO:0016874	ligase activity	molecular_function	1	377	10	5261	4534341,	-	-
+GO:0006544	glycine metabolic process	biological_process	1	377	1	5261	4534638,	-	-
+GO:0046500	S-adenosylmethionine metabolic process	biological_process	1	377	4	5261	4533780,	-	-
+GO:0046890	regulation of lipid biosynthetic process	biological_process	1	377	4	5261	4535464,	-	-
+GO:0004754	saccharopine dehydrogenase (NAD+, L-lysine-forming) activity	molecular_function	1	377	1	5261	4537318,	-	-
+GO:0001676	long-chain fatty acid metabolic process	biological_process	1	377	4	5261	4537397,	-	-
+GO:0015105	arsenite transmembrane transporter activity	molecular_function	1	377	3	5261	4533398,	-	-
+GO:0046322	negative regulation of fatty acid oxidation	biological_process	1	377	2	5261	4535848,	-	-
+GO:0006206	pyrimidine nucleobase metabolic process	biological_process	1	377	1	5261	4537501,	-	-
+GO:0016651	oxidoreductase activity, acting on NAD(P)H	molecular_function	1	377	6	5261	4534336,	-	-
+GO:0016798	hydrolase activity, acting on glycosyl bonds	molecular_function	1	377	2	5261	4537501,	-	-
+GO:0019216	regulation of lipid metabolic process	biological_process	1	377	3	5261	4533571,	-	-
+GO:0015189	L-lysine transmembrane transporter activity	molecular_function	1	377	3	5261	4530886,	-	-
+GO:0050104	L-gulonate 3-dehydrogenase activity	molecular_function	1	377	1	5261	4531638,	-	-
+GO:0052060	evasion or tolerance by symbiont of host-produced nitric oxide	biological_process	1	377	11	5261	4536110,	-	-
+GO:0006302	double-strand break repair	biological_process	1	377	1	5261	4533238,	-	-
+GO:0004106	chorismate mutase activity	molecular_function	1	377	3	5261	4536816,	-	-
+GO:0033202	DNA helicase complex	cellular_component	1	377	1	5261	4533238,	-	-
+GO:0034605	cellular response to heat	biological_process	1	377	9	5261	4531856,	-	-
+GO:0046874	quinolinate metabolic process	biological_process	1	377	3	5261	4537130,	-	-
+GO:0004347	glucose-6-phosphate isomerase activity	molecular_function	1	377	1	5261	4534436,	-	-
+GO:0006796	phosphate-containing compound metabolic process	biological_process	1	377	2	5261	4531949,	-	-
+GO:0044271	cellular nitrogen compound biosynthetic process	biological_process	1	377	2	5261	4531552,	-	-
+GO:0009152	purine ribonucleotide biosynthetic process	biological_process	1	377	2	5261	4531280,	-	-
+GO:0008411	4-hydroxybutyrate CoA-transferase activity	molecular_function	1	377	1	5261	4531311,	-	-
+GO:0016709	oxidoreductase activity, acting on paired donors, with incorporation or reduction of molecular oxygen, NAD(P)H as one donor, and incorporation of one atom of oxygen	molecular_function	1	377	14	5261	4533864,	-	-
+GO:0004123	cystathionine gamma-lyase activity	molecular_function	1	377	2	5261	4532874,	-	-
+GO:0004617	phosphoglycerate dehydrogenase activity	molecular_function	1	377	2	5261	4535201,	-	-
+GO:0003962	cystathionine gamma-synthase activity	molecular_function	1	377	1	5261	4532874,	-	-
+GO:0009252	peptidoglycan biosynthetic process	biological_process	1	377	8	5261	4532765,	-	-
+GO:0015293	symporter activity	molecular_function	2	377	28	5261	4537080,4533388,	-	-
+GO:0052572	response to host immune response	biological_process	7	377	100	5261	4534315,4531856,4536110,4537397,4535464,4531503,4534118,	-	-
+GO:0045893	positive regulation of transcription, DNA-templated	biological_process	2	377	29	5261	4535464,4531934,	-	-
+GO:0005515	protein binding	molecular_function	15	377	219	5261	4532951,4537501,4535864,4536332,4535722,4534178,4531856,4531900,4536280,4533238,4531550,4534522,4531703,4534252,4533392,	-	-
+GO:0016020	membrane	cellular_component	11	377	186	5261	4537080,4537493,4533612,4530867,4533388,4536413,4534716,4533730,4532400,4535139,4534715,	-	-
+GO:0006865	amino acid transport	biological_process	3	377	52	5261	4537080,4537145,4532636,	-	-
+GO:0005618	cell wall	cellular_component	44	377	766	5261	4532951,4531389,4532591,4532460,4536131,4536390,4536720,4534315,4530913,4535163,4534600,4534984,4533557,4535972,4533544,4534178,4535810,4531856,4536521,4531399,4533488,4530890,4537695,4536980,4537586,4531038,4537397,4536280,4534649,4533238,4535526,4532297,4535953,4535464,4536215,4536463,4533067,4533696,4533507,4534956,4537709,4536540,4535977,4532118,	-	-
+GO:0005215	transporter activity	molecular_function	6	377	105	5261	4537080,4532468,4533612,4530867,4533388,4536413,	-	-
+GO:0001666	response to hypoxia	biological_process	2	377	35	5261	4534315,4536280,	-	-
+GO:0005576	extracellular region	cellular_component	20	377	354	5261	4537406,4533622,4535797,4536390,4536788,4530913,4534221,4535163,4536809,4531520,4531264,4535526,4532297,4535953,4537085,4531550,4533696,4536346,4536511,4531184,	-	-
+GO:0008270	zinc ion binding	molecular_function	3	377	54	5261	4532240,4536829,4535725,	-	-
+GO:0044119	growth of symbiont in host cell	biological_process	2	377	37	5261	4532811,4534118,	-	-
+GO:0006810	transport	biological_process	11	377	207	5261	4537080,4534554,4532468,4533612,4530867,4533388,4536413,4534716,4534195,4534737,4534252,	-	-
+GO:0040007	growth	biological_process	32	377	618	5261	4534436,4536829,4532680,4535797,4536390,4537700,4537595,4535972,4536705,4535810,4537686,4535846,4532437,4531155,4536013,4530890,4533982,4530982,4536280,4533238,4536746,4537117,4533495,4535314,4534098,4530917,4531550,4534969,4533268,4531703,4531184,4533571,	-	-
+GO:0005886	plasma membrane	cellular_component	73	377	1416	5261	4537080,4532951,4534676,4532874,4534436,4531389,4532591,4531303,4536966,4532804,4536829,4536131,4534460,4533717,4531523,4536720,4534704,4534315,4530913,4535163,4534984,4533544,4535722,4534178,4537686,4533612,4531264,4531399,4531949,4532759,4530890,4536980,4537503,4537586,4536036,4530867,4533388,4537458,4531038,4536280,4533941,4536413,4534716,4531722,4536816,4534649,4533238,4532598,4536310,4532811,4535526,4532297,4535725,4535953,4532747,4537085,4533468,4530917,4536463,4535139,4533067,4533696,4533507,4534969,4532878,4532765,4537709,4536540,4533780,4535977,4533749,4532118,4533392,	-	-
+GO:0006633	fatty acid biosynthetic process	biological_process	2	377	39	5261	4531966,4535005,	-	-
+GO:0005829	cytosol	cellular_component	22	377	430	5261	4532874,4531303,4535964,4532680,4535797,4534315,4532511,4535810,4531949,4530890,4536110,4536415,4536597,4533724,4531319,4530917,4534969,4532878,4532765,4537130,4531703,4535537,	-	-
+GO:0006351	transcription, DNA-templated	biological_process	2	377	40	5261	4531653,4531934,	-	-
+GO:0034220	ion transmembrane transport	biological_process	2	377	41	5261	4537080,4533388,	-	-
+GO:0000287	magnesium ion binding	molecular_function	4	377	86	5261	4536829,4531949,4533238,4533768,	-	-
+GO:0051260	protein homooligomerization	biological_process	2	377	44	5261	4536332,4533749,	-	-
+GO:0046677	response to antibiotic	biological_process	2	377	44	5261	4536540,4535065,	-	-
+GO:0003677	DNA binding	molecular_function	4	377	100	5261	4531653,4534218,4531934,4533571,	-	-
+GO:0055085	transmembrane transport	biological_process	4	377	103	5261	4537080,4533388,4534716,4534195,	-	-
+GO:0016021	integral component of membrane	cellular_component	5	377	137	5261	4537080,4533388,4534716,4535139,4534715,	-	-
+GO:0009405	pathogenesis	biological_process	3	377	83	5261	4535864,4532364,4537083,	-	-
+GO:0042803	protein homodimerization activity	molecular_function	4	377	116	5261	4537733,4536829,4531520,4531638,	-	-
+GO:0005887	integral component of plasma membrane	cellular_component	4	377	127	5261	4537080,4531514,4535464,4532878,	-	-

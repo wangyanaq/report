@@ -1,0 +1,452 @@
+<html>
+<!---
+ENTRY       osa03040
+DEFINITION  Spliceosome - Oryza sativa japonica (Japanese rice) (RefSeq)
+--->
+<head>
+<title>
+KEGG PATHWAY: Spliceosome - Oryza sativa japonica (Japanese rice) (RefSeq)
+</title>
+<style type="text/css">
+<!--
+div.poplay {
+  position: absolute;
+  padding: 2px;
+  background-color: #ffff99;
+  border-top: solid 1px #c0c0c0;
+  border-left: solid 1px #c0c0c0;
+  border-bottom: solid 1px #808080;
+  border-right: solid 1px #808080;
+  visibility: hidden;
+}
+
+span.popup
+{
+  font-weight: bold;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+form {
+  margin: 0px;
+}
+
+div.image {
+  position: absolute;
+  padding: 0px;
+  top: 0px;
+  padding: 0px;
+  border: solid 1px #000000;
+}
+
+img {
+  border: none;
+}
+
+
+-->
+</style>
+<link rel="stylesheet" href="http://www.genome.jp/css/kegg.css" type="text/css" />
+<script language="JavaScript" src="http://www.genome.jp/js/dhtml.js"></script>
+
+<script language="JavaScript">
+<!---
+var image_height;
+$(function(){
+	$(window).bind('load',function(){
+  image_height = $("div.image").height()-10;
+	$("div.control").height(image_height-5);
+	$("#resizable").height(image_height);
+	});
+});
+
+
+function resize_map(scale){
+  var form = document.forms["form2"];
+  form.scale.value = scale;
+  form.submit();
+}
+
+function select_menu(){
+  var form = document.forms["selmenu"];
+  if(form.org_name.value == 'set_cookie' || form.org_name.value == 'reset_cookie'){
+    window.open('http://www.genome.jp/kegg/misc/kegg2_select.html','sel_org','toolbar=no,location=no,directories=no,width=500,height=320,resizable=yes');
+  }else{
+    form.action='http://www.genome.jp/kegg-bin/show_pathway';
+    form.submit();
+  }
+}
+
+var timer = 0;
+var p_entry, p_title, p_bgcolor;
+function popupTimer(entry, title, bgcolor)
+{
+  p_entry = entry;
+  p_title = title;
+  p_bgcolor = bgcolor;
+
+  if(timer == 0){
+    var func = "showThumbnail()";
+    timer = setTimeout(func, 1200);
+  }
+}
+
+
+function showThumbnail()
+{
+
+  var url = "";
+  if(p_entry.match(/^[A-Z]+\d+$/))
+  {
+    url = "http://www.genome.jp/kegg/misc/thumbnail/" + p_entry + ".gif";
+  }
+  else if(p_entry.match(/(\d+)$/))
+  {
+    url = "http://www.genome.jp/kegg/misc/thumbnail/map" + RegExp.$1 + ".gif";
+  }
+
+  var html = "";
+
+  if(p_bgcolor != "#ffffff")
+  {
+    html += "<span class=\"popup\">" + p_entry + "</span><br />";
+  }
+
+  html += "<img src=\"" + url + "\" alt=\"Loading...\">";
+
+  var x = getCurrentMouseX();
+  var y = getCurrentMouseY();
+
+  var layer = new Component("poplay");
+  layer.backgroundColor(p_bgcolor);
+  layer.HTML(html);
+  layer.move(x, y+40);
+  layer.visible(true);
+
+  timer = 0;
+}
+
+function hideMapTn(){
+  var layer = new Component("poplay");
+  layer.visible(false);
+
+  if(timer != 0){
+    clearTimeout(timer);
+    timer = 0;
+  }
+}
+
+function switchDescription(){
+  var form = document.forms[0];
+  var status = form.show_description.value;
+
+  if(status == "hide"){
+    document.getElementById("description").style.display = "";
+    document.getElementById("descLink").innerHTML = "Hide description";
+    form.show_description.value='show';
+
+    if(document.forms[1]){
+    	document.forms[1].show_description.value='show';
+    }
+  }
+  else
+  {
+    document.getElementById("description").style.display = 'none';
+    document.getElementById("descLink").innerHTML = "Show description";
+    form.show_description.value='hide';
+
+    if(document.forms[1]){
+      document.forms[1].show_description.value='hide';
+    }
+  }
+}
+
+function btn(bobj,img) { bobj.src = "http://www.genome.jp/Fig/bget/button_" + img + ".gif"; }
+//--->
+</script>
+</head>
+<body>
+<table cellpadding="0" width="100%" cellspacing="0" border="0">
+ <tr>
+  <td>
+   <a href="http://www.genome.jp/kegg/kegg2.html"><img align="middle" alt="KEGG" border="0" src="http://www.genome.jp/Fig/bget/kegg3.gif" /></a>
+   &nbsp;&nbsp;&nbsp;<font class="title3"><b>Spliceosome - Oryza sativa japonica (Japanese rice) (RefSeq)</b></font>
+  </td>
+  <td valign="bottom" align="right">
+   <a href="javascript:void(window.open('http://www.genome.jp/kegg/document/help_pathway.html','KEGG_Help','toolbar=no,location=no,directories=no,width=720,height=640,resizable=yes,scrollbars=yes'))"><img name="help" src="http://www.genome.jp/Fig/bget/button_Hb.gif" border="0" align="middle" alt="Help" onmouseout="btn(this,'Hb')" onmousedown="btn(this,'Hbd')" onmouseover="btn(this,'Hbh')" onmouseup="btn(this,'Hb')" /></a>
+  </td>
+ </tr>
+</table>
+
+  
+[
+<a href="http://www.genome.jp/kegg-bin/get_htext?query=03040&htext=br08901.keg&option=-a">Pathway menu</a>
+| <a href="http://www.genome.jp/kegg-bin/get_htext?htext=br08601_map03040.keg&query=osa&option=-a">Organism menu</a>
+| <a href="http://www.genome.jp/dbget-bin/www_bget?pathway+osa03040">Pathway entry</a>
+
+| <a href="http://www.kegg.jp/kegg-bin/download?entry=osa03040&format=kgml">Download KGML</a>
+| <a id="descLink" href="javascript:switchDescription()">Show description</a>
+| <a href="javascript:void(window.open('http://www.genome.jp/kegg/tool/color_a_pathway.html','KEGG_Help','height=300,width=600,resizable=yes,scrollbars=yes'))">User data mapping</a>
+
+]
+  
+<table id="description" cellpadding="10" width="800" style="display: none;"><tr><td>
+After transcription, eukaryotic mRNA precursors contain protein-coding exons and noncoding introns. In the following splicing, introns are excised and exons are joined by a macromolecular complex, the spliceosome. The standard spliceosome is made up of five small nuclear ribonucleoproteins (snRNPs), U1, U2, U4, U5, and U6 snRNPs, and several spliceosome-associated proteins (SAPs). Spliceosomes are not a simple stable complex, but a dynamic family of particles that assemble on the mRNA precursor and help fold it into a conformation that allows transesterification to proceed. Various spliceosome forms (e.g. A-, B- and C-complexes) have been identified.</td></tr></table>
+<table><tr><td>
+<form name="selmenu" method="get">
+<select name="org_name">
+<option value="map">Reference pathway</option>
+<option value="ko">Reference pathway (KO)</option>
+<option value="set_cookie">-----&lt; Set personalized menu &gt;-----</option>
+<option value="osa.sort_alp">-----&lt; Sort below by alphabet &gt;-----</option>
+<option value="hsa">Homo sapiens (human)</option>
+<option value="hsadd">Homo sapiens (human) + Disease/drug</option>
+<option value="ptr">Pan troglodytes (chimpanzee)</option>
+<option value="mcc">Macaca mulatta (rhesus monkey)</option>
+<option value="mmu">Mus musculus (mouse)</option>
+<option value="rno">Rattus norvegicus (rat)</option>
+<option value="cfa">Canis familiaris (dog)</option>
+<option value="aml">Ailuropoda melanoleuca (giant panda)</option>
+<option value="bta">Bos taurus (cow)</option>
+<option value="ssc">Sus scrofa (pig)</option>
+<option value="ecb">Equus caballus (horse)</option>
+<option value="mdo">Monodelphis domestica (opossum)</option>
+<option value="oaa">Ornithorhynchus anatinus (platypus)</option>
+<option value="gga">Gallus gallus (chicken)</option>
+<option value="tgu">Taeniopygia guttata (zebra finch)</option>
+<option value="xla">Xenopus laevis (African clawed frog)</option>
+<option value="xtr">Xenopus tropicalis (western clawed frog)</option>
+<option value="dre">Danio rerio (zebrafish)</option>
+<option value="bfo">Branchiostoma floridae (Florida lancelet)</option>
+<option value="cin">Ciona intestinalis (sea squirt)</option>
+<option value="spu">Strongylocentrotus purpuratus (purple sea urchin)</option>
+<option value="dme">Drosophila melanogaster (fruit fly)</option>
+<option value="dpo">Drosophila pseudoobscura pseudoobscura</option>
+<option value="dan">Drosophila ananassae</option>
+<option value="der">Drosophila erecta</option>
+<option value="dpe">Drosophila persimilis</option>
+<option value="dse">Drosophila sechellia</option>
+<option value="dsi">Drosophila simulans</option>
+<option value="dwi">Drosophila willistoni</option>
+<option value="dya">Drosophila yakuba</option>
+<option value="dgr">Drosophila grimshawi</option>
+<option value="dmo">Drosophila mojavensis</option>
+<option value="dvi">Drosophila virilis</option>
+<option value="aga">Anopheles gambiae (mosquito)</option>
+<option value="aag">Aedes aegypti (yellow fever mosquito)</option>
+<option value="cqu">Culex quinquefasciatus (southern house mosquito)</option>
+<option value="ame">Apis mellifera (honey bee)</option>
+<option value="nvi">Nasonia vitripennis (jewel wasp)</option>
+<option value="tca">Tribolium castaneum (red flour beetle)</option>
+<option value="api">Acyrthosiphon pisum (pea aphid)</option>
+<option value="phu">Pediculus humanus corporis (human body louse)</option>
+<option value="isc">Ixodes scapularis (black-legged tick)</option>
+<option value="cel">Caenorhabditis elegans (nematode)</option>
+<option value="cbr">Caenorhabditis briggsae</option>
+<option value="bmy">Brugia malayi (filaria)</option>
+<option value="smm">Schistosoma mansoni</option>
+<option value="nve">Nematostella vectensis (sea anemone)</option>
+<option value="hmg">Hydra vulgaris</option>
+<option value="tad">Trichoplax adhaerens</option>
+<option value="ath">Arabidopsis thaliana (thale cress)</option>
+<option value="rcu">Ricinus communis (castor bean)</option>
+<option value="pop">Populus trichocarpa (black cottonwood)</option>
+<option value="vvi">Vitis vinifera (wine grape)</option>
+<option value="osa" selected>Oryza sativa japonica (Japanese rice) (RefSeq)</option>
+<option value="sbi">Sorghum bicolor (sorghum)</option>
+<option value="zma">Zea mays (maize)</option>
+<option value="ppp">Physcomitrella patens subsp. patens</option>
+<option value="cre">Chlamydomonas reinhardtii</option>
+<option value="vcn">Volvox carteri f. nagariensis</option>
+<option value="olu">Ostreococcus lucimarinus</option>
+<option value="cme">Cyanidioschyzon merolae</option>
+<option value="sce">Saccharomyces cerevisiae (budding yeast)</option>
+<option value="ago">Ashbya gossypii (Eremothecium gossypii)</option>
+<option value="kla">Kluyveromyces lactis</option>
+<option value="lth">Lachancea thermotolerans</option>
+<option value="vpo">Vanderwaltozyma polyspora</option>
+<option value="zro">Zygosaccharomyces rouxii</option>
+<option value="cgr">Candida glabrata</option>
+<option value="ppa">Komagataella phaffii</option>
+<option value="dha">Debaryomyces hansenii</option>
+<option value="pic">Scheffersomyces stipitis</option>
+<option value="pgu">Meyerozyma guilliermondii</option>
+<option value="lel">Lodderomyces elongisporus</option>
+<option value="cal">Candida albicans</option>
+<option value="ctp">Candida tropicalis</option>
+<option value="cdu">Candida dubliniensis</option>
+<option value="yli">Yarrowia lipolytica</option>
+<option value="clu">Clavispora lusitaniae</option>
+<option value="ncr">Neurospora crassa</option>
+<option value="pan">Podospora anserina</option>
+<option value="mgr">Magnaporthe oryzae</option>
+<option value="ssl">Sclerotinia sclerotiorum</option>
+<option value="bfu">Botrytis cinerea</option>
+<option value="ani">Aspergillus nidulans</option>
+<option value="afm">Aspergillus fumigatus</option>
+<option value="aor">Aspergillus oryzae</option>
+<option value="ang">Aspergillus niger</option>
+<option value="afv">Aspergillus flavus</option>
+<option value="act">Aspergillus clavatus</option>
+<option value="nfi">Aspergillus fischeri</option>
+<option value="pcs">Penicillium rubens</option>
+<option value="cim">Coccidioides immitis</option>
+<option value="cpw">Coccidioides posadasii</option>
+<option value="ure">Uncinocarpus reesii</option>
+<option value="pno">Parastagonospora nodorum</option>
+<option value="tml">Tuber melanosporum</option>
+<option value="spo">Schizosaccharomyces pombe (fission yeast)</option>
+<option value="cne">Cryptococcus neoformans JEC21</option>
+<option value="cnb">Cryptococcus neoformans B-3501A</option>
+<option value="ppl">Postia placenta</option>
+<option value="lbc">Laccaria bicolor</option>
+<option value="mpr">Moniliophthora perniciosa</option>
+<option value="cci">Coprinopsis cinerea</option>
+<option value="scm">Schizophyllum commune</option>
+<option value="uma">Ustilago maydis</option>
+<option value="mgl">Malassezia globosa</option>
+<option value="ecu">Encephalitozoon cuniculi</option>
+<option value="mbr">Monosiga brevicollis</option>
+<option value="ddi">Dictyostelium discoideum (cellular slime mold)</option>
+<option value="ehi">Entamoeba histolytica</option>
+<option value="edi">Entamoeba dispar</option>
+<option value="pfa">Plasmodium falciparum 3D7</option>
+<option value="pfd">Plasmodium falciparum Dd2</option>
+<option value="pfh">Plasmodium falciparum HB3</option>
+<option value="pyo">Plasmodium yoelii</option>
+<option value="pcb">Plasmodium chabaudi</option>
+<option value="pbe">Plasmodium berghei</option>
+<option value="pkn">Plasmodium knowlesi</option>
+<option value="pvx">Plasmodium vivax</option>
+<option value="tan">Theileria annulata</option>
+<option value="tpv">Theileria parva</option>
+<option value="bbo">Babesia bovis</option>
+<option value="cpv">Cryptosporidium parvum</option>
+<option value="cho">Cryptosporidium hominis</option>
+<option value="tgo">Toxoplasma gondii</option>
+<option value="tet">Tetrahymena thermophila</option>
+<option value="ptm">Paramecium tetraurelia</option>
+<option value="pti">Phaeodactylum tricornutum</option>
+<option value="tps">Thalassiosira pseudonana</option>
+<option value="pif">Phytophthora infestans</option>
+<option value="tbr">Trypanosoma brucei</option>
+<option value="tcr">Trypanosoma cruzi</option>
+<option value="lma">Leishmania major</option>
+<option value="lif">Leishmania infantum</option>
+<option value="lbz">Leishmania braziliensis</option>
+<option value="ngr">Naegleria gruberi</option>
+<option value="tva">Trichomonas vaginalis</option>
+<option value="gla">Giardia lamblia</option>
+</select>
+<input type="hidden" name="mapno" value="03040" />
+<input type="hidden" name="mapscale" value=>
+<input type="button" value="Go" onclick="select_menu(this.form)" />
+<input type="hidden" name="show_description" value="hide">
+
+</form>
+</td><td>
+<form name="form2" method="get" action="http://www.genome.jp/kegg-bin/show_pathway">
+&nbsp;&nbsp;&nbsp;&nbsp;
+<select name="scale" onChange="resize_map(this.form.scale.value)">
+<option value="1.84" >184%</option>
+<option value="1.5" >150%</option>
+<option value="1.22" >122%</option>
+<option value="1.0" selected>100%</option>
+<option value="0.82" >82%</option>
+<option value="0.67" >67%</option>
+<option value="0.55" >55%</option>
+</select>
+&nbsp;&nbsp;<input type="text" name="query" size=20 value="">
+<input type="hidden" name="map" value="osa03040" />
+<input type="hidden" name="scale" value=>
+<input type="hidden" name="image" value=/share/www//mark_pathway146062767029759/osa03040.png>
+<input type="hidden" name="use" value="reference">
+<input type="hidden" name="nmap_args" value="1460627548145703">
+<input type="hidden" name="auto_image" value="">
+<input type="hidden" name="show_description" value="hide">
+<input type="hidden" name="multi_query" />
+
+<!--</form>-->
+</td></tr></table>
+
+
+<img src="osa03040.png" name="pathwayimage" name="pathwayimage" usemap="#mapdata" border="0" />
+
+<map name="mapdata">
+<area shape=rect	coords=57,257,103,274	href="http://www.genome.jp/dbget-bin/www_bget?osa:4344682+osa:4344716"	title="4344682, 4344716" />
+<area shape=rect	coords=57,277,103,294	href="http://www.genome.jp/dbget-bin/www_bget?osa:4326192+osa:4326193"	title="4326192, 4326193" />
+<area shape=rect	coords=675,150,721,167	href="http://www.genome.jp/dbget-bin/www_bget?osa:4347985"	title="4347985" />
+<area shape=rect	coords=675,167,721,184	href="http://www.genome.jp/dbget-bin/www_bget?osa:4337846"	title="4337846" />
+<area shape=rect	coords=675,184,721,201	href="http://www.genome.jp/dbget-bin/www_bget?osa:4328958"	title="4328958" />
+<area shape=rect	coords=410,521,456,538	href="http://www.genome.jp/dbget-bin/www_bget?osa:4338675+osa:4345304+osa:9268581"	title="4338675, 4345304, 9268581" />
+<area shape=rect	coords=526,378,572,395	href="http://www.genome.jp/dbget-bin/www_bget?osa:4343339"	title="4343339" />
+<area shape=rect	coords=526,398,572,415	href="http://www.genome.jp/dbget-bin/www_bget?osa:4333045"	title="4333045" />
+<area shape=rect	coords=675,222,721,239	href="http://www.genome.jp/dbget-bin/www_bget?osa:4327802"	title="4327802" />
+<area shape=rect	coords=675,242,721,259	href="http://www.genome.jp/dbget-bin/www_bget?osa:4345578"	title="4345578" />
+<area shape=rect	coords=517,260,563,277	href="http://www.genome.jp/dbget-bin/www_bget?osa:4329095+osa:4340375+osa:4340964+osa:4343940+osa:4350353"	title="4329095, 4340375, 4340964, 4343940, 4350353" />
+<area shape=rect	coords=446,155,492,172	href="http://www.genome.jp/dbget-bin/www_bget?osa:4332645"	title="4332645" />
+<area shape=rect	coords=675,133,721,150	href="http://www.genome.jp/dbget-bin/www_bget?osa:4324004+osa:4327991+osa:4328158+osa:4328484+osa:4329810+osa:4332206+osa:4333092+osa:4336118+osa:4338385+osa:4343870+osa:4344666+osa:4351052+osa:9270807"	title="4324004, 4327991, 4328158, 4328484, 4329810, 4332206, 4333092, 4336118, 4338385, 4343870, 4344666, 4351052, 9270807" />
+<area shape=rect	coords=675,262,721,279	href="http://www.genome.jp/dbget-bin/www_bget?osa:4326190+osa:4327645+osa:4351155+osa:9271802"	title="4326190, 4327645, 4351155, 9271802" />
+<area shape=rect	coords=675,282,721,299	href="http://www.genome.jp/dbget-bin/www_bget?osa:4348939"	title="4348939" />
+<area shape=rect	coords=740,133,786,150	href="http://www.genome.jp/dbget-bin/www_bget?osa:4324004+osa:4327991+osa:4328158+osa:4328484+osa:4329810+osa:4332206+osa:4333092+osa:4336118+osa:4338385+osa:4343870+osa:4344666+osa:4351052+osa:9270807"	title="4324004, 4327991, 4328158, 4328484, 4329810, 4332206, 4333092, 4336118, 4338385, 4343870, 4344666, 4351052, 9270807" />
+<area shape=rect	coords=740,150,786,167	href="http://www.genome.jp/dbget-bin/www_bget?osa:4328823"	title="4328823" />
+<area shape=rect	coords=740,167,786,184	href="http://www.genome.jp/dbget-bin/www_bget?osa:4332557"	title="4332557" />
+<area shape=rect	coords=740,183,786,200	href="http://www.genome.jp/dbget-bin/www_bget?osa:4328860+osa:4332334+osa:4333915"	title="4328860, 4332334, 4333915" />
+<area shape=rect	coords=740,200,786,217	href="http://www.genome.jp/dbget-bin/www_bget?osa:4325082+osa:4328237+osa:4328270+osa:4328284+osa:4328291+osa:4331222+osa:4332617+osa:4334543+osa:4337303+osa:4338563+osa:4338860+osa:4342674+osa:4342675+osa:4345702+osa:4348798+osa:9272211+osa:9272713"	title="4325082, 4328237, 4328270, 4328284, 4328291, 4331222, 4332617, 4334543, 4337303, 4338563, 4338860, 4342674, 4342675, 4345702, 4348798, 9272211, 9272713" />
+<area shape=rect	coords=740,242,786,259	href="http://www.genome.jp/dbget-bin/www_bget?osa:4325413+osa:4326323+osa:4331556+osa:4339621+osa:4350981+osa:4351124+osa:9268567"	title="4325413, 4326323, 4331556, 4339621, 4350981, 4351124, 9268567" />
+<area shape=rect	coords=740,282,786,299	href="http://www.genome.jp/dbget-bin/www_bget?osa:4344474"	title="4344474" />
+<area shape=rect	coords=740,362,786,379	href="http://www.genome.jp/dbget-bin/www_bget?osa:4332645"	title="4332645" />
+<area shape=rect	coords=870,473,916,490	href="http://www.genome.jp/dbget-bin/www_bget?osa:4329963+osa:4332822"	title="4329963, 4332822" />
+<area shape=rect	coords=870,493,916,510	href="http://www.genome.jp/dbget-bin/www_bget?osa:4326212+osa:4326641+osa:4328758+osa:4329903+osa:4333731+osa:4334703+osa:4337147+osa:4341330+osa:4342599+osa:4343831+osa:4345254+osa:4345910+osa:4348309+osa:4352279"	title="4326212, 4326641, 4328758, 4329903, 4333731, 4334703, 4337147, 4341330, 4342599, 4343831, 4345254, 4345910, 4348309, 4352279" />
+<area shape=rect	coords=870,513,916,530	href="http://www.genome.jp/dbget-bin/www_bget?osa:4324080+osa:4327263+osa:4328133+osa:4328900+osa:4329951+osa:4330968+osa:4332476+osa:4332806+osa:4332903+osa:4333005+osa:4334964+osa:4337644+osa:4337897+osa:4338552+osa:4340353+osa:4342102+osa:4343955+osa:4344009+osa:4344256+osa:4345455+osa:4345884+osa:4351215+osa:4352590+osa:9268085"	title="4324080, 4327263, 4328133, 4328900, 4329951, 4330968, 4332476, 4332806, 4332903, 4333005, 4334964, 4337644, 4337897, 4338552, 4340353, 4342102, 4343955, 4344009, 4344256, 4345455, 4345884, 4351215, 4352590, 9268085" />
+<area shape=rect	coords=675,473,721,490	href="http://www.genome.jp/dbget-bin/www_bget?osa:4348844"	title="4348844" />
+<area shape=rect	coords=675,490,721,507	href="http://www.genome.jp/dbget-bin/www_bget?osa:4335542"	title="4335542" />
+<area shape=rect	coords=675,524,721,541	href="http://www.genome.jp/dbget-bin/www_bget?osa:4332781"	title="4332781" />
+<area shape=rect	coords=675,541,721,558	href="http://www.genome.jp/dbget-bin/www_bget?osa:4339866"	title="4339866" />
+<area shape=rect	coords=675,558,721,575	href="http://www.genome.jp/dbget-bin/www_bget?osa:4331250"	title="4331250" />
+<area shape=rect	coords=675,575,721,592	href="http://www.genome.jp/dbget-bin/www_bget?osa:4327388+osa:4332413+osa:4332416+osa:4332420+osa:4334598+osa:4339012+osa:4349971+osa:4349972+osa:4351208+osa:4351875+osa:9268687+osa:9271426"	title="4327388, 4332413, 4332416, 4332420, 4334598, 4339012, 4349971, 4349972, 4351208, 4351875, 9268687, 9271426" />
+<area shape=rect	coords=675,599,721,616	href="http://www.genome.jp/dbget-bin/www_bget?osa:4324332"	title="4324332" />
+<area shape=rect	coords=740,493,786,510	href="http://www.genome.jp/dbget-bin/www_bget?osa:4324113+osa:4338298+osa:4342038+osa:4344088+osa:4348330+osa:9268891"	title="4324113, 4338298, 4342038, 4344088, 4348330, 9268891" />
+<area shape=rect	coords=740,473,786,490	href="http://www.genome.jp/dbget-bin/www_bget?osa:4330796"	title="4330796" />
+<area shape=rect	coords=740,513,786,530	href="http://www.genome.jp/dbget-bin/www_bget?osa:4329902"	title="4329902" />
+<area shape=rect	coords=740,533,786,550	href="http://www.genome.jp/dbget-bin/www_bget?osa:4346316"	title="4346316" />
+<area shape=rect	coords=740,573,786,590	href="http://www.genome.jp/dbget-bin/www_bget?osa:4342149"	title="4342149" />
+<area shape=rect	coords=740,593,786,610	href="http://www.genome.jp/dbget-bin/www_bget?osa:4340263+osa:4342926"	title="4340263, 4342926" />
+<area shape=rect	coords=740,633,786,650	href="http://www.genome.jp/dbget-bin/www_bget?osa:4332999"	title="4332999" />
+<area shape=rect	coords=805,150,851,167	href="http://www.genome.jp/dbget-bin/www_bget?osa:4325074+osa:4326227+osa:4329449+osa:4335668+osa:4338670+osa:4339810+osa:4344686+osa:4344803"	title="4325074, 4326227, 4329449, 4335668, 4338670, 4339810, 4344686, 4344803" />
+<area shape=rect	coords=805,167,851,184	href="http://www.genome.jp/dbget-bin/www_bget?osa:4324004+osa:4327991+osa:4328158+osa:4328484+osa:4329810+osa:4332206+osa:4333092+osa:4336118+osa:4338385+osa:4343870+osa:4344666+osa:4351052+osa:9270807"	title="4324004, 4327991, 4328158, 4328484, 4329810, 4332206, 4333092, 4336118, 4338385, 4343870, 4344666, 4351052, 9270807" />
+<area shape=rect	coords=805,234,851,251	href="http://www.genome.jp/dbget-bin/www_bget?osa:4330613+osa:4336619+osa:4342372"	title="4330613, 4336619, 4342372" />
+<area shape=rect	coords=805,218,851,235	href="http://www.genome.jp/dbget-bin/www_bget?osa:4334542"	title="4334542" />
+<area shape=rect	coords=805,201,851,218	href="http://www.genome.jp/dbget-bin/www_bget?osa:4332861"	title="4332861" />
+<area shape=rect	coords=805,184,851,201	href="http://www.genome.jp/dbget-bin/www_bget?osa:4346506"	title="4346506" />
+<area shape=rect	coords=805,251,851,268	href="http://www.genome.jp/dbget-bin/www_bget?osa:4332209+osa:4348007"	title="4332209, 4348007" />
+<area shape=rect	coords=870,133,916,150	href="http://www.genome.jp/dbget-bin/www_bget?osa:4324004+osa:4327991+osa:4328158+osa:4328484+osa:4329810+osa:4332206+osa:4333092+osa:4336118+osa:4338385+osa:4343870+osa:4344666+osa:4351052+osa:9270807"	title="4324004, 4327991, 4328158, 4328484, 4329810, 4332206, 4333092, 4336118, 4338385, 4343870, 4344666, 4351052, 9270807" />
+<area shape=rect	coords=870,150,916,167	href="http://www.genome.jp/dbget-bin/www_bget?osa:4341492"	title="4341492" />
+<area shape=rect	coords=870,167,916,184	href="http://www.genome.jp/dbget-bin/www_bget?osa:4328024+osa:9267295"	title="4328024, 9267295" />
+<area shape=rect	coords=870,184,916,201	href="http://www.genome.jp/dbget-bin/www_bget?osa:4349020+osa:9270118"	title="4349020, 9270118" />
+<area shape=rect	coords=870,201,916,218	href="http://www.genome.jp/dbget-bin/www_bget?osa:4337900+osa:4340248"	title="4337900, 4340248" />
+<area shape=rect	coords=870,218,916,235	href="http://www.genome.jp/dbget-bin/www_bget?osa:4341706"	title="4341706" />
+<area shape=rect	coords=870,235,916,252	href="http://www.genome.jp/dbget-bin/www_bget?osa:4333866"	title="4333866" />
+<area shape=rect	coords=870,252,916,269	href="http://www.genome.jp/dbget-bin/www_bget?osa:4348949+osa:9268087"	title="4348949, 9268087" />
+<area shape=rect	coords=805,310,851,327	href="http://www.genome.jp/dbget-bin/www_bget?osa:4329300"	title="4329300" />
+<area shape=rect	coords=805,327,851,344	href="http://www.genome.jp/dbget-bin/www_bget?osa:4347019"	title="4347019" />
+<area shape=rect	coords=805,344,851,361	href="http://www.genome.jp/dbget-bin/www_bget?osa:4329455"	title="4329455" />
+<area shape=rect	coords=805,473,851,490	href="http://www.genome.jp/dbget-bin/www_bget?osa:4332988+osa:4343967"	title="4332988, 4343967" />
+<area shape=rect	coords=805,490,851,507	href="http://www.genome.jp/dbget-bin/www_bget?osa:4326580+osa:4333273"	title="4326580, 4333273" />
+<area shape=rect	coords=805,507,851,524	href="http://www.genome.jp/dbget-bin/www_bget?osa:4334528+osa:4337757"	title="4334528, 4337757" />
+<area shape=rect	coords=805,524,851,541	href="http://www.genome.jp/dbget-bin/www_bget?osa:4344462+osa:4351998"	title="4344462, 4351998" />
+<area shape=rect	coords=805,541,851,558	href="http://www.genome.jp/dbget-bin/www_bget?osa:4326192+osa:4326193"	title="4326192, 4326193" />
+<area shape=rect	coords=805,558,851,575	href="http://www.genome.jp/dbget-bin/www_bget?osa:4324336+osa:4331353+osa:4332426+osa:4340675+osa:4342793+osa:4345621+osa:4346657+osa:4349526+osa:4351236"	title="4324336, 4331353, 4332426, 4340675, 4342793, 4345621, 4346657, 4349526, 4351236" />
+<area shape=rect	coords=575,378,621,395	href="http://www.genome.jp/dbget-bin/www_bget?osa:4329095+osa:4340375+osa:4340964+osa:4343940+osa:4350353"	title="4329095, 4340375, 4340964, 4343940, 4350353" />
+<area shape=rect	coords=575,398,621,415	href="http://www.genome.jp/dbget-bin/www_bget?osa:4344572"	title="4344572" />
+<area shape=rect	coords=805,370,851,387	href="http://www.genome.jp/dbget-bin/www_bget?osa:4334674"	title="4334674" />
+<area shape=rect	coords=805,390,851,407	href="http://www.genome.jp/dbget-bin/www_bget?osa:4337972+osa:4346374"	title="4337972, 4346374" />
+<area shape=rect	coords=526,418,572,435	href="http://www.genome.jp/dbget-bin/www_bget?osa:4333826+osa:4343671"	title="4333826, 4343671" />
+<area shape=rect	coords=740,613,786,630	href="http://www.genome.jp/dbget-bin/www_bget?osa:4324760+osa:4337198+osa:4338942+osa:4351510"	title="4324760, 4337198, 4338942, 4351510" />
+<area shape=rect	coords=40,45,169,70	href="http://www.genome.jp/dbget-bin/www_bget?osa03040"	title="osa03040: Spliceosome" onmouseover="popupTimer(&quot;osa03040&quot;, &quot;osa03040: Spliceosome&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+</map>
+<div id="poplay" class="poplay" />
+
+</form>
+</body>
+</html>

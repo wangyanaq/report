@@ -1,0 +1,314 @@
+<html>
+<!---
+ENTRY       osa04931
+DEFINITION  Insulin resistance - Oryza sativa japonica (Japanese rice) (RefSeq)
+--->
+<head>
+<title>
+KEGG PATHWAY: Insulin resistance - Oryza sativa japonica (Japanese rice) (RefSeq)
+</title>
+<style type="text/css">
+<!--
+div.poplay {
+  position: absolute;
+  padding: 2px;
+  background-color: #ffff99;
+  border-top: solid 1px #c0c0c0;
+  border-left: solid 1px #c0c0c0;
+  border-bottom: solid 1px #808080;
+  border-right: solid 1px #808080;
+  visibility: hidden;
+}
+
+span.popup
+{
+  font-weight: bold;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+form {
+  margin: 0px;
+}
+
+div.image {
+  position: absolute;
+  padding: 0px;
+  top: 0px;
+  padding: 0px;
+  border: solid 1px #000000;
+}
+
+img {
+  border: none;
+}
+
+
+-->
+</style>
+<link rel="stylesheet" href="http://www.genome.jp/css/kegg.css" type="text/css" />
+<script language="JavaScript" src="http://www.genome.jp/js/dhtml.js"></script>
+
+<script language="JavaScript">
+<!---
+var image_height;
+$(function(){
+	$(window).bind('load',function(){
+  image_height = $("div.image").height()-10;
+	$("div.control").height(image_height-5);
+	$("#resizable").height(image_height);
+	});
+});
+
+
+function resize_map(scale){
+  var form = document.forms["form2"];
+  form.scale.value = scale;
+  form.submit();
+}
+
+function select_menu(){
+  var form = document.forms["selmenu"];
+  if(form.org_name.value == 'set_cookie' || form.org_name.value == 'reset_cookie'){
+    window.open('http://www.genome.jp/kegg/misc/kegg2_select.html','sel_org','toolbar=no,location=no,directories=no,width=500,height=320,resizable=yes');
+  }else{
+    form.action='http://www.genome.jp/kegg-bin/show_pathway';
+    form.submit();
+  }
+}
+
+var timer = 0;
+var p_entry, p_title, p_bgcolor;
+function popupTimer(entry, title, bgcolor)
+{
+  p_entry = entry;
+  p_title = title;
+  p_bgcolor = bgcolor;
+
+  if(timer == 0){
+    var func = "showThumbnail()";
+    timer = setTimeout(func, 1200);
+  }
+}
+
+
+function showThumbnail()
+{
+
+  var url = "";
+  if(p_entry.match(/^[A-Z]+\d+$/))
+  {
+    url = "http://www.genome.jp/kegg/misc/thumbnail/" + p_entry + ".gif";
+  }
+  else if(p_entry.match(/(\d+)$/))
+  {
+    url = "http://www.genome.jp/kegg/misc/thumbnail/map" + RegExp.$1 + ".gif";
+  }
+
+  var html = "";
+
+  if(p_bgcolor != "#ffffff")
+  {
+    html += "<span class=\"popup\">" + p_entry + "</span><br />";
+  }
+
+  html += "<img src=\"" + url + "\" alt=\"Loading...\">";
+
+  var x = getCurrentMouseX();
+  var y = getCurrentMouseY();
+
+  var layer = new Component("poplay");
+  layer.backgroundColor(p_bgcolor);
+  layer.HTML(html);
+  layer.move(x, y+40);
+  layer.visible(true);
+
+  timer = 0;
+}
+
+function hideMapTn(){
+  var layer = new Component("poplay");
+  layer.visible(false);
+
+  if(timer != 0){
+    clearTimeout(timer);
+    timer = 0;
+  }
+}
+
+function switchDescription(){
+  var form = document.forms[0];
+  var status = form.show_description.value;
+
+  if(status == "hide"){
+    document.getElementById("description").style.display = "";
+    document.getElementById("descLink").innerHTML = "Hide description";
+    form.show_description.value='show';
+
+    if(document.forms[1]){
+    	document.forms[1].show_description.value='show';
+    }
+  }
+  else
+  {
+    document.getElementById("description").style.display = 'none';
+    document.getElementById("descLink").innerHTML = "Show description";
+    form.show_description.value='hide';
+
+    if(document.forms[1]){
+      document.forms[1].show_description.value='hide';
+    }
+  }
+}
+
+function btn(bobj,img) { bobj.src = "http://www.genome.jp/Fig/bget/button_" + img + ".gif"; }
+//--->
+</script>
+</head>
+<body>
+<table cellpadding="0" width="100%" cellspacing="0" border="0">
+ <tr>
+  <td>
+   <a href="http://www.genome.jp/kegg/kegg2.html"><img align="middle" alt="KEGG" border="0" src="http://www.genome.jp/Fig/bget/kegg3.gif" /></a>
+   &nbsp;&nbsp;&nbsp;<font class="title3"><b>Insulin resistance - Oryza sativa japonica (Japanese rice) (RefSeq)</b></font>
+  </td>
+  <td valign="bottom" align="right">
+   <a href="javascript:void(window.open('http://www.genome.jp/kegg/document/help_pathway.html','KEGG_Help','toolbar=no,location=no,directories=no,width=720,height=640,resizable=yes,scrollbars=yes'))"><img name="help" src="http://www.genome.jp/Fig/bget/button_Hb.gif" border="0" align="middle" alt="Help" onmouseout="btn(this,'Hb')" onmousedown="btn(this,'Hbd')" onmouseover="btn(this,'Hbh')" onmouseup="btn(this,'Hb')" /></a>
+  </td>
+ </tr>
+</table>
+
+  
+[
+<a href="http://www.genome.jp/kegg-bin/get_htext?query=04931&htext=br08901.keg&option=-a">Pathway menu</a>
+| <a href="http://www.genome.jp/kegg-bin/get_htext?htext=br08601_map04931.keg&query=osa&option=-a">Organism menu</a>
+| <a href="http://www.genome.jp/dbget-bin/www_bget?pathway+osa04931">Pathway entry</a>
+
+| <a href="http://www.kegg.jp/kegg-bin/download?entry=osa04931&format=kgml">Download KGML</a>
+| <a id="descLink" href="javascript:switchDescription()">Show description</a>
+| <a href="javascript:void(window.open('http://www.genome.jp/kegg/tool/color_a_pathway.html','KEGG_Help','height=300,width=600,resizable=yes,scrollbars=yes'))">User data mapping</a>
+
+]
+  
+<table id="description" cellpadding="10" width="800" style="display: none;"><tr><td>
+Insulin resistance is a condition where cells become resistant to the effects of insulin. It is often found in people with health disorders, including obesity, type 2 diabetes mellitus, non-alcoholic fatty liver disease, and cardiovascular diseases. In this diagram multiple mechanisms underlying insulin resistance are shown: (a) increased phosphorylation of IRS (insulin receptor substrate) protein through serine/threonine kinases, such as JNK1 and IKKB, and protein kinase C, (b) increased IRS-1 proteasome degradation via mTOR signaling pathway, (c) decreased activation of signaling molecules including PI3K and AKT, (d) increase in activity of phosphatases including PTPs, PTEN, and PP2A. Regulatory actions such as oxidative stress, mitochondrial dysfunction, accumulation of intracellular lipid derivatives (diacylglycrol and ceramides), and inflammation (via IL-6 and TNFA) contribute to these mechanisms. Consequently, insulin resistance causes reduced GLUT4 translocation, resulting in glucose takeup and glycogen synthesis in skeletal muscle as well as increased hepatic gluconeogenesis and decreased glycogen synthesis in liver. At the bottom of the diagram, interplay between O-GlcNAcylation and serine/threonine phosphorylation is shown. Studies suggested that elevated O-GlcNAc level was correlated to high glucose-induced insulin resistance. Donor UDP-GlcNAc is induced through hexosamine biosynthesis pathway and added to proteins by O-GlcNAc transferase. Elevation of O-GlcNAc modification alters phosphorylation and function of key insulin signaling proteins including IRS-1, PI3K, PDK1, Akt and other transcription factor and cofactors, resulting in the attenuation of insulin signaling cascade.</td></tr></table>
+<table><tr><td>
+<form name="selmenu" method="get">
+<select name="org_name">
+<option value="map">Reference pathway</option>
+<option value="ko">Reference pathway (KO)</option>
+<option value="set_cookie">-----&lt; Set personalized menu &gt;-----</option>
+<option value="osa.sort_alp">-----&lt; Sort below by alphabet &gt;-----</option>
+<option value="hsa">Homo sapiens (human)</option>
+<option value="hsadd">Homo sapiens (human) + Disease/drug</option>
+<option value="eco">Escherichia coli K-12 MG1655</option>
+<option value="bct">Burkholderia cepacia GG4</option>
+</select>
+<input type="hidden" name="mapno" value="04931" />
+<input type="hidden" name="mapscale" value=>
+<input type="button" value="Go" onclick="select_menu(this.form)" />
+<input type="hidden" name="show_description" value="hide">
+
+</form>
+</td><td>
+<form name="form2" method="get" action="http://www.genome.jp/kegg-bin/show_pathway">
+&nbsp;&nbsp;&nbsp;&nbsp;
+<select name="scale" onChange="resize_map(this.form.scale.value)">
+<option value="1.84" >184%</option>
+<option value="1.5" >150%</option>
+<option value="1.22" >122%</option>
+<option value="1.0" selected>100%</option>
+<option value="0.82" >82%</option>
+<option value="0.67" >67%</option>
+<option value="0.55" >55%</option>
+</select>
+&nbsp;&nbsp;<input type="text" name="query" size=20 value="">
+<input type="hidden" name="map" value="osa04931" />
+<input type="hidden" name="scale" value=>
+<input type="hidden" name="image" value=/share/www//mark_pathway146062561264876/osa04931.png>
+<input type="hidden" name="use" value="reference">
+<input type="hidden" name="nmap_args" value="146062484268696">
+<input type="hidden" name="auto_image" value="">
+<input type="hidden" name="show_description" value="hide">
+<input type="hidden" name="multi_query" />
+
+<!--</form>-->
+</td></tr></table>
+
+
+<img src="osa04931.png" name="pathwayimage" name="pathwayimage" usemap="#mapdata" border="0" />
+
+<map name="mapdata">
+<area shape=circle	coords=254,597,4	href="http://www.genome.jp/dbget-bin/www_bget?C00162"	title="C00162 (Fatty acid)" onmouseover="popupTimer(&quot;C00162&quot;, &quot;C00162 (Fatty acid)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=423,598,4	href="http://www.genome.jp/dbget-bin/www_bget?C00162"	title="C00162 (Fatty acid)" onmouseover="popupTimer(&quot;C00162&quot;, &quot;C00162 (Fatty acid)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=536,597,4	href="http://www.genome.jp/dbget-bin/www_bget?C02843"	title="C02843 (Long-chain acyl-CoA)" onmouseover="popupTimer(&quot;C02843&quot;, &quot;C02843 (Long-chain acyl-CoA)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=616,599,4	href="http://www.genome.jp/dbget-bin/www_bget?C00165"	title="C00165 (Diacylglycerol)" onmouseover="popupTimer(&quot;C00165&quot;, &quot;C00165 (Diacylglycerol)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=1339,311,4	href="http://www.genome.jp/dbget-bin/www_bget?C00031"	title="C00031 (D-Glucose)" onmouseover="popupTimer(&quot;C00031&quot;, &quot;C00031 (D-Glucose)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=617,645,4	href="http://www.genome.jp/dbget-bin/www_bget?C00195"	title="C00195 (N-Acylsphingosine)" onmouseover="popupTimer(&quot;C00195&quot;, &quot;C00195 (N-Acylsphingosine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=1227,218,4	href="http://www.genome.jp/dbget-bin/www_bget?C00369"	title="C00369 (Starch)" onmouseover="popupTimer(&quot;C00369&quot;, &quot;C00369 (Starch)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=716,296,4	href="http://www.genome.jp/dbget-bin/www_bget?C00533"	title="C00533 (Nitric oxide)" onmouseover="popupTimer(&quot;C00533&quot;, &quot;C00533 (Nitric oxide)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=617,553,4	href="http://www.genome.jp/dbget-bin/www_bget?C00422"	title="C00422 (Triacylglycerol)" onmouseover="popupTimer(&quot;C00422&quot;, &quot;C00422 (Triacylglycerol)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=532,1134,4	href="http://www.genome.jp/dbget-bin/www_bget?C00083"	title="C00083 (Malonyl-CoA)" onmouseover="popupTimer(&quot;C00083&quot;, &quot;C00083 (Malonyl-CoA)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=253,1228,4	href="http://www.genome.jp/dbget-bin/www_bget?C00162"	title="C00162 (Fatty acid)" onmouseover="popupTimer(&quot;C00162&quot;, &quot;C00162 (Fatty acid)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=424,1228,4	href="http://www.genome.jp/dbget-bin/www_bget?C00162"	title="C00162 (Fatty acid)" onmouseover="popupTimer(&quot;C00162&quot;, &quot;C00162 (Fatty acid)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=479,1228,4	href="http://www.genome.jp/dbget-bin/www_bget?C02843"	title="C02843 (Long-chain acyl-CoA)" onmouseover="popupTimer(&quot;C02843&quot;, &quot;C02843 (Long-chain acyl-CoA)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=532,1280,4	href="http://www.genome.jp/dbget-bin/www_bget?C00165"	title="C00165 (Diacylglycerol)" onmouseover="popupTimer(&quot;C00165&quot;, &quot;C00165 (Diacylglycerol)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=532,1324,4	href="http://www.genome.jp/dbget-bin/www_bget?C00195"	title="C00195 (N-Acylsphingosine)" onmouseover="popupTimer(&quot;C00195&quot;, &quot;C00195 (N-Acylsphingosine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=254,1024,4	href="http://www.genome.jp/dbget-bin/www_bget?C00031"	title="C00031 (D-Glucose)" onmouseover="popupTimer(&quot;C00031&quot;, &quot;C00031 (D-Glucose)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=553,1025,4	href="http://www.genome.jp/dbget-bin/www_bget?C00024"	title="C00024 (Acetyl-CoA)" onmouseover="popupTimer(&quot;C00024&quot;, &quot;C00024 (Acetyl-CoA)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=479,1025,4	href="http://www.genome.jp/dbget-bin/www_bget?C00022"	title="C00022 (Pyruvate)" onmouseover="popupTimer(&quot;C00022&quot;, &quot;C00022 (Pyruvate)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=617,1134,4	href="http://www.genome.jp/dbget-bin/www_bget?C00024"	title="C00024 (Acetyl-CoA)" onmouseover="popupTimer(&quot;C00024&quot;, &quot;C00024 (Acetyl-CoA)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=479,1073,4	href="http://www.genome.jp/dbget-bin/www_bget?C02571"	title="C02571 (O-Acetylcarnitine)" onmouseover="popupTimer(&quot;C02571&quot;, &quot;C02571 (O-Acetylcarnitine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=254,942,4	href="http://www.genome.jp/dbget-bin/www_bget?C00095"	title="C00095 (D-Fructose)" onmouseover="popupTimer(&quot;C00095&quot;, &quot;C00095 (D-Fructose)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=1339,985,4	href="http://www.genome.jp/dbget-bin/www_bget?C00031"	title="C00031 (D-Glucose)" onmouseover="popupTimer(&quot;C00031&quot;, &quot;C00031 (D-Glucose)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=532,1228,4	href="http://www.genome.jp/dbget-bin/www_bget?C00162"	title="C00162 (Fatty acid)" onmouseover="popupTimer(&quot;C00162&quot;, &quot;C00162 (Fatty acid)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=508,491,4	href="http://www.genome.jp/dbget-bin/www_bget?C00083"	title="C00083 (Malonyl-CoA)" onmouseover="popupTimer(&quot;C00083&quot;, &quot;C00083 (Malonyl-CoA)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=617,1228,4	href="http://www.genome.jp/dbget-bin/www_bget?C00422"	title="C00422 (Triacylglycerol)" onmouseover="popupTimer(&quot;C00422&quot;, &quot;C00422 (Triacylglycerol)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=1227,850,4	href="http://www.genome.jp/dbget-bin/www_bget?C00369"	title="C00369 (Starch)" onmouseover="popupTimer(&quot;C00369&quot;, &quot;C00369 (Starch)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=254,1690,4	href="http://www.genome.jp/dbget-bin/www_bget?C00031"	title="C00031 (D-Glucose)" onmouseover="popupTimer(&quot;C00031&quot;, &quot;C00031 (D-Glucose)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=424,1690,4	href="http://www.genome.jp/dbget-bin/www_bget?C00031"	title="C00031 (D-Glucose)" onmouseover="popupTimer(&quot;C00031&quot;, &quot;C00031 (D-Glucose)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=821,1691,4	href="http://www.genome.jp/dbget-bin/www_bget?C00043"	title="C00043 (UDP-N-acetyl-alpha-D-glucosamine)" onmouseover="popupTimer(&quot;C00043&quot;, &quot;C00043 (UDP-N-acetyl-alpha-D-glucosamine)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=496,1690,4	href="http://www.genome.jp/dbget-bin/www_bget?C00092"	title="C00092 (D-Glucose 6-phosphate)" onmouseover="popupTimer(&quot;C00092&quot;, &quot;C00092 (D-Glucose 6-phosphate)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=562,1690,4	href="http://www.genome.jp/dbget-bin/www_bget?C00085"	title="C00085 (D-Fructose 6-phosphate)" onmouseover="popupTimer(&quot;C00085&quot;, &quot;C00085 (D-Fructose 6-phosphate)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=650,1690,4	href="http://www.genome.jp/dbget-bin/www_bget?C00352"	title="C00352 (D-Glucosamine 6-phosphate)" onmouseover="popupTimer(&quot;C00352&quot;, &quot;C00352 (D-Glucosamine 6-phosphate)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=730,1690,4	href="http://www.genome.jp/dbget-bin/www_bget?C06156"	title="C06156 (alpha-D-Glucosamine 1-phosphate)" onmouseover="popupTimer(&quot;C06156&quot;, &quot;C06156 (alpha-D-Glucosamine 1-phosphate)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=718,1453,4	href="http://www.genome.jp/dbget-bin/www_bget?C05981"	title="C05981 (Phosphatidylinositol-3,4,5-trisphosphate)" onmouseover="popupTimer(&quot;C05981&quot;, &quot;C05981 (Phosphatidylinositol-3,4,5-trisphosphate)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=1339,1454,4	href="http://www.genome.jp/dbget-bin/www_bget?C00031"	title="C00031 (D-Glucose)" onmouseover="popupTimer(&quot;C00031&quot;, &quot;C00031 (D-Glucose)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=1227,1531,4	href="http://www.genome.jp/dbget-bin/www_bget?G00369"	title="G00369" />
+<area shape=circle	coords=254,424,4	href="http://www.genome.jp/dbget-bin/www_bget?C02135"	title="C02135 (Angiotensin II)" onmouseover="popupTimer(&quot;C02135&quot;, &quot;C02135 (Angiotensin II)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=849,1479,4	href="http://www.genome.jp/dbget-bin/www_bget?C00533"	title="C00533 (Nitric oxide)" onmouseover="popupTimer(&quot;C00533&quot;, &quot;C00533 (Nitric oxide)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=circle	coords=423,491,4	href="http://www.genome.jp/dbget-bin/www_bget?C00024"	title="C00024 (Acetyl-CoA)" onmouseover="popupTimer(&quot;C00024&quot;, &quot;C00024 (Acetyl-CoA)&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=1020,165,1066,182	href="http://www.genome.jp/dbget-bin/www_bget?osa:4338174"	title="4338174" />
+<area shape=rect	coords=904,132,950,149	href="http://www.genome.jp/dbget-bin/www_bget?osa:4332748+osa:4344299"	title="4332748, 4344299" />
+<area shape=rect	coords=1020,210,1066,227	href="http://www.genome.jp/dbget-bin/www_bget?osa:4326720+osa:4334738+osa:4341251"	title="4326720, 4334738, 4341251" />
+<area shape=rect	coords=693,637,739,654	href="http://www.genome.jp/dbget-bin/www_bget?osa:4340511"	title="4340511" />
+<area shape=rect	coords=1020,100,1066,117	href="http://www.genome.jp/dbget-bin/www_bget?osa:4326473+osa:4331166+osa:4332369+osa:4340228+osa:4345748"	title="4326473, 4331166, 4332369, 4340228, 4345748" />
+<area shape=rect	coords=1020,841,1066,858	href="http://www.genome.jp/dbget-bin/www_bget?osa:4326720+osa:4334738+osa:4341251"	title="4326720, 4334738, 4341251" />
+<area shape=rect	coords=693,1316,739,1333	href="http://www.genome.jp/dbget-bin/www_bget?osa:4340511"	title="4340511" />
+<area shape=rect	coords=408,976,454,993	href="http://www.genome.jp/dbget-bin/www_bget?osa:4340511"	title="4340511" />
+<area shape=rect	coords=1020,887,1066,904	href="http://www.genome.jp/dbget-bin/www_bget?osa:4326473+osa:4331166+osa:4332369+osa:4340228+osa:4345748"	title="4326473, 4331166, 4332369, 4340228, 4345748" />
+<area shape=rect	coords=1123,887,1169,904	href="http://www.genome.jp/dbget-bin/www_bget?osa:4324810+osa:4334171"	title="4324810, 4334171" />
+<area shape=rect	coords=580,1669,626,1686	href="http://www.genome.jp/dbget-bin/www_bget?osa:4351413"	title="4351413" />
+<area shape=rect	coords=790,1445,836,1462	href="http://www.genome.jp/dbget-bin/www_bget?osa:4324953"	title="4324953" />
+<area shape=rect	coords=920,1523,966,1540	href="http://www.genome.jp/dbget-bin/www_bget?osa:4326720+osa:4334738+osa:4341251"	title="4326720, 4334738, 4341251" />
+<area shape=rect	coords=694,1383,740,1400	href="http://www.genome.jp/dbget-bin/www_bget?osa:4352052"	title="4352052" />
+<area shape=rect	coords=437,544,483,561	href="http://www.genome.jp/dbget-bin/www_bget?osa:4325161+osa:4332495+osa:4339173+osa:4339410+osa:4344345+osa:4345873"	title="4325161, 4332495, 4339173, 4339410, 4344345, 4345873" />
+<area shape=rect	coords=358,545,404,562	href="http://www.genome.jp/dbget-bin/www_bget?osa:4324182+osa:4324201+osa:4327465+osa:4332374+osa:4339454+osa:4339671+osa:4339797+osa:4346736+osa:9268838"	title="4324182, 4324201, 4327465, 4332374, 4339454, 4339671, 4339797, 4346736, 9268838" />
+<area shape=rect	coords=40,45,217,70	href="http://www.genome.jp/kegg-bin/show_pathway?map05230"	title="map05230: Central carbon metabolism in cancer" onmouseover="popupTimer(&quot;map05230&quot;, &quot;map05230: Central carbon metabolism in cancer&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=820,195,917,229	href="http://www.genome.jp/kegg-bin/show_pathway?map04151"	title="map04151: PI3K-Akt signaling pathway" onmouseover="popupTimer(&quot;map04151&quot;, &quot;map04151: PI3K-Akt signaling pathway&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=844,796,942,830	href="http://www.genome.jp/kegg-bin/show_pathway?map04151"	title="map04151: PI3K-Akt signaling pathway" onmouseover="popupTimer(&quot;map04151&quot;, &quot;map04151: PI3K-Akt signaling pathway&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=537,1178,629,1212	href="http://www.genome.jp/kegg-bin/show_pathway?osa00061"	title="osa00061: Fatty acid biosynthesis" onmouseover="popupTimer(&quot;osa00061&quot;, &quot;osa00061: Fatty acid biosynthesis&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=397,1580,516,1614	href="http://www.genome.jp/kegg-bin/show_pathway?map00514"	title="map00514: Other types of O-glycan biosynthesis" onmouseover="popupTimer(&quot;map00514&quot;, &quot;map00514: Other types of O-glycan biosynthesis&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=629,1721,787,1755	href="http://www.genome.jp/kegg-bin/show_pathway?osa00520"	title="osa00520: Amino sugar and nucleotide sugar metabolism" onmouseover="popupTimer(&quot;osa00520&quot;, &quot;osa00520: Amino sugar and nucleotide sugar metabolism&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=1271,149,1371,183	href="http://www.genome.jp/kegg-bin/show_pathway?map04910"	title="map04910: Insulin signaling pathway" onmouseover="popupTimer(&quot;map04910&quot;, &quot;map04910: Insulin signaling pathway&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=669,1475,777,1509	href="http://www.genome.jp/kegg-bin/show_pathway?map04151"	title="map04151: PI3K-Akt signaling pathway" onmouseover="popupTimer(&quot;map04151&quot;, &quot;map04151: PI3K-Akt signaling pathway&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=164,261,262,295	href="http://www.genome.jp/kegg-bin/show_pathway?map04668"	title="map04668: TNF signaling pathway" onmouseover="popupTimer(&quot;map04668&quot;, &quot;map04668: TNF signaling pathway&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=182,679,280,713	href="http://www.genome.jp/kegg-bin/show_pathway?map04688"	title="map04688" />
+<area shape=rect	coords=197,978,289,1012	href="http://www.genome.jp/kegg-bin/show_pathway?osa00010"	title="osa00010: Glycolysis / Gluconeogenesis" onmouseover="popupTimer(&quot;osa00010&quot;, &quot;osa00010: Glycolysis / Gluconeogenesis&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=767,111,866,145	href="http://www.genome.jp/kegg-bin/show_pathway?map04150"	title="map04150: mTOR signaling pathway" onmouseover="popupTimer(&quot;map04150&quot;, &quot;map04150: mTOR signaling pathway&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+</map>
+<div id="poplay" class="poplay" />
+
+</form>
+</body>
+</html>

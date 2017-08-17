@@ -1,0 +1,395 @@
+<html>
+<!---
+ENTRY       osa00196
+DEFINITION  Photosynthesis - antenna proteins - Oryza sativa japonica (Japanese rice) (RefSeq)
+--->
+<head>
+<title>
+KEGG PATHWAY: Photosynthesis - antenna proteins - Oryza sativa japonica (Japanese rice) (RefSeq)
+</title>
+<style type="text/css">
+<!--
+div.poplay {
+  position: absolute;
+  padding: 2px;
+  background-color: #ffff99;
+  border-top: solid 1px #c0c0c0;
+  border-left: solid 1px #c0c0c0;
+  border-bottom: solid 1px #808080;
+  border-right: solid 1px #808080;
+  visibility: hidden;
+}
+
+span.popup
+{
+  font-weight: bold;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+form {
+  margin: 0px;
+}
+
+div.image {
+  position: absolute;
+  padding: 0px;
+  top: 0px;
+  padding: 0px;
+  border: solid 1px #000000;
+}
+
+img {
+  border: none;
+}
+
+
+-->
+</style>
+<link rel="stylesheet" href="http://www.genome.jp/css/kegg.css" type="text/css" />
+<script language="JavaScript" src="http://www.genome.jp/js/dhtml.js"></script>
+
+<script language="JavaScript">
+<!---
+var image_height;
+$(function(){
+	$(window).bind('load',function(){
+  image_height = $("div.image").height()-10;
+	$("div.control").height(image_height-5);
+	$("#resizable").height(image_height);
+	});
+});
+
+
+function resize_map(scale){
+  var form = document.forms["form2"];
+  form.scale.value = scale;
+  form.submit();
+}
+
+function select_menu(){
+  var form = document.forms["selmenu"];
+  if(form.org_name.value == 'set_cookie' || form.org_name.value == 'reset_cookie'){
+    window.open('http://www.genome.jp/kegg/misc/kegg2_select.html','sel_org','toolbar=no,location=no,directories=no,width=500,height=320,resizable=yes');
+  }else{
+    form.action='http://www.genome.jp/kegg-bin/show_pathway';
+    form.submit();
+  }
+}
+
+var timer = 0;
+var p_entry, p_title, p_bgcolor;
+function popupTimer(entry, title, bgcolor)
+{
+  p_entry = entry;
+  p_title = title;
+  p_bgcolor = bgcolor;
+
+  if(timer == 0){
+    var func = "showThumbnail()";
+    timer = setTimeout(func, 1200);
+  }
+}
+
+
+function showThumbnail()
+{
+
+  var url = "";
+  if(p_entry.match(/^[A-Z]+\d+$/))
+  {
+    url = "http://www.genome.jp/kegg/misc/thumbnail/" + p_entry + ".gif";
+  }
+  else if(p_entry.match(/(\d+)$/))
+  {
+    url = "http://www.genome.jp/kegg/misc/thumbnail/map" + RegExp.$1 + ".gif";
+  }
+
+  var html = "";
+
+  if(p_bgcolor != "#ffffff")
+  {
+    html += "<span class=\"popup\">" + p_entry + "</span><br />";
+  }
+
+  html += "<img src=\"" + url + "\" alt=\"Loading...\">";
+
+  var x = getCurrentMouseX();
+  var y = getCurrentMouseY();
+
+  var layer = new Component("poplay");
+  layer.backgroundColor(p_bgcolor);
+  layer.HTML(html);
+  layer.move(x, y+40);
+  layer.visible(true);
+
+  timer = 0;
+}
+
+function hideMapTn(){
+  var layer = new Component("poplay");
+  layer.visible(false);
+
+  if(timer != 0){
+    clearTimeout(timer);
+    timer = 0;
+  }
+}
+
+function switchDescription(){
+  var form = document.forms[0];
+  var status = form.show_description.value;
+
+  if(status == "hide"){
+    document.getElementById("description").style.display = "";
+    document.getElementById("descLink").innerHTML = "Hide description";
+    form.show_description.value='show';
+
+    if(document.forms[1]){
+    	document.forms[1].show_description.value='show';
+    }
+  }
+  else
+  {
+    document.getElementById("description").style.display = 'none';
+    document.getElementById("descLink").innerHTML = "Show description";
+    form.show_description.value='hide';
+
+    if(document.forms[1]){
+      document.forms[1].show_description.value='hide';
+    }
+  }
+}
+
+function btn(bobj,img) { bobj.src = "http://www.genome.jp/Fig/bget/button_" + img + ".gif"; }
+//--->
+</script>
+</head>
+<body>
+<table cellpadding="0" width="100%" cellspacing="0" border="0">
+ <tr>
+  <td>
+   <a href="http://www.genome.jp/kegg/kegg2.html"><img align="middle" alt="KEGG" border="0" src="http://www.genome.jp/Fig/bget/kegg3.gif" /></a>
+   &nbsp;&nbsp;&nbsp;<font class="title3"><b>Photosynthesis - antenna proteins - Oryza sativa japonica (Japanese rice) (RefSeq)</b></font>
+  </td>
+  <td valign="bottom" align="right">
+   <a href="javascript:void(window.open('http://www.genome.jp/kegg/document/help_pathway.html','KEGG_Help','toolbar=no,location=no,directories=no,width=720,height=640,resizable=yes,scrollbars=yes'))"><img name="help" src="http://www.genome.jp/Fig/bget/button_Hb.gif" border="0" align="middle" alt="Help" onmouseout="btn(this,'Hb')" onmousedown="btn(this,'Hbd')" onmouseover="btn(this,'Hbh')" onmouseup="btn(this,'Hb')" /></a>
+  </td>
+ </tr>
+</table>
+
+  
+[
+<a href="http://www.genome.jp/kegg-bin/get_htext?query=00196&htext=br08901.keg&option=-a">Pathway menu</a>
+| <a href="http://www.genome.jp/kegg-bin/get_htext?htext=br08601_map00196.keg&query=osa&option=-a">Organism menu</a>
+| <a href="http://www.genome.jp/dbget-bin/www_bget?pathway+osa00196">Pathway entry</a>
+
+| <a href="http://www.kegg.jp/kegg-bin/download?entry=osa00196&format=kgml">Download KGML</a>
+| <a id="descLink" href="javascript:switchDescription()">Show description</a>
+| <a href="javascript:void(window.open('http://www.genome.jp/kegg/tool/color_a_pathway.html','KEGG_Help','height=300,width=600,resizable=yes,scrollbars=yes'))">User data mapping</a>
+
+]
+  
+<table id="description" cellpadding="10" width="800" style="display: none;"><tr><td>
+The chlorophyll-binding subunits of photosystems I and II are internal antenna light-harvesting proteins of oxygenic photosynthesis. The antenna proteins that exist in phycobilisomes in cyanobacteria and light-harvesting chlorophyll protein complexes in green plants act as peripheral antenna systems, enabling more efficient absorption of light energy.</td></tr></table>
+<table><tr><td>
+<form name="selmenu" method="get">
+<select name="org_name">
+<option value="map">Reference pathway</option>
+<option value="ko">Reference pathway (KO)</option>
+<option value="ec">Reference pathway (EC)</option>
+<option value="set_cookie">-----&lt; Set personalized menu &gt;-----</option>
+<option value="osa.sort_alp">-----&lt; Sort below by alphabet &gt;-----</option>
+<option value="ath">Arabidopsis thaliana (thale cress)</option>
+<option value="aly">Arabidopsis lyrata (lyrate rockcress)</option>
+<option value="crb">Capsella rubella</option>
+<option value="eus">Eutrema salsugineum</option>
+<option value="brp">Brassica rapa (field mustard)</option>
+<option value="cit">Citrus sinensis (Valencia orange)</option>
+<option value="cic">Citrus clementina (mandarin orange)</option>
+<option value="tcc">Theobroma cacao (cacao)</option>
+<option value="egr">Eucalyptus grandis (rose gum)</option>
+<option value="gmx">Glycine max (soybean)</option>
+<option value="pvu">Phaseolus vulgaris (common bean)</option>
+<option value="mtr">Medicago truncatula (barrel medic)</option>
+<option value="cam">Cicer arietinum (chickpea)</option>
+<option value="fve">Fragaria vesca (woodland strawberry)</option>
+<option value="pper">Prunus persica (peach)</option>
+<option value="pmum">Prunus mume (Japanese apricot)</option>
+<option value="mdm">Malus domestica (apple)</option>
+<option value="pxb">Pyrus x bretschneideri (Chinese white pear)</option>
+<option value="csv">Cucumis sativus (cucumber)</option>
+<option value="cmo">Cucumis melo (muskmelon)</option>
+<option value="rcu">Ricinus communis (castor bean)</option>
+<option value="jcu">Jatropha curcas</option>
+<option value="pop">Populus trichocarpa (black cottonwood)</option>
+<option value="vvi">Vitis vinifera (wine grape)</option>
+<option value="sly">Solanum lycopersicum (tomato)</option>
+<option value="sot">Solanum tuberosum (potato)</option>
+<option value="bvg">Beta vulgaris (sugar beet)</option>
+<option value="osa" selected>Oryza sativa japonica (Japanese rice) (RefSeq)</option>
+<option value="dosa">Oryza sativa japonica (Japanese rice) (RAPDB)</option>
+<option value="obr">Oryza brachyantha (malo sina)</option>
+<option value="bdi">Brachypodium distachyon</option>
+<option value="sbi">Sorghum bicolor (sorghum)</option>
+<option value="zma">Zea mays (maize)</option>
+<option value="sita">Setaria italica (foxtail millet)</option>
+<option value="pda">Phoenix dactylifera (date palm)</option>
+<option value="egu">Elaeis guineensis (African oil palm)</option>
+<option value="mus">Musa acuminata (wild Malaysian banana)</option>
+<option value="atr">Amborella trichopoda</option>
+<option value="smo">Selaginella moellendorffii</option>
+<option value="ppp">Physcomitrella patens subsp. patens</option>
+<option value="cre">Chlamydomonas reinhardtii</option>
+<option value="vcn">Volvox carteri f. nagariensis</option>
+<option value="olu">Ostreococcus lucimarinus</option>
+<option value="ota">Ostreococcus tauri</option>
+<option value="bpg">Bathycoccus prasinos</option>
+<option value="mis">Micromonas sp. RCC299</option>
+<option value="mpp">Micromonas pusilla</option>
+<option value="csl">Coccomyxa subellipsoidea</option>
+<option value="cvr">Chlorella variabilis</option>
+<option value="cme">Cyanidioschyzon merolae</option>
+<option value="gsl">Galdieria sulphuraria</option>
+<option value="ccp">Chondrus crispus (carragheen)</option>
+<option value="syn">Synechocystis sp. PCC 6803</option>
+<option value="syz">Synechocystis sp. PCC 6803</option>
+<option value="syy">Synechocystis sp. PCC 6803 GT-S</option>
+<option value="syt">Synechocystis sp. PCC 6803 GT-I</option>
+<option value="sys">Synechocystis sp. PCC 6803 PCC-N</option>
+<option value="syq">Synechocystis sp. PCC 6803 PCC-P</option>
+<option value="syj">Synechocystis sp. PCC 6714</option>
+<option value="syw">Synechococcus sp. WH8102</option>
+<option value="syc">Synechococcus elongatus PCC6301</option>
+<option value="syf">Synechococcus elongatus PCC7942</option>
+<option value="syd">Synechococcus sp. CC9605</option>
+<option value="sye">Synechococcus sp. CC9902</option>
+<option value="syg">Synechococcus sp. CC9311</option>
+<option value="syr">Synechococcus sp. RCC307</option>
+<option value="syx">Synechococcus sp. WH7803</option>
+<option value="syp">Synechococcus sp. PCC7002</option>
+<option value="cya">Synechococcus sp. JA-3-3Ab</option>
+<option value="cyb">Synechococcus sp. JA-2-3B'a(2-13)</option>
+<option value="syne">Synechococcus sp. PCC 6312</option>
+<option value="synp">Synechococcus sp. PCC 7502</option>
+<option value="synk">Synechococcus sp. KORDI-100</option>
+<option value="synr">Synechococcus sp. KORDI-49</option>
+<option value="synd">Synechococcus sp. KORDI-52</option>
+<option value="syu">Synechococcus sp. UTEX 2973</option>
+<option value="syh">Synechococcus sp. WH 8109</option>
+<option value="tel">Thermosynechococcus elongatus</option>
+<option value="thn">Thermosynechococcus sp. NK55</option>
+<option value="mar">Microcystis aeruginosa</option>
+<option value="mpk">Microcystis panniformis</option>
+<option value="cyt">Cyanothece sp. ATCC 51142</option>
+<option value="cyp">Cyanothece sp. PCC 8801</option>
+<option value="cyc">Cyanothece sp. PCC 7424</option>
+<option value="cyn">Cyanothece sp. PCC 7425</option>
+<option value="cyh">Cyanothece sp. PCC 8802</option>
+<option value="cyj">Cyanothece sp. PCC 7822</option>
+<option value="amr">Acaryochloris marina</option>
+<option value="cgc">Cyanobium gracile</option>
+<option value="can">Cyanobacterium aponinum</option>
+<option value="csn">Cyanobacterium stanieri</option>
+<option value="dsl">Dactylococcopsis salina</option>
+<option value="hao">Halothece sp. PCC 7418</option>
+<option value="glp">Gloeocapsa sp. PCC 7428</option>
+<option value="cmp">Chamaesiphon minutus</option>
+<option value="ter">Trichodesmium erythraeum</option>
+<option value="lep">Leptolyngbya sp. PCC 7376</option>
+<option value="gei">Geitlerinema sp. PCC 7407</option>
+<option value="oac">Oscillatoria acuminata</option>
+<option value="oni">Oscillatoria nigro-viridis</option>
+<option value="pseu">Pseudanabaena sp. PCC 7367</option>
+<option value="cep">Crinalium epipsammum</option>
+<option value="mic">Microcoleus sp. PCC 7113</option>
+<option value="arp">Arthrospira platensis</option>
+<option value="gvi">Gloeobacter violaceus</option>
+<option value="glj">Gloeobacter kilaueensis</option>
+<option value="ana">Nostoc sp. PCC 7120</option>
+<option value="npu">Nostoc punctiforme</option>
+<option value="nos">Nostoc sp. PCC 7107</option>
+<option value="nop">Nostoc sp. PCC 7524</option>
+<option value="ava">Anabaena variabilis</option>
+<option value="anb">Anabaena sp. 90</option>
+<option value="acy">Anabaena cylindrica</option>
+<option value="awa">Anabaena sp. wa102</option>
+<option value="naz">Anabaena azollae 0708</option>
+<option value="csg">Cylindrospermum stagnale</option>
+<option value="calo">Calothrix sp. PCC 7507</option>
+<option value="calt">Calothrix sp. PCC 6303</option>
+<option value="calh">Calothrix sp. 336/3</option>
+<option value="riv">Rivularia sp. PCC 7116</option>
+<option value="pma">Prochlorococcus marinus SS120</option>
+<option value="pmm">Prochlorococcus marinus MED4</option>
+<option value="pmt">Prochlorococcus marinus MIT 9313</option>
+<option value="pmn">Prochlorococcus marinus NATL2A</option>
+<option value="pmi">Prochlorococcus marinus MIT9312</option>
+<option value="pmb">Prochlorococcus marinus AS9601</option>
+<option value="pmc">Prochlorococcus marinus MIT 9515</option>
+<option value="pmf">Prochlorococcus marinus MIT 9303</option>
+<option value="pmg">Prochlorococcus marinus MIT 9301</option>
+<option value="pmh">Prochlorococcus marinus MIT 9215</option>
+<option value="pmj">Prochlorococcus marinus MIT 9211</option>
+<option value="pme">Prochlorococcus marinus NATL1A</option>
+<option value="prm">Prochlorococcus sp. MIT 0801</option>
+<option value="cthe">Chroococcidiopsis thermalis</option>
+<option value="plp">Pleurocapsa sp. PCC 7327</option>
+<option value="scs">Stanieria cyanosphaera</option>
+</select>
+<input type="hidden" name="mapno" value="00196" />
+<input type="hidden" name="mapscale" value=>
+<input type="button" value="Go" onclick="select_menu(this.form)" />
+<input type="hidden" name="show_description" value="hide">
+
+</form>
+</td><td>
+<form name="form2" method="get" action="http://www.genome.jp/kegg-bin/show_pathway">
+&nbsp;&nbsp;&nbsp;&nbsp;
+<select name="scale" onChange="resize_map(this.form.scale.value)">
+<option value="1.84" >184%</option>
+<option value="1.5" >150%</option>
+<option value="1.22" >122%</option>
+<option value="1.0" selected>100%</option>
+<option value="0.82" >82%</option>
+<option value="0.67" >67%</option>
+<option value="0.55" >55%</option>
+</select>
+&nbsp;&nbsp;<input type="text" name="query" size=20 value="">
+<input type="hidden" name="map" value="osa00196" />
+<input type="hidden" name="scale" value=>
+<input type="hidden" name="image" value=/share/www//mark_pathway1460626337115043/osa00196.png>
+<input type="hidden" name="use" value="reference">
+<input type="hidden" name="nmap_args" value="14606259325178">
+<input type="hidden" name="auto_image" value="">
+<input type="hidden" name="show_description" value="hide">
+<input type="hidden" name="multi_query" />
+
+<!--</form>-->
+</td></tr></table>
+
+
+<img src="osa00196.png" name="pathwayimage" name="pathwayimage" usemap="#mapdata" border="0" />
+
+<map name="mapdata">
+<area shape=rect	coords=766,485,812,502	href="http://www.genome.jp/dbget-bin/www_bget?osa:4345663"	title="4345663" />
+<area shape=rect	coords=720,485,766,502	href="http://www.genome.jp/dbget-bin/www_bget?osa:4328623"	title="4328623" />
+<area shape=rect	coords=674,485,720,502	href="http://www.genome.jp/dbget-bin/www_bget?osa:4343709+osa:4347166"	title="4343709, 4347166" />
+<area shape=rect	coords=628,485,674,502	href="http://www.genome.jp/dbget-bin/www_bget?osa:4340892"	title="4340892" />
+<area shape=rect	coords=858,525,904,542	href="http://www.genome.jp/dbget-bin/www_bget?osa:4336028"	title="4336028" />
+<area shape=rect	coords=812,525,858,542	href="http://www.genome.jp/dbget-bin/www_bget?osa:4350176"	title="4350176" />
+<area shape=rect	coords=766,525,812,542	href="http://www.genome.jp/dbget-bin/www_bget?osa:4343583"	title="4343583" />
+<area shape=rect	coords=720,525,766,542	href="http://www.genome.jp/dbget-bin/www_bget?osa:4343604"	title="4343604" />
+<area shape=rect	coords=674,525,720,542	href="http://www.genome.jp/dbget-bin/www_bget?osa:4333359"	title="4333359" />
+<area shape=rect	coords=628,525,674,542	href="http://www.genome.jp/dbget-bin/www_bget?osa:4324599+osa:4324705+osa:4346803"	title="4324599, 4324705, 4346803" />
+<area shape=rect	coords=904,525,950,542	href="http://www.genome.jp/dbget-bin/www_bget?osa:4346649"	title="4346649" />
+<area shape=rect	coords=812,485,858,502	href="http://www.genome.jp/dbget-bin/www_bget?osa:4330828"	title="4330828" />
+<area shape=rect	coords=772,399,867,424	href="http://www.genome.jp/kegg-bin/show_pathway?osa00195"	title="osa00195: Photosynthesis" onmouseover="popupTimer(&quot;osa00195&quot;, &quot;osa00195: Photosynthesis&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=328,400,423,425	href="http://www.genome.jp/kegg-bin/show_pathway?osa00195"	title="osa00195: Photosynthesis" onmouseover="popupTimer(&quot;osa00195&quot;, &quot;osa00195: Photosynthesis&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+<area shape=rect	coords=383,45,681,70	href="http://www.genome.jp/dbget-bin/www_bget?osa00196"	title="osa00196: Photosynthesis - antenna proteins" onmouseover="popupTimer(&quot;osa00196&quot;, &quot;osa00196: Photosynthesis - antenna proteins&quot;, &quot;#ffffff&quot;)" onmouseout="hideMapTn()" />
+</map>
+<div id="poplay" class="poplay" />
+
+</form>
+</body>
+</html>
