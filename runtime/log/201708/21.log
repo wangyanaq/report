@@ -1,0 +1,135 @@
+[ 2017-08-21T11:24:02+08:00 ] 10.2.2.28 10.2.2.28 GET /current/
+[ log ] 10.2.2.28/current/ [运行时间：1.873107s][吞吐率：0.53req/s] [内存消耗：2,437.82kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.364021s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_reportinfo` [ RunTime:0.036002s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_reportinfo` WHERE  `username` = 'demo'   [ RunTime:0.003000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.030002s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bc_seq_reportinfo` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `bc_seq_reportinfo` WHERE  `username` = 'demo'   [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `bc_seq_reportinfo` WHERE  `bh_id` = 'BC150548-1' LIMIT 1    [ RunTime:0.021001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bc_seq_analysis` [ RunTime:0.029002s ]
+[ sql ] [ SQL ] SELECT * FROM `bc_seq_analysis` WHERE  `bh_id` = 'BC150548-1' LIMIT 1    [ RunTime:0.003000s ]
+
+---------------------------------------------------------------
+[ 2017-08-21T11:24:26+08:00 ] 10.2.2.28 10.2.2.28 GET /current/
+[ log ] 10.2.2.28/current/ [运行时间：0.508029s][吞吐率：1.97req/s] [内存消耗：2,437.83kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_reportinfo` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_reportinfo` WHERE  `username` = 'demo'   [ RunTime:0.003001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bc_seq_reportinfo` [ RunTime:0.056003s ]
+[ sql ] [ SQL ] SELECT * FROM `bc_seq_reportinfo` WHERE  `username` = 'demo'   [ RunTime:0.004000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `bc_seq_reportinfo` WHERE  `bh_id` = 'BC150548-1' LIMIT 1    [ RunTime:0.036002s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bc_seq_analysis` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `bc_seq_analysis` WHERE  `bh_id` = 'BC150548-1' LIMIT 1    [ RunTime:0.003000s ]
+
+---------------------------------------------------------------
+[ 2017-08-21T11:24:29+08:00 ] 10.2.2.28 10.2.2.28 POST /plogin
+[ log ] 10.2.2.28/plogin [运行时间：0.132008s][吞吐率：7.58req/s] [内存消耗：2,232.90kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_analysis` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_analysis` WHERE  `bh_id` = 'BHdemo2345' LIMIT 1    [ RunTime:0.003000s ]
+
+---------------------------------------------------------------
+[ 2017-08-21T11:24:29+08:00 ] 10.2.2.28 10.2.2.28 GET /current
+[ log ] 10.2.2.28/current [运行时间：0.136008s][吞吐率：7.35req/s] [内存消耗：2,442.29kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_reportinfo` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_reportinfo` WHERE  `username` = 'demo'   [ RunTime:0.003000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bc_seq_reportinfo` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `bc_seq_reportinfo` WHERE  `username` = 'demo'   [ RunTime:0.003000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_reportinfo` WHERE  `bh_id` = 'BHdemo2345' LIMIT 1    [ RunTime:0.011000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_analysis` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_analysis` WHERE  `bh_id` = 'BHdemo2345' LIMIT 1    [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2017-08-21T11:24:30+08:00 ] 10.2.2.28 10.2.2.28 GET /welcome/BHdemo2345
+[ log ] 10.2.2.28/welcome/BHdemo2345 [运行时间：0.227013s][吞吐率：4.41req/s] [内存消耗：2,341.52kb] [文件加载：50]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_reportinfo` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_reportinfo` WHERE  `bh_id` = 'BHdemo2345' LIMIT 1    [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_analysis` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_analysis` WHERE  `bh_id` = 'BHdemo2345' LIMIT 1    [ RunTime:0.004000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_login` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_login` WHERE  `username` = 'demo' LIMIT 1    [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2017-08-21T11:24:36+08:00 ] 10.2.2.28 10.2.2.28 GET /current
+[ log ] 10.2.2.28/current [运行时间：0.116007s][吞吐率：8.62req/s] [内存消耗：2,442.29kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_reportinfo` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_reportinfo` WHERE  `username` = 'demo'   [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bc_seq_reportinfo` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `bc_seq_reportinfo` WHERE  `username` = 'demo'   [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_reportinfo` WHERE  `bh_id` = 'BHdemo2345' LIMIT 1    [ RunTime:0.003000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_analysis` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_analysis` WHERE  `bh_id` = 'BHdemo2345' LIMIT 1    [ RunTime:0.005000s ]
+
+---------------------------------------------------------------
+[ 2017-08-21T11:24:36+08:00 ] 10.2.2.28 10.2.2.28 GET /welcome/BHdemo2345
+[ log ] 10.2.2.28/welcome/BHdemo2345 [运行时间：0.115007s][吞吐率：8.70req/s] [内存消耗：2,341.52kb] [文件加载：50]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_reportinfo` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_reportinfo` WHERE  `bh_id` = 'BHdemo2345' LIMIT 1    [ RunTime:0.003001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_analysis` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_analysis` WHERE  `bh_id` = 'BHdemo2345' LIMIT 1    [ RunTime:0.003000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_login` [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_login` WHERE  `username` = 'demo' LIMIT 1    [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2017-08-21T11:24:45+08:00 ] 10.2.2.28 10.2.2.28 GET /current
+[ log ] 10.2.2.28/current [运行时间：0.132008s][吞吐率：7.58req/s] [内存消耗：2,442.29kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_reportinfo` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_reportinfo` WHERE  `username` = 'demo'   [ RunTime:0.003000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bc_seq_reportinfo` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `bc_seq_reportinfo` WHERE  `username` = 'demo'   [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_reportinfo` WHERE  `bh_id` = 'BHdemo2345' LIMIT 1    [ RunTime:0.002001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_analysis` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_analysis` WHERE  `bh_id` = 'BHdemo2345' LIMIT 1    [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2017-08-21T11:24:45+08:00 ] 10.2.2.28 10.2.2.28 GET /welcome/BHdemo2345
+[ log ] 10.2.2.28/welcome/BHdemo2345 [运行时间：0.112006s][吞吐率：8.93req/s] [内存消耗：2,341.52kb] [文件加载：50]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_reportinfo` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_reportinfo` WHERE  `bh_id` = 'BHdemo2345' LIMIT 1    [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_analysis` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_analysis` WHERE  `bh_id` = 'BHdemo2345' LIMIT 1    [ RunTime:0.005001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_login` [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_login` WHERE  `username` = 'demo' LIMIT 1    [ RunTime:0.003000s ]
+
+---------------------------------------------------------------
+[ 2017-08-21T11:25:52+08:00 ] 10.2.2.28 10.2.2.28 GET /article/BHdemo2345
+[ log ] 10.2.2.28/article/BHdemo2345 [运行时间：0.657038s][吞吐率：1.52req/s] [内存消耗：2,675.50kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_analysis` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_analysis` WHERE  `bh_id` = 'BHdemo2345' LIMIT 1    [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_analysis` WHERE  `analysis_id` = 'pUItWJC9vOTfmsv6xZje8gczoYpKQ79b1ihrcJOgwAdpZtnTDF' LIMIT 1    [ RunTime:0.003001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bh_chip_reportinfo` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_reportinfo` WHERE  `bh_id` = 'BHdemo2345' LIMIT 1    [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:dbname=test;host=10.2.2.153;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `bh_chip_reportinfo` WHERE  `bh_id` = 'BHdemo2345' LIMIT 1    [ RunTime:0.005000s ]
+
+---------------------------------------------------------------

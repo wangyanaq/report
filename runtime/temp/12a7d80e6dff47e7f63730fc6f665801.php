@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"C:\xampp\htdocs\report\public/../application/pc\view\welcome\welcome.html";i:1502851814;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"C:\xampp\htdocs\report\public/../application/pc\view\welcome\welcome.html";i:1502948886;}*/ ?>
 ﻿<!DOCTYPE HTML>
 <html>
 <head>
@@ -29,8 +29,11 @@
 <div class="page-container">
 	<?php if($bh_status=='bh'): ?>
 	<p class="f-20 text-success">欢迎使用伯豪生物芯片报告系统<span class="f-14"></span></p>
-	<!--s<p>登录次数：18 </p>-->
+	<?php elseif($bh_status=='bc'): ?>
+	<p class="f-20 text-success">欢迎使用伯豪生物RNA-seq报告系统<span class="f-14"></span></p>
+	<?php endif; ?>
 	<p>上次登录IP：<?php echo $last_login_ip; ?>  上次登录时间：<?php echo $last_login_time; ?></p>
+	<?php if($bh_status=='bh'): ?>
 	<table class="table table-border table-bordered table-bg">
 		<thead>
 			<tr>
@@ -41,8 +44,6 @@
 				<th>项目类型</th>
 				<th>芯片数量</th>
 				<th>报告状态</th>
-				<!--<th>查看地址</th>-->
-			<!--	<th>管理员</th>-->
 			</tr>
 		</thead>
 		<tbody>
@@ -74,9 +75,9 @@
 			</tr>
 		</thead>
 		<tbody>
-		<?php  $i = 1;if($ana_row['nor_data'] == '1'): ?>
+		<?php  $i = 0;if($ana_row['nor_data'] == '1'): ?>
 		<tr>
-			<td width="70%"><?php echo $i; ?>.原始数据的归一化处理 </td>
+			<td width="70%"><?php echo ++$i; ?>.原始数据的归一化处理 </td>
 			<!--<td><span id="lbServerName">http://127.0.0.1/</span></td>-->
 			<td class="text-c">√</td>
 		</tr>
@@ -156,60 +157,9 @@
 			<td class="text-c">√</td>
 		</tr>
 	 <?php endif; ?>
-
-		<!--	<tr>
-				<td width="70%">1. Box Plot图</td>
-				<td class="text-c">√</td>
-			</tr>
-			<tr>
-				<td>2. PCA图.</td>
-				<td class="text-c">√</td>
-			</tr>
-			<tr>
-				<td>3. 样本聚类图</td>
-				<td class="text-c">√</td>
-			</tr>
-			<tr>
-				<td> 4. 样本相关性分析</td>
-				<td class="text-c">√</td>
-			</tr>
-			<tr>
-				<td> 5. 基因水平表达差异筛选</td>
-				<td class="text-c">√</td>
-			</tr>
-			<tr>
-				<td> 6. 热图 </td>
-				<td class="text-c">√</td>
-			</tr>
-			<tr>
-				<td> 7. 散点图</td>
-				<td class="text-c">√</td>
-			</tr>
-			<tr>
-				<td>8. 火山图	 </td>
-				<td class="text-c">√</td>
-			</tr>
-			<tr>
-				<td>9. 差异基因层级聚类 </td>
-				<td class="text-c">√</td>
-			</tr>
-			<tr>
-				<td>10. lncRNA靶基因预测 </td>
-				<td class="text-c">√</td>
-			</tr>
-			<tr>
-				<td> 11. GO富集分析 </td>
-				<td class="text-c">√</td>
-			</tr>
-			<tr>
-				<td>12. KEGG富集分析 </td>
-				<td class="text-c">√</td>
-			</tr>-->
 		</tbody>
 	</table>
 	<?php elseif($bh_status=='bc'): ?>
-	<p class="f-20 text-success">欢迎使用伯豪生物RNA-seq报告系统<span class="f-14"></span></p>
-	<p>上次登录IP：222.35.131.79.1  上次登录时间：2014-6-14 11:19:55</p>
 	<table class="table table-border table-bordered table-bg">
 		<thead>
 		<tr>
@@ -219,15 +169,20 @@
 			<th>项目编号</th>
 			<th>项目类型</th>
 			<th>报告状态</th>
-			<!--	<th>管理员</th>-->
 		</tr>
 		</thead>
 		<tbody>
 		<tr class="text-c">
-			<td>BC150548-1</td>
-			<td> 原核RNA测序 </td>
-			<td> 已完成</td>
-			<!--	<td>20</td>-->
+
+			<td> <?php echo $bh_id; ?></td>
+			<td>  <?php echo $curr_bh['project_type']; ?>测序 </td>
+			<td>
+				<?php if($curr_bh['status']==1): ?>
+					已完成
+				<?php else: ?>
+					正在处理
+				<?php endif; ?>
+			</td>
 		</tr>
 		</tbody>
 	</table>
@@ -242,47 +197,58 @@
 		</tr>
 		</thead>
 		<tbody>
+		<?php  $i = 0;if($ana_row['qc_eval'] == '1'): ?>
 		<tr>
-			<td width="70%">1.测序序列质量评估</td>
+			<td width="70%"><?php echo ++$i; ?>.测序序列质量评估</td>
 			<!--<td><span id="lbServerName">http://127.0.0.1/</span></td>-->
 			<td class="text-c">√</td>
 		</tr>
+		<?php endif; if($ana_row['data_pre'] == '1'): ?>
 		<tr>
-			<td>2.数据预处理</td>
+			<td><?php echo ++$i; ?>.数据预处理</td>
 			<td class="text-c">√</td>
 		</tr>
+		<?php endif; if($ana_row['mapping'] == '1'): ?>
 		<tr>
-			<td>3.基因组比对</td>
+			<td><?php echo ++$i; ?>.基因组比对</td>
 			<td class="text-c">√</td>
 		</tr>
+		<?php endif; if($ana_row['gene_expression'] == '1'): ?>
 		<tr>
-			<td> 4.基因表达定量分析</td>
+			<td> <?php echo ++$i; ?>.基因表达定量分析</td>
 			<td class="text-c">√</td>
 		</tr>
+		<?php endif; if($ana_row['correlation'] == '1'): ?>
 		<tr>
-			<td> 5.表达相关性分析</td>
+			<td><?php echo ++$i; ?>.表达相关性分析</td>
 			<td class="text-c">√</td>
 		</tr>
+		<?php endif; if($ana_row['diff_gene'] == '1'): ?>
 		<tr>
-			<td> 6.基因差异表达分析 </td>
+			<td><?php echo ++$i; ?>.基因差异表达分析 </td>
 			<td class="text-c">√</td>
 		</tr>
+		<?php endif; if($ana_row['go'] == '1'): ?>
 		<tr>
-			<td> 7.差异基因GO富集分析</td>
+			<td><?php echo ++$i; ?>.差异基因GO富集分析</td>
 			<td class="text-c">√</td>
 		</tr>
+		<?php endif; if($ana_row['kegg'] == '1'): ?>
 		<tr>
-			<td>8.差异基因KEGG富集分析</td>
+			<td><?php echo ++$i; ?>.差异基因KEGG富集分析</td>
 			<td class="text-c">√</td>
 		</tr>
+		<?php endif; if($ana_row['novel_gene'] == '1'): ?>
 		<tr>
-			<td>9.新基因分析</td>
+			<td><?php echo ++$i; ?>.新基因分析</td>
 			<td class="text-c">√</td>
 		</tr>
+		<?php endif; if($ana_row['ncrna'] == '1'): ?>
 		<tr>
-			<td>10.ncRNA分析 </td>
+			<td><?php echo ++$i; ?>.ncRNA分析 </td>
 			<td class="text-c">√</td>
 		</tr>
+		<?php endif; ?>
 		</tbody>
 	</table>
 

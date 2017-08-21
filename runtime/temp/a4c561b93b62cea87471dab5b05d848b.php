@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:69:"C:\xampp\htdocs\report\public/../application/pc\view\login\login.html";i:1502851827;s:72:"C:\xampp\htdocs\report\public/../application/pc\view\common\_header.html";i:1502765597;s:68:"C:\xampp\htdocs\report\public/../application/pc\view\login\body.html";i:1502775944;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:69:"C:\xampp\htdocs\report\public/../application/pc\view\login\login.html";i:1502851827;s:72:"C:\xampp\htdocs\report\public/../application/pc\view\common\_header.html";i:1502765597;s:68:"C:\xampp\htdocs\report\public/../application/pc\view\login\body.html";i:1502939333;}*/ ?>
 ﻿<!DOCTYPE HTML>
 <html>
 <head>
@@ -327,7 +327,7 @@
     <div id="iframe_box" class="Hui-article">
       <div class="show_iframe">
         <div style="display:none" class="loading"></div>
-        <iframe scrolling="yes" frameborder="0" src="welcome/BC123"></iframe>
+        <iframe scrolling="yes" frameborder="0" src="welcome/<?php echo $bh_id; ?>"></iframe>
       </div>
     </div>
   </section>

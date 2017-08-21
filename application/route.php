@@ -17,9 +17,10 @@ return [
         ':id'   => ['index/hello', ['method' => 'get'], ['id' => '\d+']],
         ':name' => ['index/hello', ['method' => 'post']],
     ],
-     'plogin'=>'pc/Login/login',
+    '/'=>'index/Index/index',
+     'plogin'=>['pc/Login/login',['method' => 'post']],
      'welcome/:bh_id'=>'pc/Welcome/welcome',
-     'current'=>'pc/Login/current',
+     'current'=>['pc/Login/current',['method' => 'post']],
      //芯片
      'article/:bh_id'=>'pc/Article/article_list',//项目概况
      'chipDiff/:bh_id'=>'pc/Diff/diff_gene',//差异筛选结果

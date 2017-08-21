@@ -11,9 +11,16 @@ class  Welcome  extends Controller
         {
             $read=new valid();
             $r=$read->valid_exists();
-            if($r and isset($bh_id)){
-             $ana_row=db('bh_chip_analysis')->where('bh_id',$bh_id)->find();
-             $curr_bh=db('bh_chip_reportinfo')->where('bh_id',$bh_id)->find();
+               //判断合同类别查询该合同信息
+               if(preg_match("/^BH/i", $bh_id,$matches)){
+                    $curr_bh=db('bh_chip_reportinfo')->where('bh_id',$bh_id)->find();
+                    $pre="bh_chip";
+                }else if(preg_match("/^BC/i",$bh_id, $matches)){
+                    $curr_bh=db('bc_seq_reportinfo')->where('bh_id',$bh_id)->find();
+                    $pre="bc_seq";
+                }
+            if($r and !empty($curr_bh)){
+             $ana_row=db($pre.'_analysis')->where('bh_id',$bh_id)->find();
              $username= $curr_bh['username'];
              $login=db('bh_login')->where('username',$username)->find();
 
@@ -34,7 +41,7 @@ class  Welcome  extends Controller
                 echo  $this->fetch('welcome');
             }
             else{
-               echo $this->redirect('index/index/index');
+               echo $this->redirect('/');
             }
         }
 }

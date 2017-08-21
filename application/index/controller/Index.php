@@ -10,7 +10,7 @@ class Index  extends Controller
     public function index()
     {
        // 清除session（ 当前作用域）
-       session(null);
+       //  session(null);
         $read=new getMsg();
         $flg=$read->isMobile();
         session('mobile',$flg);

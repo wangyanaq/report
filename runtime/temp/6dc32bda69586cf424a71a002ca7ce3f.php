@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:53:"C:\xampp\htdocs\report\public/../application/404.html";i:1502938339;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
